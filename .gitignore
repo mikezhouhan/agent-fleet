@@ -1,0 +1,10 @@
+/kandev/
+/cindy/
+/grok-bot-0.18-reconstructed/
+/rakazo/
+/agent-orchestrator/
+/deepseek-harness/
+.DS_Store
+.env
+.env.*
+*.pem

@@ -1,0 +1,35 @@
+{
+  "description": "Fixed source snapshots used for static analysis; source repositories are not included.",
+  "repositories": [
+    {
+      "name": "kandev",
+      "url": "https://github.com/kdlbs/kandev",
+      "commit": "753e5549ee730245e4124654052b8b9e364d630c"
+    },
+    {
+      "name": "cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "commit": "f4422f816ccbadbcd29714dc0722e581bb08e172"
+    },
+    {
+      "name": "grok-bot-0.18-reconstructed",
+      "url": "https://github.com/b-nnett/grok-bot-0.18-reconstructed",
+      "commit": "a9f633e09d49a85829b8236331b9e21f7e612634"
+    },
+    {
+      "name": "rakazo",
+      "url": "https://github.com/elie222/rakazo",
+      "commit": "b286fc4a5d0f608005000ef35bee4c473c31a165"
+    },
+    {
+      "name": "agent-orchestrator",
+      "url": "https://github.com/Untrivial-ai/agent-orchestrator",
+      "commit": "ab968d5e761469eb32c1b4dc780cde721a9998de"
+    },
+    {
+      "name": "deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "commit": "c291e7961a515f6d7af9304e7fd1d257929aef26"
+    }
+  ]
+}
