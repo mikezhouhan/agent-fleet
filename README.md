@@ -4,6 +4,8 @@
 
 ## 阅读入口
 
+- [下载六个源码仓库并复现分析版本](SOURCE_DOWNLOAD.zh-CN.md)
+
 - [六个项目的区别、优缺点与架构分析](analysis/multi-agent-grok-product-analysis.zh-CN.md)
 - [五条演进路线总览与对比](analysis/routes/README.md)
 - [路线一：基于 Cindy 演进](analysis/routes/01-cindy-evolution.zh-CN.md)
