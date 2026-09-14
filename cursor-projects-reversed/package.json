@@ -1,0 +1,18 @@
+{
+  "name": "cursor-projects-reversed",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Recover Cursor Projects client units from the named macOS DMG for security-team review. Not original Anysphere source and not a runnable Cursor clone.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "recover": "node scripts/recover.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@electron/asar": "4.2.1",
+    "esbuild": "0.25.9"
+  }
+}

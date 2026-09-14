@@ -1,0 +1,174 @@
+{
+  "dmgPath": "/Users/jasper/Downloads/Cursor-darwin-arm64.dmg",
+  "dmgBytes": 288578762,
+  "dmgSha256": "a3cf86050ea4c322b8a63fa840f35a54318c46da9b33281c2b223a17e473c738",
+  "payload": {
+    "kind": "unpacked-app",
+    "payloadRoot": "Cursor.app/Contents/Resources/app",
+    "asarPath": null,
+    "nodeModulesAsar": {
+      "shippedPath": "node_modules.asar",
+      "sha256": "daf0b84ce274cb8dc423dc5e2a57a799d2c12c1d4793051716333beaade07982",
+      "entryCount": 0
+    },
+    "primaryBundle": {
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "sha256": "4b02d0d6d8a54ef3d191db50f1bde8b6b2c16cfc37cabf94d59d2e17f20feb4b",
+      "bytes": 45174252
+    },
+    "files": [
+      {
+        "shippedPath": "extensions/cursor-agent-exec/dist/main.js",
+        "sha256": "ea0caf6adfc6d0dd8667f41ff72d56fb2f48a4c86b00dac2c4d59178525b72fd",
+        "bytes": 10076915
+      },
+      {
+        "shippedPath": "extensions/cursor-agent-exec/package.json",
+        "sha256": "1b2988d066c4ed5acfec05e93a8063e17a7e12d6c5ae2013751ad4b00b9dec44",
+        "bytes": 532
+      },
+      {
+        "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+        "sha256": "e19b3904d02db7e1382479c8860f02520f01225aaf05ea5cb171184034cf7442",
+        "bytes": 27378622
+      },
+      {
+        "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+        "sha256": "0d1a6e3523d689e3e421ae8e9f66812981e1fb694d01b8dda993c148423aeb1b",
+        "bytes": 12039564
+      },
+      {
+        "shippedPath": "extensions/cursor-agent-host/package.json",
+        "sha256": "38a67a4a4e66b1ebb1df528980fea5d815b0496b89bb2367c04b49c69d4590f4",
+        "bytes": 424
+      },
+      {
+        "shippedPath": "extensions/cursor-agent-worker/dist/main.js",
+        "sha256": "bc840c7b27f40a204b0c901a714d4b99c3e4b1e4bc74f450963c99891a66a33f",
+        "bytes": 1390572
+      },
+      {
+        "shippedPath": "extensions/cursor-always-local/dist/main.js",
+        "sha256": "d758894b7399fbc9c935e5220c10b10729923b79307e34bcaf71ccd9e6090c86",
+        "bytes": 5885917
+      },
+      {
+        "shippedPath": "extensions/cursor-always-local/package.json",
+        "sha256": "f1fbfdcfa61dd65a3a8714ee5c96a7524c6b1586fb766e1cb93dbe7cc1288930",
+        "bytes": 1080
+      },
+      {
+        "shippedPath": "extensions/cursor-always-local/schemas/environment.schema.json",
+        "sha256": "8e81be8b36c9bea044b5546c65afc43ac4f9c3617238c0f43ecbf702d479143a",
+        "bytes": 5951
+      },
+      {
+        "shippedPath": "extensions/cursor-always-local/schemas/permissions.schema.json",
+        "sha256": "852aa108fe5add547ce205f4282a6a447a49b1756b4c88100c556f28866f005e",
+        "bytes": 1839
+      },
+      {
+        "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+        "sha256": "956563334f2800a9ba1172c704c030949fd4c44b59ed147aa6a9ea960e1de4c3",
+        "bytes": 8824221
+      },
+      {
+        "shippedPath": "extensions/cursor-local-agent-runtime/package.json",
+        "sha256": "a243b0abd8bafb24efef9216562bb859b919be75fb2301122627cb8642d98250",
+        "bytes": 325
+      },
+      {
+        "shippedPath": "extensions/cursor-resolver/dist/browser/main.js",
+        "sha256": "36a2962c7fcf80dd436c9f2e61256a3129b7c9d1e1c9626d68f551d961dfe285",
+        "bytes": 4537627
+      },
+      {
+        "shippedPath": "node_modules.asar",
+        "sha256": "daf0b84ce274cb8dc423dc5e2a57a799d2c12c1d4793051716333beaade07982",
+        "bytes": 28
+      },
+      {
+        "shippedPath": "out/main.js",
+        "sha256": "d15ee82247f73accfa24097ea416ca398910ffaa7c6d0fee360e10850c552ee6",
+        "bytes": 2541436
+      },
+      {
+        "shippedPath": "out/vs/code/electron-utility/conversationSearch/conversationSearchMain.js",
+        "sha256": "78b0afdcca358216415828e2b4aa951a6bda94de1d37d7b761fa421d1d83f9fa",
+        "bytes": 476908
+      },
+      {
+        "shippedPath": "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+        "sha256": "242706ca7bd2186a47e6fa6ecdacc358ebfb15c7af8bdb7576a3de910f4fc0c8",
+        "bytes": 435766
+      },
+      {
+        "shippedPath": "out/vs/workbench/workbench.anysphere-ui-automations.js",
+        "sha256": "3af80c98d5aac97b091256ea1821e32d14696879eb53d162dcc6389969d95345",
+        "bytes": 9102133
+      },
+      {
+        "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+        "sha256": "6dbdfff3a20622f6875bc1c345f95e6f15e1abe36f6f74cb578f95caf07496c7",
+        "bytes": 38272882
+      },
+      {
+        "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+        "sha256": "4b02d0d6d8a54ef3d191db50f1bde8b6b2c16cfc37cabf94d59d2e17f20feb4b",
+        "bytes": 45174252
+      },
+      {
+        "shippedPath": "package.json",
+        "sha256": "6dde8e88ddd28f05a3d279dfb40fe22751ac50beec929676cc6912795c77f296",
+        "bytes": 419
+      },
+      {
+        "shippedPath": "product.json",
+        "sha256": "c30941ccc18b0db36bdfceebd1cf4ac8a66e60d37bb17d63d8e3fcf7097c54c2",
+        "bytes": 52335
+      }
+    ],
+    "app": {
+      "bundleId": "com.todesktop.230313mzl4w4u92",
+      "bundleName": "Cursor",
+      "shortVersion": "3.20.17",
+      "bundleVersion": "3.20.17"
+    },
+    "product": {
+      "nameShort": "Cursor",
+      "version": "3.20.17",
+      "commit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc0",
+      "realCommit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc8",
+      "vscodeVersion": "1.128.0",
+      "date": "2026-09-12T03:16:10.634Z",
+      "dataFolderName": ".cursor",
+      "quality": "stable",
+      "darwinBundleIdentifier": "com.todesktop.230313mzl4w4u92",
+      "updateUrl": "https://api2.cursor.sh/updates"
+    }
+  },
+  "workPayloadCopied": [
+    "extensions/cursor-agent-exec/dist/main.js",
+    "extensions/cursor-agent-exec/package.json",
+    "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+    "extensions/cursor-agent-host/dist/main.js",
+    "extensions/cursor-agent-host/package.json",
+    "extensions/cursor-agent-worker/dist/main.js",
+    "extensions/cursor-always-local/dist/main.js",
+    "extensions/cursor-always-local/package.json",
+    "extensions/cursor-always-local/schemas/environment.schema.json",
+    "extensions/cursor-always-local/schemas/permissions.schema.json",
+    "extensions/cursor-local-agent-runtime/dist/main.js",
+    "extensions/cursor-local-agent-runtime/package.json",
+    "extensions/cursor-resolver/dist/browser/main.js",
+    "node_modules.asar",
+    "out/main.js",
+    "out/vs/code/electron-utility/conversationSearch/conversationSearchMain.js",
+    "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+    "out/vs/workbench/workbench.anysphere-ui-automations.js",
+    "out/vs/workbench/workbench.desktop.main.js",
+    "out/vs/workbench/workbench.glass.main.js",
+    "package.json",
+    "product.json"
+  ]
+}

@@ -1,0 +1,2459 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "dmgPath": "/Users/jasper/Downloads/Cursor-darwin-arm64.dmg",
+    "dmgBytes": 288578762,
+    "dmgSha256": "a3cf86050ea4c322b8a63fa840f35a54318c46da9b33281c2b223a17e473c738",
+    "payload": {
+      "kind": "unpacked-app",
+      "payloadRoot": "Cursor.app/Contents/Resources/app",
+      "asarPath": null,
+      "nodeModulesAsar": {
+        "shippedPath": "node_modules.asar",
+        "sha256": "daf0b84ce274cb8dc423dc5e2a57a799d2c12c1d4793051716333beaade07982",
+        "entryCount": 0
+      },
+      "primaryBundle": {
+        "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+        "sha256": "4b02d0d6d8a54ef3d191db50f1bde8b6b2c16cfc37cabf94d59d2e17f20feb4b",
+        "bytes": 45174252
+      },
+      "files": [
+        {
+          "shippedPath": "extensions/cursor-agent-exec/dist/main.js",
+          "sha256": "ea0caf6adfc6d0dd8667f41ff72d56fb2f48a4c86b00dac2c4d59178525b72fd",
+          "bytes": 10076915
+        },
+        {
+          "shippedPath": "extensions/cursor-agent-exec/package.json",
+          "sha256": "1b2988d066c4ed5acfec05e93a8063e17a7e12d6c5ae2013751ad4b00b9dec44",
+          "bytes": 532
+        },
+        {
+          "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+          "sha256": "e19b3904d02db7e1382479c8860f02520f01225aaf05ea5cb171184034cf7442",
+          "bytes": 27378622
+        },
+        {
+          "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+          "sha256": "0d1a6e3523d689e3e421ae8e9f66812981e1fb694d01b8dda993c148423aeb1b",
+          "bytes": 12039564
+        },
+        {
+          "shippedPath": "extensions/cursor-agent-host/package.json",
+          "sha256": "38a67a4a4e66b1ebb1df528980fea5d815b0496b89bb2367c04b49c69d4590f4",
+          "bytes": 424
+        },
+        {
+          "shippedPath": "extensions/cursor-agent-worker/dist/main.js",
+          "sha256": "bc840c7b27f40a204b0c901a714d4b99c3e4b1e4bc74f450963c99891a66a33f",
+          "bytes": 1390572
+        },
+        {
+          "shippedPath": "extensions/cursor-always-local/dist/main.js",
+          "sha256": "d758894b7399fbc9c935e5220c10b10729923b79307e34bcaf71ccd9e6090c86",
+          "bytes": 5885917
+        },
+        {
+          "shippedPath": "extensions/cursor-always-local/package.json",
+          "sha256": "f1fbfdcfa61dd65a3a8714ee5c96a7524c6b1586fb766e1cb93dbe7cc1288930",
+          "bytes": 1080
+        },
+        {
+          "shippedPath": "extensions/cursor-always-local/schemas/environment.schema.json",
+          "sha256": "8e81be8b36c9bea044b5546c65afc43ac4f9c3617238c0f43ecbf702d479143a",
+          "bytes": 5951
+        },
+        {
+          "shippedPath": "extensions/cursor-always-local/schemas/permissions.schema.json",
+          "sha256": "852aa108fe5add547ce205f4282a6a447a49b1756b4c88100c556f28866f005e",
+          "bytes": 1839
+        },
+        {
+          "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+          "sha256": "956563334f2800a9ba1172c704c030949fd4c44b59ed147aa6a9ea960e1de4c3",
+          "bytes": 8824221
+        },
+        {
+          "shippedPath": "extensions/cursor-local-agent-runtime/package.json",
+          "sha256": "a243b0abd8bafb24efef9216562bb859b919be75fb2301122627cb8642d98250",
+          "bytes": 325
+        },
+        {
+          "shippedPath": "extensions/cursor-resolver/dist/browser/main.js",
+          "sha256": "36a2962c7fcf80dd436c9f2e61256a3129b7c9d1e1c9626d68f551d961dfe285",
+          "bytes": 4537627
+        },
+        {
+          "shippedPath": "node_modules.asar",
+          "sha256": "daf0b84ce274cb8dc423dc5e2a57a799d2c12c1d4793051716333beaade07982",
+          "bytes": 28
+        },
+        {
+          "shippedPath": "out/main.js",
+          "sha256": "d15ee82247f73accfa24097ea416ca398910ffaa7c6d0fee360e10850c552ee6",
+          "bytes": 2541436
+        },
+        {
+          "shippedPath": "out/vs/code/electron-utility/conversationSearch/conversationSearchMain.js",
+          "sha256": "78b0afdcca358216415828e2b4aa951a6bda94de1d37d7b761fa421d1d83f9fa",
+          "bytes": 476908
+        },
+        {
+          "shippedPath": "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+          "sha256": "242706ca7bd2186a47e6fa6ecdacc358ebfb15c7af8bdb7576a3de910f4fc0c8",
+          "bytes": 435766
+        },
+        {
+          "shippedPath": "out/vs/workbench/workbench.anysphere-ui-automations.js",
+          "sha256": "3af80c98d5aac97b091256ea1821e32d14696879eb53d162dcc6389969d95345",
+          "bytes": 9102133
+        },
+        {
+          "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+          "sha256": "6dbdfff3a20622f6875bc1c345f95e6f15e1abe36f6f74cb578f95caf07496c7",
+          "bytes": 38272882
+        },
+        {
+          "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+          "sha256": "4b02d0d6d8a54ef3d191db50f1bde8b6b2c16cfc37cabf94d59d2e17f20feb4b",
+          "bytes": 45174252
+        },
+        {
+          "shippedPath": "package.json",
+          "sha256": "6dde8e88ddd28f05a3d279dfb40fe22751ac50beec929676cc6912795c77f296",
+          "bytes": 419
+        },
+        {
+          "shippedPath": "product.json",
+          "sha256": "c30941ccc18b0db36bdfceebd1cf4ac8a66e60d37bb17d63d8e3fcf7097c54c2",
+          "bytes": 52335
+        }
+      ],
+      "app": {
+        "bundleId": "com.todesktop.230313mzl4w4u92",
+        "bundleName": "Cursor",
+        "shortVersion": "3.20.17",
+        "bundleVersion": "3.20.17"
+      },
+      "product": {
+        "nameShort": "Cursor",
+        "version": "3.20.17",
+        "commit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc0",
+        "realCommit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc8",
+        "vscodeVersion": "1.128.0",
+        "date": "2026-09-12T03:16:10.634Z",
+        "dataFolderName": ".cursor",
+        "quality": "stable",
+        "darwinBundleIdentifier": "com.todesktop.230313mzl4w4u92",
+        "updateUrl": "https://api2.cursor.sh/updates"
+      }
+    },
+    "workPayloadCopied": [
+      "extensions/cursor-agent-exec/dist/main.js",
+      "extensions/cursor-agent-exec/package.json",
+      "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "extensions/cursor-agent-host/dist/main.js",
+      "extensions/cursor-agent-host/package.json",
+      "extensions/cursor-agent-worker/dist/main.js",
+      "extensions/cursor-always-local/dist/main.js",
+      "extensions/cursor-always-local/package.json",
+      "extensions/cursor-always-local/schemas/environment.schema.json",
+      "extensions/cursor-always-local/schemas/permissions.schema.json",
+      "extensions/cursor-local-agent-runtime/dist/main.js",
+      "extensions/cursor-local-agent-runtime/package.json",
+      "extensions/cursor-resolver/dist/browser/main.js",
+      "node_modules.asar",
+      "out/main.js",
+      "out/vs/code/electron-utility/conversationSearch/conversationSearchMain.js",
+      "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+      "out/vs/workbench/workbench.anysphere-ui-automations.js",
+      "out/vs/workbench/workbench.desktop.main.js",
+      "out/vs/workbench/workbench.glass.main.js",
+      "package.json",
+      "product.json"
+    ]
+  },
+  "scannedFiles": [
+    "package.json",
+    "product.json",
+    "node_modules.asar",
+    "out/main.js",
+    "out/vs/workbench/workbench.desktop.main.js",
+    "out/vs/workbench/workbench.glass.main.js",
+    "out/vs/workbench/workbench.anysphere-ui-automations.js",
+    "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+    "out/vs/code/electron-utility/conversationSearch/conversationSearchMain.js",
+    "extensions/cursor-agent-exec/package.json",
+    "extensions/cursor-agent-exec/dist/main.js",
+    "extensions/cursor-agent-host/package.json",
+    "extensions/cursor-agent-host/dist/main.js",
+    "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+    "extensions/cursor-local-agent-runtime/package.json",
+    "extensions/cursor-local-agent-runtime/dist/main.js",
+    "extensions/cursor-always-local/package.json",
+    "extensions/cursor-always-local/dist/main.js",
+    "extensions/cursor-always-local/schemas/environment.schema.json",
+    "extensions/cursor-always-local/schemas/permissions.schema.json",
+    "extensions/cursor-resolver/dist/browser/main.js",
+    "extensions/cursor-agent-worker/dist/main.js"
+  ],
+  "missingCategories": [],
+  "classification": [
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-exec/dist/main.js",
+      "shippedSymbols": [
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 10076915
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "shippedSymbols": [
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 27378622
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+      "shippedSymbols": [
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 12039564
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-worker/dist/main.js",
+      "shippedSymbols": [
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 1390572
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/dist/main.js",
+      "shippedSymbols": [
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 5885917
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+      "shippedSymbols": [
+        "LocalAgentRuntimeProvider",
+        "cursor-local-agent-runtime",
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 8824221
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-local-agent-runtime/package.json",
+      "shippedSymbols": [
+        "cursor-local-agent-runtime"
+      ],
+      "bytes": 325
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-resolver/dist/browser/main.js",
+      "shippedSymbols": [
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 4537627
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "out/main.js",
+      "shippedSymbols": [
+        "localAgentStorageService",
+        "cursor-local-agent-runtime",
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 2541436
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+      "shippedSymbols": [
+        "cloudAgentRepositoryService",
+        "glass.cloudAgentProjects.v1",
+        "LocalAgentRuntimeProvider",
+        "localAgentGatewayConfiguration",
+        "localAgentStorageService",
+        "cursor-local-agent-runtime",
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 38272882
+    },
+    {
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentRepositoryService",
+        "glass.cloudAgentProjects.v1",
+        "LocalAgentRuntimeProvider",
+        "localAgentGatewayConfiguration",
+        "localAgentStorageService",
+        "cursor-local-agent-runtime",
+        "CloudAgentEgressProtectionMode"
+      ],
+      "bytes": 45174252
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "extensions/cursor-agent-exec/dist/main.js",
+      "shippedSymbols": [
+        "ProjectCoordinator"
+      ],
+      "bytes": 10076915
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "shippedSymbols": [
+        "ProjectCoordinator"
+      ],
+      "bytes": 27378622
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+      "shippedSymbols": [
+        "ProjectCoordinator"
+      ],
+      "bytes": 12039564
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+      "shippedSymbols": [
+        "ProjectCoordinator"
+      ],
+      "bytes": 8824221
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "out/vs/code/electron-utility/conversationSearch/conversationSearchMain.js",
+      "shippedSymbols": [
+        "ProjectCoordinator",
+        "isProjectCoordinator"
+      ],
+      "bytes": 476908
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+      "shippedSymbols": [
+        "ProjectCoordinator",
+        "isProjectCoordinator",
+        "agentProjectService",
+        "agentProjectServiceFacade",
+        "glass.cloudAgentProjects.v1",
+        "createProjectSubagent",
+        "coordinatorAgentTaskProjection",
+        "isComposerProjectAgent"
+      ],
+      "bytes": 38272882
+    },
+    {
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "ProjectCoordinator",
+        "isProjectCoordinator",
+        "agentProjectService",
+        "agentProjectServiceFacade",
+        "glass.localAgentProjects.v1",
+        "glass.cloudAgentProjects.v1",
+        "createProjectSubagent",
+        "coordinatorAgentTaskProjection",
+        "isComposerProjectAgent"
+      ],
+      "bytes": 45174252
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "extensions/cursor-agent-exec/dist/main.js",
+      "shippedSymbols": [
+        "pr_shared_context"
+      ],
+      "bytes": 10076915
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "shippedSymbols": [
+        "pr_shared_context"
+      ],
+      "bytes": 27378622
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+      "shippedSymbols": [
+        "pr_shared_context"
+      ],
+      "bytes": 12039564
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+      "shippedSymbols": [
+        "pr_shared_context"
+      ],
+      "bytes": 8824221
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "out/main.js",
+      "shippedSymbols": [
+        "cursor.sharedSessionFileWatcher.enabled"
+      ],
+      "bytes": 2541436
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+      "shippedSymbols": [
+        "cursor.sharedSessionFileWatcher.enabled"
+      ],
+      "bytes": 38272882
+    },
+    {
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "pr_shared_context",
+        "sharedContext",
+        "projectContextContent",
+        "project-notes-document",
+        "project-notes-only-context-toggle",
+        "cursor.sharedSessionFileWatcher.enabled"
+      ],
+      "bytes": 45174252
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-agent-exec/dist/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 10076915
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 27378622
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 12039564
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-agent-worker/dist/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 1390572
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-always-local/dist/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 5885917
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 8824221
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "extensions/cursor-resolver/dist/browser/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 4537627
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "out/main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 2541436
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR"
+      ],
+      "bytes": 435766
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.anysphere-ui-automations.js",
+      "shippedSymbols": [
+        "CronSchedule"
+      ],
+      "bytes": 9102133
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR",
+        "slackConnect",
+        "connect_slack"
+      ],
+      "bytes": 38272882
+    },
+    {
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK",
+        "SUBSCRIPTION_SOURCE_GITHUB",
+        "SUBSCRIPTION_SOURCE_LINEAR",
+        "CronSchedule",
+        "localSubscriptions",
+        "slackConnect",
+        "connect_slack"
+      ],
+      "bytes": 45174252
+    }
+  ],
+  "units": [
+    {
+      "id": "cloud_local_agents:extensions/cursor-agent-exec/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-exec/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-agent-exec__package.json/package.json",
+      "sha256": "16655fc68711ebb92404e12c50d32fef7db14b60b22bdf464d2a3e497e33bea6",
+      "bytes": 533,
+      "byteRange": [
+        0,
+        532
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-agent-host/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-host/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-agent-host__package.json/package.json",
+      "sha256": "9119bf50b3392cf6fac159fe8531857faee35c8781d9616f76755913a012cc25",
+      "bytes": 425,
+      "byteRange": [
+        0,
+        424
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-always-local/dist/main.js:marker:LocalAgentStoreIntoProject",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/dist/main.js",
+      "shippedSymbols": [
+        "LocalAgentStoreIntoProject"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-always-local__dist__main.js/LocalAgentStoreIntoProject.slice.js",
+      "sha256": "59bdbb2cdfe992f6fadc0283af25dfce4adf5ddb6ce150ae4dd8fc227127e41c",
+      "bytes": 8479,
+      "byteRange": [
+        1670499,
+        1678717
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-always-local/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-always-local__package.json/package.json",
+      "sha256": "5d7a32d63517091b5dac70c8da6beb9d668192cd2ea343d4696b700ffadf01e9",
+      "bytes": 1081,
+      "byteRange": [
+        0,
+        1080
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-always-local/schemas/environment.schema.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/schemas/environment.schema.json",
+      "shippedSymbols": [
+        "environment.schema.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-always-local__schemas__environment.schema.json/environment.schema.json",
+      "sha256": "28c57a904ca49aca799d5ad01029a5bfad56cb29e5c639c40c9435d4f6017c97",
+      "bytes": 5952,
+      "byteRange": [
+        0,
+        5951
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-local-agent-runtime/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-local-agent-runtime/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-local-agent-runtime__package.json/package.json",
+      "sha256": "47314ea20f4d392321b0b57e29b0911f9782e9f62175f47649b423cda3a32bc2",
+      "bytes": 326,
+      "byteRange": [
+        0,
+        325
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/main.js:marker:IngestConversationRequest",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/main.js",
+      "shippedSymbols": [
+        "IngestConversationRequest"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__main.js/IngestConversationRequest.slice.js",
+      "sha256": "39dc782f2144e4113cd8fb156b4786a896051e625d5061100f86db19cdc1052e",
+      "bytes": 8445,
+      "byteRange": [
+        1094640,
+        1102857
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.desktop.main.js:marker:localAgentStorageService",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+      "shippedSymbols": [
+        "localAgentStorageService"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.desktop.main.js/localAgentStorageService.slice.js",
+      "sha256": "1cb9e84248460cf73ccfd6afcbd6f464910d38518dffc6cda8a86de1aee3522d",
+      "bytes": 8476,
+      "byteRange": [
+        36820118,
+        36828334
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:analytics_connectweb.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "analytics_connectweb.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/analytics_connectweb.js",
+      "sha256": "60f30c8a044237807eb20b20217fda0c9ff33fbb526499068d36f044f633cd45",
+      "bytes": 924,
+      "byteRange": [
+        16694961,
+        16695629
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:analytics_pb.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "analytics_pb.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/analytics_pb.js",
+      "sha256": "5deafea3eeadeb5ebdfa8603fe0e93bf56187fcda056af57541fa8292709465b",
+      "bytes": 5476,
+      "byteRange": [
+        16689733,
+        16694961
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudAgentEnvironment.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentEnvironment.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentEnvironment.js",
+      "sha256": "32cc19b8c5893b49f772e12ea06da0cdcac21552820ebb3900e53a2c4735b8f4",
+      "bytes": 31282,
+      "byteRange": [
+        18749917,
+        18780942
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudAgentRepositoryService.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentRepositoryService.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentRepositoryService.js",
+      "sha256": "0accbe17c4a25f9d3f2171358b4820d506752729c686830768ba5e46e592970e",
+      "bytes": 323563,
+      "byteRange": [
+        20451506,
+        20774806
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudAgentStorageService.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentStorageService.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentStorageService.js",
+      "sha256": "553a7109c117654f2b9628d1d2060f3041c9641c17b0495518e8ffbc14ebe8d6",
+      "bytes": 10408,
+      "byteRange": [
+        17565539,
+        17575687
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudProjects.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudProjects.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudProjects.js",
+      "sha256": "50f89b3584bb48f7f4779b38edb147c17e99ab5efe72ae490623d8f8d7f08d8b",
+      "bytes": 16935,
+      "byteRange": [
+        18905665,
+        18922351
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:env-setup-secret.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "env-setup-secret.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/env-setup-secret.js",
+      "sha256": "a73b5dfef2250946e9f1574cefac0a95deddd2d36e2c61e5938ae6ce32d21592",
+      "bytes": 4846,
+      "byteRange": [
+        18309219,
+        18313813
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:lazyLocalAgentEnvironment.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "lazyLocalAgentEnvironment.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/lazyLocalAgentEnvironment.js",
+      "sha256": "c47853d03e28671d1380825debb3f5fc4a357857e3effe27b2629f1b10346088",
+      "bytes": 4620,
+      "byteRange": [
+        19006252,
+        19010611
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:loadedCloudAgent.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "loadedCloudAgent.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/loadedCloudAgent.js",
+      "sha256": "294fa4450115a5055fc01c4c0d7023f2c3a93a9c1e2295b923200649ab5c8e99",
+      "bytes": 15932,
+      "byteRange": [
+        20258760,
+        20274440
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:localAgentEnvironment.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localAgentEnvironment.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/localAgentEnvironment.js",
+      "sha256": "28a882ce31481bb3f967a1f059e0deedd106a69be756cd3749043bb6c4b9343c",
+      "bytes": 13979,
+      "byteRange": [
+        18716230,
+        18729952
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:localAgentGatewayConfiguration.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localAgentGatewayConfiguration.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/localAgentGatewayConfiguration.js",
+      "sha256": "533ee46db6230cacbac492d1dec7013c86453bd60fa9fc451c2ca7ede1480b20",
+      "bytes": 1582,
+      "byteRange": [
+        19834395,
+        19835711
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:localAgentRepository.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localAgentRepository.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/localAgentRepository.js",
+      "sha256": "7b6e4c0e8a2dd8728f5d50e7fa2471f9a6b9385eee6d431e8b46a095a33f30b6",
+      "bytes": 3501,
+      "byteRange": [
+        16817465,
+        16820710
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:marker:IngestConversationRequest",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "IngestConversationRequest"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/IngestConversationRequest.slice.js",
+      "sha256": "999a6dfda0aa08f516694f3c3871000ab8ac9b6fe5263f413eca12edbb785ffb",
+      "bytes": 8476,
+      "byteRange": [
+        16689591,
+        16697808
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:marker:promptUploadRef",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "promptUploadRef"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/promptUploadRef.slice.js",
+      "sha256": "2a0a64dcc3d15c4e4f78ffbaa1d4e190583c728696726e5414f53ce612b3a5bc",
+      "bytes": 8456,
+      "byteRange": [
+        17610614,
+        17618821
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:origin-cloud-projects.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "origin-cloud-projects.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/origin-cloud-projects.js",
+      "sha256": "d1295cd4f9e436ce8cdc58cc452238219b6add4641a2dc06c455188e06051b19",
+      "bytes": 451,
+      "byteRange": [
+        28734938,
+        28735132
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:pendingReadOverride.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "pendingReadOverride.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/pendingReadOverride.js",
+      "sha256": "3268ade9ae76dc6df64f9f433c65267e835528ba82339dd323709ab07a0b5d84",
+      "bytes": 2310,
+      "byteRange": [
+        17613542,
+        17615597
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:secret-variable-names.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "secret-variable-names.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/secret-variable-names.js",
+      "sha256": "ac341767ac0c51539dba557ab478c44a19cbefbe4d235d95617efe1c4a37d11d",
+      "bytes": 8891,
+      "byteRange": [
+        13819797,
+        13828431
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs:marker:CursorProject",
+      "category": "coordinator",
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "shippedSymbols": [
+        "CursorProject"
+      ],
+      "recoveredPath": "recovered/coordinator/extensions__cursor-agent-host__dist__agent-host-daemon__dist__bin__daemon.cjs/CursorProject.slice.js",
+      "sha256": "60f2ab3baba067a634cfc51002eb7e11f8b803af99594d357b81ae8041c5cdb7",
+      "bytes": 8483,
+      "byteRange": [
+        19622583,
+        19630788
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:agentProjectReactive.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "agentProjectReactive.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/agentProjectReactive.js",
+      "sha256": "eccc0d8fdb522245a139aecf84fc50abaf1e6d83064906bfa8600955d54596e0",
+      "bytes": 1081,
+      "byteRange": [
+        20226038,
+        20226863
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:agentProjectService.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "agentProjectService.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/agentProjectService.js",
+      "sha256": "b058e831797b8583aa8b967ff259b062d57c5d4250df8f813f9df58c011aa605",
+      "bytes": 9905,
+      "byteRange": [
+        20226863,
+        20236513
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:coordinator_tools_pb.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "coordinator_tools_pb.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/coordinator_tools_pb.js",
+      "sha256": "34277142f237e716a29926b88cf3eaa98ff9014b6f2412e495c0c5732a9f8594",
+      "bytes": 4893,
+      "byteRange": [
+        1454271,
+        1458910
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:coordinatorAgentTaskProjection.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "coordinatorAgentTaskProjection.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/coordinatorAgentTaskProjection.js",
+      "sha256": "81984ea0afe8e5d26979bd1d57c677f606430f48ed1f44f9228ef7c1f8912554",
+      "bytes": 3814,
+      "byteRange": [
+        17637572,
+        17641120
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:create-local-workspace-project.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "create-local-workspace-project.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/create-local-workspace-project.js",
+      "sha256": "c809eeb3e1863500ec30920fd8aecd40171107a9394aeb6b12175d3a868ef827",
+      "bytes": 801,
+      "byteRange": [
+        28701981,
+        28702516
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:create-project-dialog.react.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "create-project-dialog.react.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/create-project-dialog.react.js",
+      "sha256": "a7a2932bb4b9a440b7adfe5302dd9b0d62abe9712594daa46cda81c564b7427a",
+      "bytes": 2141,
+      "byteRange": [
+        29005282,
+        29007160
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:glass-new-project-service.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "glass-new-project-service.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/glass-new-project-service.js",
+      "sha256": "556a46b73d98366ef7f40f3331feb39caa2e9fe4361102a29c9fb0c9d9a65057",
+      "bytes": 6713,
+      "byteRange": [
+        28707495,
+        28713947
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:glass-prompt-submit-validation.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "glass-prompt-submit-validation.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/glass-prompt-submit-validation.js",
+      "sha256": "5c9f9ddd7161f37a3bc8cc2a90872da29cf1ffaa7e62e845e736d23398be6414",
+      "bytes": 748,
+      "byteRange": [
+        27330716,
+        27331198
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:isComposerProjectAgent.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "isComposerProjectAgent.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/isComposerProjectAgent.js",
+      "sha256": "46482dcdbd790cd3fdf3bcc2ed224b501dcd1b7a88657334dcd14a5bee433915",
+      "bytes": 840,
+      "byteRange": [
+        18792142,
+        18792724
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:marker:isProjectCoordinator",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "isProjectCoordinator"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/isProjectCoordinator.slice.js",
+      "sha256": "b8171f7ab848aafe650f6b00290759bac45439ecc7e8255fc1682f07cbc36df7",
+      "bytes": 8466,
+      "byteRange": [
+        17237922,
+        17246134
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:project-agents.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-agents.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/project-agents.js",
+      "sha256": "14ea3d0f684bd7a15ab0276b83288eee07ab8b43c610f04130d6d3a9cfc3fffc",
+      "bytes": 956,
+      "byteRange": [
+        23513382,
+        23514088
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:project-subagent-roster.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-subagent-roster.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/project-subagent-roster.js",
+      "sha256": "1e32353af16c58290d3ce32117bf98b5509d6dca235c4502c31d09c46eb34570",
+      "bytes": 854,
+      "byteRange": [
+        31641184,
+        31641779
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectAgentHeader.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectAgentHeader.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectAgentHeader.js",
+      "sha256": "e2c143c5fd5ca1b872aad9210a36c32c37c3d1629ded5c0b99b66e9e67e18144",
+      "bytes": 1975,
+      "byteRange": [
+        17737749,
+        17739470
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectAgentRole.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectAgentRole.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectAgentRole.js",
+      "sha256": "aab501ab65ffeb5ef5abf646fa8922ad6d90773bef72b19c044ffd5cdd4a8fe8",
+      "bytes": 2841,
+      "byteRange": [
+        13957267,
+        13959856
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectFollowupSteeringPolicy.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectFollowupSteeringPolicy.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectFollowupSteeringPolicy.js",
+      "sha256": "0877e0d1b87353e262489ba1a504dc3f22ee85bd4aec410e137c9dca421f1121",
+      "bytes": 1054,
+      "byteRange": [
+        18792724,
+        18793513
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectLineage.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectLineage.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectLineage.js",
+      "sha256": "1d649ccbfdf552cf1c112b7cbbd6fd0299498b814d1082260541cce78c18d70c",
+      "bytes": 853,
+      "byteRange": [
+        19599739,
+        19600342
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectWorkerMembership.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectWorkerMembership.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectWorkerMembership.js",
+      "sha256": "25603f3612c4a3c5b74731a126b7c550b59c10ddbd08c31ca11b1f027fe62070",
+      "bytes": 7658,
+      "byteRange": [
+        20425931,
+        20433330
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:extensions/cursor-always-local/schemas/permissions.schema.json:full",
+      "category": "shared_context",
+      "shippedPath": "extensions/cursor-always-local/schemas/permissions.schema.json",
+      "shippedSymbols": [
+        "permissions.schema.json"
+      ],
+      "recoveredPath": "recovered/shared_context/extensions__cursor-always-local__schemas__permissions.schema.json/permissions.schema.json",
+      "sha256": "d7c92d330e5b6c984de7af91d660cdc06b2e25be726c7845388dfc1b010004b4",
+      "bytes": 1840,
+      "byteRange": [
+        0,
+        1839
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:agentTranscriptService.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "agentTranscriptService.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/agentTranscriptService.js",
+      "sha256": "79d638e3198c96cb6276f5f56d182939d74a17f2171c0cc506640a0e7445a61e",
+      "bytes": 3874,
+      "byteRange": [
+        22683242,
+        22686858
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:cloudTranscriptResidencySession.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudTranscriptResidencySession.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/cloudTranscriptResidencySession.js",
+      "sha256": "c4302d7d2d6cd068c2093a4d92e1aa46da097243cb0c3b262a83b047fb422315",
+      "bytes": 38043,
+      "byteRange": [
+        17692009,
+        17729785
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:composerEffectiveAllowlistService.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "composerEffectiveAllowlistService.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/composerEffectiveAllowlistService.js",
+      "sha256": "f14e41068f726410904ffaeb3479dee65652c3d2e2b8bc20d26f3fda820aeeb5",
+      "bytes": 17247,
+      "byteRange": [
+        19680614,
+        19697592
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:marker:<pr_shared_context>",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "<pr_shared_context>"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/pr_shared_context.slice.js",
+      "sha256": "b2bf28779ba22c7929ebfbd0651e9fc17f9424d5322aa6a89df7475e4d329f93",
+      "bytes": 8464,
+      "byteRange": [
+        31061856,
+        31070067
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:project-notes-document.react.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-notes-document.react.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/project-notes-document.react.js",
+      "sha256": "4f37b31c8119379ac9b73a6b0942b3e0399c106339c848e08e1b40cde4db6b6f",
+      "bytes": 4115,
+      "byteRange": [
+        27051575,
+        27055426
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:project-notes-only-context-toggle.react.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-notes-only-context-toggle.react.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/project-notes-only-context-toggle.react.js",
+      "sha256": "15701e55ecf8f609d7c30a44efeb7875487bd2f1e9cec86da4497d76f14d9904",
+      "bytes": 656,
+      "byteRange": [
+        26971489,
+        26971870
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:projectContextContent.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectContextContent.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/projectContextContent.js",
+      "sha256": "1a39840723e63e6f6d6f0448fda4653fd73ffb314efac113f8a7bc707dc90691",
+      "bytes": 3814,
+      "byteRange": [
+        13928769,
+        13932326
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:projectPermissionsFileUtils.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectPermissionsFileUtils.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/projectPermissionsFileUtils.js",
+      "sha256": "0e91886661a7339d48e11760689196118d51e2dfc354d2896369ac3f003fec51",
+      "bytes": 1494,
+      "byteRange": [
+        19676335,
+        19677566
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:secrets.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "secrets.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/secrets.js",
+      "sha256": "37a85008f659066664fce481f27f5f4db1485582152f14e30ea015634d5112eb",
+      "bytes": 3912,
+      "byteRange": [
+        18869681,
+        18873350
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:transcriptPaths.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "transcriptPaths.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/transcriptPaths.js",
+      "sha256": "7c87d0769f351b1c0b9adb014edc798add317c5b934ee07bff8390de4296fb9b",
+      "bytes": 776,
+      "byteRange": [
+        17262463,
+        17262988
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:workspaceProjectPaths.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "workspaceProjectPaths.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/workspaceProjectPaths.js",
+      "sha256": "a1cd80c4263b6e4c8d724173662341a7447b3afa7773c8899e2c8284d346d664",
+      "bytes": 456,
+      "byteRange": [
+        18658729,
+        18658928
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js:marker:SUBSCRIPTION_SOURCE_SLACK",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__services__agentData__browser__cloudAgentTranscriptIndexWorkerMain.js/SUBSCRIPTION_SOURCE_SLACK.slice.js",
+      "sha256": "e2deb8341e0ff2ad44838d5235962e42dd73806e4bfb45c441623861377bdd25",
+      "bytes": 8514,
+      "byteRange": [
+        360930,
+        369147
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:AgentTranscriptSubscriptionEvents.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "AgentTranscriptSubscriptionEvents.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/AgentTranscriptSubscriptionEvents.js",
+      "sha256": "eb8cc98b6a4abddbc3714434f4952059c2943e6bb1da3732c61b28947ccfee2d",
+      "bytes": 1680,
+      "byteRange": [
+        13179639,
+        13181050
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:aiSettingsService.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "aiSettingsService.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/aiSettingsService.js",
+      "sha256": "c4ec0df30c29fc95497db7762bf49a90a8e463c003aa860d8401ba8a9792dd08",
+      "bytes": 24408,
+      "byteRange": [
+        19357209,
+        19381364
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:ComposerSubscriptionEvents.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "ComposerSubscriptionEvents.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/ComposerSubscriptionEvents.react.js",
+      "sha256": "7c84c05ab77b432c52273f91d97245515755c26a8f54e0cc3a6b9e22293ca5d7",
+      "bytes": 1233,
+      "byteRange": [
+        24699280,
+        24700245
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:fsd-mcp-tool-description.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "fsd-mcp-tool-description.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/fsd-mcp-tool-description.js",
+      "sha256": "08dd6d3cf9db38e90c813e15202b9c969442ab8038e6d3ece5746282d77ea84f",
+      "bytes": 6595,
+      "byteRange": [
+        12571592,
+        12577927
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:localSubscriptionMailbox.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localSubscriptionMailbox.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/localSubscriptionMailbox.js",
+      "sha256": "53e8d966284ae663713a65f3acff45801e0d28f7a97459561cba932eca00d824",
+      "bytes": 646,
+      "byteRange": [
+        16783042,
+        16783428
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:localSubscriptions.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localSubscriptions.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/localSubscriptions.js",
+      "sha256": "bc405b8f1f4ae73d7ca99b6bcb22c1496383985e036c49e102c8b2e30fd785eb",
+      "bytes": 783,
+      "byteRange": [
+        26143736,
+        26144265
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:Connect Slack",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "Connect Slack"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/Connect-Slack.slice.js",
+      "sha256": "26eabe6b53223cd745aa6dab3d418abd4effb9aa3b4719a5e3e3429ea8454c98",
+      "bytes": 8452,
+      "byteRange": [
+        19376658,
+        19384863
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:connect_slack",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "connect_slack"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/connect_slack.slice.js",
+      "sha256": "42394e83733c784f002169e5431cefde49de1b3ac9db75d99d902654158693c1",
+      "bytes": 8452,
+      "byteRange": [
+        19376940,
+        19385145
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:cursor.connectSlack",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cursor.connectSlack"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/cursor.connectSlack.slice.js",
+      "sha256": "dbf55688e9820ee71b11b24eb95390a9eb6922b0a3f8506f5c01760938a59247",
+      "bytes": 8464,
+      "byteRange": [
+        19376623,
+        19384834
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:SUBSCRIPTION_SOURCE_SLACK",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/SUBSCRIPTION_SOURCE_SLACK.slice.js",
+      "sha256": "df4ed55a7cf53098d12897be8ea710cebcb2403ca7cc63d4cd48818692bcb7c3",
+      "bytes": 8474,
+      "byteRange": [
+        1493784,
+        1502001
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:slackSubscriptionEvent.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "slackSubscriptionEvent.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/slackSubscriptionEvent.js",
+      "sha256": "d57881d0ef1dbd9b810a194fd8a68255c0731c07223f29a5c1738d024aed01cd",
+      "bytes": 2052,
+      "byteRange": [
+        17689602,
+        17691396
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:subscription-row.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "subscription-row.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/subscription-row.react.js",
+      "sha256": "0f470d1fe406d77c50539f7ec4d4a2fcfdaf8b00c30766db74b495794dc11827",
+      "bytes": 4252,
+      "byteRange": [
+        32309377,
+        32313371
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:subscriptions-tab-content.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "subscriptions-tab-content.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/subscriptions-tab-content.react.js",
+      "sha256": "a3b732a5ca3a23b1b80504a66f5454fd1447fb51c114c9eb61b09509de469b5b",
+      "bytes": 1498,
+      "byteRange": [
+        32567729,
+        32568960
+      ],
+      "kind": "named-module",
+      "truncated": false
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:use-event-subscriptions.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "use-event-subscriptions.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/use-event-subscriptions.react.js",
+      "sha256": "4b24f44e5a5b1f70c18e2daf7582d064f9076a34ec6cca3f4e8c60a59ad730ee",
+      "bytes": 794,
+      "byteRange": [
+        31756788,
+        31757317
+      ],
+      "kind": "named-module",
+      "truncated": false
+    }
+  ],
+  "identities": [
+    {
+      "id": "cloud_local_agents:extensions/cursor-agent-exec/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-exec/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-agent-exec__package.json/package.json",
+      "sha256": "16655fc68711ebb92404e12c50d32fef7db14b60b22bdf464d2a3e497e33bea6"
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-agent-host/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-agent-host/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-agent-host__package.json/package.json",
+      "sha256": "9119bf50b3392cf6fac159fe8531857faee35c8781d9616f76755913a012cc25"
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-always-local/dist/main.js:marker:LocalAgentStoreIntoProject",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/dist/main.js",
+      "shippedSymbols": [
+        "LocalAgentStoreIntoProject"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-always-local__dist__main.js/LocalAgentStoreIntoProject.slice.js",
+      "sha256": "59bdbb2cdfe992f6fadc0283af25dfce4adf5ddb6ce150ae4dd8fc227127e41c"
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-always-local/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-always-local__package.json/package.json",
+      "sha256": "5d7a32d63517091b5dac70c8da6beb9d668192cd2ea343d4696b700ffadf01e9"
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-always-local/schemas/environment.schema.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-always-local/schemas/environment.schema.json",
+      "shippedSymbols": [
+        "environment.schema.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-always-local__schemas__environment.schema.json/environment.schema.json",
+      "sha256": "28c57a904ca49aca799d5ad01029a5bfad56cb29e5c639c40c9435d4f6017c97"
+    },
+    {
+      "id": "cloud_local_agents:extensions/cursor-local-agent-runtime/package.json:full",
+      "category": "cloud_local_agents",
+      "shippedPath": "extensions/cursor-local-agent-runtime/package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/extensions__cursor-local-agent-runtime__package.json/package.json",
+      "sha256": "47314ea20f4d392321b0b57e29b0911f9782e9f62175f47649b423cda3a32bc2"
+    },
+    {
+      "id": "cloud_local_agents:out/main.js:marker:IngestConversationRequest",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/main.js",
+      "shippedSymbols": [
+        "IngestConversationRequest"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__main.js/IngestConversationRequest.slice.js",
+      "sha256": "39dc782f2144e4113cd8fb156b4786a896051e625d5061100f86db19cdc1052e"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.desktop.main.js:marker:localAgentStorageService",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.desktop.main.js",
+      "shippedSymbols": [
+        "localAgentStorageService"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.desktop.main.js/localAgentStorageService.slice.js",
+      "sha256": "1cb9e84248460cf73ccfd6afcbd6f464910d38518dffc6cda8a86de1aee3522d"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:analytics_connectweb.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "analytics_connectweb.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/analytics_connectweb.js",
+      "sha256": "60f30c8a044237807eb20b20217fda0c9ff33fbb526499068d36f044f633cd45"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:analytics_pb.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "analytics_pb.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/analytics_pb.js",
+      "sha256": "5deafea3eeadeb5ebdfa8603fe0e93bf56187fcda056af57541fa8292709465b"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudAgentEnvironment.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentEnvironment.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentEnvironment.js",
+      "sha256": "32cc19b8c5893b49f772e12ea06da0cdcac21552820ebb3900e53a2c4735b8f4"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudAgentRepositoryService.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentRepositoryService.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentRepositoryService.js",
+      "sha256": "0accbe17c4a25f9d3f2171358b4820d506752729c686830768ba5e46e592970e"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudAgentStorageService.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudAgentStorageService.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentStorageService.js",
+      "sha256": "553a7109c117654f2b9628d1d2060f3041c9641c17b0495518e8ffbc14ebe8d6"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:cloudProjects.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudProjects.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudProjects.js",
+      "sha256": "50f89b3584bb48f7f4779b38edb147c17e99ab5efe72ae490623d8f8d7f08d8b"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:env-setup-secret.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "env-setup-secret.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/env-setup-secret.js",
+      "sha256": "a73b5dfef2250946e9f1574cefac0a95deddd2d36e2c61e5938ae6ce32d21592"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:lazyLocalAgentEnvironment.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "lazyLocalAgentEnvironment.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/lazyLocalAgentEnvironment.js",
+      "sha256": "c47853d03e28671d1380825debb3f5fc4a357857e3effe27b2629f1b10346088"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:loadedCloudAgent.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "loadedCloudAgent.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/loadedCloudAgent.js",
+      "sha256": "294fa4450115a5055fc01c4c0d7023f2c3a93a9c1e2295b923200649ab5c8e99"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:localAgentEnvironment.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localAgentEnvironment.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/localAgentEnvironment.js",
+      "sha256": "28a882ce31481bb3f967a1f059e0deedd106a69be756cd3749043bb6c4b9343c"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:localAgentGatewayConfiguration.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localAgentGatewayConfiguration.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/localAgentGatewayConfiguration.js",
+      "sha256": "533ee46db6230cacbac492d1dec7013c86453bd60fa9fc451c2ca7ede1480b20"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:localAgentRepository.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localAgentRepository.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/localAgentRepository.js",
+      "sha256": "7b6e4c0e8a2dd8728f5d50e7fa2471f9a6b9385eee6d431e8b46a095a33f30b6"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:marker:IngestConversationRequest",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "IngestConversationRequest"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/IngestConversationRequest.slice.js",
+      "sha256": "999a6dfda0aa08f516694f3c3871000ab8ac9b6fe5263f413eca12edbb785ffb"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:marker:promptUploadRef",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "promptUploadRef"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/promptUploadRef.slice.js",
+      "sha256": "2a0a64dcc3d15c4e4f78ffbaa1d4e190583c728696726e5414f53ce612b3a5bc"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:origin-cloud-projects.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "origin-cloud-projects.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/origin-cloud-projects.js",
+      "sha256": "d1295cd4f9e436ce8cdc58cc452238219b6add4641a2dc06c455188e06051b19"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:pendingReadOverride.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "pendingReadOverride.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/pendingReadOverride.js",
+      "sha256": "3268ade9ae76dc6df64f9f433c65267e835528ba82339dd323709ab07a0b5d84"
+    },
+    {
+      "id": "cloud_local_agents:out/vs/workbench/workbench.glass.main.js:secret-variable-names.js",
+      "category": "cloud_local_agents",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "secret-variable-names.js"
+      ],
+      "recoveredPath": "recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/secret-variable-names.js",
+      "sha256": "ac341767ac0c51539dba557ab478c44a19cbefbe4d235d95617efe1c4a37d11d"
+    },
+    {
+      "id": "coordinator:extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs:marker:CursorProject",
+      "category": "coordinator",
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "shippedSymbols": [
+        "CursorProject"
+      ],
+      "recoveredPath": "recovered/coordinator/extensions__cursor-agent-host__dist__agent-host-daemon__dist__bin__daemon.cjs/CursorProject.slice.js",
+      "sha256": "60f2ab3baba067a634cfc51002eb7e11f8b803af99594d357b81ae8041c5cdb7"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:agentProjectReactive.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "agentProjectReactive.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/agentProjectReactive.js",
+      "sha256": "eccc0d8fdb522245a139aecf84fc50abaf1e6d83064906bfa8600955d54596e0"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:agentProjectService.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "agentProjectService.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/agentProjectService.js",
+      "sha256": "b058e831797b8583aa8b967ff259b062d57c5d4250df8f813f9df58c011aa605"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:coordinator_tools_pb.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "coordinator_tools_pb.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/coordinator_tools_pb.js",
+      "sha256": "34277142f237e716a29926b88cf3eaa98ff9014b6f2412e495c0c5732a9f8594"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:coordinatorAgentTaskProjection.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "coordinatorAgentTaskProjection.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/coordinatorAgentTaskProjection.js",
+      "sha256": "81984ea0afe8e5d26979bd1d57c677f606430f48ed1f44f9228ef7c1f8912554"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:create-local-workspace-project.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "create-local-workspace-project.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/create-local-workspace-project.js",
+      "sha256": "c809eeb3e1863500ec30920fd8aecd40171107a9394aeb6b12175d3a868ef827"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:create-project-dialog.react.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "create-project-dialog.react.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/create-project-dialog.react.js",
+      "sha256": "a7a2932bb4b9a440b7adfe5302dd9b0d62abe9712594daa46cda81c564b7427a"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:glass-new-project-service.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "glass-new-project-service.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/glass-new-project-service.js",
+      "sha256": "556a46b73d98366ef7f40f3331feb39caa2e9fe4361102a29c9fb0c9d9a65057"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:glass-prompt-submit-validation.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "glass-prompt-submit-validation.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/glass-prompt-submit-validation.js",
+      "sha256": "5c9f9ddd7161f37a3bc8cc2a90872da29cf1ffaa7e62e845e736d23398be6414"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:isComposerProjectAgent.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "isComposerProjectAgent.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/isComposerProjectAgent.js",
+      "sha256": "46482dcdbd790cd3fdf3bcc2ed224b501dcd1b7a88657334dcd14a5bee433915"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:marker:isProjectCoordinator",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "isProjectCoordinator"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/isProjectCoordinator.slice.js",
+      "sha256": "b8171f7ab848aafe650f6b00290759bac45439ecc7e8255fc1682f07cbc36df7"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:project-agents.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-agents.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/project-agents.js",
+      "sha256": "14ea3d0f684bd7a15ab0276b83288eee07ab8b43c610f04130d6d3a9cfc3fffc"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:project-subagent-roster.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-subagent-roster.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/project-subagent-roster.js",
+      "sha256": "1e32353af16c58290d3ce32117bf98b5509d6dca235c4502c31d09c46eb34570"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectAgentHeader.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectAgentHeader.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectAgentHeader.js",
+      "sha256": "e2c143c5fd5ca1b872aad9210a36c32c37c3d1629ded5c0b99b66e9e67e18144"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectAgentRole.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectAgentRole.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectAgentRole.js",
+      "sha256": "aab501ab65ffeb5ef5abf646fa8922ad6d90773bef72b19c044ffd5cdd4a8fe8"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectFollowupSteeringPolicy.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectFollowupSteeringPolicy.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectFollowupSteeringPolicy.js",
+      "sha256": "0877e0d1b87353e262489ba1a504dc3f22ee85bd4aec410e137c9dca421f1121"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectLineage.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectLineage.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectLineage.js",
+      "sha256": "1d649ccbfdf552cf1c112b7cbbd6fd0299498b814d1082260541cce78c18d70c"
+    },
+    {
+      "id": "coordinator:out/vs/workbench/workbench.glass.main.js:projectWorkerMembership.js",
+      "category": "coordinator",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectWorkerMembership.js"
+      ],
+      "recoveredPath": "recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectWorkerMembership.js",
+      "sha256": "25603f3612c4a3c5b74731a126b7c550b59c10ddbd08c31ca11b1f027fe62070"
+    },
+    {
+      "id": "shared_context:extensions/cursor-always-local/schemas/permissions.schema.json:full",
+      "category": "shared_context",
+      "shippedPath": "extensions/cursor-always-local/schemas/permissions.schema.json",
+      "shippedSymbols": [
+        "permissions.schema.json"
+      ],
+      "recoveredPath": "recovered/shared_context/extensions__cursor-always-local__schemas__permissions.schema.json/permissions.schema.json",
+      "sha256": "d7c92d330e5b6c984de7af91d660cdc06b2e25be726c7845388dfc1b010004b4"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:agentTranscriptService.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "agentTranscriptService.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/agentTranscriptService.js",
+      "sha256": "79d638e3198c96cb6276f5f56d182939d74a17f2171c0cc506640a0e7445a61e"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:cloudTranscriptResidencySession.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cloudTranscriptResidencySession.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/cloudTranscriptResidencySession.js",
+      "sha256": "c4302d7d2d6cd068c2093a4d92e1aa46da097243cb0c3b262a83b047fb422315"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:composerEffectiveAllowlistService.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "composerEffectiveAllowlistService.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/composerEffectiveAllowlistService.js",
+      "sha256": "f14e41068f726410904ffaeb3479dee65652c3d2e2b8bc20d26f3fda820aeeb5"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:marker:<pr_shared_context>",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "<pr_shared_context>"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/pr_shared_context.slice.js",
+      "sha256": "b2bf28779ba22c7929ebfbd0651e9fc17f9424d5322aa6a89df7475e4d329f93"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:project-notes-document.react.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-notes-document.react.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/project-notes-document.react.js",
+      "sha256": "4f37b31c8119379ac9b73a6b0942b3e0399c106339c848e08e1b40cde4db6b6f"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:project-notes-only-context-toggle.react.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "project-notes-only-context-toggle.react.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/project-notes-only-context-toggle.react.js",
+      "sha256": "15701e55ecf8f609d7c30a44efeb7875487bd2f1e9cec86da4497d76f14d9904"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:projectContextContent.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectContextContent.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/projectContextContent.js",
+      "sha256": "1a39840723e63e6f6d6f0448fda4653fd73ffb314efac113f8a7bc707dc90691"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:projectPermissionsFileUtils.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "projectPermissionsFileUtils.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/projectPermissionsFileUtils.js",
+      "sha256": "0e91886661a7339d48e11760689196118d51e2dfc354d2896369ac3f003fec51"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:secrets.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "secrets.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/secrets.js",
+      "sha256": "37a85008f659066664fce481f27f5f4db1485582152f14e30ea015634d5112eb"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:transcriptPaths.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "transcriptPaths.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/transcriptPaths.js",
+      "sha256": "7c87d0769f351b1c0b9adb014edc798add317c5b934ee07bff8390de4296fb9b"
+    },
+    {
+      "id": "shared_context:out/vs/workbench/workbench.glass.main.js:workspaceProjectPaths.js",
+      "category": "shared_context",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "workspaceProjectPaths.js"
+      ],
+      "recoveredPath": "recovered/shared_context/out__vs__workbench__workbench.glass.main.js/workspaceProjectPaths.js",
+      "sha256": "a1cd80c4263b6e4c8d724173662341a7447b3afa7773c8899e2c8284d346d664"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js:marker:SUBSCRIPTION_SOURCE_SLACK",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/services/agentData/browser/cloudAgentTranscriptIndexWorkerMain.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__services__agentData__browser__cloudAgentTranscriptIndexWorkerMain.js/SUBSCRIPTION_SOURCE_SLACK.slice.js",
+      "sha256": "e2deb8341e0ff2ad44838d5235962e42dd73806e4bfb45c441623861377bdd25"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:AgentTranscriptSubscriptionEvents.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "AgentTranscriptSubscriptionEvents.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/AgentTranscriptSubscriptionEvents.js",
+      "sha256": "eb8cc98b6a4abddbc3714434f4952059c2943e6bb1da3732c61b28947ccfee2d"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:aiSettingsService.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "aiSettingsService.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/aiSettingsService.js",
+      "sha256": "c4ec0df30c29fc95497db7762bf49a90a8e463c003aa860d8401ba8a9792dd08"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:ComposerSubscriptionEvents.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "ComposerSubscriptionEvents.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/ComposerSubscriptionEvents.react.js",
+      "sha256": "7c84c05ab77b432c52273f91d97245515755c26a8f54e0cc3a6b9e22293ca5d7"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:fsd-mcp-tool-description.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "fsd-mcp-tool-description.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/fsd-mcp-tool-description.js",
+      "sha256": "08dd6d3cf9db38e90c813e15202b9c969442ab8038e6d3ece5746282d77ea84f"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:localSubscriptionMailbox.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localSubscriptionMailbox.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/localSubscriptionMailbox.js",
+      "sha256": "53e8d966284ae663713a65f3acff45801e0d28f7a97459561cba932eca00d824"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:localSubscriptions.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "localSubscriptions.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/localSubscriptions.js",
+      "sha256": "bc405b8f1f4ae73d7ca99b6bcb22c1496383985e036c49e102c8b2e30fd785eb"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:Connect Slack",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "Connect Slack"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/Connect-Slack.slice.js",
+      "sha256": "26eabe6b53223cd745aa6dab3d418abd4effb9aa3b4719a5e3e3429ea8454c98"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:connect_slack",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "connect_slack"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/connect_slack.slice.js",
+      "sha256": "42394e83733c784f002169e5431cefde49de1b3ac9db75d99d902654158693c1"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:cursor.connectSlack",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "cursor.connectSlack"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/cursor.connectSlack.slice.js",
+      "sha256": "dbf55688e9820ee71b11b24eb95390a9eb6922b0a3f8506f5c01760938a59247"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:marker:SUBSCRIPTION_SOURCE_SLACK",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "SUBSCRIPTION_SOURCE_SLACK"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/SUBSCRIPTION_SOURCE_SLACK.slice.js",
+      "sha256": "df4ed55a7cf53098d12897be8ea710cebcb2403ca7cc63d4cd48818692bcb7c3"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:slackSubscriptionEvent.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "slackSubscriptionEvent.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/slackSubscriptionEvent.js",
+      "sha256": "d57881d0ef1dbd9b810a194fd8a68255c0731c07223f29a5c1738d024aed01cd"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:subscription-row.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "subscription-row.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/subscription-row.react.js",
+      "sha256": "0f470d1fe406d77c50539f7ec4d4a2fcfdaf8b00c30766db74b495794dc11827"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:subscriptions-tab-content.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "subscriptions-tab-content.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/subscriptions-tab-content.react.js",
+      "sha256": "a3b732a5ca3a23b1b80504a66f5454fd1447fb51c114c9eb61b09509de469b5b"
+    },
+    {
+      "id": "subscriptions:out/vs/workbench/workbench.glass.main.js:use-event-subscriptions.react.js",
+      "category": "subscriptions",
+      "shippedPath": "out/vs/workbench/workbench.glass.main.js",
+      "shippedSymbols": [
+        "use-event-subscriptions.react.js"
+      ],
+      "recoveredPath": "recovered/subscriptions/out__vs__workbench__workbench.glass.main.js/use-event-subscriptions.react.js",
+      "sha256": "4b24f44e5a5b1f70c18e2daf7582d064f9076a34ec6cca3f4e8c60a59ad730ee"
+    }
+  ]
+}

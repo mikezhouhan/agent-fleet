@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: AgentTranscriptSubscriptionEvents.js
+// byteRange: [13179639, 13181050)
+// beautified: false
+// truncated: false
+O({"AgentTranscriptSubscriptionEvents.js"(){"use strict";Ja(),ybh(),wbh(),kbh(),PJo(),vF(),TAr(),xd(),CIe(),EAr={tightStack:{kOIVth:"ui-lwqa1o",$$css:!0},botMark:{k1xSpc:"ui-3nfvp2",kGNEyG:"ui-6s0dn4",kmuXW:"ui-2lah0s",kLKAdn:"ui-exx8yu",kpe85a:"ui-1jg1sa",kGO01o:"ui-18d9i69",kE3dHu:"ui-1rplcre",kIxVMA:"ui-c8ce4q",ksF3WI:"ui-j5toj7",kYm2EN:"ui-16ti9za",kqGeR4:"ui-11hym3f",kGuDYH:"ui-y5h43f",kLWn49:"ui-19ji09o",khDVqt:"ui-uxw1ft",khiITx:"ui-vmahel",kTUp5R:"ui-lh3980",$$css:!0},instantCollapse:{kaUvHv:"ui-14tz7v1",knUCKd:"ui-f45s7j",$$css:!0}}}});import{jsx as Ibh}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as eZ_}from"./react-runtime/react/esm-compiler-runtime-production.js";function tZ_(t,e){return t.getFullYear()===e.getFullYear()&&t.getMonth()===e.getMonth()&&t.getDate()===e.getDate()}function Abh(t,e={}){const n=new Date(t),i=new Date(e.nowMs??Date.now()),r=e.locale,s=new Intl.DateTimeFormat(r,{hour:"numeric",minute:"2-digit"}).format(n);return tZ_(n,i)?`Today ${s}`:new Intl.DateTimeFormat(r,{dateStyle:"medium",timeStyle:"short"}).format(n)}function Rbh(t){const e=eZ_(4),{row:n}=t;let i;e[0]!==n.timestampMs?(i=Abh(n.timestampMs),e[0]=n.timestampMs,e[1]=i):i=e[1];let r;return e[2]!==i?(r=Ibh("div",{className:"ui-euugli ui-j9xw9b ui-9f619 ui-y3jwiz ui-2b8uid",children:Ibh(rn,{as:"span",color:"quaternary",size:"md",children:i})}),e[2]=i,e[3]=r):r=e[3],r}var Tta,Pbh=
