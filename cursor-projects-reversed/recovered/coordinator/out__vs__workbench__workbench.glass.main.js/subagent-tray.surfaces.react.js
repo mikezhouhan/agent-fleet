@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: subagent-tray.surfaces.react.js
+// byteRange: [31748313, 31749734)
+// beautified: false
+// truncated: false
+O({"subagent-tray.surfaces.react.js"(){"use strict";Pt(),m4(),qns(),nki(),gO(),UPn(),MKt(),NKt(),iRf(),Q_w(),R3(),hAf(),w2i(),GPn(),KAf(),vyw(),hxt={pillRoot:{kB7OPa:"glass-9f619",kZKoxP:"glass-1fgtraw",kAzted:"glass-e0p6wg",kskxy:"glass-z75wtk",kLKAdn:"glass-exx8yu",kpe85a:"glass-16b7oty",kGO01o:"glass-18d9i69",kE3dHu:"glass-o7x2bt",kOIVth:"glass-11twubx",kGNEyG:"glass-6s0dn4",$$css:!0},pillLeading:{k1xSpc:"glass-3nfvp2",kGNEyG:"glass-6s0dn4",kjj79g:"glass-l56j7k",kLWn49:"glass-14ju556",km5ZXQ:"glass-1f1oiij",$$css:!0},pillLabel:{k1xSpc:"glass-3nfvp2",kGNEyG:"glass-6s0dn4",kLWn49:"glass-spwq11",kcqcaj:"glass-ss6m8b",$$css:!0},pillLoadingIcon:{kMwMTN:"glass-1lbmi28",$$css:!0},stopAllButton:{kwRFfy:"glass-yri2b",$$css:!0},previewTrayContainer:{"--agent-panel-subagent-preview-tray-height":"glass-1hkxl7x",kzqmXN:"glass-h8yej3",k1xSpc:"glass-78zum5",kXwgrk:"glass-dt5ytf",kZKoxP:"glass-dudrxx",kskxy:"glass-1auhv2c",kAzted:"glass-9l5fec",$$css:!0}},jat={Pill:_yw,FollowupTraySlot:Iyw,Expanded:s2f,Preview:o2f,PanelPreviewBackdrop:Ayw}}});function a2f({activeTray:t,close:e}){if(t===null||t.presentation.type==="legacy")return;const n=t.actions?.cancel,i=n?.disabled===!0?void 0:n;if(!(t.presentation.type==="blocking"&&i===void 0))return()=>(i?.run(),t.presentation.type==="blocking"?!0:e(t.id)||i!==void 0)}function Ryw({promptEscape:t,trayEscape:e}){if(t!==void 0)return t;if(e!==void 0)return()=>{e()}}var ZFl=

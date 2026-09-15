@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: environment-setup-secret-level-select.react.js
+// byteRange: [30149726, 30151099)
+// beautified: false
+// truncated: false
+O({"environment-setup-secret-level-select.react.js"(){"use strict";z_()}});function lj0(t){return t.providerIdentifier===sgf&&t.toolName===ogf}function GAi(t){return lj0(t)&&t.succeeded}function cj0(t){if(!ngf(t))return null;const e=hj0(Gbs(t.buildId,t.build_id));if(e===pMl)return null;const n=Gbs(t.environmentJson,t.environment_json);if(ngf(n)){const s=rgf(n.install),o=rgf(n.start);return s===null||o===null?null:{installScript:s,startScript:o,buildId:e}}const i=igf(Gbs(t.installScript,t.install_script)),r=igf(Gbs(t.startScript,t.start_script));return i===null||r===null?null:{installScript:i,startScript:r,buildId:e}}function hMl(t){return GAi(t)?cj0(t.argumentsValue):null}function uj0(t){let e=null,n=0;for(const i of t){const r=hMl(i);r!==null&&(n+=1,e={...r,proposalIndex:n,revision:i.toolCallId??`legacy:${n}:${JSON.stringify(r)}`})}return e}function dj0(t){let e=null,n=0;for(const i of t){const r=hMl(i);r!==null&&(n+=1,r.buildId!==void 0&&(e={...r,proposalIndex:n,revision:i.toolCallId??`legacy:${n}:${JSON.stringify(r)}`}))}return e}function ngf(t){return t!==null&&typeof t=="object"&&!Array.isArray(t)}function Gbs(...t){for(const e of t)if(e!==void 0)return e}function hj0(t){if(t!==void 0)return typeof t!="string"?pMl:t}function igf(t){return typeof t=="string"?t:null}function rgf(t){return t===void 0?"":typeof t=="string"?t:null}var sgf,ogf,pMl,pj0=

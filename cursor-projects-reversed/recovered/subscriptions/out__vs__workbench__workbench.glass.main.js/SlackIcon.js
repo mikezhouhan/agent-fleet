@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: SlackIcon.js
+// byteRange: [13169452, 13170935)
+// beautified: false
+// truncated: false
+O({"SlackIcon.js"(){"use strict"}});import{jsx as jQ_}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as $Q_}from"./react-runtime/react/esm-compiler-runtime-production.js";function WQ_({pill:t,size:e,variant:n}){return[MIe.base,e==="sm"?MIe.sizeSm:MIe.sizeBase,t?[MIe.pill,e==="sm"?MIe.pillSizeSm:MIe.pillSizeBase]:null,CAr(n)]}function CAr(t){switch(t){case"accent":return MIe.variantAccent;case"neutral":return MIe.variantNeutral;case"success":return MIe.variantSuccess;case"warn":return MIe.variantWarn;case"danger":return MIe.variantDanger}}function $K(t){const e=$Q_(24);let n,i,r,s,o,a,l,c;e[0]!==t?({children:n,variant:o,size:a,pill:l,as:c,className:i,style:s,...r}=t,e[0]=t,e[1]=n,e[2]=i,e[3]=r,e[4]=s,e[5]=o,e[6]=a,e[7]=l,e[8]=c):(n=e[1],i=e[2],r=e[3],s=e[4],o=e[5],a=e[6],l=e[7],c=e[8]);const u=o===void 0?"neutral":o,d=a===void 0?"base":a,h=l===void 0?!1:l,p=c===void 0?"span":c;let g;e[9]!==i||e[10]!==h||e[11]!==d||e[12]!==s||e[13]!==u?(g=or({rootClass:"ui-status-badge",stylexStyles:WQ_({pill:h,size:d,variant:u}),className:i,style:s}),e[9]=i,e[10]=h,e[11]=d,e[12]=s,e[13]=u,e[14]=g):g=e[14];const v=g,b=h||void 0;let _;return e[15]!==p||e[16]!==n||e[17]!==r||e[18]!==v.className||e[19]!==v.style||e[20]!==d||e[21]!==b||e[22]!==u?(_=jQ_(p,{className:v.className,style:v.style,"data-variant":u,"data-size":d,"data-pill":b,...r,children:n}),e[15]=p,e[16]=n,e[17]=r,e[18]=v.className,e[19]=v.style,e[20]=d,e[21]=b,e[22]=u,e[23]=_):_=e[23],_}var MIe,TAr=

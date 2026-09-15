@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: TranscriptCardHeaderContext.js
+// byteRange: [12486132, 12487545)
+// beautified: false
+// truncated: false
+O({"TranscriptCardHeaderContext.js"(){"use strict";TXo=G9_(!1)}});import{jsx as Ioh}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as V9_}from"./react-runtime/react/esm-compiler-runtime-production.js";function K9_(t){return[Aoh,Q4t.header,t.inset===12?Q4t.inset12:null,t.paddingBottom===!1?Q4t.noPaddingBottom:null,t.variant!=="flat"?Q4t.headerHoverable:null,t.withDivider&&t.variant==="default"?Q4t.headerWithDivider:null,t.clickable?Q4t.headerClickable:null,t.rootStyle]}function Y9_(t){const e=V9_(16),{children:n,variant:i,inset:r,withDivider:s,paddingBottom:o,title:a,onClick:l,rootStyle:c}=t,u=i===void 0?"default":i,d=r===void 0?8:r,h=s===void 0?!1:s,p=o===void 0?!0:o;Y4t("TranscriptCard.Header");let g;e[0]!==d||e[1]!==l||e[2]!==p||e[3]!==c||e[4]!==u||e[5]!==h?(g=Sn(K9_({clickable:l!==void 0,inset:d,paddingBottom:p,rootStyle:c,variant:u,withDivider:h})),e[0]=d,e[1]=l,e[2]=p,e[3]=c,e[4]=u,e[5]=h,e[6]=g):g=e[6];const v=g,b=p?void 0:"false";let _;return e[7]!==v.className||e[8]!==v.style||e[9]!==n||e[10]!==d||e[11]!==l||e[12]!==b||e[13]!==a||e[14]!==u?(_=Ioh(TXo.Provider,{value:!0,children:Ioh("div",{className:v.className,"data-component":"transcript-card-header","data-variant":u,"data-inset":d,"data-padding-bottom":b,style:v.style,title:a,onClick:l,children:n})}),e[7]=v.className,e[8]=v.style,e[9]=n,e[10]=d,e[11]=l,e[12]=b,e[13]=a,e[14]=u,e[15]=_):_=e[15],_}var Aoh,Q4t,X9_=

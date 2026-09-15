@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: managedCanvasSkill.js
+// byteRange: [20223588, 20224985)
+// beautified: false
+// truncated: false
+O({"managedCanvasSkill.js"(){"use strict";Hlm="canvas",zlm="canvas/SKILL.md",Glm="/.cursor/skills-cursor/canvas/SKILL.md"}});function Tvi(t,e){return{atMs:t,message:new _Oe({message:{case:"transientErrorWithOffset",value:new QTa({offsetKey:"",transientError:new FEa({errorMessage:e})})}})}}function b0t(t,e){return{atMs:t,message:new _Oe({message:{case:"workflowStatusWithOffset",value:new XTa({offsetKey:"",workflowStatus:e})}})}}function qlm(t){return{atMs:t,message:new _Oe({message:{case:"interactionUpdateWithOffset",value:new YTa({offsetKey:"",interactionUpdate:new hC({message:{case:"heartbeat",value:new dar}})})}})}}function Vlm({atMs:t,errorMessage:e,errorCode:n}){return{atMs:t,message:new _Oe({message:{case:"cloudAgentStateWithIdAndOffset",value:new KTa({offsetKey:"",cloudAgentState:new Lnt({userFacingErrorDetails:new BEa({errorMessage:e,errorCode:n})}),preFetchedBlobs:[]})}})}}function RwS(){return[b0t(0,Om.RUNNING),Tvi(500,UHr),Tvi(5e3,Klm),qlm(1e4),b0t(11e3,Om.IDLE)]}function PwS(){return[b0t(0,Om.RUNNING),Tvi(500,UHr),Tvi(5e3,UHr),Vlm({atMs:1e4,errorMessage:Ylm,errorCode:"UNAVAILABLE"}),b0t(10100,Om.ERROR)]}function MwS(){return[b0t(0,Om.RUNNING),Vlm({atMs:2e3,errorMessage:$ao,errorCode:"FAILED_PRECONDITION"}),b0t(2100,Om.ERROR)]}function DwS(){return[b0t(0,Om.RUNNING),Tvi(500,Xlm),qlm(8e3),b0t(9e3,Om.IDLE)]}function NwS(t){return Qlm[t]()}var UHr,Klm,Ylm,Xlm,Qlm,LwS=

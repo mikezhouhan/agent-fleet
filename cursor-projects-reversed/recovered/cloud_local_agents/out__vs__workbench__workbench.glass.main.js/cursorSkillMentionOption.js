@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: cursorSkillMentionOption.js
+// byteRange: [22049281, 22050688)
+// beautified: false
+// truncated: false
+O({"cursorSkillMentionOption.js"(){"use strict"}});function sNS(t){const e=Jd();e.set(KKr,[]),e.set(L_i,!0);const n=sa(e,KKr),i=sa(e,L_i),r=c=>e.set(L_i,c),s=c=>e.set(vCm,c);fn(Sb([t.isActive,t.existingRuleIds,t.existingSubagentNames,t.supportsSkills,t.supportsSubagents,t.includeCloudOnlyGlobalCommands,()=>UcS(t.workspaceId?.(),t.workspaceFolders?.())],()=>{if(!t.isActive()){s({items:[],isLoading:!1});return}let c=!1;r(!0),(async()=>{try{const u=await Cqp({services:t.vsContext,existingRuleIds:t.existingRuleIds(),existingSubagentNames:t.existingSubagentNames(),supportsSkills:t.supportsSkills(),supportsSubagents:t.supportsSubagents(),onSelectOption:t.onSelectOption,includeCloudOnlyGlobalCommands:t.includeCloudOnlyGlobalCommands(),workspaceFolders:t.workspaceFolders?.()});c||s({items:u,isLoading:!1})}catch{c||s({items:[],isLoading:!1})}})(),Tn(()=>{c=!0})}));const o=st(()=>KcS(t.actions())),a=st(()=>YcS([...n(),...o()],t.queryString()));return{sections:st(()=>{const c=t.queryString();if(!!c.length){if(a().length>0)return[{title:"Results",items:a()}];if(i())return[];const d=c.replace(/^\//,"").trim();return d?[{title:"Create",items:[{id:"create-skill-from-query",name:`Create /${d} skill`,description:"Define a new skill for the agent to use",type:"action",onSelect:()=>{t.onSelectOption({case:"create_skill_from_query",skillName:d})}}]}]:[]}return XcS(a())}),isLoading:i}}var KKr,L_i,vCm,oNS=

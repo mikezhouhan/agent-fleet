@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: use-subscriptions-pill.react.js
+// byteRange: [32319430, 32320904)
+// beautified: false
+// truncated: false
+O({"use-subscriptions-pill.react.js"(){"use strict";e6l(),P2i(),Dh(),h1s()}});import{c as CLw}from"./react-runtime/react/esm-compiler-runtime-production.js";import{useRef as TLw,useState as ELw}from"./react-runtime/react/esm-index-production.js";import{jsx as OMn,jsxs as P4f}from"./react-runtime/react/esm-jsx-runtime-production.js";function xLw(t){const e=CLw(15),{visible:n,onSwitchToBranch:i}=t,[r,s]=ELw(!1),o=TLw(!1);let a;e[0]!==i?(a=()=>{!i||o.current||(o.current=!0,s(!0),Promise.resolve(i()).catch(ILw).finally(()=>{o.current=!1,s(!1)}))},e[0]=i,e[1]=a):a=e[1];const l=a;let c;e[2]===Symbol.for("react.memo_cache_sentinel")?(c=P4f(Ci.BannerContent,{children:[OMn(Ci.BannerTitle,{truncate:!0,children:"Worktree no longer available"}),OMn(Ci.BannerDescription,{truncate:!0,children:"The git worktree for this agent is no longer on disk."})]}),e[2]=c):c=e[2];let u;e[3]!==l||e[4]!==i||e[5]!==r?(u=i?OMn(Ci.BannerActions,{children:OMn(Ln,{variant:"text",onClick:g=>{g.stopPropagation(),l()},children:r?"Switching\u2026":"Switch to branch"})}):null,e[3]=l,e[4]=i,e[5]=r,e[6]=u):u=e[6];let d;e[7]!==u?(d=P4f(Ci.Banner,{children:[c,u]}),e[7]=u,e[8]=d):d=e[8];let h;e[9]!==d||e[10]!==n?(h=OMn(Ci.Root,{enableKeyboardNavigation:!1,stackPriority:R2i,visible:n,children:d}),e[9]=d,e[10]=n,e[11]=h):h=e[11];let p;return e[12]!==h||e[13]!==n?(p=OMn(XS.HeaderTray,{stackPriority:R2i,trigger:null,visible:n,children:h}),e[12]=h,e[13]=n,e[14]=p):p=e[14],p}function ILw(){}var ALw=

@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: settingsCloudMcpHelpers.js
+// byteRange: [18733870, 18735385)
+// beautified: false
+// truncated: false
+O({"settingsCloudMcpHelpers.js"(){"use strict";Wu(),Yc(),Ei(),pve(),Rgi(),fNa="__team_default__",BKp="__DEFAULT__"}});function UKp(t){const e=t.authId?.trim();if(!e)return;const n=t.teamId!==void 0?`t${t.teamId}`:"personal";return p1t(`${vNa}${jKp}.${n}`,e)}function ohS(t){return new tya({id:t.id,name:t.name,isTeamServer:t.isTeamServer,enabled:t.enabled,type:t.type,url:t.url,pluginId:t.pluginId})}function ahS(t,e){if(!(e.status===void 0||e.status==="needsAuth"||e.status==="error"))return{id:t,status:e.status,isConnected:e.isConnected===!0}}function lhS(t){const e=new Map;if(Date.now()-t.fetchedAtMs>=WKp)return e;for(const n of t.statuses??[])typeof n?.id!="number"||n.status===void 0||e.set(n.id,{status:n.status,isConnected:n.isConnected===!0});return e}function chS(t,e){const n=UKp(e);if(n===void 0)return;const i=t.get(n,-1);if(i)try{const r=JSON.parse(i);return r.servers===void 0||typeof r.fetchedAtMs!="number"||!Number.isFinite(r.fetchedAtMs)?void 0:{servers:dFr.fromJson(r.servers,{ignoreUnknownFields:!0}).servers,statusByServerId:lhS(r),pluginBrandLogoByPluginId:new Map(Object.entries(r.pluginBrandLogos??{}))}}catch{return}}function uhS(t,e,n){const i=UKp(e);if(i!==void 0)try{const r=[];for(const[o,a]of n.statusByServerId){const l=ahS(o,a);l!==void 0&&r.push(l)}const s={fetchedAtMs:Date.now(),servers:new dFr({servers:n.servers.map(ohS)}).toJson(),statuses:r,pluginBrandLogos:Object.fromEntries(n.pluginBrandLogoByPluginId)};t.store(i,JSON.stringify(s),-1,1)}catch{}}var vNa,jKp,$Kp,WKp,HKp=

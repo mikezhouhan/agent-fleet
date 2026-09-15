@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: AgentTranscriptConnectScmCard.js
+// byteRange: [12874270, 12875751)
+// beautified: false
+// truncated: false
+O({"AgentTranscriptConnectScmCard.js"(){"use strict";a5e(),Hbt(),bC(),S9t(),cph="Connect GitHub so the agent can review pull requests and access your repositories."}});import{jsx as dph}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as CG_}from"./react-runtime/react/esm-compiler-runtime-production.js";function Mri(t){const e=CG_(25);let n,i,r,s,o;e[0]!==t?({collapsed:o,className:i,style:s,children:n,...r}=t,e[0]=t,e[1]=n,e[2]=i,e[3]=r,e[4]=s,e[5]=o):(n=e[1],i=e[2],r=e[3],s=e[4],o=e[5]);const a=o===void 0?!1:o;let l,c,u;if(e[6]!==i||e[7]!==a){c={0:{className:"ui-rvj5dj ui-1tu4anv ui-pv8u57 ui-1qn9uv2 ui-4wkmsb ui-g3p6pi ui-ptf4uz"},1:{className:"ui-rvj5dj ui-pv8u57 ui-1qn9uv2 ui-4wkmsb ui-g3p6pi ui-ptf4uz ui-ihq33y"}}[!!a<<0];let v;e[11]===Symbol.for("react.memo_cache_sentinel")?(v={className:"ui-6ikm8r ui-10wlt62 ui-2lwn1j"},e[11]=v):v=e[11],l=v,u=ii("ui-collapsible-content-view",c.className,i),e[6]=i,e[7]=a,e[8]=l,e[9]=c,e[10]=u}else l=e[8],c=e[9],u=e[10];let d;e[12]!==c.style||e[13]!==s?(d={...c.style,...s},e[12]=c.style,e[13]=s,e[14]=d):d=e[14];const h=a||void 0;let p;e[15]!==n||e[16]!==l.className||e[17]!==l.style?(p=dph("div",{className:l.className,style:l.style,children:n}),e[15]=n,e[16]=l.className,e[17]=l.style,e[18]=p):p=e[18];let g;return e[19]!==r||e[20]!==u||e[21]!==d||e[22]!==h||e[23]!==p?(g=dph("div",{className:u,style:d,"data-collapsed":h,...r,children:p}),e[19]=r,e[20]=u,e[21]=d,e[22]=h,e[23]=p,e[24]=g):g=e[24],g}var aJo=

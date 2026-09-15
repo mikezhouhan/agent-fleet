@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: TranscriptCardHeaderExpand.js
+// byteRange: [11145809, 11147318)
+// beautified: false
+// truncated: false
+j({"TranscriptCardHeaderExpand.js"(){"use strict";Gc(),dqe(),tm(),hyn={button:{k1xSpc:"ui-3nfvp2",kGNEyG:"ui-6s0dn4",kjj79g:"ui-l56j7k",kmuXW:"ui-2lah0s",kzqmXN:"ui-16bvwqk",kZKoxP:"ui-1a6rlst",keoZOQ:"ui-dj266r",km5ZXQ:"ui-1yf7rl7",k1K539:"ui-at24cr",koQZXg:"ui-j3b58b",kLKAdn:"ui-exx8yu",kpe85a:"ui-1xpa7k",kGO01o:"ui-18d9i69",kE3dHu:"ui-1uhho1l",kMwMTN:"ui-1lbmi28",kWkggS:"ui-jbqb8w",kEafiO:"ui-972fbf",kPef9Z:"ui-1ejq31n",kWqL5O:"ui-gfja2r",kSWEuD:"ui-11pwa6s",kt9PQ7:"ui-1qhh985",kfdmCh:"ui-1sy0etr",kZ1KPB:"ui-yj58a3",k4WBpm:"ui-1b16gh4",kkrTdU:"ui-1ypdohk",kSiTet:"ui-g01cxk ui-1o7uuvo ui-25t5g8 ui-15aqy90",k1ekBW:"ui-19991ni",kIyJzY:"ui-7pq1vu",kAMwcw:"ui-6ekqhr",$$css:!0},buttonOpen:{kSiTet:"ui-1hc1fzr",$$css:!0},chevron:{k1ekBW:"ui-11xpdln",kIyJzY:"ui-7pq1vu",kAMwcw:"ui-6ekqhr",$$css:!0},chevronOpen:{k3aq6I:"ui-1iffjtl",$$css:!0}}}});import{jsx as Mkg}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as Pkg}from"./react-runtime/react/esm-compiler-runtime-production.js";function Lkg(e){const t=Pkg(7),{children:n,color:i}=e,r=i===void 0?"tertiary":i;mpt("TranscriptCard.HeaderIcon");let s;t[0]!==r?(s=Ln(X0i.root,r==="primary"?X0i.primary:r==="secondary"?X0i.secondary:null),t[0]=r,t[1]=s):s=t[1];const o=s;let a;return t[2]!==o.className||t[3]!==o.style||t[4]!==n||t[5]!==r?(a=Mkg("span",{className:o.className,"data-component":"transcript-card-header-icon","data-color":r,style:o.style,children:n}),t[2]=o.className,t[3]=o.style,t[4]=n,t[5]=r,t[6]=a):a=t[6],a}var X0i,Nkg=

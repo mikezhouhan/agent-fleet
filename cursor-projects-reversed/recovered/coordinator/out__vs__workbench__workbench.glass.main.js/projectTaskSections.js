@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: projectTaskSections.js
+// byteRange: [5145599, 5146995)
+// beautified: false
+// truncated: false
+O({"projectTaskSections.js"(){"use strict";Hyr(),hei()}});import{jsx as i8o}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as r8o}from"./react-runtime/react/esm-compiler-runtime-production.js";function BJe(t){const e=r8o(13),{children:n,tone:i,variant:r,marker:s,as:o,rootStyle:a,"aria-hidden":l}=t,c=r===void 0?"icon":r,u=s===void 0?"tone":s,d=o===void 0?"span":o,h=c==="surface"?lDd:aDd;let p;e[0]!==u||e[1]!==i?(p=nu_(u,i),e[0]=u,e[1]=i,e[2]=p):p=e[2];let g;e[3]!==a||e[4]!==i||e[5]!==h?(g=Sn(h[i],a),e[3]=a,e[4]=i,e[5]=h,e[6]=g):g=e[6];let v;return e[7]!==d||e[8]!==l||e[9]!==n||e[10]!==p||e[11]!==g?(v=i8o(d,{...p,"aria-hidden":l,...g,children:n}),e[7]=d,e[8]=l,e[9]=n,e[10]=p,e[11]=g,e[12]=v):v=e[12],v}function oDd(t){const e=r8o(6),{tone:n,offset:i,stopOpacity:r}=t;let s;e[0]!==n?(s=Sn(s8o[n]),e[0]=n,e[1]=s):s=e[1];let o;return e[2]!==i||e[3]!==r||e[4]!==s?(o=i8o("stop",{offset:i,stopOpacity:r,...s}),e[2]=i,e[3]=r,e[4]=s,e[5]=o):o=e[5],o}function tu_(t){const e=r8o(8);let n,i;e[0]!==t?({tone:i,...n}=t,e[0]=t,e[1]=n,e[2]=i):(n=e[1],i=e[2]);let r;e[3]!==i?(r=Sn(s8o[i]),e[3]=i,e[4]=r):r=e[4];let s;return e[5]!==n||e[6]!==r?(s=i8o("path",{...n,...r}),e[5]=n,e[6]=r,e[7]=s):s=e[7],s}function nu_(t,e){switch(t){case"agent-role-tone":return{"data-agent-role-tone":e};case"phase-tone":return{"data-phase-tone":e};case"tone":return{"data-tone":e}}}var aDd,lDd,s8o,UJe=

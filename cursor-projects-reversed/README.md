@@ -23,8 +23,8 @@ npm test
 2. 只读挂载 DMG
 3. 定位 `Cursor.app` 与 payload（本版本是未打包的 `Contents/Resources/app`，不是单一 `app.asar`）
 4. 按 shipped path/symbol 分类 coordinator、cloud/local agent、shared context、subscriptions
-5. 把该子集 beautify/切片写入 `recovered/`
-6. 写出 `inventory.json`（recovered file → shipped path → symbols）与 `provenance.json`
+5. 按 factory 名自动发现全部 Projects 相关模块（coordinator / agent store / side chat / 订阅 / 云·本机 agent / 共享上下文），写入 `recovered/`
+6. 写出 `inventory.json`、`provenance.json` 与 `CATALOG.md`
 
 完整 payload 工作副本在 gitignored 的 `work/payload/`。
 

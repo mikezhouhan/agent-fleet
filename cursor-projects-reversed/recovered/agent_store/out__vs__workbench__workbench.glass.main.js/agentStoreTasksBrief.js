@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: agentStoreTasksBrief.js
+// byteRange: [26979380, 26980835)
+// beautified: false
+// truncated: false
+O({"agentStoreTasksBrief.js"(){"use strict";Yc(),Sl(),Pr(),xUr(),ds(),qTi="notes.md",Mds="tasks.md",GOg=/^\s*<tldr>([\s\S]*?)<\/tldr>(?=\s|$)/,qOg=/<\/?tldr(?:\s[^>]*)?\/?>/i,VOg=/<\/?tldr(?:\s[^>]*)?\/?>/gi,KOg=/^ {0,3}(?:`{3,}|~{3,})/,YOg=/^\uFEFF/}});import{useCallback as XOg,useMemo as QOg,useState as UY1}from"./react-runtime/react/esm-index-production.js";import{jsx as Nds}from"./react-runtime/react/esm-jsx-runtime-production.js";function jY1({codeProps:t}){const{onHeaderContextMenu:e}=t;return Nds(j6t,{className:`language-${t.language||"text"}`,copyText:t.copyText,endLine:t.endLine,filePath:t.filePath,onHeaderContextMenu:e,showIndentGuides:!1,startLine:t.startLine,streaming:t.streaming,wordWrap:t.wordWrap,children:t.children})}function $Y1(t){return t==="kanban"?"board":t}function ZOg(t,e){const n=Ols(t);return n.kind==="valid"?XEg(t,n.board,e):t}function WY1({initialResult:t,initialSource:e,onLinkClick:n}){const[i,r]=UY1(e),s=QOg(()=>Ols(i),[i]),o=s.kind==="valid"?s.board:t.board,a=XOg(c=>{r(u=>ZOg(u,{kind:"mode",mode:$Y1(c)}))},[]),l=XOg(c=>{r(u=>ZOg(u,{kind:"state",state:c}))},[]);return Nds(txg,{board:o,onLinkClick:n,onViewModeChange:a,onViewStateChange:l})}function HY1({codeProps:t,onLinkClick:e}){const n=QOg(()=>t.language==="cursor-project"?Ols(t.children):void 0,[t.children,t.language]);return n?.kind!=="valid"?Nds(jY1,{codeProps:t}):Nds(WY1,{initialResult:n,initialSource:t.children,onLinkClick:e},t.children)}var zY1=

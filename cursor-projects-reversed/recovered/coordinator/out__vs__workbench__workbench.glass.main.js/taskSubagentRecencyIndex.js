@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: taskSubagentRecencyIndex.js
+// byteRange: [17629164, 17630570)
+// beautified: false
+// truncated: false
+O({"taskSubagentRecencyIndex.js"(){"use strict";bu(),nHe(),wBr()}});function U4p(t){return t.type==="new"?t.environment.usePrivateWorker:void 0}function j4p(t){return U4p(t)===!0}function uSn(t){return t.selectedPoolName?.trim()||void 0}function $4p(t){if(t.type==="existing"){if(Il(t.environment))return t.environment.uri.authority;if(sh(t.environment))return t.environment.configPath.authority}}function fXy(t){return t.length<=_Aa?t:`${t.slice(0,_Aa).trimEnd()}...`}function fAa(t){const e=tva(t.richText)?.trim()||t.prompt,n=e===void 0?void 0:O0(e).map(i=>i.trim()).find(i=>i.length>0);return fXy(n||t.fallback||aZ)}function W4p(t){return t.requestedAgentName??fAa({prompt:t.prompt,richText:t.richText,fallback:t.setupRunAgentName?.trim()||aZ})}function vAa(t){return t.source==="claude-code"&&t.claudeCodeMetadata!==void 0}function cmi(t){return t===Bl.AS_SUBAGENT_FROM_LOCAL||t===Bl.AS_SUBAGENT_FROM_CLOUD}function H1(t){const e=[],n=new Set;for(const i of t){const r=i.repoUrl.value?.trim();r&&!n.has(r)&&(n.add(r),e.push(r))}return e}function kBr(t){return t[0]?.activeBranchName.value}function CBr(t,e){if(!e)return kBr(t);const n=t.find(i=>i.repoPath===e);return n?n.activeBranchName.value:kBr(t)}function bAa(t,e){if(e)return t.find(n=>n.repoPath===e)?.repoUrl.value}function vXy(t,e,n){const i=t.find(r=>r.repoPath===e);if(i)return i.repoPath;if(t.length===1)return t[0].repoPath}var aZ,_Aa,MS=

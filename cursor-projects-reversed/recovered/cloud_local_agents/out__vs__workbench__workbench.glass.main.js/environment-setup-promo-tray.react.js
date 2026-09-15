@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: environment-setup-promo-tray.react.js
+// byteRange: [32027111, 32028589)
+// beautified: false
+// truncated: false
+O({"environment-setup-promo-tray.react.js"(){"use strict";Pt(),Ih(),mw(),k6l(),zAi(),o_s(),cMl(),jMl(),HAi()}});import{c as hxw}from"./react-runtime/react/esm-compiler-runtime-production.js";import{useEffect as pxw}from"./react-runtime/react/esm-index-production.js";import{jsx as mxw,Fragment as gxw,jsxs as fxw}from"./react-runtime/react/esm-jsx-runtime-production.js";function e0s(t){const e=hxw(21),{status:n,onLimitApplied:i,onUpgradeOverride:r,visible:s,stackPriority:o}=t,a=s===void 0?!0:s,l=Ze(ks),c=Ze(rq),u=Ze(gl),d=Ze(ru),h=Ze(rs),p=Ze(Ko),g=Ze(Ive);let v,b;e[0]!==g?(v=()=>(g.addConsumer(),g.refetch(!1),()=>{g.removeConsumer()}),b=[g],e[0]=g,e[1]=v,e[2]=b):(v=e[1],b=e[2]),pxw(v,b);const _=Mc(g,vxw);let y;e[3]!==h||e[4]!==l||e[5]!==d||e[6]!==u||e[7]!==i||e[8]!==r||e[9]!==p||e[10]!==n||e[11]!==_||e[12]!==c?(y={analyticsService:h,cursorAuthenticationService:l,logService:d,notificationService:u,onLimitApplied:i,onUpgradeOverride:r,reactiveStorageService:p,status:n,surface:"glass",upgradeTarget:_,usageLimitPolicyStatusService:c},e[3]=h,e[4]=l,e[5]=d,e[6]=u,e[7]=i,e[8]=r,e[9]=p,e[10]=n,e[11]=_,e[12]=c,e[13]=y):y=e[13];const{notice:S,modal:k}=bLm(y);let C;e[14]!==S||e[15]!==o||e[16]!==a?(C=mxw(Ci.Root,{enableKeyboardNavigation:!1,stackPriority:o,visible:a,children:S}),e[14]=S,e[15]=o,e[16]=a,e[17]=C):C=e[17];let T;return e[18]!==k||e[19]!==C?(T=fxw(gxw,{children:[C,k]}),e[18]=k,e[19]=C,e[20]=T):T=e[20],T}function vxw(t){return fCn(t.nextUpgrade())}var L3f=

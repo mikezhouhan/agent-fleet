@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: mcp_auth_tool_pb.js
+// byteRange: [13902473, 13903908)
+// beautified: false
+// truncated: false
+j({"mcp_auth_tool_pb.js"(){"use strict";Ni(),lPi=T.makeMessageType("agent.v1.McpAuthArgs",()=>[{no:1,name:"server_identifier",kind:"scalar",T:9},{no:2,name:"tool_call_id",kind:"scalar",T:9}]),L2s=T.makeMessageType("agent.v1.McpAuthResult",()=>[{no:1,name:"success",kind:"message",T:N2s,oneof:"result"},{no:2,name:"error",kind:"message",T:O2s,oneof:"result"},{no:3,name:"rejected",kind:"message",T:F2s,oneof:"result"}]),N2s=T.makeMessageType("agent.v1.McpAuthSuccess",()=>[{no:1,name:"server_identifier",kind:"scalar",T:9}]),O2s=T.makeMessageType("agent.v1.McpAuthError",()=>[{no:1,name:"error",kind:"scalar",T:9}]),F2s=T.makeMessageType("agent.v1.McpAuthRejected",()=>[{no:1,name:"reason",kind:"scalar",T:9}]),B2s=T.makeMessageType("agent.v1.McpAuthToolCall",()=>[{no:1,name:"args",kind:"message",T:lPi},{no:2,name:"result",kind:"message",T:L2s}]),TQl=T.makeMessageType("agent.v1.McpAuthRequestQuery",()=>[{no:1,name:"args",kind:"message",T:lPi}]),qq=T.makeMessageType("agent.v1.McpAuthRequestResponse",()=>[{no:1,name:"approved",kind:"message",T:o6t,oneof:"result"},{no:2,name:"rejected",kind:"message",T:rge,oneof:"result"}]),o6t=T.makeMessageType("agent.v1.McpAuthRequestResponse.Approved",[],{localName:"McpAuthRequestResponse_Approved"}),rge=T.makeMessageType("agent.v1.McpAuthRequestResponse.Rejected",()=>[{no:1,name:"reason",kind:"scalar",T:9}],{localName:"McpAuthRequestResponse_Rejected"})}}),EQl,U2s,$2s,xQl,IQl,AQl,RQl,Baf=

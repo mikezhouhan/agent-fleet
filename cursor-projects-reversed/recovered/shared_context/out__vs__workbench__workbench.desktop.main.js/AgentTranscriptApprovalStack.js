@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: AgentTranscriptApprovalStack.js
+// byteRange: [11559571, 11561027)
+// beautified: false
+// truncated: false
+j({"AgentTranscriptApprovalStack.js"(){"use strict";Cvs()}});import{jsx as qAl,Fragment as NPg}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as OPg}from"./react-runtime/react/esm-compiler-runtime-production.js";import{useState as KAl,useRef as FPg,useLayoutEffect as BPg}from"./react-runtime/react/esm-index-production.js";function UPg(e){const t=e.closest("[data-reveal-ready]");return t===null?!0:t.getAttribute("data-reveal-ready")==="true"}function YAl(e){const t=OPg(12),{enter:n,onEntered:i,children:r}=e,[s]=KAl(n),[o,a]=KAl(!1),c=FPg(null);let l,u;if(t[0]!==s?(l=()=>{if(!s)return;const v=c.current;if(v===null)return;const _=()=>UPg(v)?(a(!0),!0):!1;if(_())return;const S=v.closest("[data-reveal-ready]");if(S===null){a(!0);return}const k=new MutationObserver(()=>{_()&&k.disconnect()});return k.observe(S,{attributes:!0,attributeFilter:["data-reveal-ready"]}),()=>{k.disconnect()}},u=[s],t[0]=s,t[1]=l,t[2]=u):(l=t[1],u=t[2]),BPg(l,u),!s){let v;return t[3]!==r?(v=qAl(NPg,{children:r}),t[3]=r,t[4]=v):v=t[4],v}let h;t[5]!==i?(h=v=>{v.target===v.currentTarget&&i?.()},t[5]=i,t[6]=h):h=t[6];let m;t[7]===Symbol.for("react.memo_cache_sentinel")?(m={0:{className:"ui-g01cxk"},1:{className:"ui-1xbrt40 ui-1aquc0h ui-1shwlz2 ui-rmiu4m ui-1u6ievf"}},t[7]=m):m=t[7];const g=m[!!o<<0];let f;return t[8]!==r||t[9]!==h||t[10]!==g?(f=qAl("div",{ref:c,onAnimationStart:h,...g,children:r}),t[8]=r,t[9]=h,t[10]=g,t[11]=f):f=t[11],f}var $Pg=

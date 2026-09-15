@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: use-slack-conversations-query.react.js
+// byteRange: [28477444, 28478787)
+// beautified: false
+// truncated: false
+O({"use-slack-conversations-query.react.js"(){"use strict";Ih(),Wu(),yc(),hf(),Ks(),uRn(),kn(),K0(),KXg=[],YXg=1500}});import{c as XXg}from"./react-runtime/react/esm-compiler-runtime-production.js";async function QXg({getClient:t,category:e,signal:n}){return(await(await t()).listWorkflowTemplates(new xka({category:e}),{signal:n})).templates}function SC0(t,e){const n=XXg(9),i=p8(t);let r;n[0]!==e?(r=Wqt.list(e),n[0]=e,n[1]=r):r=n[1];let s;n[2]!==e||n[3]!==i?(s=l=>{const{signal:c}=l;return QXg({getClient:i,category:e,signal:c})},n[2]=e,n[3]=i,n[4]=s):s=n[4];let o;n[5]===Symbol.for("react.memo_cache_sentinel")?(o=t1(2),n[5]=o):o=n[5];let a;return n[6]!==r||n[7]!==s?(a={queryKey:r,queryFn:s,staleTime:3e5,refetchOnWindowFocus:!1,retry:o},n[6]=r,n[7]=s,n[8]=a):a=n[8],nm(a)}function ZXg(t,e){const n=XXg(10),i=p8(t);let r;n[0]!==e?(r=Wqt.detail(e??""),n[0]=e,n[1]=r):r=n[1];let s;n[2]!==i||n[3]!==e?(s=async c=>{const{signal:u}=c;return e===null?null:(await(await i()).getWorkflowTemplate(new Ika({templateId:e}),{signal:u})).template??null},n[2]=i,n[3]=e,n[4]=s):s=n[4];const o=e!==null;let a;n[5]===Symbol.for("react.memo_cache_sentinel")?(a=t1(2),n[5]=a):a=n[5];let l;return n[6]!==r||n[7]!==s||n[8]!==o?(l={queryKey:r,queryFn:s,enabled:o,staleTime:3e5,refetchOnWindowFocus:!1,retry:a},n[6]=r,n[7]=s,n[8]=o,n[9]=l):l=n[9],nm(l)}var $El=

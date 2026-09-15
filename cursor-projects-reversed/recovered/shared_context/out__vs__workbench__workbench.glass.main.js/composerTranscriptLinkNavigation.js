@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: composerTranscriptLinkNavigation.js
+// byteRange: [25320163, 25321537)
+// beautified: false
+// truncated: false
+O({"composerTranscriptLinkNavigation.js"(){"use strict";Oi(),Pi(),an(),_k(),ezt(),j1t(),lns()}});async function vT1({bubbleId:t,composerDataHandle:e,services:n}){if(e.data.isNAL!==!0)return;const i=n.composerDataService.getComposerCapability(e,Zs.TOOL_FORMER);if(!i)return;let r=t,s=i.getBubbleData(r);if(!s||s.tool!==vt.RUN_TERMINAL_COMMAND_V2){const b=await i.getHydratedBubbleByToolCallId(r);b?.bubbleData.tool===vt.RUN_TERMINAL_COMMAND_V2&&(r=b.bubbleId,s=b.bubbleData)}if(!s||s.tool!==vt.RUN_TERMINAL_COMMAND_V2)return;const o=s.toolCallId;if(!o)return;const a=s.additionalData?.sessionId,l=n.toolCallHumanReviewService.getTerminalReviewModelForBubble(e,r),c=s.additionalData?.status;if(!!a&&!s.params?.isBackground&&(c==="running"||c==="loading")&&a)try{n.terminalExecutionService.cancelStream(a)}catch{}i.setBubbleData(r,{status:"cancelled",additionalData:{...s.additionalData,status:"cancelled"}}),l?.reset();let d=n.instantiationService,h;const p=n.workspaceCollectionService.getMaterializedWorkspaceIdentifiers(),g=e.data.workspaceIdentifier??(p.length===1?p[0]:void 0),v=g!==void 0&&p.some(b=>b.id===g.id);if(g&&v)try{h=await n.workspaceCollectionService.createWorkspaceReference(g,Uc.Terminal),d=h.object.instantiationService}catch{}try{await d.invokeFunction(async b=>{await b.get(p7).cancelExecByToolCallId(e.data.composerId,o)})}finally{h?.dispose()}}var bT1=

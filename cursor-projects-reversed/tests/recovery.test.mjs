@@ -3,7 +3,14 @@ import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
 import { classifyProjectsPayload, CATEGORY_IDS } from "../scripts/lib/classify.mjs";
-import { extractMarkerWindow, extractNamedModuleSlice, inventoryIdentities, MODULE_MAX_BYTES, recoverUnits } from "../scripts/lib/extract.mjs";
+import {
+  discoverProjectsModules,
+  extractMarkerWindow,
+  extractNamedModuleSlice,
+  inventoryIdentities,
+  MODULE_MAX_BYTES,
+  recoverUnits,
+} from "../scripts/lib/extract.mjs";
 import { identitiesFingerprint } from "../scripts/lib/inventory.mjs";
 import { hashFile } from "../scripts/lib/hash.mjs";
 import { DEFAULT_DMG_PATH, EXPECTED_DMG_SHA256, inventoryPath, repoRoot, workPayloadDir } from "../scripts/lib/paths.mjs";
@@ -32,6 +39,19 @@ test("extractNamedModuleSlice and extractMarkerWindow drive the real slice funct
   assert.ok(window);
   assert.ok(window.text.includes("<pr_shared_context>"));
   assert.equal(window.hit, source.indexOf("<pr_shared_context>"));
+});
+
+test("discoverProjectsModules finds side-chat, agent-store, and archive factories in a synthetic bundle", () => {
+  const source = [
+    'O({"side-chats.ts"(){"use strict"}})',
+    'O({"agent-store-ids.ts"(){const z="/cursor/stores"}})',
+    'O({"unrelatedEditor.js"(){}})',
+    'O({"ArchiveBackgroundComposer.js"(){}})',
+  ].join("");
+  const modules = discoverProjectsModules(source).map((row) => row.module);
+  assert.ok(modules.includes("side-chats.ts"));
+  assert.ok(modules.includes("agent-store-ids.ts"));
+  assert.equal(modules.includes("unrelatedEditor.js"), false);
 });
 
 test("extractNamedModuleSlice extends to the next factory past the 48KiB cap", () => {
@@ -98,6 +118,14 @@ test("recoverFromDmg classifies Projects units and writes recovered files + inve
   const payloadRoot = workPayloadDir(repoRoot);
   const againClassify = await classifyProjectsPayload(payloadRoot);
   assert.equal(againClassify.missingCategories.length, 0);
+  const mustRecover = ["side-chats.ts", "agent-store-ids.ts", "agentStoreSubagentMount.js", "project-subagents.ts"];
+  for (const name of mustRecover) {
+    assert.ok(
+      inventory.units.some((unit) => unit.shippedSymbols.includes(name) || unit.id.endsWith(`:${name}`)),
+      `full reverse missing ${name}`,
+    );
+  }
+
   const repoService = inventory.units.find((unit) => unit.id.endsWith(":cloudAgentRepositoryService.js"));
   assert.ok(repoService, "cloudAgentRepositoryService.js must be recovered");
   const repoSpan = repoService.byteRange[1] - repoService.byteRange[0];

@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: settingsCloudMcpHelpers.js
+// byteRange: [17527249, 17528723)
+// beautified: false
+// truncated: false
+j({"settingsCloudMcpHelpers.js"(){"use strict";$p(),xh(),ti(),ale(),ZAn()}});function $Rd(e){const t=e.authId?.trim();if(!t)return;const n=e.teamId!==void 0?`t${e.teamId}`:"personal";return RIn(`${zeo}${WRd}.${n}`,t)}function X5f(e){return new j7s({id:e.id,name:e.name,isTeamServer:e.isTeamServer,enabled:e.enabled,type:e.type,url:e.url,pluginId:e.pluginId})}function Z5f(e,t){if(!(t.status===void 0||t.status==="needsAuth"||t.status==="error"))return{id:e,status:t.status,isConnected:t.isConnected===!0}}function Q5f(e){const t=new Map;if(Date.now()-e.fetchedAtMs>=HRd)return t;for(const n of e.statuses??[])typeof n?.id!="number"||n.status===void 0||t.set(n.id,{status:n.status,isConnected:n.isConnected===!0});return t}function J5f(e,t){const n=$Rd(t);if(n===void 0)return;const i=e.get(n,-1);if(i)try{const r=JSON.parse(i);return r.servers===void 0||typeof r.fetchedAtMs!="number"||!Number.isFinite(r.fetchedAtMs)?void 0:{servers:R3i.fromJson(r.servers,{ignoreUnknownFields:!0}).servers,statusByServerId:Q5f(r),pluginBrandLogoByPluginId:new Map(Object.entries(r.pluginBrandLogos??{}))}}catch{return}}function e6f(e,t,n){const i=$Rd(t);if(i!==void 0)try{const r=[];for(const[o,a]of n.statusByServerId){const c=Z5f(o,a);c!==void 0&&r.push(c)}const s={fetchedAtMs:Date.now(),servers:new R3i({servers:n.servers.map(X5f)}).toJson(),statuses:r,pluginBrandLogos:Object.fromEntries(n.pluginBrandLogoByPluginId)};e.store(i,JSON.stringify(s),-1,1)}catch{}}var zeo,WRd,t6f,HRd,n6f=

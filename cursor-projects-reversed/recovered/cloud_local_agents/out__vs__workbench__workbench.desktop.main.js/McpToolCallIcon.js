@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: McpToolCallIcon.js
+// byteRange: [11444003, 11445396)
+// beautified: false
+// truncated: false
+j({"McpToolCallIcon.js"(){"use strict";SIl(),kIl(),Uvs=16,EIl=Bvs,xIl=Uvs-2,IIl=12}});import{jsxs as RIl,Fragment as hRg,jsx as pRg}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as mRg}from"./react-runtime/react/esm-compiler-runtime-production.js";function DIl(e){const t=mRg(23),{toolCase:n,isNewFile:i,path:r,onFileClick:s,onFileContextMenu:o}=e;let a;t[0]!==i||t[1]!==n?(a=t1i({toolCase:n,isNewFile:i}),t[0]=i,t[1]=n,t[2]=a):a=t[2];const c=a.error;let l;t[3]!==s||t[4]!==r?(l=r&&s?()=>s(r):void 0,t[3]=s,t[4]=r,t[5]=l):l=t[5];const u=l;let h;t[6]!==o||t[7]!==r?(h=r&&o?I=>o(I,r):void 0,t[6]=o,t[7]=r,t[8]=h):h=t[8];const m=h;let g;t[9]!==u?(g=u?I=>{(I.key==="Enter"||I.key===" ")&&(I.preventDefault(),u())}:void 0,t[9]=u,t[10]=g):g=t[10];const f=g,v=u?"button":void 0,_=u?0:void 0;let S;t[11]===Symbol.for("react.memo_cache_sentinel")?(S={0:{className:"ui-19aaqeu ui-1yn0g08"},1:{className:"ui-19aaqeu ui-1yn0g08 ui-1ypdohk"}},t[11]=S):S=t[11];const k=S[!!u<<0];let C;t[12]!==r?(C=r?RIl(hRg,{children:[" ",pRg("span",{className:"ui-4b2ntj",children:r})]}):null,t[12]=r,t[13]=C):C=t[13];let x;return t[14]!==c||t[15]!==u||t[16]!==m||t[17]!==f||t[18]!==v||t[19]!==_||t[20]!==k||t[21]!==C?(x=RIl("div",{role:v,tabIndex:_,...k,onClick:u,onContextMenu:m,onKeyDown:f,children:[c,C]}),t[14]=c,t[15]=u,t[16]=m,t[17]=f,t[18]=v,t[19]=_,t[20]=k,t[21]=C,t[22]=x):x=t[22],x}var gRg=

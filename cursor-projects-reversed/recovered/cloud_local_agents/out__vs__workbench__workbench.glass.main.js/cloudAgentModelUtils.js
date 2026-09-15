@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: cloudAgentModelUtils.js
+// byteRange: [20361674, 20363138)
+// beautified: false
+// truncated: false
+O({"cloudAgentModelUtils.js"(){"use strict";vg()}});async function YkS(t){const{loopbackService:e,cursorAuthenticationService:n,loopbackState:i,stateId:r}=t,s=await e.waitForCallback(i);if(s.kind!=="delivered"){SNa({stateId:r,error:s.error??"Timed out waiting for the MCP sign-in to finish."});return}ZKp(r);try{await(await n.dashboardClient()).completeMcpOAuth(new pFr({stateId:r,authorizationCode:s.authorizationCode})),JKp(r)}catch(o){SNa({stateId:r,error:o instanceof Error?o.message:"Failed to complete the MCP authentication flow."})}}function XkS(t){try{return new URL(t).searchParams.get("redirect_uri")===Xtr}catch{return!1}}function q9a(t){return t?.aborted===!0}async function V9a(t){const{loopback:e,encodedState:n,stateId:i}=t,r=e!==void 0&&n!==void 0&&i!==void 0&&XkS(t.authUrlToOpen)?{...e,encodedState:n,stateId:i}:void 0,s=t.abortSignal;if(q9a(s))return;const o=async()=>{if(!await t.open())throw new Error(Hum)};if(r===void 0){await o();return}if((await r.service.arm(r.encodedState)).kind!=="armed")throw new Error(Wum);const l=()=>{r.service.cancel(r.encodedState)};if(q9a(s)){l();return}s?.addEventListener("abort",l,{once:!0});try{await o()}catch(c){throw s?.removeEventListener("abort",l),await r.service.cancel(r.encodedState),c}q9a(s)||YkS({loopbackService:r.service,cursorAuthenticationService:r.cursorAuthenticationService,loopbackState:r.encodedState,stateId:r.stateId}).finally(()=>{s?.removeEventListener("abort",l)})}var Wum,Hum,K9a=

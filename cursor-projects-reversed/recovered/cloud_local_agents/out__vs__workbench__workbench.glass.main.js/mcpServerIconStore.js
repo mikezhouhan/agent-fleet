@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: mcpServerIconStore.js
+// byteRange: [25335638, 25336990)
+// beautified: false
+// truncated: false
+O({"mcpServerIconStore.js"(){"use strict";Qn()}});function WT1(t){t.headers[vL];const e=as(()=>[...ud(t.headers)]),n=[];for(const i of e){if(i.type===ws.HUMAN)continue;const r=i.grouping;if(r?.toolFormerTool!==void 0&&r.toolFormerStatus!==void 0){if(!ogg(r,t.pendingToolCallIds)){sgg(i.bubbleId,t.getToolDataUntracked,t.pendingToolCallIds)&&n.push(i.bubbleId);continue}if(r.toolFormerTool===vt.TASK_V2&&MOe(r.taskStatus)){n.push(i.bubbleId);continue}const o=t.getToolData(i.bubbleId);o!==void 0&&xul(o,t.pendingToolCallIds)&&n.push(i.bubbleId);continue}if(r?.toolDisplayComputed===!0&&r.toolFormerTool===void 0||!sgg(i.bubbleId,t.getToolDataUntracked,t.pendingToolCallIds))continue;const s=t.getToolData(i.bubbleId);s!==void 0&&xul(s,t.pendingToolCallIds)&&n.push(i.bubbleId)}return n}function sgg(t,e,n){return as(()=>{const i=e(t);return i!==void 0&&xul(i,n)})}function xul(t,e){return ogg({toolCallId:t.toolCallId,toolFormerTool:t.tool,toolFormerStatus:t.status,taskStatus:t.tool===vt.TASK_V2?t.additionalData?.status:void 0,shellStatus:t.tool===vt.RUN_TERMINAL_COMMAND_V2?t.additionalData?.status:void 0},e)}function ogg(t,e){return t.toolCallId!==void 0&&e.has(t.toolCallId)||t.toolFormerStatus==="loading"?!0:t.toolFormerTool!==vt.RUN_TERMINAL_COMMAND_V2?!1:t.shellStatus==="pending"||t.shellStatus==="loading"||t.shellStatus==="running"}var HT1=

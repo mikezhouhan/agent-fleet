@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: account-mcp-identifier.ts
+// byteRange: [19137960, 19139345)
+// beautified: false
+// truncated: false
+O({"account-mcp-identifier.ts"(){"use strict"}});function SvS(t){const e=new Map,n=[];for(const i of t){const r=wvS(i),s=tOa(i);if(r===void 0){n.push({groupId:`singleton:${i.identifier}`,sourceKind:s,servers:[i],isGrouped:!1});continue}const o=e.get(r);if(o){o.servers=[...o.servers,i],o.isGrouped=o.servers.length>1;continue}const a={groupId:r,sourceKind:s,normalizedUrl:r.slice(15),servers:[i],isGrouped:!1};e.set(r,a),n.push(a)}return n}function wvS(t){if(!(t.projectManaged||t.type!=="streamableHttp"||!t.url)&&!t.url.startsWith("mcp-provider://"))return`streamableHttp:${svS(t.url)}`}function kvS(t,e,n){const i=n.getSelection(t.groupId);if(i){const s=cem(i).map(l=>t.servers.find(c=>c.identifier===l)).filter(l=>l!==void 0),o=s.filter(l=>!e.has(l.identifier));if(o.length>0)return o;const a=s[0];if(a)return[a]}const r=CvS(t.servers)??t.servers[0];return r?[r]:[]}function cem(t){const e=new Set,n=[];for(const i of t)e.has(i)||(e.add(i),n.push(i));return n}function CvS(t,e=()=>!0){for(const n of uem){const i=t.find(r=>tOa(r)===n&&e(r));if(i)return i}}function tOa(t){return t.url?.startsWith("mcp-provider://")?"provider":t.userManaged?"user":t.projectManaged?"project":t.extensionId?"extension":t.dashboardManaged?"team":t.pluginManaged?"plugin":t.identifier.startsWith("user-")?"user":"default"}function TvS(t){return t?t instanceof Set?t:new Set(t):new Set}var uem,dem,hem=

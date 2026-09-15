@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: managedCanvasSkill.js
+// byteRange: [18970273, 18971670)
+// beautified: false
+// truncated: false
+j({"managedCanvasSkill.js"(){"use strict";v8d="canvas",b8d="canvas/SKILL.md",_8d="/.cursor/skills-cursor/canvas/SKILL.md"}});function NDn(e,t){return{atMs:e,message:new $ke({message:{case:"transientErrorWithOffset",value:new SGs({offsetKey:"",transientError:new nzs({errorMessage:t})})}})}}function MZe(e,t){return{atMs:e,message:new $ke({message:{case:"workflowStatusWithOffset",value:new yGs({offsetKey:"",workflowStatus:t})}})}}function y8d(e){return{atMs:e,message:new $ke({message:{case:"interactionUpdateWithOffset",value:new _Gs({offsetKey:"",interactionUpdate:new Uw({message:{case:"heartbeat",value:new zPi}})})}})}}function S8d({atMs:e,errorMessage:t,errorCode:n}){return{atMs:e,message:new $ke({message:{case:"cloudAgentStateWithIdAndOffset",value:new bGs({offsetKey:"",cloudAgentState:new h6e({userFacingErrorDetails:new izs({errorMessage:t,errorCode:n})}),preFetchedBlobs:[]})}})}}function Kzf(){return[MZe(0,op.RUNNING),NDn(500,z$i),NDn(5e3,w8d),y8d(1e4),MZe(11e3,op.IDLE)]}function Yzf(){return[MZe(0,op.RUNNING),NDn(500,z$i),NDn(5e3,z$i),S8d({atMs:1e4,errorMessage:k8d,errorCode:"UNAVAILABLE"}),MZe(10100,op.ERROR)]}function Xzf(){return[MZe(0,op.RUNNING),S8d({atMs:2e3,errorMessage:zzr,errorCode:"FAILED_PRECONDITION"}),MZe(2100,op.ERROR)]}function Zzf(){return[MZe(0,op.RUNNING),NDn(500,C8d),y8d(8e3),MZe(9e3,op.IDLE)]}function Qzf(e){return T8d[e]()}var z$i,w8d,k8d,C8d,T8d,Jzf=

@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: loadableSubagentHeaderRegistry.js
+// byteRange: [20334075, 20335425)
+// beautified: false
+// truncated: false
+O({"loadableSubagentHeaderRegistry.js"(){"use strict";wum=class{constructor(t){this._onDidChangeIdentity=t,this._heldById=new Map,this._removalTokenById=new Map,this._lastRevision=0}get size(){return this._heldById.size}get(t){return this._heldById.get(t)?.header}has(t){return this._heldById.has(t)}keys(){return this._heldById.keys()}*values(){for(const t of this._heldById.values())yield t.header}*[Symbol.iterator](){for(const[t,e]of this._heldById)yield[t,e.header]}getRevision(t){return this._heldById.get(t)?.revision??this._removalTokenById.get(t)??0}set(t,e){return this._heldById.get(t)?.header===e?this:(this._heldById.set(t,{header:e,revision:this._mint()}),this._onDidChangeIdentity(t),this)}delete(t){return this._heldById.delete(t)?(this._announceRemoval([t]),!0):!1}clear(){const t=[...this._heldById.keys()];this._heldById.clear(),this._announceRemoval(t)}_mint(){return++this._lastRevision}_announceRemoval(t){for(const e of t)this._removalTokenById.set(e,this._mint());for(const e of t)this._onDidChangeIdentity(e);for(const e of t)this._removalTokenById.delete(e)}}}});function kum(t){if(!t)return!1;const e=t.split(/[/\\]/).pop()||t;if(B9a.includes(e))return!0;for(const n of B9a)if(n.includes("*")){const i=n.replace(/[.+?^${}()|[\]\\]/g,"\\$&").replace(/\*/g,".*");if(new RegExp(`^${i}$`).test(e))return!0}return!1}var B9a,Cum=

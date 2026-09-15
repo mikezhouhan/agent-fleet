@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: cloudAgentLifecycleObservability.js
+// byteRange: [18879149, 18880585)
+// beautified: false
+// truncated: false
+O({"cloudAgentLifecycleObservability.js"(){"use strict";zg(),gd(),aa(),Ei(),CQp="cloud_agent.create",TQp="cloud_agent.create.duration_ms",EQp="cloud_agent.followup_submit",xQp="cloud_agent.followup_submit.duration_ms",ILa="REFUSED_STREAM"}});function IQp(t){const e=[t.rawMessage,t.message];try{for(const n of t.findDetails(F0)){const i=n.details?.title?.trim(),r=n.details?.detail?.trim();i&&e.push(i),r&&e.push(r)}}catch{}return e.join(" ").toLowerCase()}function CmS(t){return t.code!==yo.NotFound?!1:IQp(t).includes("conversation stream not available")}function TmS(t){return t instanceof Ka&&t.code===yo.Canceled}function EmS(t){if(t instanceof Ka&&CmS(t)||TmS(t))return!1;if(yyn(t))return!0;if(!(t instanceof Ka)||t.code!==yo.Aborted)return!1;const e=IQp(t);return e.includes("deleted")||e.includes("not found")||e.includes("not active")||e.includes("archived")||e.includes("killed")}function voe(t){let e="";for(let n=0;n<t.length;n++)e+=PQp[t[n]];return e}function AQp(t){const{viewerAuthId:e,participantsByUserId:n}=t;return i=>{if(i.authId===void 0||e===void 0||i.authId===e)return;const r=i.userId!==void 0?n?.get(i.userId):void 0,s=r?.displayName??r?.email;return s!==void 0&&s.length>0?s:void 0}}function xmS(t){return t===Om.ERROR||t===Om.ARCHIVED||t===Om.EXPIRED}function ImS(t,e){let n=!1;return{resolve:i=>{n||(n=!0,t(i))},reject:i=>{n||(n=!0,e(i))}}}var RQp,PQp,RLa,MQp,PLa,MLa,DQp,DLa,zgi,NQp,LQp,OQp,FQp,BQp,NLa,$jr=

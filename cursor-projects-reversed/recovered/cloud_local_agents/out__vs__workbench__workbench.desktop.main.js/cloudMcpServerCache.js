@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: cloudMcpServerCache.js
+// byteRange: [17528723, 17530073)
+// beautified: false
+// truncated: false
+j({"cloudMcpServerCache.js"(){"use strict";$p(),mKs(),$In(),zeo="glass.cloudMcpServers.",WRd="v1",t6f=`${sbt}${zeo}`,HRd=1440*60*1e3}});function jRd(e){const t=e.authId?.trim();if(!t)return;const n=bNi(e.repoUrl);if(n.length!==0)return RIn(`${qeo}${qRd}.${encodeURIComponent(n)}`,t)}function VRd(e){if(Array.isArray(e))return e.filter(t=>typeof t=="string")}function GRd(e){if(Array.isArray(e))return e.filter(t=>typeof t=="object"&&t!==null&&typeof t.name=="string")}function i6f(e){return typeof e=="string"?e:void 0}function zRd(e,t){const n=jRd(t);if(n===void 0)return;const i=e.get(n,-1);if(i)try{const r=JSON.parse(i);if(typeof r.fetchedAtMs!="number"||!Number.isFinite(r.fetchedAtMs))return;const s=VRd(r.skillNames),o=VRd(r.commandNames);return s===void 0||o===void 0?void 0:{fetchedAtMs:r.fetchedAtMs,gitRef:i6f(r.gitRef),skillNames:s,commandNames:o,skills:GRd(r.skills),commands:GRd(r.commands)}}catch{return}}function r6f(e,t,n){const i=jRd(t);if(i!==void 0)try{const r={fetchedAtMs:Date.now(),gitRef:n.gitRef,skillNames:n.skillNames,commandNames:n.commandNames,skills:n.skills?.map(s=>({name:s.name,description:s.description,displayName:s.displayName,icon:s.icon,color:s.color,sourcePath:s.sourcePath})),commands:n.commands?.map(s=>({name:s.name,description:s.description}))};e.store(i,JSON.stringify(r),-1,1)}catch{}}var qeo,qRd,s6f,o6f=

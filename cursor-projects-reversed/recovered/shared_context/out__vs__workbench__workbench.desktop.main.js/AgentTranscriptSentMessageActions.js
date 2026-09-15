@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: AgentTranscriptSentMessageActions.js
+// byteRange: [11805899, 11807310)
+// beautified: false
+// truncated: false
+j({"AgentTranscriptSentMessageActions.js"(){"use strict";U3g(),DN(),nys(),X_s(),tm(),Eme(),J5(),bNt(),kN(),h2l=20}});import{jsx as p2l}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as _Fg}from"./react-runtime/react/esm-compiler-runtime-production.js";function m2l(e){const t=_Fg(9);let n,i,r;t[0]!==e?({size:i,title:r,...n}=e,t[0]=e,t[1]=n,t[2]=i,t[3]=r):(n=t[1],i=t[2],r=t[3]);const s=i===void 0?24:i,o=r===void 0?"Cursor":r;let a;t[4]===Symbol.for("react.memo_cache_sentinel")?(a=p2l("path",{fill:"currentColor",d:"M48.0226 13.2547L25.6601 0.311786C24.942 -0.103929 24.0559 -0.103929 23.3378 0.311786L0.976347 13.2547C0.372691 13.6041 0 14.2503 0 14.9502V41.0498C0 41.7496 0.372691 42.3958 0.976347 42.7453L23.3389 55.6882C24.057 56.1039 24.943 56.1039 25.6611 55.6882L48.0237 42.7453C48.6273 42.3958 49 41.7496 49 41.0498V14.9502C49 14.2503 48.6273 13.6041 48.0237 13.2547H48.0226ZM46.6179 15.9964L25.0302 53.4802C24.8842 53.7328 24.4989 53.6296 24.4989 53.337V28.793C24.4989 28.3026 24.2375 27.849 23.8134 27.6027L2.61094 15.3312C2.35898 15.1849 2.46186 14.7987 2.75372 14.7987H45.9292C46.5423 14.7987 46.9255 15.4649 46.619 15.9974L46.6179 15.9964Z"}),t[4]=a):a=t[4];let c;return t[5]!==n||t[6]!==s||t[7]!==o?(c=p2l("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 49 56",width:s,height:s,role:"img","aria-label":o,...n,children:a}),t[5]=n,t[6]=s,t[7]=o,t[8]=c):c=t[8],c}var g2l=

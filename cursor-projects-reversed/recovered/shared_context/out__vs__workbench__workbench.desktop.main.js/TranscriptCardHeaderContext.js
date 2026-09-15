@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.desktop.main.js
+// kind: named-module
+// name: TranscriptCardHeaderContext.js
+// byteRange: [11141060, 11142473)
+// beautified: false
+// truncated: false
+j({"TranscriptCardHeaderContext.js"(){"use strict";rfs=mkg(!1)}});import{jsx as B0l}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as fkg}from"./react-runtime/react/esm-compiler-runtime-production.js";function vkg(e){return[U0l,gpt.header,e.inset===12?gpt.inset12:null,e.paddingBottom===!1?gpt.noPaddingBottom:null,e.variant!=="flat"?gpt.headerHoverable:null,e.withDivider&&e.variant==="default"?gpt.headerWithDivider:null,e.clickable?gpt.headerClickable:null,e.rootStyle]}function bkg(e){const t=fkg(16),{children:n,variant:i,inset:r,withDivider:s,paddingBottom:o,title:a,onClick:c,rootStyle:l}=e,u=i===void 0?"default":i,h=r===void 0?8:r,m=s===void 0?!1:s,g=o===void 0?!0:o;ppt("TranscriptCard.Header");let f;t[0]!==h||t[1]!==c||t[2]!==g||t[3]!==l||t[4]!==u||t[5]!==m?(f=Ln(vkg({clickable:c!==void 0,inset:h,paddingBottom:g,rootStyle:l,variant:u,withDivider:m})),t[0]=h,t[1]=c,t[2]=g,t[3]=l,t[4]=u,t[5]=m,t[6]=f):f=t[6];const v=f,_=g?void 0:"false";let S;return t[7]!==v.className||t[8]!==v.style||t[9]!==n||t[10]!==h||t[11]!==c||t[12]!==_||t[13]!==a||t[14]!==u?(S=B0l(rfs.Provider,{value:!0,children:B0l("div",{className:v.className,"data-component":"transcript-card-header","data-variant":u,"data-inset":h,"data-padding-bottom":_,style:v.style,title:a,onClick:c,children:n})}),t[7]=v.className,t[8]=v.style,t[9]=n,t[10]=h,t[11]=c,t[12]=_,t[13]=a,t[14]=u,t[15]=S):S=t[15],S}var U0l,gpt,_kg=

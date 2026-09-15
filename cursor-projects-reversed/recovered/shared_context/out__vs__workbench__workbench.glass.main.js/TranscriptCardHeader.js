@@ -1,0 +1,8 @@
+// Recovered Cursor Projects client unit. Not original TypeScript.
+// shippedPath: out/vs/workbench/workbench.glass.main.js
+// kind: named-module
+// name: TranscriptCardHeader.js
+// byteRange: [12487545, 12488946)
+// beautified: false
+// truncated: false
+O({"TranscriptCardHeader.js"(){"use strict";Ja(),a_t(),l_t(),Aoh={"ui--default-marker":"ui--default-marker",$$css:!0},Q4t={header:{k1xSpc:"ui-78zum5",kGNEyG:"ui-1cy8zhl",kLKAdn:"ui-13ly8rp",kpe85a:"ui-1yxiud8",kGO01o:"ui-1xlntvz",kE3dHu:"ui-yab65l",kWkggS:"ui-jbqb8w",k7Eaqz:"ui-euugli",kOIVth:"ui-pkkfsy",kB7OPa:"ui-9f619",kzqmXN:"ui-h8yej3",kMwMTN:"ui-1heor9g",kMv6JI:"ui-jb2p0i",k63SB2:"ui-1pd3egz",k9WMMc:"ui-dpxx8g",$$css:!0},noPaddingBottom:{kGO01o:"ui-18d9i69",$$css:!0},headerHoverable:{kWkggS:"ui-jbqb8w ui-1iuyybk",k1ekBW:"ui-15406qy",kIyJzY:"ui-g3p6pi",kAMwcw:"ui-6ekqhr",$$css:!0},headerWithDivider:{kt9PQ7:"ui-so031l",kfdmCh:"ui-1q0q8m5",kL6WhQ:"ui-8daab9",$$css:!0},headerClickable:{kkrTdU:"ui-1ypdohk",$$css:!0},inset12:{kpe85a:"ui-1jkygx",kE3dHu:"ui-1o7kk3e",$$css:!0}}}});import{jsx as Q9_}from"./react-runtime/react/esm-jsx-runtime-production.js";import{c as Z9_}from"./react-runtime/react/esm-compiler-runtime-production.js";function J9_(t){const e=Z9_(3),{children:n}=t;X4t("TranscriptCard.HeaderContent");let i;e[0]===Symbol.for("react.memo_cache_sentinel")?(i={className:"ui-78zum5 ui-dt5ytf ui-1cy8zhl ui-1iyjqo2 ui-s83m0k ui-dl72j9 ui-euugli ui-4jlmx6 ui-l56j7k ui-137clkk ui-dpxx8g"},e[0]=i):i=e[0];const r=i;let s;return e[1]!==n?(s=Q9_("div",{className:r.className,"data-component":"transcript-card-header-content",style:r.style,children:n}),e[1]=n,e[2]=s):s=e[2],s}var e8_=

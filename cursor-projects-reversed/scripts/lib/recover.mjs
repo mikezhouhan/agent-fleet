@@ -66,3 +66,16 @@ export async function recoverFromDmg({ dmgPath, outDir }) {
     await detachDmg(mount);
   }
 }
+
+/** Re-extract from an already copied work/payload tree (no DMG remount). */
+export async function recoverFromPayloadRoot({ payloadRoot, outDir, provenanceBase = null }) {
+  const classification = await classifyProjectsPayload(payloadRoot);
+  const recoveredRoot = recoveredDir(outDir);
+  await rm(recoveredRoot, { recursive: true, force: true });
+  await mkdir(recoveredRoot, { recursive: true });
+  const recoveredUnits = await recoverUnits({ payloadRoot, outDir });
+  const provenance = provenanceBase ?? { payloadRoot, note: "recovered from existing payload tree" };
+  const inventory = buildInventory({ provenance, classification, recoveredUnits });
+  await writeInventory(inventoryPath(outDir), inventory);
+  return { provenance, classification, recoveredUnits, inventory };
+}

@@ -134,6 +134,31 @@ export const MARKER_WINDOWS = Object.freeze([
     shippedPath: "out/vs/workbench/workbench.glass.main.js",
     marker: "promptUploadRef",
   },
+  {
+    category: "side_chats",
+    shippedPath: "out/vs/workbench/workbench.glass.main.js",
+    marker: "Side chat boundary.",
+  },
+  {
+    category: "side_chats",
+    shippedPath: "out/vs/workbench/workbench.glass.main.js",
+    marker: "Cannot create a side chat inside a side chat",
+  },
+  {
+    category: "cloud_local_agents",
+    shippedPath: "out/vs/workbench/workbench.glass.main.js",
+    marker: "Your environment snapshot has expired after inactivity.",
+  },
+  {
+    category: "cloud_local_agents",
+    shippedPath: "out/vs/workbench/workbench.glass.main.js",
+    marker: "ArchiveBackgroundComposer",
+  },
+  {
+    category: "cloud_local_agents",
+    shippedPath: "out/vs/workbench/workbench.glass.main.js",
+    marker: "new_cloud_vm",
+  },
 ]);
 
 /** Optional safety cap only. Recover does not pass this; tests may. */
@@ -159,16 +184,64 @@ export async function beautifyJs(code) {
   }
 }
 
+const FACTORY_PREFIXES = Object.freeze(['O({"', 'j({"']);
+
+/** Filename patterns that belong to Cursor Projects (not the whole workbench). */
+export const DISCOVERY_RE =
+  /project|subagent|coordinator|agentstore|agent-store|side-chat|sidechat|subscription|slack|worktree|sandbox|mcp|skill|cloudagent|localagent|backgroundcomposer|mailbox|kanban|transcript|secret|oauth|egress|snapshot|create-project|new-project|environment-setup|env-egress|cloudsubagent|composerlocalworktree/i;
+
+export function listFactoryNames(source) {
+  const names = new Set();
+  for (const match of source.matchAll(/[Oj]\(\{"([^"]+)"\(\)/g)) names.add(match[1]);
+  return [...names].sort();
+}
+
+export function isProjectsRelatedFactory(name) {
+  if (name.endsWith(".css")) return false;
+  return DISCOVERY_RE.test(name);
+}
+
+export function categorizeModule(name) {
+  const n = name.toLowerCase();
+  if (n.includes("side-chat") || n.includes("sidechat") || n.includes("side_chat")) return "side_chats";
+  if (n.includes("agent-store") || n.includes("agentstore") || n.includes("skillstore")) return "agent_store";
+  if (n.includes("subscription") || n.includes("slack") || n.includes("mailbox")) return "subscriptions";
+  if (/(transcript|secret|kanban|project-document|project-task|project-notes|projectdatabase|project-database)/.test(n)) {
+    return "shared_context";
+  }
+  if (
+    /(worktree|sandbox|cloudagent|localagent|backgroundcomposer|cloudsubagent|environment-setup|env-egress|mcp|skill|plugin|snapshot)/.test(
+      n,
+    )
+  ) {
+    return "cloud_local_agents";
+  }
+  if (/(project|coordinator|subagent|create-project|new-project)/.test(n)) return "coordinator";
+  return "cloud_local_agents";
+}
+
+export function discoverProjectsModules(source) {
+  const byName = new Map();
+  for (const spec of NAMED_MODULES) byName.set(spec.module, spec);
+  for (const module of listFactoryNames(source).filter(isProjectsRelatedFactory)) {
+    if (!byName.has(module)) byName.set(module, { category: categorizeModule(module), module });
+  }
+  return [...byName.values()].sort((a, b) => a.module.localeCompare(b.module) || a.category.localeCompare(b.category));
+}
+
 export function extractNamedModuleSlice(source, moduleName, maxBytes = Number.POSITIVE_INFINITY) {
-  const needle = `O({"${moduleName}"()`;
-  const start = source.indexOf(needle);
-  if (start < 0) return null;
-  const searchFrom = start + needle.length;
-  const nextFactory = source.indexOf('O({"', searchFrom);
-  const naturalEnd = nextFactory > searchFrom ? nextFactory : source.length;
-  const truncated = Number.isFinite(maxBytes) && naturalEnd - start > maxBytes;
-  const end = truncated ? start + maxBytes : naturalEnd;
-  return { start, end, text: source.slice(start, end), truncated };
+  for (const prefix of FACTORY_PREFIXES) {
+    const needle = `${prefix}${moduleName}"()`;
+    const start = source.indexOf(needle);
+    if (start < 0) continue;
+    const searchFrom = start + needle.length;
+    const nextFactory = source.indexOf(prefix, searchFrom);
+    const naturalEnd = nextFactory > searchFrom ? nextFactory : source.length;
+    const truncated = Number.isFinite(maxBytes) && naturalEnd - start > maxBytes;
+    const end = truncated ? start + maxBytes : naturalEnd;
+    return { start, end, text: source.slice(start, end), truncated };
+  }
+  return null;
 }
 
 export function extractMarkerWindow(source, marker, radius = WINDOW_RADIUS) {
@@ -220,6 +293,7 @@ export async function recoverUnits({ payloadRoot, outDir }) {
 
   const units = [];
 
+  const seenIds = new Set();
   for (const bundle of BUNDLE_SOURCES) {
     let source;
     try {
@@ -227,10 +301,11 @@ export async function recoverUnits({ payloadRoot, outDir }) {
     } catch {
       continue;
     }
-    for (const spec of NAMED_MODULES) {
+    for (const spec of discoverProjectsModules(source)) {
       const slice = extractNamedModuleSlice(source, spec.module);
       if (!slice) continue;
-      const pretty = await beautifyJs(slice.text);
+      const pretty =
+        slice.text.length > 80_000 ? { code: slice.text, beautified: false } : await beautifyJs(slice.text);
       const body = headerComment({
         shippedPath: bundle,
         kind: "named-module",
@@ -240,10 +315,15 @@ export async function recoverUnits({ payloadRoot, outDir }) {
         beautified: pretty.beautified,
         truncated: slice.truncated,
       }) + pretty.code;
-      const fileName = spec.module.endsWith(".js") ? spec.module : `${spec.module}.js`;
+      const fileName = spec.module.endsWith(".js") || spec.module.endsWith(".ts") || spec.module.endsWith(".mjs")
+        ? spec.module
+        : `${spec.module}.js`;
+      const id = `${spec.category}:${bundle}:${spec.module}`;
+      if (seenIds.has(id)) continue;
+      seenIds.add(id);
       const written = await writeRecoveredFile(outDir, recoveredRelative(spec.category, bundle, fileName), body);
       units.push({
-        id: `${spec.category}:${bundle}:${spec.module}`,
+        id,
         category: spec.category,
         shippedPath: bundle,
         shippedSymbols: [spec.module],
