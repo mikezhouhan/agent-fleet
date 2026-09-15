@@ -1,5 +1,7 @@
 # 面向可替换 Coding Agent 的 Grok Bot：六项目源码分析
 
+> **新增 Multica：**最新选择结论见[十一项目综合报告](extensions/eleven-project-comparison.zh-CN.md)；本文保留此前固定快照。
+
 > **新增 Memoh：**最新选择结论见[十项目综合报告](extensions/ten-project-comparison.zh-CN.md)；本文保留此前固定快照。
 
 > **新增 Agent Swarm：**最新横向比较见[九项目综合报告](extensions/nine-project-comparison.zh-CN.md)；本文保留此前固定快照的分析。

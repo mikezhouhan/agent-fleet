@@ -1,5 +1,7 @@
 # 九项目比较：持续会话与持久任务团队的两种底座
 
+> **新增 Multica：**最新选择结论见[十一项目综合报告](eleven-project-comparison.zh-CN.md)；本文保留此前固定快照。
+
 > **新增 Memoh：**最新选择结论见[十项目综合报告](ten-project-comparison.zh-CN.md)；本文保留此前固定快照。
 
 ## 1. 新增 Agent Swarm 后的结论

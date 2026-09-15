@@ -1,5 +1,5 @@
 {
-  "description": "Fixed snapshots used for static analysis: nine separately cloned source repositories and one bundled Cursor client recovery evidence set. Full upstream repositories and installer payloads are not included.",
+  "description": "Fixed snapshots used for static analysis: ten separately cloned source repositories and one bundled Cursor client recovery evidence set. Full upstream repositories and installer payloads are not included.",
   "repositories": [
     {
       "name": "kandev",
@@ -52,6 +52,12 @@
           "commit": "519a597e0e740906792f2bb6bb8e1c454e4ac727"
         }
       ]
+    },
+    {
+      "name": "multica",
+      "url": "https://github.com/multica-ai/multica",
+      "commit": "cf52ba33ccf97f756de9e6b9d364fc0a57dc5260",
+      "git_describe": "v0.4.43-31-gcf52ba33c"
     }
   ],
   "bundled_evidence": [

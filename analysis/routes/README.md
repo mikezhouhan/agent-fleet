@@ -1,4 +1,4 @@
-# 多 Coding Agent 伙伴产品的八条演进路线
+# 多 Coding Agent 伙伴产品的九条演进路线
 
 原五份报告分别从不同底座出发，分析如何演进为长期伙伴、多原生 coding agent、可介入协作和可恢复执行的产品。各报告独立包含目标、源码现状、架构取舍、阶段与退出条件、数据迁移、风险、成本结构、验证与停止条件，可以单独阅读。
 
@@ -30,7 +30,13 @@
 
 [Memoh 完整分析与演进路线](../extensions/memoh-analysis.zh-CN.md)从常驻伙伴、独立电脑与 direct/ACP 主会话出发：冻结运行基线 → 异构 Worker 委派 → 显式交接 → ACP 与恢复验证 → 知识权限与调度。当前有消息的会话禁止更换 agent，托管子 agent 仍为 model，外部审批 waiter 丢失不能原地恢复；这些边界决定改造重点。
 
-最新选择结论见[十项目综合报告](../extensions/ten-project-comparison.zh-CN.md)。Memoh 新增常驻伙伴候选，不改变前七条路线各自固定版本的事实。
+加入 Memoh 时的选择结论见[十项目综合报告](../extensions/ten-project-comparison.zh-CN.md)。Memoh 新增常驻伙伴候选，不改变前七条路线各自固定版本的事实。
+
+## 新增第九条路线：Multica
+
+[Multica 完整分析与演进路线](../extensions/multica-analysis.zh-CN.md)从 Issue/Squad 与执行 Daemon 出发：验证异构小队 → 结构化委派 → 长期伙伴与显式交接 → 原生权限桥 → 恢复、隔离与交付。已有多协议接入和持久计划去重，但原生工具权限偏自治，普通 Chat 不能等同于无损跨引擎切换；直接 fork 的复用范围还需考虑其附加条件许可。
+
+最新选择结论见[十一项目综合报告](../extensions/eleven-project-comparison.zh-CN.md)。前八条路线保留对应版本的事实与完整方案。
 
 ## 五条路线的不同起点
 
