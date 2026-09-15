@@ -1,5 +1,7 @@
 # 八项目比较：可替换 Coding Agent 的伙伴与项目编排产品
 
+> **新增 Memoh：**最新选择结论见[十项目综合报告](ten-project-comparison.zh-CN.md)；本文保留此前固定快照。
+
 > **新增 Agent Swarm：**最新横向比较见[九项目综合报告](nine-project-comparison.zh-CN.md)；本文保留此前固定快照的分析。
 
 ## 1. 更新后的选择结论

@@ -1,4 +1,4 @@
-# 多 Coding Agent 伙伴产品的七条演进路线
+# 多 Coding Agent 伙伴产品的八条演进路线
 
 原五份报告分别从不同底座出发，分析如何演进为长期伙伴、多原生 coding agent、可介入协作和可恢复执行的产品。各报告独立包含目标、源码现状、架构取舍、阶段与退出条件、数据迁移、风险、成本结构、验证与停止条件，可以单独阅读。
 
@@ -24,7 +24,13 @@
 
 [Agent Swarm 完整分析与演进路线](../extensions/agent-swarm-analysis.zh-CN.md)从持久任务团队出发：验证多 harness 主管 → 伙伴与交互 Session → ACP 会话化 → 执行权与验收 → 知识和多端。其原生 resume 主动弃用、ACP 自动权限与工作流审批分层，是选择此底座前需要理解的前提。
 
-最新选择结论见[九项目综合报告](../extensions/nine-project-comparison.zh-CN.md)。原五份路线和第六条 Omnigent 路线保留各自基准，新增路线不等于替代已有结论。
+加入 Agent Swarm 时的选择结论见[九项目综合报告](../extensions/nine-project-comparison.zh-CN.md)。原五份路线和第六条 Omnigent 路线保留各自基准，新增路线不等于替代已有结论。
+
+## 新增第八条路线：Memoh
+
+[Memoh 完整分析与演进路线](../extensions/memoh-analysis.zh-CN.md)从常驻伙伴、独立电脑与 direct/ACP 主会话出发：冻结运行基线 → 异构 Worker 委派 → 显式交接 → ACP 与恢复验证 → 知识权限与调度。当前有消息的会话禁止更换 agent，托管子 agent 仍为 model，外部审批 waiter 丢失不能原地恢复；这些边界决定改造重点。
+
+最新选择结论见[十项目综合报告](../extensions/ten-project-comparison.zh-CN.md)。Memoh 新增常驻伙伴候选，不改变前七条路线各自固定版本的事实。
 
 ## 五条路线的不同起点
 

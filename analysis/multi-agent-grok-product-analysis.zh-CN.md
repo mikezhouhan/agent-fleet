@@ -1,5 +1,7 @@
 # 面向可替换 Coding Agent 的 Grok Bot：六项目源码分析
 
+> **新增 Memoh：**最新选择结论见[十项目综合报告](extensions/ten-project-comparison.zh-CN.md)；本文保留此前固定快照。
+
 > **新增 Agent Swarm：**最新横向比较见[九项目综合报告](extensions/nine-project-comparison.zh-CN.md)；本文保留此前固定快照的分析。
 
 分析日期：2026-09-14。范围：当前已克隆的六个仓库，产品模型、运行时接入、编排、上下文、恢复和复用价值。本报告是源码与文档分析，不是实现方案或运行性能评测。
