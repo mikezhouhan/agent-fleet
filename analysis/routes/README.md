@@ -14,6 +14,12 @@
 | 4. 独立核心 | [独立新建核心](04-independent-core-evolution.zh-CN.md) | 单引擎完整闭环 → 第二引擎验证抽象 → 混合团队 → 交接恢复 → 长期伙伴与远端 |
 | 5. DSH | [基于 DeepSeek Harness 演进](05-deepseek-harness-evolution.zh-CN.md) | 明确框架角色 → 产品身份 → 完整外部 session → 异构 Worker → 生命周期与产品 UI |
 
+## 新增第六条路线：Omnigent
+
+[Omnigent 完整分析与演进路线](../extensions/omnigent-analysis.zh-CN.md)补充现成 meta-harness 底座的选择：限制接入范围 → 验证能力 → 持久交接与执行权 → 伙伴/项目模型 → 常驻事件与远端。报告明确 generic ACP 的 cold replay、顶层空闲会话切换限制、两次数据库提交与异步资源清理边界。
+
+[八项目综合报告](../extensions/eight-project-comparison.zh-CN.md)比较新增材料对原五条路线的影响。[Cursor Projects](../extensions/cursor-projects-analysis.zh-CN.md)作为产品模式与客户端证据参考，不作为可直接 fork 的完整底座路线。以下表格保留原五条路线的基准分析。
+
 ## 五条路线的不同起点
 
 | 维度 | Cindy | Rakazo | AO | 独立核心 | DSH |

@@ -4,10 +4,12 @@
 
 ## 阅读入口
 
-- [下载六个源码仓库并复现分析版本](SOURCE_DOWNLOAD.zh-CN.md)
-
+- [八项目综合比较与更新后的路线建议](analysis/extensions/eight-project-comparison.zh-CN.md)
+- [Cursor Projects：产品机制与恢复证据](analysis/extensions/cursor-projects-analysis.zh-CN.md)
+- [Omnigent：多 Harness 底座与第六条演进路线](analysis/extensions/omnigent-analysis.zh-CN.md)
+- [下载七个源码仓库与获取 Cursor 恢复材料](SOURCE_DOWNLOAD.zh-CN.md)
 - [六个项目的区别、优缺点与架构分析](analysis/multi-agent-grok-product-analysis.zh-CN.md)
-- [五条演进路线总览与对比](analysis/routes/README.md)
+- [五条原始路线与新增 Omnigent 路线](analysis/routes/README.md)
 - [路线一：基于 Cindy 演进](analysis/routes/01-cindy-evolution.zh-CN.md)
 - [路线二：基于 Rakazo 演进](analysis/routes/02-rakazo-evolution.zh-CN.md)
 - [路线三：基于 Agent Orchestrator 演进](analysis/routes/03-ao-evolution.zh-CN.md)
@@ -16,8 +18,8 @@
 
 ## 研究范围与方法
 
-分析对象为 Kandev、Cindy、Grok Bot 0.18 重建版、Rakazo、Agent Orchestrator 与 DeepSeek Harness。报告基于固定源码快照，源码引用链接锁定到具体提交；完整版本记录见 [sources.json](sources.json)。
+比较对象为 Kandev、Cindy、Grok Bot 0.18 重建版、Rakazo、Agent Orchestrator、DeepSeek Harness、Cursor Projects 客户端恢复材料与 Omnigent。原六项目报告保留其固定基准；2026-09-15 增补报告纳入两个新对象。报告基于固定源码快照，源码引用链接锁定到具体提交；完整版本记录见 [sources.json](sources.json)。
 
 当前产出为静态源码分析与演进方案，尚未实现新产品，也未通过实际模型调用验证各项目的性能、稳定性或兼容性。报告区分已有能力、架构推断和拟议改造，不代表项目最新版本的持续评测。
 
-本仓库仅包含研究报告；上游源码、素材与许可证请访问各原始仓库。Grok Bot 研究对象为非官方重建版本，其结论受可见源码范围限制。
+本仓库包含研究报告和 `cursor-projects-reversed/` 客户端恢复证据；七个独立上游仓库需另行下载，其源码、素材与许可证请访问各原始仓库。Grok Bot 研究对象为非官方重建版本，其结论受可见源码范围限制。

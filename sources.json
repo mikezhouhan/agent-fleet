@@ -1,5 +1,5 @@
 {
-  "description": "Fixed source snapshots used for static analysis; source repositories are not included.",
+  "description": "Fixed snapshots used for static analysis: seven separately cloned source repositories and one bundled Cursor client recovery evidence set. Full upstream repositories and installer payloads are not included.",
   "repositories": [
     {
       "name": "kandev",
@@ -30,6 +30,24 @@
       "name": "deepseek-harness",
       "url": "https://github.com/deepseek-ai/deepseek-harness",
       "commit": "c291e7961a515f6d7af9304e7fd1d257929aef26"
+    },
+    {
+      "name": "omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "commit": "2a05baf4399dac074f5d29fb618bd0c7f09ec8f4"
+    }
+  ],
+  "bundled_evidence": [
+    {
+      "name": "cursor-projects-reversed",
+      "path": "cursor-projects-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "commit": "06c9086284257611dd95d3367ee74e0cfafb05eb",
+      "kind": "recovered client-side distribution slices, not a complete source repository",
+      "product": "Cursor",
+      "version": "3.20.17",
+      "product_commit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc0",
+      "dmg_sha256": "a3cf86050ea4c322b8a63fa840f35a54318c46da9b33281c2b223a17e473c738"
     }
   ]
 }

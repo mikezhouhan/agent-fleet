@@ -2,6 +2,8 @@
 
 分析日期：2026-09-14。范围：当前已克隆的六个仓库，产品模型、运行时接入、编排、上下文、恢复和复用价值。本报告是源码与文档分析，不是实现方案或运行性能评测。
 
+> **2026-09-15 增补：**比较范围已扩展到八个对象，见[八项目综合报告](extensions/eight-project-comparison.zh-CN.md)、[Cursor Projects 专题](extensions/cursor-projects-analysis.zh-CN.md)与[Omnigent 专题](extensions/omnigent-analysis.zh-CN.md)。本文保留原六项目固定快照分析；Omnigent 已加入实施底座候选，Cursor Projects 补充项目协作参考。新的横向选择结论以增补报告为准。
+
 ## 1. 判断先行
 
 你的目标可以定义为：**用户拥有长期存在的 AI 伙伴，伙伴能够使用不同的原生 coding agent 工作，并把多个 agent 的工作组织成一个可持续、可介入、可验证的过程。**
