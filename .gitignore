@@ -10,3 +10,5 @@
 *.pem
 
 /omnigent/
+
+/agent-swarm/

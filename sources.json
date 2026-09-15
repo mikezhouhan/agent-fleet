@@ -1,5 +1,5 @@
 {
-  "description": "Fixed snapshots used for static analysis: seven separately cloned source repositories and one bundled Cursor client recovery evidence set. Full upstream repositories and installer payloads are not included.",
+  "description": "Fixed snapshots used for static analysis: eight separately cloned source repositories and one bundled Cursor client recovery evidence set. Full upstream repositories and installer payloads are not included.",
   "repositories": [
     {
       "name": "kandev",
@@ -35,6 +35,11 @@
       "name": "omnigent",
       "url": "https://github.com/omnigent-ai/omnigent",
       "commit": "2a05baf4399dac074f5d29fb618bd0c7f09ec8f4"
+    },
+    {
+      "name": "agent-swarm",
+      "url": "https://github.com/desplega-ai/agent-swarm",
+      "commit": "1821593fa588cea3a52f10ef5f6c4be72ce6761a"
     }
   ],
   "bundled_evidence": [

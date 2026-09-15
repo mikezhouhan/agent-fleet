@@ -1,6 +1,6 @@
-# 下载七个源码仓库与获取 Cursor Projects 恢复材料
+# 下载八个源码仓库与获取 Cursor Projects 恢复材料
 
-本仓库保存分析报告和 Cursor Projects 客户端恢复证据。七个独立上游项目需要分别克隆，版本清单见 [sources.json](sources.json)。以下命令在 macOS、Linux 或 Windows Git Bash 中执行，需要先安装 Git。
+本仓库保存分析报告和 Cursor Projects 客户端恢复证据。八个独立上游项目需要分别克隆，版本清单见 [sources.json](sources.json)。以下命令在 macOS、Linux 或 Windows Git Bash 中执行，需要先安装 Git。
 
 ## 1. 进入研究仓库
 
@@ -13,7 +13,7 @@ cd agent-fleet
 
 如果已经下载，直接进入现有的 `agent-fleet` 根目录。后续命令均从该目录执行。
 
-## 2. 下载七个源码仓库
+## 2. 下载八个源码仓库
 
 HTTPS 和 SSH 二选一，不要重复执行。若同名目录已经存在，先检查是否为已有克隆；不要删除已有工作来重跑命令。
 
@@ -29,6 +29,7 @@ git clone https://github.com/elie222/rakazo.git
 git clone https://github.com/Untrivial-ai/agent-orchestrator.git
 git clone https://github.com/deepseek-ai/deepseek-harness.git
 git clone https://github.com/omnigent-ai/omnigent.git
+git clone https://github.com/desplega-ai/agent-swarm.git
 ```
 
 ### SSH
@@ -43,6 +44,7 @@ git clone git@github.com:elie222/rakazo.git
 git clone git@github.com:Untrivial-ai/agent-orchestrator.git
 git clone git@github.com:deepseek-ai/deepseek-harness.git
 git clone git@github.com:omnigent-ai/omnigent.git
+git clone git@github.com:desplega-ai/agent-swarm.git
 ```
 
 SSH 连接失败时可执行 `ssh -T git@github.com` 检查认证；遇到 `Permission denied (publickey)`，可先改用上面的 HTTPS 地址下载。
@@ -61,10 +63,11 @@ agent-fleet/
 ├── agent-orchestrator/
 ├── deepseek-harness/
 ├── omnigent/
+├── agent-swarm/
 └── cursor-projects-reversed/
 ```
 
-七个独立上游源码目录都已被研究仓库的 `.gitignore` 忽略，每个目录保留自己的 Git 历史和远端。`cursor-projects-reversed/` 则由本研究仓跟踪，随研究仓一起下载。
+八个独立上游源码目录都已被研究仓库的 `.gitignore` 忽略，每个目录保留自己的 Git 历史和远端。`cursor-projects-reversed/` 则由本研究仓跟踪，随研究仓一起下载。
 
 ## 3. 复现报告使用的源码版本
 
@@ -78,6 +81,7 @@ git -C rakazo checkout --detach b286fc4a5d0f608005000ef35bee4c473c31a165
 git -C agent-orchestrator checkout --detach ab968d5e761469eb32c1b4dc780cde721a9998de
 git -C deepseek-harness checkout --detach c291e7961a515f6d7af9304e7fd1d257929aef26
 git -C omnigent checkout --detach 2a05baf4399dac074f5d29fb618bd0c7f09ec8f4
+git -C agent-swarm checkout --detach 1821593fa588cea3a52f10ef5f6c4be72ce6761a
 ```
 
 这些命令适用于新克隆、没有本地修改的仓库。对已有工作目录，先用 `git -C <目录名> status` 检查并保存自己的修改。`--detach` 表示停留在指定提交，适合只读研究；若要在这个版本上开发，可以在对应源码目录执行 `git switch -c my-experiment` 创建分支。
@@ -108,6 +112,6 @@ git worktree add --detach ../agent-fleet-cursor-snapshot 06c9086284257611dd95d33
 
 ## 5. 后续阅读与运行
 
-优先阅读 [八项目综合比较](analysis/extensions/eight-project-comparison.zh-CN.md) 和 [Omnigent 专题](analysis/extensions/omnigent-analysis.zh-CN.md)，也可从 [分析总览](analysis/multi-agent-grok-product-analysis.zh-CN.md) 或 [五条演进路线](analysis/routes/README.md) 开始阅读。报告中的源码链接也直接指向 GitHub 上的固定提交，无需下载即可查看。
+优先阅读 [九项目综合比较](analysis/extensions/nine-project-comparison.zh-CN.md) 和 [Agent Swarm 专题](analysis/extensions/agent-swarm-analysis.zh-CN.md)，也可从 [分析总览](analysis/multi-agent-grok-product-analysis.zh-CN.md) 或 [七条演进路线](analysis/routes/README.md) 开始阅读。报告中的源码链接也直接指向 GitHub 上的固定提交，无需下载即可查看。
 
 克隆只完成源码下载；依赖安装、子模块或大文件资源、环境变量及启动步骤请按各项目对应版本的 README 和开发文档执行。Grok Bot 仓库是非官方重建版本，不能据此假定包含原产品的完整源码与运行环境。

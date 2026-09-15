@@ -1,5 +1,7 @@
 # 八项目比较：可替换 Coding Agent 的伙伴与项目编排产品
 
+> **新增 Agent Swarm：**最新横向比较见[九项目综合报告](nine-project-comparison.zh-CN.md)；本文保留此前固定快照的分析。
+
 ## 1. 更新后的选择结论
 
 加入 Cursor Projects 恢复材料与 Omnigent 后，最重要的变化是：**Omnigent 成为可以认真评估的第六条实施路线；Cursor Projects 成为项目协作层的重要产品参考。**它们分别补充了“可运行的多 harness 产品控制面”和“项目如何持续组织工作”两方面证据。

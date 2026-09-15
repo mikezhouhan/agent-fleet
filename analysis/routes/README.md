@@ -1,6 +1,6 @@
-# 多 Coding Agent 伙伴产品的五条演进路线
+# 多 Coding Agent 伙伴产品的七条演进路线
 
-五份报告分别从不同底座出发，分析如何演进为长期伙伴、多原生 coding agent、可介入协作和可恢复执行的产品。各报告独立包含目标、源码现状、架构取舍、阶段与退出条件、数据迁移、风险、成本结构、验证与停止条件，可以单独阅读。
+原五份报告分别从不同底座出发，分析如何演进为长期伙伴、多原生 coding agent、可介入协作和可恢复执行的产品。各报告独立包含目标、源码现状、架构取舍、阶段与退出条件、数据迁移、风险、成本结构、验证与停止条件，可以单独阅读。
 
 本轮是路线分析，未修改六个项目源码，未执行产品构建或真实模型验证。没有把规划、接口声明或现有测试源码当作已通过实机验证的能力；也没有用未经验证的固定工期包装估算。
 
@@ -19,6 +19,12 @@
 [Omnigent 完整分析与演进路线](../extensions/omnigent-analysis.zh-CN.md)补充现成 meta-harness 底座的选择：限制接入范围 → 验证能力 → 持久交接与执行权 → 伙伴/项目模型 → 常驻事件与远端。报告明确 generic ACP 的 cold replay、顶层空闲会话切换限制、两次数据库提交与异步资源清理边界。
 
 [八项目综合报告](../extensions/eight-project-comparison.zh-CN.md)比较新增材料对原五条路线的影响。[Cursor Projects](../extensions/cursor-projects-analysis.zh-CN.md)作为产品模式与客户端证据参考，不作为可直接 fork 的完整底座路线。以下表格保留原五条路线的基准分析。
+
+## 新增第七条路线：Agent Swarm
+
+[Agent Swarm 完整分析与演进路线](../extensions/agent-swarm-analysis.zh-CN.md)从持久任务团队出发：验证多 harness 主管 → 伙伴与交互 Session → ACP 会话化 → 执行权与验收 → 知识和多端。其原生 resume 主动弃用、ACP 自动权限与工作流审批分层，是选择此底座前需要理解的前提。
+
+最新选择结论见[九项目综合报告](../extensions/nine-project-comparison.zh-CN.md)。原五份路线和第六条 Omnigent 路线保留各自基准，新增路线不等于替代已有结论。
 
 ## 五条路线的不同起点
 
