@@ -93,6 +93,42 @@ resume 时若目标 composer 的 `subagentInfo.parentComposerId` 与请求的 `p
 
 对新产品的可执行结论：**成员状态字段不应只有 running/done，还要能表达"我现在不知道"以及"这个判断来自哪里"。**
 
+## 4.1 把项目外的会话移入项目：adopt 路径
+
+入口是 `reparentAgentIntoProject(agentId, targetId, signal)`。它先做四项校验，全部以抛错结束，没有静默降级：[^repo]
+
+| 校验 | 错误信息 |
+|---|---|
+| 目标即自身 | `Cannot reparent an agent under itself` |
+| 被移动者本身是项目 | `Project agents cannot be reparented as threads` |
+| 被移动者已有父级 | `Only top-level agents can be dragged into a Project` |
+| 目标不是项目，或目标自己是子 agent | `Target must be a Project agent` / `Target Project must be a top-level agent` |
+
+**只有顶层会话能被移入，且只能移入顶层项目。**这等于禁止把已经属于某个父级的会话改挂到项目下，也禁止构造项目套项目。
+
+随后按目标 ID 是否为云 ID 分成两条完全不同的写入路径：
+
+| | 云项目 | 本地项目 |
+|---|---|---|
+| 服务端调用 | `setWorkerManager({workerBcId, managerBcId, spawnKind: ADOPTED})` | `reparentBackgroundComposer({bcId, parentAgentId, parentAgentType, subagentType})` |
+| 建立的关系 | manager → worker（项目成员） | parent → child subagent |
+| 乐观状态 | `recordAdd` 先加，失败 `settleAdd(..., "failed", "adopt")` 后抛错，成功 `settleAdd(..., "succeeded", "adopt")` 并立即以 `adopt` 为原因触发刷新 | 无乐观阶段 |
+| 本地盖章 | `_stampListedCloudAgentManager`：写 `managerAgentId` 与 `subagentParentId`，`isProject` 置 false | `_stampListedCloudAgentAdoptedParent`：写 `subagentParentId`、`subagentTypeName`，`isProject` 置 false |
+
+云路径的乐观加成员是有意义的：`recordAdd` 同时把该项目条目的 `suspended` 清掉、`nextRetryAtMs` 归零，等于把可能正在退避的成员刷新窗口强行打开；服务端确认后才用真实快照替换。[^membership]
+
+**最值得注意的是被收养会话缺少什么。**本地盖章写入的父级引用里，`parentToolCallId` 与 `parentSpawnId` 都是空字符串，`parentSpawnKind` 为 `ADOPTED`。也就是说：正常委派产生的子 agent 有对应的父级工具调用气泡，可以用 `toolCallId` 反查（见 3.1）；**被收养进来的会话没有这个锚点**，父会话里不存在与它对应的 TASK_V2 气泡。
+
+于是 coordinator 侧必须换一条识别路径。托盘拓扑把服务端权威 worker 列表作为 `knownChildAgentIdSet`，凡是落在这个集合里的成员，`headerDescribesWorkerNotCall` 为真，活跃判定改走专门分支：优先采信该成员自己的 header 状态，`in_progress` 即视为活跃，不再去找父级的任务气泡状态。[^topology]
+
+主管的工具契约与此一致：`coordinator_tools_pb.js` 的字段是 `worker_bc_id`、`worker_id`、`workers`、`agent_ids`，配合 `delivery`/`delivered_as`、`turn_in_flight`、`last_terminal_turn_status`、`max_turns`、`transcript`。主管是按 **worker 身份**枚举与派发的，不是按它自己发起的工具调用。这解释了为什么收养一个没有 toolCallId 的会话在主管侧仍然可用。[^tools]
+
+还有一层容易看漏的区分：**这条路径不改客户端的本地项目归属映射。**`agentProjectService` 维护的是 `composerId → 本地 project row` 的存储映射（`glass.localAgentProjectMembership.v1` 等），用于项目列表与分组；`reparentAgentIntoProject` 全程没有调用它的 `setMembership`。它写的是服务端的 manager/worker 关系与内存 header。`_syncAgentHeaders` 里的 `ensureCloudAssignment` 只在某个 agent **尚无** membership 时才补建项目并赋值，因此被收养的会话保留其原有的本地归属。[^project][^repo]
+
+反向路径是 `unparentProjectWorker`：`recordRemove` 先行，调 `clearWorkerManager({workerBcId})`，失败 `settleRemove(..., "failed")` 后抛错。成功后 `_clearListedCloudAgentManager` 清掉 `managerAgentId`，并把 `subagentParentId` **回退**到该会话原本的 `cloudSubagentParent.parentAgentId` 或 `sideChatInfo.parentBcId`，都没有才置空。移出项目不等于变成孤儿，原有血缘会恢复。[^repo]
+
+三处不可见需要说明：拖拽的 UI 调用方不在恢复集内（`reparentAgentIntoProject` 只出现在这一个模块），`subagentType` 常量的字面值落在切片之外，服务端 `setWorkerManager`/`reparentBackgroundComposer` 的实际事务与并发处理也不可见。因此可以确认客户端的校验、写入顺序与回滚，不能断言"收养在服务端是原子的"。
+
 ## 5. Side chat：继承上下文，但用提示词切断指令继承
 
 `side_chats` 是本轮新增类别，机制清晰且值得直接借鉴。
@@ -190,6 +226,7 @@ resume 时若目标 composer 的 `subagentInfo.parentComposerId` 与请求的 `p
 8. 子上下文继承历史但切断指令继承，同时在工具层做真实限制而不只靠提示词。
 9. 引擎能力矩阵逐项声明，不支持的组合显式报错。
 10. 产物有归属、作用域、不可用原因与路径逃逸校验。
+11. 已有会话移入团队时，先校验层级合法性再写入，并区分"服务端成员关系"与"客户端分组归属"两套状态；移出时把父级引用回退到原有血缘而不是置空。
 
 必须自建、恢复集给不了答案的：
 
@@ -211,8 +248,9 @@ resume 时若目标 composer 的 `subagentInfo.parentComposerId` 与请求的 `p
 | side chat 边界 | 用户在边界后要求修改文件，与工具层限制是否一致 |
 | agent store | 两个成员并发写同一 store 路径的结果 |
 | 订阅补投 | 客户端离线期间的事件在重连后是否补齐且不重复 |
+| 会话收养 | 移入项目时服务端是否原子生效；乐观成员在请求失败后是否完全回滚；主管能否立即向被收养成员派活 |
 
-本轮完成：核对 1047 个恢复单元哈希、按类别精读 coordinator/agent_store/side_chats/cloud_local_agents/shared_context/subscriptions 的关键模块、复核权限与审批的完整 schema、运行恢复测试（3/5 通过，2 个因缺原始 DMG 失败）。没有启动 Cursor、没有调用其云服务、没有验证任何服务端行为。
+本轮完成：核对 1047 个恢复单元哈希、按类别精读 coordinator/agent_store/side_chats/cloud_local_agents/shared_context/subscriptions 的关键模块、追踪会话移入与移出项目的完整客户端路径、复核权限与审批的完整 schema、运行恢复测试（3/5 通过，2 个因缺原始 DMG 失败）。没有启动 Cursor、没有调用其云服务、没有验证任何服务端行为。
 
 ## 13. 固定证据
 
@@ -232,7 +270,13 @@ resume 时若目标 composer 的 `subagentInfo.parentComposerId` 与请求的 `p
 
 [^topology]: 托盘拓扑与状态分级：[subagent-tray.topology.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/coordinator/out__vs__workbench__workbench.glass.main.js/subagent-tray.topology.js)。
 
-[^membership]: 成员协调：[projectWorkerMembership.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectWorkerMembership.js)。
+[^membership]: 成员协调、乐观增删与快照分级：[projectWorkerMembership.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/coordinator/out__vs__workbench__workbench.glass.main.js/projectWorkerMembership.js)。
+
+[^repo]: 会话移入/移出项目：[cloudAgentRepositoryService.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudAgentRepositoryService.js) 中的 `reparentAgentIntoProject`、`_stampListedCloudAgentManager`、`_stampListedCloudAgentAdoptedParent`、`unparentProjectWorker`、`_clearListedCloudAgentManager`。
+
+[^project]: 本地项目归属存储：[agentProjectService.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/coordinator/out__vs__workbench__workbench.glass.main.js/agentProjectService.js)。
+
+[^tools]: 主管工具字段：[coordinator_tools_pb.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/coordinator/out__vs__workbench__workbench.glass.main.js/coordinator_tools_pb.js)。
 
 [^cloudrunner]: 云子 agent：[cloudSubagentRunner.js](https://github.com/mikezhouhan/agent-fleet/blob/bde2c651eb5cfbedb95b81cd18de8267885929d5/cursor-projects-reversed/recovered/cloud_local_agents/out__vs__workbench__workbench.glass.main.js/cloudSubagentRunner.js)，明确拒绝 fork 与 continuation。
 
