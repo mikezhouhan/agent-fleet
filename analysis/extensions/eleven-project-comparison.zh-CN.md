@@ -1,5 +1,7 @@
 # 十一项目比较：伙伴会话与团队交付的路线收敛
 
+> 2026-09-16 更新：已加入 Warp Factories，最新结论见[十二项目比较](twelve-project-comparison.zh-CN.md)；本页保留十一项目基准。
+
 ## 1. 新增 Multica 后的结论
 
 **Multica 增加了一个有真实异构小队、任务状态、执行 Daemon 和持久自动化的团队工作台候选。**如果目标先服务团队代码交付，它应与 AO、Agent Swarm 一起进入首轮验证；如果目标仍首先是 Grok 式长期伙伴、电脑、记忆和可介入的原生会话，Memoh、Omnigent、Cindy 仍更值得先验证。[^1][^2]

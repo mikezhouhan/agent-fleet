@@ -1,4 +1,4 @@
-# 下载十个源码仓库与获取 Cursor Projects 恢复材料
+# 下载源码、Warp 官方材料与 Cursor Projects 恢复材料
 
 本仓库保存分析报告和 Cursor Projects 客户端恢复证据。十个独立上游项目需要分别克隆，版本清单见 [sources.json](sources.json)。以下命令在 macOS、Linux 或 Windows Git Bash 中执行，需要先安装 Git。
 
@@ -121,8 +121,41 @@ git worktree add --detach ../agent-fleet-cursor-snapshot 06c9086284257611dd95d33
 
 恢复切片并不保证模块语义完整，详细边界见 [Cursor 专题](analysis/extensions/cursor-projects-analysis.zh-CN.md)。
 
-## 5. 后续阅读与运行
+## 5. Warp Factories 官方材料（新增三个仓库）
 
-优先阅读 [十一项目综合比较](analysis/extensions/eleven-project-comparison.zh-CN.md) 和 [Multica 专题](analysis/extensions/multica-analysis.zh-CN.md)，也可从 [分析总览](analysis/multi-agent-grok-product-analysis.zh-CN.md) 或 [九条演进路线](analysis/routes/README.md) 开始阅读。报告中的源码链接也直接指向 GitHub 上的固定提交，无需下载即可查看。
+产品页不是 Git 仓库。对应材料分为客户端 `warp`、工厂配置示例 `warp-factory-examples` 和官方文档 `warp-docs`。它们共同支持第十二个比较对象，不是三个额外产品。**Oz 编排服务仍未公开，下面的 clone 不会获得完整 Factories 服务端。**
+
+本次使用浅克隆，避免下载全部历史。HTTPS：
+
+```bash
+git clone --depth 1 https://github.com/warpdotdev/warp.git warp
+git clone --depth 1 https://github.com/warpdotdev/warp-factory-examples.git warp-factory-examples
+git clone --depth 1 https://github.com/warpdotdev/docs.git warp-docs
+```
+
+或 SSH（二选一）：
+
+```bash
+git clone --depth 1 git@github.com:warpdotdev/warp.git warp
+git clone --depth 1 git@github.com:warpdotdev/warp-factory-examples.git warp-factory-examples
+git clone --depth 1 git@github.com:warpdotdev/docs.git warp-docs
+```
+
+之后上游默认分支可能前进，可在新克隆且无本地修改的目录中取得本报告提交：
+
+```bash
+git -C warp fetch --depth 1 origin 7b7f4f7c2553ba68981f3f45db5157a823621839
+git -C warp checkout --detach 7b7f4f7c2553ba68981f3f45db5157a823621839
+git -C warp-factory-examples fetch --depth 1 origin 84e7c952f1506c4bd2784d96fd40a6f4d6398cad
+git -C warp-factory-examples checkout --detach 84e7c952f1506c4bd2784d96fd40a6f4d6398cad
+git -C warp-docs fetch --depth 1 origin 73e217b5fa0f4a1f57d8032022665471c719659c
+git -C warp-docs checkout --detach 73e217b5fa0f4a1f57d8032022665471c719659c
+```
+
+三个目录均被研究仓 `.gitignore` 忽略。此步骤只取源码与文档；不安装依赖、不登录、不创建工厂。示例中的验证脚本会发送文件到 Warp 的在线服务，并非离线验证器。需要实际运行时再按对应提交的文档配置自己的环境。
+
+## 6. 后续阅读与运行
+
+优先阅读 [十二项目综合比较](analysis/extensions/twelve-project-comparison.zh-CN.md) 和 [Warp 专题](analysis/extensions/warp-factories-analysis.zh-CN.md)，也可从 [分析总览](analysis/multi-agent-grok-product-analysis.zh-CN.md) 或 [十条演进路线](analysis/routes/README.md) 开始阅读。报告中的源码链接也直接指向 GitHub 上的固定提交，无需下载即可查看。
 
 克隆只完成源码下载；依赖安装、子模块或大文件资源、环境变量及启动步骤请按各项目对应版本的 README 和开发文档执行。Grok Bot 仓库是非官方重建版本，不能据此假定包含原产品的完整源码与运行环境。

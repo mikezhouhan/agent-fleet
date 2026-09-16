@@ -1,5 +1,5 @@
 {
-  "description": "Fixed snapshots used for static analysis: ten separately cloned source repositories and one bundled Cursor client recovery evidence set. Full upstream repositories and installer payloads are not included.",
+  "description": "Fixed snapshots: ten original source repositories, bundled Cursor client recovery evidence, and three supporting repositories for Warp Factories (client, examples, documentation). Not all compared products expose a complete server implementation.",
   "repositories": [
     {
       "name": "kandev",
@@ -71,6 +71,39 @@
       "version": "3.20.17",
       "product_commit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc0",
       "dmg_sha256": "a3cf86050ea4c322b8a63fa840f35a54318c46da9b33281c2b223a17e473c738"
+    }
+  ],
+  "supporting_repositories": [
+    {
+      "name": "warp",
+      "url": "https://github.com/warpdotdev/warp",
+      "commit": "7b7f4f7c2553ba68981f3f45db5157a823621839",
+      "kind": "open-source client; proprietary server and Oz orchestration excluded",
+      "product": "Warp Factories",
+      "clone_depth": 1
+    },
+    {
+      "name": "warp-factory-examples",
+      "url": "https://github.com/warpdotdev/warp-factory-examples",
+      "commit": "84e7c952f1506c4bd2784d96fd40a6f4d6398cad",
+      "kind": "factory definitions, prompts and remote validation client; not orchestration server",
+      "product": "Warp Factories",
+      "clone_depth": 1
+    },
+    {
+      "name": "warp-docs",
+      "url": "https://github.com/warpdotdev/docs",
+      "commit": "73e217b5fa0f4a1f57d8032022665471c719659c",
+      "kind": "official documentation source",
+      "product": "Warp Factories",
+      "clone_depth": 1
+    }
+  ],
+  "web_sources": [
+    {
+      "url": "https://www.warp.dev/factories",
+      "accessed": "2026-09-16",
+      "kind": "product claims; detailed claims checked against pinned official documentation"
     }
   ]
 }
