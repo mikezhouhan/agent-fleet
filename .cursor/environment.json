@@ -1,0 +1,4 @@
+{
+  "name": "Agent Fleet",
+  "install": "npm --prefix cursor-projects-reversed ci"
+}
