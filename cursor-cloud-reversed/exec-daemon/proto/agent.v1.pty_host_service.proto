@@ -1,0 +1,26 @@
+// Reconstructed from /exec-daemon/index.js. Original: agent/v1/pty_host_service.proto
+syntax = "proto3";
+package agent.v1;
+
+// Bound by `exec-daemon serve --pty-websocket-port` (this run: TCP 26054).
+service PtyHostService {
+  rpc SpawnPty(SpawnPtyRequest) returns (SpawnPtyResponse);
+  rpc AttachPty(AttachPtyRequest) returns (stream PtyEvent);
+  rpc SendInput(SendInputRequest) returns (SendInputResponse);
+  rpc ResizePty(ResizePtyRequest) returns (ResizePtyResponse);
+  rpc ListPtys(ListPtysRequest) returns (ListPtysResponse);
+  rpc TerminatePty(TerminatePtyRequest) returns (TerminatePtyResponse);
+}
+
+message SpawnPtyRequest {}
+message SpawnPtyResponse {}
+message AttachPtyRequest {}
+message PtyEvent {}
+message SendInputRequest {}
+message SendInputResponse {}
+message ResizePtyRequest {}
+message ResizePtyResponse {}
+message ListPtysRequest {}
+message ListPtysResponse {}
+message TerminatePtyRequest {}
+message TerminatePtyResponse {}

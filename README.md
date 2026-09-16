@@ -4,6 +4,8 @@
 
 ## 阅读入口
 
+- [Cursor Cloud Agent 完整架构（本机 VM 证据 + 控制面 + 客户端切片）](analysis/cloud-agent-architecture.zh-CN.md)
+- [Cloud Agent 运行时逆向（exec-daemon proto / pod-daemon / live-probe）](cursor-cloud-reversed/README.md)
 - [十二项目综合比较与最新路线建议](analysis/extensions/twelve-project-comparison.zh-CN.md)
 - [Warp Factories：异构软件工厂、公开源码边界与第十条路线](analysis/extensions/warp-factories-analysis.zh-CN.md)
 - [十一项目综合比较与更新后的路线建议](analysis/extensions/eleven-project-comparison.zh-CN.md)

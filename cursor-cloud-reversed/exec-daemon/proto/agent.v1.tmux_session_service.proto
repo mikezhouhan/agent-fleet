@@ -1,0 +1,20 @@
+// Reconstructed from /exec-daemon/index.js. Original: agent/v1/tmux_session_service.proto
+syntax = "proto3";
+package agent.v1;
+
+// Enabled by `--tmux-service-enabled`. Uses bundled `/exec-daemon/tmux` + `tmux.portal.conf`.
+service TmuxSessionService {
+  rpc CreateSession(CreateTmuxSessionRequest) returns (CreateTmuxSessionResponse);
+  rpc ListSessions(ListTmuxSessionsRequest) returns (ListTmuxSessionsResponse);
+  rpc KillSession(KillTmuxSessionRequest) returns (KillTmuxSessionResponse);
+  rpc AttachSession(AttachTmuxSessionRequest) returns (AttachTmuxSessionResponse);
+}
+
+message CreateTmuxSessionRequest {}
+message CreateTmuxSessionResponse {}
+message ListTmuxSessionsRequest {}
+message ListTmuxSessionsResponse {}
+message KillTmuxSessionRequest {}
+message KillTmuxSessionResponse {}
+message AttachTmuxSessionRequest {}
+message AttachTmuxSessionResponse {}
