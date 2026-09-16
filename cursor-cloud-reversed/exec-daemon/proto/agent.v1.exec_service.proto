@@ -1,0 +1,14 @@
+// Reconstructed from /exec-daemon/index.js. Original: agent/v1/exec_service.proto
+syntax = "proto3";
+package agent.v1;
+
+service ExecService {
+  rpc Exec(ExecServerMessage) returns (stream ExecStreamElement);
+  // Trusted daemon filesystem access with no text/image transformations.
+  rpc ReadFile(ReadFileRequest) returns (stream ReadFileResponse);
+}
+
+message ExecServerMessage {}
+message ExecStreamElement {}
+message ReadFileRequest {}
+message ReadFileResponse {}

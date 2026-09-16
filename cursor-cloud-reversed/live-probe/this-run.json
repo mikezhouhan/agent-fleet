@@ -1,0 +1,58 @@
+{
+  "capturedAt": "2026-09-16T16:04Z",
+  "note": "Tokens, JWTs, connection tokens redacted. This is a side-chat conversation on the parent env-setup pod.",
+  "identity": {
+    "conversationBcId": "bc-8d255668-a39c-5fb1-8b71-d657c2e615bd",
+    "podOwnerBcId": "bc-49d992a3-8543-4f6b-9d1e-618935e8d3b6",
+    "CURSOR_CONVERSATION_ID": "bc-8d255668-a39c-5fb1-8b71-d657c2e615bd",
+    "execDaemonTraceBcId": "bc-49d992a3-8543-4f6b-9d1e-618935e8d3b6",
+    "agentStoreSelf": "bc-49d992a3-8543-4f6b-9d1e-618935e8d3b6",
+    "runInfoName": "Cursor Cloud Agent architecture",
+    "runInfoSource": "internal",
+    "runInfoStatus": "RUNNING",
+    "model": "cursor-grok-4.6-high-fast",
+    "repoUrl": "github.com/mikezhouhan/agent-fleet",
+    "owningUserEmail": "jasperzhou11@gmail.com",
+    "privateWorker": false,
+    "environment": null,
+    "build": null,
+    "egress": "unresolved: This run's agent state could not be loaded",
+    "eventsCount": 0,
+    "listCloudAgentsVisible": [
+      "bc-6278ca6e-cfc3-5421-b5fd-569e5cdaa9c1",
+      "bc-49d992a3-8543-4f6b-9d1e-618935e8d3b6"
+    ],
+    "sideChatNotInDashboardList": true
+  },
+  "cluster": {
+    "runner_cluster": "us4p",
+    "anyrun_cluster": "us4p",
+    "tenant_id": "aec3d4a70ee7629df4bc",
+    "hostname": "cursor",
+    "os": "Ubuntu 24.04.4 LTS",
+    "kernel": "6.12.94+"
+  },
+  "ports": {
+    "26053": "exec-daemon ControlService HTTP",
+    "26054": "exec-daemon PtyHost WebSocket",
+    "26055": "cursor-server (remote workbench)",
+    "26058": "noVNC websockify",
+    "5901": "TigerVNC localhost",
+    "26500": "pod-daemon gRPC (config default)",
+    "2375": "Docker HTTP API (_ping=OK)",
+    "50052": "unknown listener"
+  },
+  "sockets": [
+    "/run/cursor/api.sock",
+    "/run/host-services/ssh-auth.sock"
+  ],
+  "github": {
+    "ghUser": "cursor",
+    "app": { "id": 1210556, "slug": "cursor", "owner": "cursor" },
+    "kind": "GitHub App installation token (Resource not accessible by integration on GET /user)",
+    "rateLimit": 12500,
+    "installationRepos": ["mikezhouhan/agent-fleet"],
+    "allowed": ["repos GET", "pulls", "issues", "contents", "git refs", "installation/repositories"],
+    "denied": ["GET /user", "GET orgs/mikezhouhan", "actions/secrets", "repos/.../installation JWT decode"]
+  }
+}
