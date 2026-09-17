@@ -1,0 +1,84 @@
+{
+  "inspectedAt": "2026-09-17",
+  "productVersion": "3.20.17",
+  "productCommit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc0",
+  "kind": "Static symbol map of local full distribution payload; not a runtime probe or original source",
+  "files": [
+    {
+      "shippedPath": "extensions/cursor-agent-host/dist/agent-host-daemon/dist/bin/daemon.cjs",
+      "sha256": "e19b3904d02db7e1382479c8860f02520f01225aaf05ea5cb171184034cf7442",
+      "bytes": 27378622,
+      "symbols": [
+        {
+          "symbol": "createDaemonSessionPersistence",
+          "line": 562028,
+          "characterOffset": 20509070
+        },
+        {
+          "symbol": "createPersistentSessionStore",
+          "line": 562108,
+          "characterOffset": 20511413
+        },
+        {
+          "symbol": "createManagedLocalAgentClient",
+          "line": 713285,
+          "characterOffset": 27298067
+        },
+        {
+          "symbol": "createStitchedAgentHost",
+          "line": 714827,
+          "characterOffset": 27354377
+        },
+        {
+          "symbol": "resolveCreateAgentHost",
+          "line": 714915,
+          "characterOffset": 27357814
+        }
+      ]
+    },
+    {
+      "shippedPath": "extensions/cursor-agent-host/dist/main.js",
+      "sha256": "0d1a6e3523d689e3e421ae8e9f66812981e1fb694d01b8dda993c148423aeb1b",
+      "bytes": 12039564,
+      "symbols": [
+        {
+          "symbol": "registerAgentHostProvider",
+          "line": 8,
+          "characterOffset": 11893603
+        },
+        {
+          "symbol": "watchSessionTurnLifecycle",
+          "line": 8,
+          "characterOffset": 8743986
+        },
+        {
+          "symbol": "respondToInteraction",
+          "line": 8,
+          "characterOffset": 8737526
+        }
+      ]
+    },
+    {
+      "shippedPath": "extensions/cursor-local-agent-runtime/dist/main.js",
+      "sha256": "956563334f2800a9ba1172c704c030949fd4c44b59ed147aa6a9ea960e1de4c3",
+      "bytes": 8824221,
+      "symbols": [
+        {
+          "symbol": "runLocalAgent",
+          "line": 8,
+          "characterOffset": 8679514
+        },
+        {
+          "symbol": "registerLocalAgentRuntimeProvider",
+          "line": 8,
+          "characterOffset": 8682623
+        },
+        {
+          "symbol": "new y.LocalAgentClient",
+          "line": 8,
+          "characterOffset": 8681651
+        }
+      ]
+    }
+  ]
+}

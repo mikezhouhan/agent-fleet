@@ -18,7 +18,7 @@
 
 | 恢复文件 | 关键行为 |
 | --- | --- |
-| `cloud_local_agents/.../cloudSubagentRunner.js` | 本机 Task `environment:"cloud"`：`startBackgroundComposerFromSnapshot`，`source: AS_SUBAGENT_FROM_LOCAL`，**新 bcId、新 snapshot VM**；明确不支持 `forkAgentId` / continuation |
+| `cloud_local_agents/.../cloudSubagentRunner.js` | 本机 Task `environment:"cloud"`：`startBackgroundComposerFromSnapshot`，`source: AS_SUBAGENT_FROM_LOCAL`，**新建路径生成新 bcId 并请求独立云环境**；拒绝 `forkAgentId` / continuationConfig，但支持 `resumeAgentId` 并校验父会话归属 |
 | `cloud_local_agents/.../cloudSubagentInfo.js` | 子 agent 元数据 / parent 绑定 |
 | `cloud_local_agents/.../cloudAgentHandle.js` | `getHydrationSideChatSeedTurnCount`：侧聊从父 transcript 灌种子，**不是**新 VM |
 
@@ -52,3 +52,5 @@
 - `getBackgroundComposerSlashCommands` / `getRepoSlashCommands`
 - `getAvailableMcpServers` / `checkHttpMcpStatus` / `updateUserDefaultMcpSettings`
 - `getManagedSkills` / `getCloudAgentPluginsSnapshot`
+
+2026-09-17 深入分析见[本地与云端架构报告](../../analysis/cursor-local-cloud-architecture.zh-CN.md)。本地完整分发包补充符号与哈希见 [local-runtime-evidence.json](local-runtime-evidence.json)。

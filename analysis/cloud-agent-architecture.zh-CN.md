@@ -1,5 +1,8 @@
 # Cursor Cloud Agent 完整架构（本机证据 + 控制面文档 + 客户端切片）
 
+> 2026-09-17 复核：本页保留上一轮云端采集记录，文中“本对话/本 run”均指 2026-09-16 的采集会话，不是当前本机分析。最新跨本地/云端结论见[详细架构报告](cursor-local-cloud-architecture.zh-CN.md)。新报告补充本地 Host/loop/persistence，区分云子 agent 的 resume 与 continuation，明确 RequestContext 首轮缓存依赖调用方契约；本页推断不应视作完整后端实现证明。
+
+
 探测时间：2026-09-16。本对话是侧聊，跑在父会话 env-setup 的同一台 VM 上。逆向产物在 `cursor-cloud-reversed/`。
 
 ## 1. 一句话结论
@@ -54,7 +57,7 @@ flowchart LR
   GHAPP --> WS
 ```
 
-Local Agent 不经过本图的 Pod：客户端 `localAgentEnvironment.js` 在开发者机器上跑 harness，需要云能力时由 `cloudSubagentRunner.js` 再调 `StartBackgroundComposerFromSnapshot` 开 **另一台** VM。
+本地执行与本图的托管 Pod 是不同路径。`localAgentEnvironment.js` 是工作区能力装配，不能据此定位 harness；本地 Host/loop 见新增详细报告。`cloudSubagentRunner.js` 的新建路径调用 `StartBackgroundComposerFromSnapshot` 请求独立云环境，已有子会话则另有 resume 路径。
 
 ## 3. 启动时序图
 
