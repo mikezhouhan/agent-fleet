@@ -160,13 +160,22 @@ flowchart LR
 
 | | Cursor | Grok Bot | Meta |
 | --- | --- | --- | --- |
-| 循环主体 | **箱外** BackgroundComposer + 模型网关 | 箱内 `host-main.cjs` + 箱外控制面协同 | **箱内 agent-host**（harness 即循环）+ 本地 inference proxy socket |
-| 推理路径 | 控制面模型网关 → guest 工具 | sand 网关凭证（进 exec-daemon 前被 unset） | `JARVIS_INFERENCE_PROXY_SOCK=/run/hatch/proxy/inference.sock`（agent 不直连外网模型 API） |
-| 工具调用 | guest ControlService/Exec/Pty/tmux | 同族 exec-daemon（端口与监督分化） | `hatch-execd` → `bash --norc --noprofile -c 'umask 0007; …'` |
+| 循环主体 | **箱外** BackgroundComposer + 模型网关 | 箱内 `host-main.cjs` + 箱外控制面协同 | **分裂**：推进器（generate↔tool 状态机）在箱内 `hatch daemon`（PID 67），接入/特权/监督面在宿主 |
+| 层级 | guest VM / 控制面 | sand guest / sand-host / 控制面 | **cell（nspawn） / 宿主（同机 nspawn 外层） / 舰队控制面（完全不可见）** |
+| 推理路径 | 控制面模型网关 → guest 工具 | sand 网关凭证（进 exec-daemon 前被 unset） | `JARVIS_INFERENCE_PROXY_SOCK=/run/hatch/proxy/inference.sock`（agent 不直连外网模型 API）；连接者因 ptrace-drop 在本 VM 不可见 |
+| 工具调用 | guest ControlService/Exec/Pty/tmux | 同族 exec-daemon（端口与监督分化） | `hatch-execd` → `bash --norc --noprofile -c 'umask 0007; …'`（实测）；集成 CLI 再经 authd/stefi/credit/sentinel 多路 socket（**不经过单一 privsep**） |
+| 工作流引擎 | 编排在箱外控制面 | 未见 | **不是 Temporal**：自研 `runtime.workflow_runs` / `workflow_agent_calls` / `workflow_phase_runs` + scheduler lease/checkpoint，状态落宿主 Postgres |
 
 **证据**：Cursor/Grok 见既有对照 §3.1；Meta 见
-`meta-cloud-reversed/exec-daemon/README.md`（工具调用链）与
-`meta-cloud-reversed/live-probe/this-run.json`。
+`meta-cloud-reversed/runtime-report-2026-09-19.zh-CN.md`（工具调用链）与
+`meta-cloud-reversed/runtime-report-2026-09-19-hostlayer.zh-CN.md`（任务 0 三层图、任务 1
+A/B/C 裁决）及 `meta-cloud-reversed/live-probe/`（strings-sql.txt、hotset-keys.txt、subagent-ps.txt）。
+
+三层判定：`ip route` 显示 cell 经 veth `host0@if3`（`198.19.0.2/30`）以 `198.19.0.1`
+为网关——宿主是**同机器的 nspawn 外层**（`run-daemon.sh` 注释 "after nsenter"、
+`ensure-rootfs.sh` 注释 "systemd-nspawn PrivateUsers"）；`ls /proc/1959`
+（runtime-cell-leader）不存在——监督者在 cell 的 PID ns 之外；leader 之上无任何可见进程
+/ 地址 / socket——**舰队控制面完全不可见**。
 
 ### 3.4 工具平面：三种哲学
 
@@ -186,9 +195,21 @@ flowchart LR
 | 状态种类 | Cursor | Grok Bot | Meta |
 | --- | --- | --- | --- |
 | 对话权威源 | 控制面 blob + 客户端 streamConversation | sand-host/控制面；guest 有 transcripts 但系统提示不落盘 | 控制面（推断）+ 本地 `MEMORY.md`/`~/memory/`（精选与原始） |
-| 跨重启文件 | agent-store FUSE、workspace git | box-store v2、`/home/box/sand-data` | `~/workspace/`（home 持久化，VM 重启保留） |
-| 上下文烘焙 | `prebuild-request-context-cache`、`useCached` 契约 | 未见同等 bake 路径；host bundle 可热升级 | 无 bake；靠记忆精选 + 语义检索 + 按需读文件 |
-| 子会话 | 侧聊 `bc-…` ≠ 父 `bc_id` | `sand-subagent-…`；agent UUID 另册 | side chat 独立 transcript；`JARVIS_TOOL_CALL_ID` 按工具调用追踪 |
+### 3.5 会话与状态存放
+
+| 状态种类 | Cursor | Grok Bot | Meta |
+| --- | --- | --- | --- |
+| 对话权威源 | 控制面 blob + 客户端 streamConversation | sand-host/控制面；guest 有 transcripts 但系统提示不落盘 | **宿主 Postgres**：`runtime.messages` / `tool_calls` / `tool_outputs` / `events`（全局 `event_seq`）；`hotset.manifest` 只是 779 条 `{path, offset, len, tier}` 的**材料预热索引**，不是事件日志 |
+| 跨重启文件 | agent-store FUSE、workspace git | box-store v2、`/home/box/sand-data` | `~/workspace/`（home 持久化，VM 重启保留）+ `/run/hatch/resume/`（`handoff-epoch` 代际号、`hotset.manifest`、`execution-ready.marker`）；22:10 cell 重建实测会话无缝续上 |
+| 上下文烘焙 | `prebuild-request-context-cache`、`useCached` 契约 | 未见同等 bake 路径；host bundle 可热升级 | 无 bake；记忆精选（`MEMORY.md` + `memory_search`）+ 语义检索（`memory.entries` / `embeddings`）+ hotset 索引 + 工具 schema 按需加载（deferred namespace） |
+| 大对象 | 控制面 blob（下发给客户端的引用） | 未见 | `runtime.text_blobs` + `text_blob_gc_queue`（**服务端分块存储**——"存储像、分发不像"；客户端拿到的是 `chat-history` 里的消息） |
+| 压缩 / 恢复 | 未见 | 未见 | compaction（`runtime.summaries` + `agent.compactions`，丢中间轮次原文、留摘要）；`agent.runtime_restart_checkpoints`（`checkpoint_seq`，daemon 重启后续跑未完成的 tool call） |
+| 子会话 | 侧聊 `bc-…` ≠ 父 `bc_id` | `sand-subagent-…`；agent UUID 另册 | side chat 独立 transcript；subagent 独立 session 文件（`agents/agent-<uuid>/sessions/<uuid>.jsonl`，seeding 非共享，事件 `seq` 全局连续）；`JARVIS_TOOL_CALL_ID` 按工具调用追踪 |
+
+**证据**：Meta 见 `meta-cloud-reversed/runtime-report-2026-09-19-hostlayer.zh-CN.md`
+（任务 2 对话事件模型、任务 4 subagent 实测）与
+`meta-cloud-reversed/live-probe/strings-sql.txt`（722 个 `schema.table` 去重表名，
+行/值从未读取）。
 
 ### 3.6 环境构建：可重现 vs 常驻 vs 现成
 

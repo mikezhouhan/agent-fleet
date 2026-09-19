@@ -1,0 +1,18 @@
+# ps auxf during one-word subagent lifetime (2026-09-19). Evidence: no new hatch daemon/execd for subagents.
+# --- snapshot 1 (subagent pending_init/running) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         742  0.1  0.1 1064076 10924 ?       S    22:10   0:01 /opt/hatch/bin/hatch-execd --runtime-cell-leader=1959
+root        3038  0.0  0.0   4344  3552 ?        S    22:32   0:00  \_ /bin/bash --norc --noprofile -c umask 0007; P=~/workspace/agent-fleet-src/meta-cloud-reversed/live-probe/subagent-ps.txt; { echo "# ps auxf during one-word subagent lifetime (2026-09-19). Evidence: no new hatch daemon/execd for subagents."; echo "# --- snapshot 1 (subagent pending_init/running) ---"; ps auxf; } > $P 2>&1; wc -l $P; grep -cE "hatch" $P
+root        3039  0.0  0.0   7916  4176 ?        R    22:32   0:00      \_ ps auxf
+root          67  1.7 10.8 3279960 883880 ?      Sl   22:10   0:23 /opt/hatch/bin/hatch daemon --runtime-cell-leader=1959
+root           1  0.0  0.1  21004 12440 ?        Ss   22:10   0:00 /usr/lib/systemd/systemd
+root          17  0.0  0.1  33840 10888 ?        Ss   22:10   0:00 /usr/lib/systemd/systemd-journald
+
+# --- snapshot 2 (subagent done, final response='ok', no tools called) ---
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         742  0.1  0.1 1064076 10952 ?       S    22:10   0:01 /opt/hatch/bin/hatch-execd --runtime-cell-leader=1959
+root        3056  0.0  0.0   4344  3504 ?        S    22:32   0:00  \_ /bin/bash --norc --noprofile -c umask 0007; P=~/workspace/agent-fleet-src/meta-cloud-reversed/live-probe/subagent-ps.txt; { echo ""; echo "# --- snapshot 2 (subagent done, final response='ok', no tools called) ---"; ps auxf; } >> $P 2>&1; echo "=== diff snap1 vs snap2 (process names only) ==="; diff <(grep -oE "hatch[a-z-]*|systemd|bash|ps$" $P | sort | uniq -c) /dev/null 2>/dev/null | head -3; echo "=== agent dir listing (names only) ==="; ls -la /home/hatch/agents/agent-a307dddb-7ef6-4f0f-96aa-af1e4144471c/ 2>&1 | head -15
+root        3057  0.0  0.0   7916  4284 ?        R    22:32   0:00      \_ ps auxf
+root          67  1.8 10.8 3279960 881904 ?      Sl   22:10   0:24 /opt/hatch/bin/hatch daemon --runtime-cell-leader=1959
+root           1  0.0  0.1  21004 12440 ?        Ss   22:10   0:00 /usr/lib/systemd/systemd
+root          17  0.0  0.1  33840 10888 ?        Ss   22:10   0:00 /usr/lib/systemd/systemd-journald
