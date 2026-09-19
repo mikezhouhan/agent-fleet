@@ -1,1 +1,129 @@
-SEE_FILE
+{
+  "description": "Fixed snapshots: ten original source repositories, bundled Cursor client recovery evidence, Grok Bot sand-box live reverse notes, and three supporting repositories for Warp Factories (client, examples, documentation). Not all compared products expose a complete server implementation.",
+  "repositories": [
+    {
+      "name": "kandev",
+      "url": "https://github.com/kdlbs/kandev",
+      "commit": "753e5549ee730245e4124654052b8b9e364d630c"
+    },
+    {
+      "name": "cindy",
+      "url": "https://github.com/makecindy/cindy",
+      "commit": "f4422f816ccbadbcd29714dc0722e581bb08e172"
+    },
+    {
+      "name": "grok-bot-0.18-reconstructed",
+      "url": "https://github.com/b-nnett/grok-bot-0.18-reconstructed",
+      "commit": "a9f633e09d49a85829b8236331b9e21f7e612634"
+    },
+    {
+      "name": "rakazo",
+      "url": "https://github.com/elie222/rakazo",
+      "commit": "b286fc4a5d0f608005000ef35bee4c473c31a165"
+    },
+    {
+      "name": "agent-orchestrator",
+      "url": "https://github.com/Untrivial-ai/agent-orchestrator",
+      "commit": "ab968d5e761469eb32c1b4dc780cde721a9998de"
+    },
+    {
+      "name": "deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "commit": "c291e7961a515f6d7af9304e7fd1d257929aef26"
+    },
+    {
+      "name": "omnigent",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "commit": "2a05baf4399dac074f5d29fb618bd0c7f09ec8f4"
+    },
+    {
+      "name": "agent-swarm",
+      "url": "https://github.com/desplega-ai/agent-swarm",
+      "commit": "1821593fa588cea3a52f10ef5f6c4be72ce6761a"
+    },
+    {
+      "name": "Memoh",
+      "url": "https://github.com/felinics/Memoh",
+      "commit": "9e02a9446f325f083722bb7e23ac6cc00a1de740",
+      "submodules": [
+        {
+          "path": "packages.ui",
+          "url": "https://github.com/felinics/ui",
+          "commit": "519a597e0e740906792f2bb6bb8e1c454e4ac727"
+        }
+      ]
+    },
+    {
+      "name": "multica",
+      "url": "https://github.com/multica-ai/multica",
+      "commit": "cf52ba33ccf97f756de9e6b9d364fc0a57dc5260",
+      "git_describe": "v0.4.43-31-gcf52ba33c"
+    }
+  ],
+  "bundled_evidence": [
+    {
+      "name": "cursor-projects-reversed",
+      "path": "cursor-projects-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "commit": "06c9086284257611dd95d3367ee74e0cfafb05eb",
+      "kind": "recovered client-side distribution slices, not a complete source repository",
+      "product": "Cursor",
+      "version": "3.20.17",
+      "product_commit": "0c32194e3fb5ffaced9fb36430b860ec301e1fc0",
+      "dmg_sha256": "a3cf86050ea4c322b8a63fa840f35a54318c46da9b33281c2b223a17e473c738"
+    },
+    {
+      "name": "grok-bot-sandbox-reversed",
+      "path": "grok-bot-sandbox-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "kind": "live sandbox reverse notes from Grok Bot Computer / sand box VM; not upstream source",
+      "product": "Grok Bot Computer (sand)",
+      "captured": "2026-09-19",
+      "related_analysis": "analysis/grok-bot-sandbox-cloud-architecture.zh-CN.md"
+    }
+  ],
+  "supporting_repositories": [
+    {
+      "name": "warp",
+      "url": "https://github.com/warpdotdev/warp",
+      "commit": "7b7f4f7c2553ba68981f3f45db5157a823621839",
+      "kind": "open-source client; proprietary server and Oz orchestration excluded",
+      "product": "Warp Factories",
+      "clone_depth": 1
+    },
+    {
+      "name": "warp-factory-examples",
+      "url": "https://github.com/warpdotdev/warp-factory-examples",
+      "commit": "84e7c952f1506c4bd2784d96fd40a6f4d6398cad",
+      "kind": "factory definitions, prompts and remote validation client; not orchestration server",
+      "product": "Warp Factories",
+      "clone_depth": 1
+    },
+    {
+      "name": "warp-docs",
+      "url": "https://github.com/warpdotdev/docs",
+      "commit": "73e217b5fa0f4a1f57d8032022665471c719659c",
+      "kind": "official documentation source",
+      "product": "Warp Factories",
+      "clone_depth": 1
+    }
+  ],
+  "web_sources": [
+    {
+      "url": "https://www.warp.dev/factories",
+      "accessed": "2026-09-16",
+      "kind": "product claims; detailed claims checked against pinned official documentation"
+    }
+  ],
+  "live_captures": [
+    {
+      "name": "grok-bot-sandbox-2026-09-19",
+      "kind": "read-only inspection of running anyrun guest",
+      "cluster": "us12",
+      "hostname_pattern": "grok-bot-vm-*",
+      "host_version": "18cd065",
+      "image_sha": "bcf29f8",
+      "notes": "Secrets redacted; paths and architecture only"
+    }
+  ]
+}
