@@ -1,0 +1,14 @@
+{
+  "name": "muse-reversed",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Recover Muse 2.0 (Meta Endo/Hatch) client core from the named macOS DMG. Not original Meta source and not a runnable clone.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "recover": "node scripts/recover.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}

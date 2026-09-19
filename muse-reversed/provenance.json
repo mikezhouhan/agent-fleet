@@ -1,0 +1,105 @@
+{
+  "dmgPath": "/Users/jasper/Downloads/Muse-2.0.dmg",
+  "dmgBytes": 34327740,
+  "dmgSha256": "312d7dc024797a9bd9249b155cf03afd0af5ebdc412cc6635842b8fc78a99b80",
+  "payload": {
+    "kind": "native-macos-app",
+    "payloadRoot": "Muse.app/Contents/Resources",
+    "asarPath": null,
+    "primaryBundle": {
+      "shippedPath": "MacOS/Muse",
+      "sha256": "37664e14476c77e5ef00b1922615969efd02fb5b9c8db06ff05e8187a76628ca",
+      "bytes": 17245408
+    },
+    "files": [
+      {
+        "shippedPath": "Resources/chrome/background.js",
+        "sha256": "a7d45793c120c10e29e5e382cee17157b4e1e87c65239fe39dd95a328274d6a3",
+        "bytes": 23155
+      },
+      {
+        "shippedPath": "Resources/chrome/hatch-web-pairing.js",
+        "sha256": "85ccf45ced0af5bcdba8968f64a32b419a150bb55be8260338ef73323b10a3b6",
+        "bytes": 2252
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/blocked-sites.js",
+        "sha256": "61c71a0932e91c9df32b1834f57fc9fc92bc5739cee23e21cebb0bcc2b759435",
+        "bytes": 7563
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/browser-kit.js",
+        "sha256": "37dbad34228cf92fc45c42ccb8013477eee21a41be5feb4049a18a2e6a206c7c",
+        "bytes": 42298
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/cdp.js",
+        "sha256": "4062782291b9a8f6c79ba5ac96bb7c6bb79031b4579666668f88b08f02b2c34d",
+        "bytes": 8392
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/commands.js",
+        "sha256": "5bab4d8a44816ac676f1d0d9e283c6900c812d9c18d3fd025447892a81c1eca8",
+        "bytes": 66724
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/connection.js",
+        "sha256": "825503f87d41e7b34024a9cbe3ac62c6dfbd8319607b3e0dd0176350f8db136a",
+        "bytes": 17850
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/cursor-overlay.js",
+        "sha256": "0ec8bb6d75dc8a3f65dc3af68dc44c87bcbec7abc821ac06fe9579872aa2d574",
+        "bytes": 19465
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/events.js",
+        "sha256": "93c2483bd8688677e258b5c9a45fc8a02c5c1fb7518865ca8483f295b7a4b93c",
+        "bytes": 2717
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/pairing-security.js",
+        "sha256": "0d584cdebcfc3ceb0e05d855f6ad807681b9555776db64605e2b1c8c2066d1c8",
+        "bytes": 6198
+      },
+      {
+        "shippedPath": "Resources/chrome/lib/protocol.js",
+        "sha256": "7b8955da708cb01f2e9573862a0d33bdbef974dea5c764ae7c405ad210d0d63a",
+        "bytes": 20889
+      },
+      {
+        "shippedPath": "Resources/chrome/manifest.json",
+        "sha256": "d86a7c61ade112330877c648f37651c66895fcc3317170e86747c86e2fb077ab",
+        "bytes": 1516
+      },
+      {
+        "shippedPath": "Resources/chrome/options.js",
+        "sha256": "22ba4c5d27e750deee7ead3122f34e37461dfeecdbfd9ae5c0128f42634d30a9",
+        "bytes": 1235
+      },
+      {
+        "shippedPath": "Resources/chrome/popup.js",
+        "sha256": "b2606d0f4b598041a1881848ef15ef1649a0a13e33df4e39ae3f9ed9eb9cceed",
+        "bytes": 8723
+      },
+      {
+        "shippedPath": "Resources/hatch/index.html",
+        "sha256": "5f35ab78f74f28d58c2c0ca55cd23d35e03af25557341a2e8a66d429c447a7b6",
+        "bytes": 53055853
+      },
+      {
+        "shippedPath": "Resources/hatch/metaconfig.json",
+        "sha256": "a7ac5d639f33eb4de445c4f9ed601dca471f09423fa1b40b2d8614a866a51ad3",
+        "bytes": 3770
+      }
+    ],
+    "app": {
+      "bundleId": "com.meta.endo",
+      "bundleName": "Muse",
+      "shortVersion": "2.0",
+      "bundleVersion": "1071881651"
+    }
+  },
+  "hdiutilAttach": "success (read-only)",
+  "asarExtract": "not applicable; native Muse.app + Resources chrome/hatch"
+}

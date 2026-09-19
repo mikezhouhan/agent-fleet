@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "dmgPath": "/Users/jasper/Downloads/Muse-2.0.dmg",
+    "dmgBytes": 34327740,
+    "dmgSha256": "312d7dc024797a9bd9249b155cf03afd0af5ebdc412cc6635842b8fc78a99b80",
+    "payload": {
+      "kind": "native-macos-app",
+      "payloadRoot": "Muse.app/Contents/Resources",
+      "asarPath": null,
+      "primaryBundle": {
+        "shippedPath": "MacOS/Muse",
+        "sha256": "37664e14476c77e5ef00b1922615969efd02fb5b9c8db06ff05e8187a76628ca",
+        "bytes": 17245408
+      },
+      "files": [
+        {
+          "shippedPath": "Resources/chrome/background.js",
+          "sha256": "a7d45793c120c10e29e5e382cee17157b4e1e87c65239fe39dd95a328274d6a3",
+          "bytes": 23155
+        },
+        {
+          "shippedPath": "Resources/chrome/hatch-web-pairing.js",
+          "sha256": "85ccf45ced0af5bcdba8968f64a32b419a150bb55be8260338ef73323b10a3b6",
+          "bytes": 2252
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/blocked-sites.js",
+          "sha256": "61c71a0932e91c9df32b1834f57fc9fc92bc5739cee23e21cebb0bcc2b759435",
+          "bytes": 7563
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/browser-kit.js",
+          "sha256": "37dbad34228cf92fc45c42ccb8013477eee21a41be5feb4049a18a2e6a206c7c",
+          "bytes": 42298
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/cdp.js",
+          "sha256": "4062782291b9a8f6c79ba5ac96bb7c6bb79031b4579666668f88b08f02b2c34d",
+          "bytes": 8392
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/commands.js",
+          "sha256": "5bab4d8a44816ac676f1d0d9e283c6900c812d9c18d3fd025447892a81c1eca8",
+          "bytes": 66724
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/connection.js",
+          "sha256": "825503f87d41e7b34024a9cbe3ac62c6dfbd8319607b3e0dd0176350f8db136a",
+          "bytes": 17850
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/cursor-overlay.js",
+          "sha256": "0ec8bb6d75dc8a3f65dc3af68dc44c87bcbec7abc821ac06fe9579872aa2d574",
+          "bytes": 19465
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/events.js",
+          "sha256": "93c2483bd8688677e258b5c9a45fc8a02c5c1fb7518865ca8483f295b7a4b93c",
+          "bytes": 2717
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/pairing-security.js",
+          "sha256": "0d584cdebcfc3ceb0e05d855f6ad807681b9555776db64605e2b1c8c2066d1c8",
+          "bytes": 6198
+        },
+        {
+          "shippedPath": "Resources/chrome/lib/protocol.js",
+          "sha256": "7b8955da708cb01f2e9573862a0d33bdbef974dea5c764ae7c405ad210d0d63a",
+          "bytes": 20889
+        },
+        {
+          "shippedPath": "Resources/chrome/manifest.json",
+          "sha256": "d86a7c61ade112330877c648f37651c66895fcc3317170e86747c86e2fb077ab",
+          "bytes": 1516
+        },
+        {
+          "shippedPath": "Resources/chrome/options.js",
+          "sha256": "22ba4c5d27e750deee7ead3122f34e37461dfeecdbfd9ae5c0128f42634d30a9",
+          "bytes": 1235
+        },
+        {
+          "shippedPath": "Resources/chrome/popup.js",
+          "sha256": "b2606d0f4b598041a1881848ef15ef1649a0a13e33df4e39ae3f9ed9eb9cceed",
+          "bytes": 8723
+        },
+        {
+          "shippedPath": "Resources/hatch/index.html",
+          "sha256": "5f35ab78f74f28d58c2c0ca55cd23d35e03af25557341a2e8a66d429c447a7b6",
+          "bytes": 53055853
+        },
+        {
+          "shippedPath": "Resources/hatch/metaconfig.json",
+          "sha256": "a7ac5d639f33eb4de445c4f9ed601dca471f09423fa1b40b2d8614a866a51ad3",
+          "bytes": 3770
+        }
+      ],
+      "app": {
+        "bundleId": "com.meta.endo",
+        "bundleName": "Muse",
+        "shortVersion": "2.0",
+        "bundleVersion": "1071881651"
+      }
+    },
+    "hdiutilAttach": "success (read-only)",
+    "asarExtract": "not applicable; native Muse.app + Resources chrome/hatch"
+  },
+  "scannedFiles": [
+    "MacOS/Muse",
+    "chrome/background.js",
+    "chrome/hatch-web-pairing.js",
+    "chrome/lib/blocked-sites.js",
+    "chrome/lib/browser-kit.js",
+    "chrome/lib/cdp.js",
+    "chrome/lib/commands.js",
+    "chrome/lib/connection.js",
+    "chrome/lib/cursor-overlay.js",
+    "chrome/lib/events.js",
+    "chrome/lib/pairing-security.js",
+    "chrome/lib/protocol.js",
+    "chrome/manifest.json",
+    "chrome/options.js",
+    "chrome/popup.js",
+    "hatch/index.html",
+    "hatch/metaconfig.json"
+  ],
+  "missingCategories": [],
+  "gaps": [
+    {
+      "mechanic": "planner/executor loop",
+      "status": "dmg-absent",
+      "note": "Hatch CVM talks to hatch.metaaivm.com over Noise WS /v1/noise. The VM planner is not Swift source in this DMG."
+    },
+    {
+      "mechanic": "MCP server config",
+      "status": "dmg-absent",
+      "note": "No mcp_servers.json / SKILL.md loader in the native app. mcpSetup appears as a Swift ivar; desktop MCP is not a first-class config file like Cursor or Manus operator."
+    }
+  ],
+  "classification": [
+    {
+      "category": "computer",
+      "shippedPath": "chrome/background.js",
+      "shippedSymbols": [
+        "HatchConnection"
+      ],
+      "bytes": 23155
+    },
+    {
+      "category": "computer",
+      "shippedPath": "chrome/lib/cdp.js",
+      "shippedSymbols": [
+        "chrome.debugger"
+      ],
+      "bytes": 8392
+    },
+    {
+      "category": "computer",
+      "shippedPath": "chrome/lib/commands.js",
+      "shippedSymbols": [
+        "chrome.debugger",
+        "AGENT_TABS_KEY"
+      ],
+      "bytes": 66724
+    },
+    {
+      "category": "computer",
+      "shippedPath": "chrome/lib/connection.js",
+      "shippedSymbols": [
+        "HatchConnection"
+      ],
+      "bytes": 17850
+    },
+    {
+      "category": "computer",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "HatchConnection",
+        "ComputerControl"
+      ],
+      "bytes": 53055853
+    },
+    {
+      "category": "computer",
+      "shippedPath": "MacOS/Muse",
+      "shippedSymbols": [
+        "HatchConnection",
+        "ComputerControl",
+        "BackgroundComputerControl"
+      ],
+      "bytes": 17245408
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch.metaaivm.com",
+        "hatch_web:hatch_web_cvm",
+        "hatch_web:hatch_reset_vm",
+        "HATCH_SHARED_LB_HOST",
+        "/v1/noise"
+      ],
+      "bytes": 53055853
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "hatch/metaconfig.json",
+      "shippedSymbols": [
+        "hatch_web:hatch_web_cvm",
+        "hatch_web:hatch_reset_vm"
+      ],
+      "bytes": 3770
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "MacOS/Muse",
+      "shippedSymbols": [
+        "hatch.metaaivm.com",
+        "/v1/noise"
+      ],
+      "bytes": 17245408
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/background.js",
+      "shippedSymbols": [
+        "HatchConnection",
+        "agent.meta.ai"
+      ],
+      "bytes": 23155
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/lib/blocked-sites.js",
+      "shippedSymbols": [
+        "agent.meta.ai",
+        "hatch.meta.ai"
+      ],
+      "bytes": 7563
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/lib/commands.js",
+      "shippedSymbols": [
+        "agent.meta.ai"
+      ],
+      "bytes": 66724
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/lib/connection.js",
+      "shippedSymbols": [
+        "HatchConnection"
+      ],
+      "bytes": 17850
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/lib/pairing-security.js",
+      "shippedSymbols": [
+        "agent.meta.ai",
+        "hatch.meta.ai"
+      ],
+      "bytes": 6198
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/manifest.json",
+      "shippedSymbols": [
+        "agent.meta.ai",
+        "hatch.meta.ai"
+      ],
+      "bytes": 1516
+    },
+    {
+      "category": "session",
+      "shippedPath": "chrome/popup.js",
+      "shippedSymbols": [
+        "hatch.meta.ai"
+      ],
+      "bytes": 8723
+    },
+    {
+      "category": "session",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "parentAgentId",
+        "parent_agent_id",
+        "HatchConnection",
+        "agent.meta.ai",
+        "hatch.meta.ai"
+      ],
+      "bytes": 53055853
+    },
+    {
+      "category": "session",
+      "shippedPath": "MacOS/Muse",
+      "shippedSymbols": [
+        "parentAgentId",
+        "HatchConnection",
+        "agent.meta.ai"
+      ],
+      "bytes": 17245408
+    },
+    {
+      "category": "skills",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "SKILL.md",
+        "jarvis SKILL.md"
+      ],
+      "bytes": 53055853
+    }
+  ],
+  "units": [
+    {
+      "id": "computer:chrome/background.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/background.js",
+      "shippedSymbols": [
+        "background.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__background.js/background.js",
+      "sha256": "db08ead06c61d46778a917f4a172814b97c73a3670f8aab3f6335fb8caa4f88f",
+      "bytes": 23320,
+      "byteRange": [
+        0,
+        23057
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/hatch-web-pairing.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/hatch-web-pairing.js",
+      "shippedSymbols": [
+        "hatch-web-pairing.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__hatch-web-pairing.js/hatch-web-pairing.js",
+      "sha256": "1210a1d0d67dded61cb7c1c724776c751ae874987882878056bce2794f7c8c4f",
+      "bytes": 2430,
+      "byteRange": [
+        0,
+        2250
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/blocked-sites.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/blocked-sites.js",
+      "shippedSymbols": [
+        "blocked-sites.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__blocked-sites.js/blocked-sites.js",
+      "sha256": "82087d57f709ec9684fceff7bf40e40913644f52de744c2fe2a7bb4d2501ed79",
+      "bytes": 7737,
+      "byteRange": [
+        0,
+        7545
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/browser-kit.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/browser-kit.js",
+      "shippedSymbols": [
+        "browser-kit.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__browser-kit.js/browser-kit.js",
+      "sha256": "2ee4eefa219731b673debfbdf85f4e5a4ba5ec2496457ecae001ca4ca68f0246",
+      "bytes": 42469,
+      "byteRange": [
+        0,
+        42159
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/cdp.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/cdp.js",
+      "shippedSymbols": [
+        "cdp.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__cdp.js/cdp.js",
+      "sha256": "3ecc36e631287eb567bae7657e6bd331406d8afa56399d787e9fc9ad763d3cac",
+      "bytes": 8546,
+      "byteRange": [
+        0,
+        8392
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/commands.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/commands.js",
+      "shippedSymbols": [
+        "commands.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__commands.js/commands.js",
+      "sha256": "73f1c817ef8b834be15b96ad70118e52fb701ee16f3aab4427e84be24b114226",
+      "bytes": 66889,
+      "byteRange": [
+        0,
+        66566
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/connection.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/connection.js",
+      "shippedSymbols": [
+        "connection.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__connection.js/connection.js",
+      "sha256": "0938d1c3f95cb17fd80a6dfc52d91a6dd07db0ff6dc93f3dbe7a129d3aa254f6",
+      "bytes": 18019,
+      "byteRange": [
+        0,
+        17832
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/cursor-overlay.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/cursor-overlay.js",
+      "shippedSymbols": [
+        "cursor-overlay.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__cursor-overlay.js/cursor-overlay.js",
+      "sha256": "383e942a584623aed2916b3b01abcd3d527dd58d2a115acb984448bf5176ee2c",
+      "bytes": 19642,
+      "byteRange": [
+        0,
+        19399
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/events.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/events.js",
+      "shippedSymbols": [
+        "events.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__events.js/events.js",
+      "sha256": "c08159c4681e335b41eae3fa29a5b249d76489d34c33269d7558271a7004d34c",
+      "bytes": 2877,
+      "byteRange": [
+        0,
+        2715
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/pairing-security.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/pairing-security.js",
+      "shippedSymbols": [
+        "pairing-security.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__pairing-security.js/pairing-security.js",
+      "sha256": "e47ff24f22ffc23300fb92c193ad3a976e378f0e026eb912b4ca72cc9b480216",
+      "bytes": 6378,
+      "byteRange": [
+        0,
+        6198
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/lib/protocol.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/protocol.js",
+      "shippedSymbols": [
+        "protocol.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__protocol.js/protocol.js",
+      "sha256": "0559b165fb9068897900d585329afc4c57b920e87593644f4d336949d0dc3982",
+      "bytes": 21054,
+      "byteRange": [
+        0,
+        20835
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/manifest.json:full",
+      "category": "computer",
+      "shippedPath": "chrome/manifest.json",
+      "shippedSymbols": [
+        "manifest.json"
+      ],
+      "recoveredPath": "recovered/computer/chrome__manifest.json/manifest.json",
+      "sha256": "d86a7c61ade112330877c648f37651c66895fcc3317170e86747c86e2fb077ab",
+      "bytes": 1516,
+      "byteRange": [
+        0,
+        1516
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/options.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/options.js",
+      "shippedSymbols": [
+        "options.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__options.js/options.js",
+      "sha256": "e3956242a96f018e6dbbb5cdf518dd6bf4ee26a11898efc02a2acb0a4dc1570a",
+      "bytes": 1393,
+      "byteRange": [
+        0,
+        1235
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "computer:chrome/popup.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/popup.js",
+      "shippedSymbols": [
+        "popup.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__popup.js/popup.js",
+      "sha256": "e08c914fddb70fc67415c62525caeab25d135d4a086469556252330e7ade2b7c",
+      "bytes": 8877,
+      "byteRange": [
+        0,
+        8721
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:hatch/index.html:marker:hatch_web:hatch_reset_vm",
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch_web:hatch_reset_vm"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__index.html/hatch_web-hatch_reset_vm.slice.js",
+      "sha256": "ab62daebcd1954a8ae8f290d235c630185ec6bb7beaf71b8d941c5d991d81107",
+      "bytes": 8407,
+      "byteRange": [
+        42231711,
+        42239927
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:hatch/index.html:marker:hatch_web:hatch_web_cvm",
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch_web:hatch_web_cvm"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__index.html/hatch_web-hatch_web_cvm.slice.js",
+      "sha256": "c05b4b13f22632c207c69e277b091be6892ffeb4d914b51d0a2305009ff6b958",
+      "bytes": 8401,
+      "byteRange": [
+        12576630,
+        12584845
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:hatch/index.html:marker:hatch.metaaivm.com",
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch.metaaivm.com"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__index.html/hatch.metaaivm.com.slice.js",
+      "sha256": "aa71354db927189aa644f3cca3ce46212d0114202a21c82d3a24d39f354657d2",
+      "bytes": 8391,
+      "byteRange": [
+        10139712,
+        10147922
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:hatch/metaconfig.json:full",
+      "category": "sandbox",
+      "shippedPath": "hatch/metaconfig.json",
+      "shippedSymbols": [
+        "metaconfig.json"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__metaconfig.json/metaconfig.json",
+      "sha256": "41496f881eae7de4d7a73811302dcf9c7d274ea3778cfcf1295709bba244fe90",
+      "bytes": 3771,
+      "byteRange": [
+        0,
+        3770
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:hatch/index.html:marker:parent_agent_id",
+      "category": "session",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "parent_agent_id"
+      ],
+      "recoveredPath": "recovered/session/hatch__index.html/parent_agent_id.slice.js",
+      "sha256": "61c5c91a1a00bcf511d439e3c6e37f5dd5c775dad21e660bb5f04427c9095fb3",
+      "bytes": 8385,
+      "byteRange": [
+        13247415,
+        13255622
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "session:MacOS/Muse:swift-types",
+      "category": "session",
+      "shippedPath": "MacOS/Muse",
+      "shippedSymbols": [
+        "HatchClient",
+        "ComputerControl",
+        "SandboxSchemeHandler"
+      ],
+      "recoveredPath": "recovered/session/MacOS__Muse/endo-swift-types.txt",
+      "sha256": "ae175b7a4c134717bf0d8cf481c4e82814026636d80c906335108efe07ee1740",
+      "bytes": 4729,
+      "byteRange": [
+        0,
+        1416488
+      ],
+      "kind": "symbol-catalog",
+      "truncated": false
+    },
+    {
+      "id": "skills:hatch/index.html:marker:SKILL.md",
+      "category": "skills",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "recoveredPath": "recovered/skills/hatch__index.html/SKILL.md.slice.js",
+      "sha256": "550e3e6edd7fb4620f758b46cb5aa16ef6aae9fe4143ded62ff0d629e7b220f5",
+      "bytes": 8425,
+      "byteRange": [
+        42721221,
+        42729421
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    }
+  ],
+  "identities": [
+    {
+      "id": "computer:chrome/background.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/background.js",
+      "shippedSymbols": [
+        "background.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__background.js/background.js",
+      "sha256": "db08ead06c61d46778a917f4a172814b97c73a3670f8aab3f6335fb8caa4f88f"
+    },
+    {
+      "id": "computer:chrome/hatch-web-pairing.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/hatch-web-pairing.js",
+      "shippedSymbols": [
+        "hatch-web-pairing.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__hatch-web-pairing.js/hatch-web-pairing.js",
+      "sha256": "1210a1d0d67dded61cb7c1c724776c751ae874987882878056bce2794f7c8c4f"
+    },
+    {
+      "id": "computer:chrome/lib/blocked-sites.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/blocked-sites.js",
+      "shippedSymbols": [
+        "blocked-sites.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__blocked-sites.js/blocked-sites.js",
+      "sha256": "82087d57f709ec9684fceff7bf40e40913644f52de744c2fe2a7bb4d2501ed79"
+    },
+    {
+      "id": "computer:chrome/lib/browser-kit.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/browser-kit.js",
+      "shippedSymbols": [
+        "browser-kit.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__browser-kit.js/browser-kit.js",
+      "sha256": "2ee4eefa219731b673debfbdf85f4e5a4ba5ec2496457ecae001ca4ca68f0246"
+    },
+    {
+      "id": "computer:chrome/lib/cdp.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/cdp.js",
+      "shippedSymbols": [
+        "cdp.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__cdp.js/cdp.js",
+      "sha256": "3ecc36e631287eb567bae7657e6bd331406d8afa56399d787e9fc9ad763d3cac"
+    },
+    {
+      "id": "computer:chrome/lib/commands.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/commands.js",
+      "shippedSymbols": [
+        "commands.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__commands.js/commands.js",
+      "sha256": "73f1c817ef8b834be15b96ad70118e52fb701ee16f3aab4427e84be24b114226"
+    },
+    {
+      "id": "computer:chrome/lib/connection.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/connection.js",
+      "shippedSymbols": [
+        "connection.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__connection.js/connection.js",
+      "sha256": "0938d1c3f95cb17fd80a6dfc52d91a6dd07db0ff6dc93f3dbe7a129d3aa254f6"
+    },
+    {
+      "id": "computer:chrome/lib/cursor-overlay.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/cursor-overlay.js",
+      "shippedSymbols": [
+        "cursor-overlay.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__cursor-overlay.js/cursor-overlay.js",
+      "sha256": "383e942a584623aed2916b3b01abcd3d527dd58d2a115acb984448bf5176ee2c"
+    },
+    {
+      "id": "computer:chrome/lib/events.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/events.js",
+      "shippedSymbols": [
+        "events.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__events.js/events.js",
+      "sha256": "c08159c4681e335b41eae3fa29a5b249d76489d34c33269d7558271a7004d34c"
+    },
+    {
+      "id": "computer:chrome/lib/pairing-security.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/pairing-security.js",
+      "shippedSymbols": [
+        "pairing-security.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__pairing-security.js/pairing-security.js",
+      "sha256": "e47ff24f22ffc23300fb92c193ad3a976e378f0e026eb912b4ca72cc9b480216"
+    },
+    {
+      "id": "computer:chrome/lib/protocol.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/lib/protocol.js",
+      "shippedSymbols": [
+        "protocol.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__lib__protocol.js/protocol.js",
+      "sha256": "0559b165fb9068897900d585329afc4c57b920e87593644f4d336949d0dc3982"
+    },
+    {
+      "id": "computer:chrome/manifest.json:full",
+      "category": "computer",
+      "shippedPath": "chrome/manifest.json",
+      "shippedSymbols": [
+        "manifest.json"
+      ],
+      "recoveredPath": "recovered/computer/chrome__manifest.json/manifest.json",
+      "sha256": "d86a7c61ade112330877c648f37651c66895fcc3317170e86747c86e2fb077ab"
+    },
+    {
+      "id": "computer:chrome/options.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/options.js",
+      "shippedSymbols": [
+        "options.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__options.js/options.js",
+      "sha256": "e3956242a96f018e6dbbb5cdf518dd6bf4ee26a11898efc02a2acb0a4dc1570a"
+    },
+    {
+      "id": "computer:chrome/popup.js:full",
+      "category": "computer",
+      "shippedPath": "chrome/popup.js",
+      "shippedSymbols": [
+        "popup.js"
+      ],
+      "recoveredPath": "recovered/computer/chrome__popup.js/popup.js",
+      "sha256": "e08c914fddb70fc67415c62525caeab25d135d4a086469556252330e7ade2b7c"
+    },
+    {
+      "id": "sandbox:hatch/index.html:marker:hatch_web:hatch_reset_vm",
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch_web:hatch_reset_vm"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__index.html/hatch_web-hatch_reset_vm.slice.js",
+      "sha256": "ab62daebcd1954a8ae8f290d235c630185ec6bb7beaf71b8d941c5d991d81107"
+    },
+    {
+      "id": "sandbox:hatch/index.html:marker:hatch_web:hatch_web_cvm",
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch_web:hatch_web_cvm"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__index.html/hatch_web-hatch_web_cvm.slice.js",
+      "sha256": "c05b4b13f22632c207c69e277b091be6892ffeb4d914b51d0a2305009ff6b958"
+    },
+    {
+      "id": "sandbox:hatch/index.html:marker:hatch.metaaivm.com",
+      "category": "sandbox",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "hatch.metaaivm.com"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__index.html/hatch.metaaivm.com.slice.js",
+      "sha256": "aa71354db927189aa644f3cca3ce46212d0114202a21c82d3a24d39f354657d2"
+    },
+    {
+      "id": "sandbox:hatch/metaconfig.json:full",
+      "category": "sandbox",
+      "shippedPath": "hatch/metaconfig.json",
+      "shippedSymbols": [
+        "metaconfig.json"
+      ],
+      "recoveredPath": "recovered/sandbox/hatch__metaconfig.json/metaconfig.json",
+      "sha256": "41496f881eae7de4d7a73811302dcf9c7d274ea3778cfcf1295709bba244fe90"
+    },
+    {
+      "id": "session:hatch/index.html:marker:parent_agent_id",
+      "category": "session",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "parent_agent_id"
+      ],
+      "recoveredPath": "recovered/session/hatch__index.html/parent_agent_id.slice.js",
+      "sha256": "61c5c91a1a00bcf511d439e3c6e37f5dd5c775dad21e660bb5f04427c9095fb3"
+    },
+    {
+      "id": "session:MacOS/Muse:swift-types",
+      "category": "session",
+      "shippedPath": "MacOS/Muse",
+      "shippedSymbols": [
+        "HatchClient",
+        "ComputerControl",
+        "SandboxSchemeHandler"
+      ],
+      "recoveredPath": "recovered/session/MacOS__Muse/endo-swift-types.txt",
+      "sha256": "ae175b7a4c134717bf0d8cf481c4e82814026636d80c906335108efe07ee1740"
+    },
+    {
+      "id": "skills:hatch/index.html:marker:SKILL.md",
+      "category": "skills",
+      "shippedPath": "hatch/index.html",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "recoveredPath": "recovered/skills/hatch__index.html/SKILL.md.slice.js",
+      "sha256": "550e3e6edd7fb4620f758b46cb5aa16ef6aae9fe4143ded62ff0d629e7b220f5"
+    }
+  ]
+}
