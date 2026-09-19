@@ -37,6 +37,15 @@ agent 本人）作为第三极，与仓库已有的 Cursor Cloud Agent、Grok Bo
  （推理/记忆/安全/沙箱/sentinel/遥测），harness 本身（记忆、技能、排程、多端）
   是最厚的一层。
 
+> **xAI 侧名词辨析**（2026 年公开报道）："Grok Bot" 在本报告中指
+> **@bot**（2026-08-11 早期 beta：每 bot 一台常驻云 VM，browser/filesystem/terminal，
+> 2–6 bot 群组，skills/routines/connectors，SuperGrok Heavy 约 $300/月捆绑）。
+> xAI 另有 **Grok Build**（2026-05-14/15 封闭 beta：终端 coding agent，
+> grok-code-fast-1 256K 上下文，8 并行子 agent + git worktree 隔离 + Arena Mode）
+> 与 **@grok**（X 上的问答回复 bot）。三者不是同一产品；本报告的三方对照以
+> @bot 为 Grok 代表，Grok Build 仅在相关处注明。以上产品事实来自公开报道，
+> 部分细节（模型参数、Arena Mode 效果）未证实 ⚠️。
+
 ## 2. 产品设计对比
 
 ### 2.1 用户对象与主对象
@@ -46,8 +55,8 @@ agent 本人）作为第三极，与仓库已有的 Cursor Cloud Agent、Grok Bo
 | 典型用户 | 用 Cursor IDE 写代码的开发者/团队 | 需要长期 AI 伙伴与后台自动化的用户 | 需要个人助理的**任何人**（非开发者为主） |
 | 主对象 | Cloud Agent 会话（`bc-…`）+ Environment Build | Bot 身份（UUID）+ Computer（box） | **人**：USER 身份 + 长期 Main chat |
 | 次对象 | 仓库、PR、侧聊、云子 agent | 群组、automations、workflows、user-memory | Side chat、Goal、追踪事项、记忆、排程任务 |
-| 计费心智 | 按任务/按 token（2026-04 SDK 报道称 token-based pricing ⚠️） | 订阅 + 早期 beta | 订阅（Muse 会员体系） |
-| UI 入口 | IDE、cursor.com/agents、Slack `@Cursor` | Grok App / X、`grokbot://app/v1/…` deep link | iOS app、muse.ai、WhatsApp（同一身份多端） |
+| 计费心智 | 按任务/按 token（2026-04 官方 SDK `@cursor/sdk` 报道称 token-based pricing ⚠️）；付费计划 + 首次激活设 spend limit | 订阅捆绑：SuperGrok Heavy（约 $300/月）/ Cursor Ultra / Teams Premium，早期 beta 无独立定价 ⚠️ | 订阅（Muse 会员体系） |
+| UI 入口 | IDE、cursor.com/agents、iOS、Android PWA、Slack `@cursor`、GitHub/Bitbucket `@cursor` 评论、Linear、REST API（`/v0/agents`）、SDK | Grok App / X、`grokbot://app/v1/…` deep link；桌面 + iOS（Android 报道称开发中 ⚠️） | iOS app、muse.ai、WhatsApp（同一身份多端） |
 
 **证据**：Cursor 主对象与 `bcId` 见 `analysis/cloud-agent-architecture.zh-CN.md`、
 `cursor-cloud-reversed/live-probe/this-run.json`；环境构建见下 §3.7；
@@ -261,6 +270,9 @@ Meta 见 `meta-cloud-reversed/pod-daemon/README.md`（runtime-cell 脚本集）�
 - Grok Bot 的 sand 控制面完整 RPC、Cursor BackgroundComposer 的服务端实现，
   同样不在各自 guest 可见范围——三方对照的"箱外"部分天然薄。
 - 未做端到端产品评测：性能、稳定性、成本均为架构推断，不构成选型建议。
+- Grok Bot"使用 Cursor 账号体系/从 Cursor dashboard 管理"的说法来自单一
+  二手来源，未证实 ⚠️；grok-code-fast-1 的 314B MoE 参数量为社区流传，
+  官方未确认 ⚠️。
 
 ### 6.3 阅读地图
 
@@ -270,3 +282,13 @@ Meta 见 `meta-cloud-reversed/pod-daemon/README.md`（runtime-cell 脚本集）�
 - 两方对照（既有）：[grok-bot-vs-cursor-cloud-agents.zh-CN.md](grok-bot-vs-cursor-cloud-agents.zh-CN.md)
 - Cursor 云架构：[cloud-agent-architecture.zh-CN.md](cloud-agent-architecture.zh-CN.md)
 - Grok 沙箱架构：[grok-bot-sandbox-cloud-architecture.zh-CN.md](grok-bot-sandbox-cloud-architecture.zh-CN.md)
+
+### 6.4 公开来源（2026-09-19 前后检索，时效性声明）
+
+- Cursor Cloud Agents 文档：https://cursor.com/docs/cloud-agent.md
+- xAI Grok Bot 文档（chat/collaboration）：https://docs.x.ai/grok-bot/chat-and-collaboration
+- Cursor cloud-agent 环境约定（社区）：https://github.com/macrox-pro/agentd/blob/HEAD/research/cursor/07-cloud-agents/overview-setup-builds.md
+- xAI grok-code-fast-1 公告：https://x.ai/news/grok-code-fast-1 ；model card：https://data.x.ai/2025-08-26-grok-code-fast-1-model-card.pdf
+- Grok Bot 发布报道：https://www.thetechoutlook.com/new-release/software-apps/xai-introduces-grok-bot-available-in-early-beta-on-desktop-and-ios/ ；https://interestingengineering.com/ai-robotics/xai-grok-bot-computer-agent ；https://agentbreaking.com/blog/grok-bot-persistent-ai-agents/
+- Cursor SDK（TypeScript）发布报道：https://www.marktechpost.com/2026/04/29/cursor-introduces-a-typescript-sdk-for-building-programmatic-coding-agents-with-sandboxed-cloud-vms-subagents-hooks-and-token-based-pricing/
+- Grok Build 深挖：https://theplanettools.ai/blog/xai-grok-build-coding-agent-claude-code-rival-may-2026
