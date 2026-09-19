@@ -8,6 +8,7 @@
 
 - [Cursor Cloud Agent 完整架构（本机 VM 证据 + 控制面 + 客户端切片）](analysis/cloud-agent-architecture.zh-CN.md)
 - [Grok Bot Sandbox / Cloud Agents 架构（本机 sand box 证据 + 与 Cursor Cloud 对照）](analysis/grok-bot-sandbox-cloud-architecture.zh-CN.md)
+- [Grok Bot vs Cursor Cloud Agents：产品设计与架构设计对照](analysis/grok-bot-vs-cursor-cloud-agents.zh-CN.md)
 - [Grok Bot Sandbox 运行时逆向（sand-host / exec-daemon / live-probe）](grok-bot-sandbox-reversed/README.md)
 - [Cloud Agent 运行时逆向（exec-daemon proto / pod-daemon / live-probe）](cursor-cloud-reversed/README.md)
 - [十二项目综合比较与最新路线建议](analysis/extensions/twelve-project-comparison.zh-CN.md)
