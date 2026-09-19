@@ -47,7 +47,7 @@
       "commit": "9e02a9446f325f083722bb7e23ac6cc00a1de740",
       "submodules": [
         {
-          "path": "packages.ui",
+          "path": "packages/ui",
           "url": "https://github.com/felinics/ui",
           "commit": "519a597e0e740906792f2bb6bb8e1c454e4ac727"
         }
