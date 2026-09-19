@@ -73,6 +73,15 @@
       "dmg_sha256": "a3cf86050ea4c322b8a63fa840f35a54318c46da9b33281c2b223a17e473c738"
     },
     {
+      "name": "meta-cloud-reversed",
+      "path": "meta-cloud-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "kind": "self-reported reverse notes from the Meta cloud agent itself (live VM probes + harness self-description); not upstream source",
+      "product": "Meta Cloud Agent (Muse, hatch/Jarvis runtime)",
+      "captured": "2026-09-19",
+      "related_analysis": "analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md"
+    },
+    {
       "name": "grok-bot-sandbox-reversed",
       "path": "grok-bot-sandbox-reversed",
       "repository": "https://github.com/mikezhouhan/agent-fleet",
