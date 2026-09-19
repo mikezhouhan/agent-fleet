@@ -79,7 +79,24 @@
       "kind": "self-reported reverse notes from the Meta cloud agent itself (live VM probes + harness self-description); not upstream source",
       "product": "Meta Cloud Agent (Muse, hatch/Jarvis runtime)",
       "captured": "2026-09-19",
-      "related_analysis": "analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md"
+      "related_analysis": [
+        "analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md",
+        "analysis/muse-implementation-architecture.zh-CN.md",
+        "analysis/muse-vs-cursor-cloud-agents.zh-CN.md"
+      ]
+    },
+    {
+      "name": "muse-reversed",
+      "path": "muse-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "kind": "recovered Muse 2.0 macOS DMG slices (Endo Swift types, Hatch HTML markers, Chrome Browser Node); not upstream source",
+      "product": "Muse 2.0 (com.meta.endo / Hatch CVM client)",
+      "captured": "2026-09-19",
+      "related_analysis": [
+        "analysis/muse-implementation-architecture.zh-CN.md",
+        "analysis/muse-vs-cursor-cloud-agents.zh-CN.md",
+        "muse-reversed/COMPARISON-CURSOR.md"
+      ]
     },
     {
       "name": "grok-bot-sandbox-reversed",

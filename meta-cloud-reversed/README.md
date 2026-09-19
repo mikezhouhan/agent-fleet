@@ -15,9 +15,14 @@
 | agent 自述 | `agent-host/` | 模型、工具路由、子代理、记忆、技能、排程、客户端面——来自 agent 自身的运行手册（一手行为证据） |
 | 本 run 实测 | `live-probe/` | 脱敏后的身份、进程、端口、socket、环境变量名 |
 
-阅读顺序：先看 [../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md](../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md)
-的三方对照，再看本目录；Cursor 侧对照
-[../cursor-cloud-reversed/README.md](../cursor-cloud-reversed/README.md)，
+阅读顺序：先看实现说明书
+[../analysis/muse-implementation-architecture.zh-CN.md](../analysis/muse-implementation-architecture.zh-CN.md)
+与双边对照
+[../analysis/muse-vs-cursor-cloud-agents.zh-CN.md](../analysis/muse-vs-cursor-cloud-agents.zh-CN.md)，
+再看含 Grok 的三方对照
+[../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md](../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md)；
+Mac 桌面材料见 [../muse-reversed/README.md](../muse-reversed/README.md)。
+Cursor 侧对照 [../cursor-cloud-reversed/README.md](../cursor-cloud-reversed/README.md)，
 Grok Bot 侧对照 [../grok-bot-sandbox-reversed/README.md](../grok-bot-sandbox-reversed/README.md)。
 
 ## 目录（命名对标 cursor-cloud-reversed）

@@ -194,11 +194,6 @@ A/B/C 裁决）及 `meta-cloud-reversed/live-probe/`（strings-sql.txt、hotset-
 
 | 状态种类 | Cursor | Grok Bot | Meta |
 | --- | --- | --- | --- |
-| 对话权威源 | 控制面 blob + 客户端 streamConversation | sand-host/控制面；guest 有 transcripts 但系统提示不落盘 | 控制面（推断）+ 本地 `MEMORY.md`/`~/memory/`（精选与原始） |
-### 3.5 会话与状态存放
-
-| 状态种类 | Cursor | Grok Bot | Meta |
-| --- | --- | --- | --- |
 | 对话权威源 | 控制面 blob + 客户端 streamConversation | sand-host/控制面；guest 有 transcripts 但系统提示不落盘 | **宿主 Postgres**：`runtime.messages` / `tool_calls` / `tool_outputs` / `events`（全局 `event_seq`）；`hotset.manifest` 只是 779 条 `{path, offset, len, tier}` 的**材料预热索引**，不是事件日志 |
 | 跨重启文件 | agent-store FUSE、workspace git | box-store v2、`/home/box/sand-data` | `~/workspace/`（home 持久化，VM 重启保留）+ `/run/hatch/resume/`（`handoff-epoch` 代际号、`hotset.manifest`、`execution-ready.marker`）；22:10 cell 重建实测会话无缝续上 |
 | 上下文烘焙 | `prebuild-request-context-cache`、`useCached` 契约 | 未见同等 bake 路径；host bundle 可热升级 | 无 bake；记忆精选（`MEMORY.md` + `memory_search`）+ 语义检索（`memory.entries` / `embeddings`）+ hotset 索引 + 工具 schema 按需加载（deferred namespace） |

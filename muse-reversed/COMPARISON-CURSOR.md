@@ -1,5 +1,9 @@
 # Cursor Projects vs Muse 2.0（客户端证据）
 
+> 本文只比 **桌面客户端**。云端循环、Postgres、Noise、与 Cursor Cloud Agents 的对照见
+> [../analysis/muse-vs-cursor-cloud-agents.zh-CN.md](../analysis/muse-vs-cursor-cloud-agents.zh-CN.md)
+> 与 [../analysis/muse-implementation-architecture.zh-CN.md](../analysis/muse-implementation-architecture.zh-CN.md)。
+
 Muse 是 Meta **Endo/Hatch** 桌面壳（`com.meta.endo`）：Swift Mach-O + Chrome 扩展「Muse Browser Node」+ 内嵌 Hatch Web（CVM）。Planner 在 `hatch.metaaivm.com`，不在本 DMG 的 Swift 源码里。
 
 ## 执行隔离
