@@ -15,9 +15,14 @@
 | agent 自述 | `agent-host/` | 模型、工具路由、子代理、记忆、技能、排程、客户端面——来自 agent 自身的运行手册（一手行为证据） |
 | 本 run 实测 | `live-probe/` | 脱敏后的身份、进程、端口、socket、环境变量名 |
 
-阅读顺序：先看 [../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md](../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md)
-的三方对照，再看本目录；Cursor 侧对照
-[../cursor-cloud-reversed/README.md](../cursor-cloud-reversed/README.md)，
+阅读顺序：先看实现说明书
+[../analysis/muse-implementation-architecture.zh-CN.md](../analysis/muse-implementation-architecture.zh-CN.md)
+与双边对照
+[../analysis/muse-vs-cursor-cloud-agents.zh-CN.md](../analysis/muse-vs-cursor-cloud-agents.zh-CN.md)，
+再看含 Grok 的三方对照
+[../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md](../analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md)；
+Mac 桌面材料见 [../muse-reversed/README.md](../muse-reversed/README.md)。
+Cursor 侧对照 [../cursor-cloud-reversed/README.md](../cursor-cloud-reversed/README.md)，
 Grok Bot 侧对照 [../grok-bot-sandbox-reversed/README.md](../grok-bot-sandbox-reversed/README.md)。
 
 ## 目录（命名对标 cursor-cloud-reversed）
@@ -30,6 +35,7 @@ Grok Bot 侧对照 [../grok-bot-sandbox-reversed/README.md](../grok-bot-sandbox-
 | [agent-host/](agent-host/) | agent harness：模型、工具命名空间、子代理、记忆、技能、排程 | （Meta 特有，Cursor 侧对应桌面/IDE 宿主） |
 | [client-map/](client-map/) | 客户端面：iOS app、Muse app / muse.ai、WhatsApp、配对设备 | `cursor-cloud-reversed/client-map/` |
 | [runtime-report-2026-09-19.zh-CN.md](runtime-report-2026-09-19.zh-CN.md) | 运行时自述报告（2026-09-19）：agent loop 定位、进程/socket 网、状态存储、cron/hook、工具权限、推理网关、与「箱外 Temporal loop」假设的对质；每条结论标【观察/自述/推断】 | （Meta 特有归档报告） |
+| [runtime-report-2026-09-19-hostlayer.zh-CN.md](runtime-report-2026-09-19-hostlayer.zh-CN.md) | 宿主层补测报告（2026-09-19）：三层图（cell/宿主/舰队）、generate↔tool 归属裁决（分裂：推进器在箱内 daemon）、对话事件模型（Postgres 权威源 vs hotset 材料索引）、工具跳转实验（多路 socket 非单一 privsep）、subagent 实测、客户端协议与 Cursor streamConversation 对照表 | （Meta 特有归档报告） |
 
 ## 一句话
 

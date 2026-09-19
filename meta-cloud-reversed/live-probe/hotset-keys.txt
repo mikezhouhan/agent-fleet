@@ -1,0 +1,7 @@
+# /run/hatch/resume/hotset.manifest — key names only (values redacted), 2026-09-19
+# lines: 780, bytes: 70360
+# line1 keys: ['version', 'created_at_unix_ms', 'entries', 'total_bytes', 'tier2_entries', 'tier2_bytes']
+# line2 keys: ['path', 'offset', 'len', 'tier']
+# distinct key sets across all lines:
+#   779x ['len', 'offset', 'path', 'tier']
+#   1x ['created_at_unix_ms', 'entries', 'tier2_bytes', 'tier2_entries', 'total_bytes', 'version']
