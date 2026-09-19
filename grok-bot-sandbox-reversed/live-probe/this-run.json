@@ -1,0 +1,85 @@
+{
+  "capturedAt": "2026-09-19T08:22+08:00",
+  "note": "Tokens, JWTs, cookies, gateway bearer, box-secrets values redacted. This conversation is a sand-subagent on a shared multi-agent box.",
+  "identity": {
+    "hostname": "grok-bot-vm-157438920",
+    "CURSOR_CONVERSATION_ID": "sand-subagent-5581bfff-a3c8-c352-3913-426c0313ce9d",
+    "CURSOR_AGENT": "1",
+    "CURSOR_AGENT_SOCKET": "/tmp/sand-identity.sock",
+    "SAND_BOX_CLUSTER": "us12",
+    "SAND_BOX_STORE_BACKEND": "v2",
+    "SAND_BOX_STORE_ID_prefix": "c96c34e2…",
+    "SAND_BOX_TENANT_ID_prefix": "058f6e84…",
+    "SAND_BOX_BOOT_ID_prefix": "98766a12…",
+    "SAND_BOX_AUTH_ID_shape": "auth0|user_…",
+    "SAND_HTTP_PROXY_NAME": "fastly-prod-xai-1",
+    "activeAgentId_prefix": "761022e5…",
+    "hostVersion": "18cd065",
+    "imageSha": "bcf29f8",
+    "orbitRelease": "bcf29f8"
+  },
+  "runtime": {
+    "dockerenv": false,
+    "inferred": "anyrun pod (brokered), not local Docker",
+    "os": "Debian GNU/Linux 13 (trixie)",
+    "kernel": "6.12.94+",
+    "pid1": "/tini -- /pod-daemon --ssh-auth-sock-path /run/host-services/ssh-auth.sock --ssh-auth-vsock-port 52"
+  },
+  "ports": {
+    "1337": "primary exec-daemon ControlService HTTP",
+    "1338": "primary exec-daemon PtyHost WebSocket",
+    "1339": "sand-window-router (x-sand-display / x-sand-window-owner)",
+    "1340": "sand-host gateway (host-main.cjs)",
+    "26500": "pod-daemon gRPC (anyrun PodDaemonService)",
+    "2375": "Docker HTTP API (listener present; no dockerd process observed)",
+    "50052": "unknown listener (also seen on Cursor Cloud pods)",
+    "5900": "x11vnc primary display :1 (localhost)",
+    "5906": "x11vnc fork display :6",
+    "5907": "x11vnc fork display :7",
+    "6080": "primary noVNC websockify",
+    "6081": "fork noVNC websockify (TokenFile)",
+    "8790": "sand-egress-tunnel WebSocket",
+    "8791": "sand-egress-tunnel CONNECT proxy (loopback)",
+    "14006": "fork exec-daemon for display :6",
+    "14007": "fork exec-daemon for display :7",
+    "13606": "fork PtyHost for display :6",
+    "13607": "fork PtyHost for display :7"
+  },
+  "processes_key": [
+    "pod-daemon :26500",
+    "sand-exit-watch / sand-memory-watch",
+    "supervise-exec-daemon → exec-daemon serve :1337/:1338",
+    "sand-window-router.mjs :1339",
+    "sand-supervisor.mjs (supervise-sand-supervisor)",
+    "host-main.cjs gateway :1340",
+    "sand-egress-tunnel server :8790/:8791",
+    "sand-session-sync / sand-web-bot-auth / sand-ua-governor / sand-cookie-persist",
+    "per-window: start-desktop.sh + Xvfb :N + x11vnc + xfwm4 + plank + fork exec-daemon"
+  ],
+  "multi_window": {
+    "SAND_BOX_MAX_WINDOWS": 100,
+    "observed_displays": [1, 6, 7],
+    "assignments_file": "/home/box/.sand-window-assignments.json",
+    "assignments_shape": { "<agentId>": "<displayNumber>" },
+    "note": "tokens map redacted; display ownership bound under /tmp/sand-window-tokens.d/<N>"
+  },
+  "persistence": {
+    "sand_data": "/home/box/sand-data",
+    "agent_data_symlink": "/home/box/agent-data → /home/box/sand-data",
+    "agents_dir": "/home/box/sand-data/agents/<uuid>/{profile,settings,group,store.db,automations}",
+    "host_bundle": "/home/box/sand-host (version file = short git sha)",
+    "host_bundle_default_url": "https://public-asphr-vm-daemon-bucket.s3.us-east-1.amazonaws.com/sand-host-bundle",
+    "managed": "/opt/sand-managed/assignment.json schemaVersion=1 manifests=[]"
+  },
+  "github": {
+    "gh_auth_status": "not logged in (no gh credentials in this box run)"
+  },
+  "secrets_redacted_paths_only": [
+    "/home/box/sand-data/gateway.json (port/pid/scheme/host + token)",
+    "/home/box/sand-data/box-secrets.json",
+    "/home/box/sand-data/host-secrets.json",
+    "/home/box/sand-data/chrome-cookie-seed.json",
+    "/home/box/.sand-window-assignments.json tokens",
+    "env SAND_GATEWAY_TOKEN / SAND_EGRESS_TUNNEL_BEARER / SAND_INFERENCE_RENEWAL_CREDENTIAL (unset into exec-daemon by start-exec-daemon)"
+  ]
+}
