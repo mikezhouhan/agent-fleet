@@ -1,0 +1,222 @@
+{
+  "dmgPath": "/Users/jasper/Downloads/Manus-Setup-1.7.6.dmg",
+  "dmgBytes": 183742182,
+  "dmgSha256": "41e9915db4bde4ce3234deba5df6e762b1e2a73b5490abe35769c51a14c94ba0",
+  "payload": {
+    "kind": "app.asar",
+    "payloadRoot": "Manus.app/Contents/Resources/app.asar",
+    "asarPath": "Manus.app/Contents/Resources/app.asar",
+    "asarSha256": "bc093ee32d6ab02810df5f566127fe37a4ccb98fec0d122f00fb21929d41cb17",
+    "asarBytes": 123444239,
+    "asarEntryCount": 2770,
+    "primaryBundle": {
+      "shippedPath": "app.asar",
+      "sha256": "bc093ee32d6ab02810df5f566127fe37a4ccb98fec0d122f00fb21929d41cb17",
+      "bytes": 123444239
+    },
+    "files": [
+      {
+        "shippedPath": "dist/agentManager/operatorManager.js",
+        "sha256": "2200c91bf32618d7d221db871d601c618a932b07f6b7e32b7cb672b8a5067a53",
+        "bytes": 22869,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/agentManager/operatorManagerUtils.js",
+        "sha256": "dbb7ef51bed4a7ba3876b45a3a0d8087a5349d4b4b1288e6ee1901df359f1765",
+        "bytes": 700,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/AddonHelperLocator.js",
+        "sha256": "ea711d835cfb955a20a23bd3776ac3f6a903df411958a233043b851b3d6bf675",
+        "bytes": 5938,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/addonHost.js",
+        "sha256": "d4ed15ab3602516eee506074c09dc0e6d3c6d86bb4e61e5b5245c72c7f044d9e",
+        "bytes": 14645,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/autoWorkspaceManager.js",
+        "sha256": "1ba8c3b390494db8a5c067727139967d3416adb7a1ff35c14c9c541cc87757f8",
+        "bytes": 12786,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/computerUseHelperProcessManager.js",
+        "sha256": "534573e7e465406ab83ca49eeec6d8d40ef479de5f16b08d81ab938de36d4937",
+        "bytes": 4378,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/deviceAddonLocators.js",
+        "sha256": "6627db8995687c4ac51199f41950d432f6226cbf11705bf3bab4aaa95fa748c4",
+        "bytes": 855,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/operatorMcpConfig.js",
+        "sha256": "b1596c5f326f806f64330bd36406f13a022c9ba76d6a84f0c50b93393fd1e276",
+        "bytes": 2785,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/operatorMcpTypes.js",
+        "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+        "bytes": 77,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/computerUse/skillRecordingClient.js",
+        "sha256": "f50d244ec618fb280091734396ea9ab59fff08f51850bfa6f2adf6cf7b42c6d2",
+        "bytes": 13492,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/consts.js",
+        "sha256": "0c48707764e8781d5310299072b967d30a3f4530f24d425b8f58e5769bcca234",
+        "bytes": 121,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/env.js",
+        "sha256": "c108922c241fa78fff6a6d4c106f7c047cd02e04c674f09d245934e6ad32aefe",
+        "bytes": 266,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/fileGrant/fileGrantService.js",
+        "sha256": "cc16ebf00ea2205a21492e24a98120c2d034ddc40855183f5a3976ab42e2e8c6",
+        "bytes": 4782,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/fileGrant/localFileHandoff.js",
+        "sha256": "d27fc1cda008ae970f57aea1de7fa12093c215bd8db3eec79951308e3d335f74",
+        "bytes": 1292,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/generated-env.js",
+        "sha256": "65f184aa90b357ffa06662e2597c0a44773ccbbed8e133bf576cb11662db6cfe",
+        "bytes": 201,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/events/myComputer.js",
+        "sha256": "16cd8ec8ba968836488411fc30312caec763c1d83e249d183416eef9324fa474",
+        "bytes": 332,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/events/skillRecording.js",
+        "sha256": "0bd0e53bee4bd90d57657e7cc03dd2f29ce0a1dfb0c983f75974fa39dcace35a",
+        "bytes": 686,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/handlers/computerUse.js",
+        "sha256": "ef53813cee79681628d18caaa29eaa69b4c49f5b8929fcf2de60bb8cbde6eb84",
+        "bytes": 3737,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/handlers/desktopOperator.js",
+        "sha256": "42f077ccd78ba4eba73ff88642c6890ea749948292ffdc8f1b08b4038d48a84d",
+        "bytes": 506,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/handlers/localMcp.js",
+        "sha256": "ab835e7d97586be0c34e156c96f88cb73ee1121208cd3fec2fafbc0ee340a8d2",
+        "bytes": 3127,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/handlers/skillRecording.js",
+        "sha256": "55a5f35275fac39c8c6cd1b0ecc0df047acdf624e940704758866f2cc43358d3",
+        "bytes": 1869,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/ipc/registry.js",
+        "sha256": "95e2ca0a2f00a1a046c33a5df93ba5bb67609af71de13ae3926fa25d87e0db87",
+        "bytes": 6425,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/myComputerService/myComputerService.js",
+        "sha256": "14ca88c591a7118af62d9d9ae86d69ac52ea8be9adcf082f4e2353bf763f3d23",
+        "bytes": 11262,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/myComputerService/SessionSupervisor.js",
+        "sha256": "6e6137db8727a2a8b60f7efdddca04d69fd092706bcd990f78ae6c6b387f074c",
+        "bytes": 10155,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/myComputerService/sidecarManager.js",
+        "sha256": "3b7079d8180ad788bf91c49d9f94d35b5a316decc1ee4cd0286c955fabe6717f",
+        "bytes": 9854,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/myComputerService/socketClient.js",
+        "sha256": "c6e68a72867fa6f66861b42e87571efdd8da6a5941fd92390a5d6fbc959d2d77",
+        "bytes": 3989,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "dist/myComputerService/types.js",
+        "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+        "bytes": 77,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "frontend/out/_next/static/chunks",
+        "kind": "directory",
+        "bytes": 20128,
+        "source": "asar-dir"
+      },
+      {
+        "shippedPath": "package.json",
+        "sha256": "f5d79bf791ab2447c0662ebc1810f6ef8cd97090740a1b4f194a3361c287664c",
+        "bytes": 656,
+        "source": "asar"
+      },
+      {
+        "shippedPath": "Resources/addons/manus-computer-use/1.0.5/addon.json",
+        "sha256": "53ccaf005e38c51c2f1566154e220d006a4aff3609f594145dec070d3d469c5e",
+        "bytes": 424,
+        "source": "resources"
+      },
+      {
+        "shippedPath": "Resources/addons/skill-recorder/1.0.0/addon.json",
+        "sha256": "c00a320ec9abfd213cfa40185daa99890f1e78c6eb5de2b4255650182640cf0d",
+        "bytes": 392,
+        "source": "resources"
+      }
+    ],
+    "app": {
+      "bundleId": "im.manus.desktop",
+      "bundleName": "Manus",
+      "shortVersion": "1.7.6",
+      "bundleVersion": "1.7.6"
+    },
+    "product": {
+      "name": "Manus",
+      "version": "1.7.6",
+      "main": "dist/index.js"
+    }
+  },
+  "asarExtract": {
+    "dest": "work/payload",
+    "entryCount": 2770
+  },
+  "hdiutilAttach": "success (read-only)"
+}

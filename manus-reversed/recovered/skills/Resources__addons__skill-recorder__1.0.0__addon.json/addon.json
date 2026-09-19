@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "addonId": "skill-recorder",
+  "version": "1.0.0",
+  "platforms": {
+    "darwin": {
+      "sharedHelperAddonId": "manus-computer-use",
+      "mcp": {
+        "server": "skill-recorder",
+        "description": "Record a workflow demonstrated in local desktop apps and attach the recording to the active Manus task.",
+        "transport": "socket"
+      }
+    }
+  }
+}

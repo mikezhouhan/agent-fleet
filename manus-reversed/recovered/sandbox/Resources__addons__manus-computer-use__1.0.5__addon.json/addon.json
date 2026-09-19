@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "addonId": "manus-computer-use",
+  "version": "1.0.5",
+  "platforms": {
+    "darwin": {
+      "helper": "helper/darwin/Manus Computer Use.app",
+      "mcp": {
+        "server": "computer-use",
+        "description": "Operate the user's own computer: capture the screen, read UI elements, and drive mouse and keyboard input on local desktop apps.",
+        "transport": "socket"
+      }
+    }
+  }
+}

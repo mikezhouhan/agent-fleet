@@ -1,0 +1,33 @@
+// Recovered Manus 1.7.6 client unit. Not original TypeScript.
+// shippedPath: package.json
+// kind: full-copy
+// name: package.json
+// byteRange: [0, 656)
+{
+  "name": "Manus",
+  "displayName": "Manus",
+  "description": "The official Manus Windows app",
+  "version": "1.7.6",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "manus"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    "./ipc": "./backend/ipc/registry.ts",
+    "./preload": "./backend/preload.ts"
+  },
+  "dependencies": {
+    "app-root-path": "^3.1.0",
+    "electron-log": "^5.4.0",
+    "electron-updater": "^6.3.9",
+    "electron-window-state": "^5.0.3",
+    "lodash-es": "^4.17.21",
+    "sc-prepare-next": "^1.0.3",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "ws": "^8.18.0"
+  },
+  "productName": "Manus"
+}

@@ -1,0 +1,2459 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "dmgPath": "/Users/jasper/Downloads/Manus-Setup-1.7.6.dmg",
+    "dmgBytes": 183742182,
+    "dmgSha256": "41e9915db4bde4ce3234deba5df6e762b1e2a73b5490abe35769c51a14c94ba0",
+    "payload": {
+      "kind": "app.asar",
+      "payloadRoot": "Manus.app/Contents/Resources/app.asar",
+      "asarPath": "Manus.app/Contents/Resources/app.asar",
+      "asarSha256": "bc093ee32d6ab02810df5f566127fe37a4ccb98fec0d122f00fb21929d41cb17",
+      "asarBytes": 123444239,
+      "asarEntryCount": 2770,
+      "primaryBundle": {
+        "shippedPath": "app.asar",
+        "sha256": "bc093ee32d6ab02810df5f566127fe37a4ccb98fec0d122f00fb21929d41cb17",
+        "bytes": 123444239
+      },
+      "files": [
+        {
+          "shippedPath": "dist/agentManager/operatorManager.js",
+          "sha256": "2200c91bf32618d7d221db871d601c618a932b07f6b7e32b7cb672b8a5067a53",
+          "bytes": 22869,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/agentManager/operatorManagerUtils.js",
+          "sha256": "dbb7ef51bed4a7ba3876b45a3a0d8087a5349d4b4b1288e6ee1901df359f1765",
+          "bytes": 700,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/AddonHelperLocator.js",
+          "sha256": "ea711d835cfb955a20a23bd3776ac3f6a903df411958a233043b851b3d6bf675",
+          "bytes": 5938,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/addonHost.js",
+          "sha256": "d4ed15ab3602516eee506074c09dc0e6d3c6d86bb4e61e5b5245c72c7f044d9e",
+          "bytes": 14645,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/autoWorkspaceManager.js",
+          "sha256": "1ba8c3b390494db8a5c067727139967d3416adb7a1ff35c14c9c541cc87757f8",
+          "bytes": 12786,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/computerUseHelperProcessManager.js",
+          "sha256": "534573e7e465406ab83ca49eeec6d8d40ef479de5f16b08d81ab938de36d4937",
+          "bytes": 4378,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/deviceAddonLocators.js",
+          "sha256": "6627db8995687c4ac51199f41950d432f6226cbf11705bf3bab4aaa95fa748c4",
+          "bytes": 855,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/operatorMcpConfig.js",
+          "sha256": "b1596c5f326f806f64330bd36406f13a022c9ba76d6a84f0c50b93393fd1e276",
+          "bytes": 2785,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/operatorMcpTypes.js",
+          "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+          "bytes": 77,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/computerUse/skillRecordingClient.js",
+          "sha256": "f50d244ec618fb280091734396ea9ab59fff08f51850bfa6f2adf6cf7b42c6d2",
+          "bytes": 13492,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/consts.js",
+          "sha256": "0c48707764e8781d5310299072b967d30a3f4530f24d425b8f58e5769bcca234",
+          "bytes": 121,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/env.js",
+          "sha256": "c108922c241fa78fff6a6d4c106f7c047cd02e04c674f09d245934e6ad32aefe",
+          "bytes": 266,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/fileGrant/fileGrantService.js",
+          "sha256": "cc16ebf00ea2205a21492e24a98120c2d034ddc40855183f5a3976ab42e2e8c6",
+          "bytes": 4782,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/fileGrant/localFileHandoff.js",
+          "sha256": "d27fc1cda008ae970f57aea1de7fa12093c215bd8db3eec79951308e3d335f74",
+          "bytes": 1292,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/generated-env.js",
+          "sha256": "65f184aa90b357ffa06662e2597c0a44773ccbbed8e133bf576cb11662db6cfe",
+          "bytes": 201,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/events/myComputer.js",
+          "sha256": "16cd8ec8ba968836488411fc30312caec763c1d83e249d183416eef9324fa474",
+          "bytes": 332,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/events/skillRecording.js",
+          "sha256": "0bd0e53bee4bd90d57657e7cc03dd2f29ce0a1dfb0c983f75974fa39dcace35a",
+          "bytes": 686,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/handlers/computerUse.js",
+          "sha256": "ef53813cee79681628d18caaa29eaa69b4c49f5b8929fcf2de60bb8cbde6eb84",
+          "bytes": 3737,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/handlers/desktopOperator.js",
+          "sha256": "42f077ccd78ba4eba73ff88642c6890ea749948292ffdc8f1b08b4038d48a84d",
+          "bytes": 506,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/handlers/localMcp.js",
+          "sha256": "ab835e7d97586be0c34e156c96f88cb73ee1121208cd3fec2fafbc0ee340a8d2",
+          "bytes": 3127,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/handlers/skillRecording.js",
+          "sha256": "55a5f35275fac39c8c6cd1b0ecc0df047acdf624e940704758866f2cc43358d3",
+          "bytes": 1869,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/ipc/registry.js",
+          "sha256": "95e2ca0a2f00a1a046c33a5df93ba5bb67609af71de13ae3926fa25d87e0db87",
+          "bytes": 6425,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/myComputerService/myComputerService.js",
+          "sha256": "14ca88c591a7118af62d9d9ae86d69ac52ea8be9adcf082f4e2353bf763f3d23",
+          "bytes": 11262,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/myComputerService/SessionSupervisor.js",
+          "sha256": "6e6137db8727a2a8b60f7efdddca04d69fd092706bcd990f78ae6c6b387f074c",
+          "bytes": 10155,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/myComputerService/sidecarManager.js",
+          "sha256": "3b7079d8180ad788bf91c49d9f94d35b5a316decc1ee4cd0286c955fabe6717f",
+          "bytes": 9854,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/myComputerService/socketClient.js",
+          "sha256": "c6e68a72867fa6f66861b42e87571efdd8da6a5941fd92390a5d6fbc959d2d77",
+          "bytes": 3989,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "dist/myComputerService/types.js",
+          "sha256": "d43aa81f5bc89faa359e0f97c814ba25155591ff078fbb9bfd40f8c7c9683230",
+          "bytes": 77,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "frontend/out/_next/static/chunks",
+          "kind": "directory",
+          "bytes": 20128,
+          "source": "asar-dir"
+        },
+        {
+          "shippedPath": "package.json",
+          "sha256": "f5d79bf791ab2447c0662ebc1810f6ef8cd97090740a1b4f194a3361c287664c",
+          "bytes": 656,
+          "source": "asar"
+        },
+        {
+          "shippedPath": "Resources/addons/manus-computer-use/1.0.5/addon.json",
+          "sha256": "53ccaf005e38c51c2f1566154e220d006a4aff3609f594145dec070d3d469c5e",
+          "bytes": 424,
+          "source": "resources"
+        },
+        {
+          "shippedPath": "Resources/addons/skill-recorder/1.0.0/addon.json",
+          "sha256": "c00a320ec9abfd213cfa40185daa99890f1e78c6eb5de2b4255650182640cf0d",
+          "bytes": 392,
+          "source": "resources"
+        }
+      ],
+      "app": {
+        "bundleId": "im.manus.desktop",
+        "bundleName": "Manus",
+        "shortVersion": "1.7.6",
+        "bundleVersion": "1.7.6"
+      },
+      "product": {
+        "name": "Manus",
+        "version": "1.7.6",
+        "main": "dist/index.js"
+      }
+    },
+    "asarExtract": {
+      "dest": "work/payload",
+      "entryCount": 2770
+    },
+    "hdiutilAttach": "success (read-only)"
+  },
+  "scannedFiles": [
+    "Resources/addons/manus-computer-use/1.0.5/addon.json",
+    "Resources/addons/skill-recorder/1.0.0/addon.json",
+    "dist/agentManager/operatorManager.js",
+    "dist/agentManager/operatorManagerUtils.js",
+    "dist/computerUse/AddonHelperLocator.js",
+    "dist/computerUse/addonHost.js",
+    "dist/computerUse/autoWorkspaceManager.js",
+    "dist/computerUse/computerUseHelperProcessManager.js",
+    "dist/computerUse/deviceAddonLocators.js",
+    "dist/computerUse/operatorMcpConfig.js",
+    "dist/computerUse/operatorMcpTypes.js",
+    "dist/computerUse/skillRecordingClient.js",
+    "dist/consts.js",
+    "dist/env.js",
+    "dist/fileGrant/fileGrantService.js",
+    "dist/fileGrant/localFileHandoff.js",
+    "dist/generated-env.js",
+    "dist/ipc/events/myComputer.js",
+    "dist/ipc/events/skillRecording.js",
+    "dist/ipc/handlers/computerUse.js",
+    "dist/ipc/handlers/desktopOperator.js",
+    "dist/ipc/handlers/localMcp.js",
+    "dist/ipc/handlers/skillRecording.js",
+    "dist/ipc/registry.js",
+    "dist/myComputerService/SessionSupervisor.js",
+    "dist/myComputerService/myComputerService.js",
+    "dist/myComputerService/sidecarManager.js",
+    "dist/myComputerService/socketClient.js",
+    "dist/myComputerService/types.js",
+    "frontend/out/_next/static/chunks/0-3u4356j48s-.js",
+    "frontend/out/_next/static/chunks/0-cw48f5mgieo.js",
+    "frontend/out/_next/static/chunks/0-hasq5pjsp_p.js",
+    "frontend/out/_next/static/chunks/0-nzhtlnotep4.js",
+    "frontend/out/_next/static/chunks/001xsj7hjxp1o.js",
+    "frontend/out/_next/static/chunks/003wsu7rmoi3c.js",
+    "frontend/out/_next/static/chunks/00oxcl1gs93jk.js",
+    "frontend/out/_next/static/chunks/00urjj40eslml.js",
+    "frontend/out/_next/static/chunks/0166jhq6a2y7y.js",
+    "frontend/out/_next/static/chunks/01gxvwp6uon6u.js",
+    "frontend/out/_next/static/chunks/01i1wk4nnaedd.js",
+    "frontend/out/_next/static/chunks/01txhr8_owl6x.js",
+    "frontend/out/_next/static/chunks/01xpfwxwhcfe9.js",
+    "frontend/out/_next/static/chunks/02vvt0hasp7f-.js",
+    "frontend/out/_next/static/chunks/03fupopae7-6b.js",
+    "frontend/out/_next/static/chunks/03kejo_apwwq7.js",
+    "frontend/out/_next/static/chunks/03nb3tru59n6c.js",
+    "frontend/out/_next/static/chunks/03o37xgu4el4v.js",
+    "frontend/out/_next/static/chunks/03oh5d5w-5369.js",
+    "frontend/out/_next/static/chunks/03v2m5cn3fqxr.js",
+    "frontend/out/_next/static/chunks/03z9-kitfigmn.js",
+    "frontend/out/_next/static/chunks/041vkn_for-lw.js",
+    "frontend/out/_next/static/chunks/046pn6qxbix25.js",
+    "frontend/out/_next/static/chunks/04kla-fr8169f.js",
+    "frontend/out/_next/static/chunks/04sypgsq_l-6n.js",
+    "frontend/out/_next/static/chunks/05-la8rasglr0.js",
+    "frontend/out/_next/static/chunks/055cr24orjkck.js",
+    "frontend/out/_next/static/chunks/05ejr76hex9ar.js",
+    "frontend/out/_next/static/chunks/05esb2b2fp84q.js",
+    "frontend/out/_next/static/chunks/05h6sx90vnrzc.js",
+    "frontend/out/_next/static/chunks/05syuui81c6ul.js",
+    "frontend/out/_next/static/chunks/05tbn9c3hddsv.js",
+    "frontend/out/_next/static/chunks/05w5cztmruokg.js",
+    "frontend/out/_next/static/chunks/06a61qnlbw_be.js",
+    "frontend/out/_next/static/chunks/06rcmffqf7nbs.js",
+    "frontend/out/_next/static/chunks/07stw097j109f.js",
+    "frontend/out/_next/static/chunks/08gfr-43wv35f.js",
+    "frontend/out/_next/static/chunks/08set3twfed_p.js",
+    "frontend/out/_next/static/chunks/08wnkd257d9hc.js",
+    "frontend/out/_next/static/chunks/093sk8renkesq.js",
+    "frontend/out/_next/static/chunks/09i7p0h201-rt.js",
+    "frontend/out/_next/static/chunks/09qhq6v_ay3rw.js",
+    "frontend/out/_next/static/chunks/09u7gse3wlstx.js",
+    "frontend/out/_next/static/chunks/09y4n-enw9_cd.js",
+    "frontend/out/_next/static/chunks/0_-7jm4cwh_1y.js",
+    "frontend/out/_next/static/chunks/0_2jbbohixyk0.js",
+    "frontend/out/_next/static/chunks/0_4__xtc4nwlt.js",
+    "frontend/out/_next/static/chunks/0_e1zxarhm4ca.js",
+    "frontend/out/_next/static/chunks/0_g2q5zezm4hk.js",
+    "frontend/out/_next/static/chunks/0_k2ajlkpqdo4.js",
+    "frontend/out/_next/static/chunks/0_kilnaz1s7oc.js",
+    "frontend/out/_next/static/chunks/0ablnlu8d13nb.js",
+    "frontend/out/_next/static/chunks/0au989em27f04.js",
+    "frontend/out/_next/static/chunks/0b1uunc1w5l-7.js",
+    "frontend/out/_next/static/chunks/0beop8hxkxa0x.js",
+    "frontend/out/_next/static/chunks/0bydt3im-jfkn.js",
+    "frontend/out/_next/static/chunks/0c8tkqssqa178.js",
+    "frontend/out/_next/static/chunks/0cn4k9-2psuf0.js",
+    "frontend/out/_next/static/chunks/0ctqewmx6_u1h.js",
+    "frontend/out/_next/static/chunks/0cz1d0mv5g_q7.js",
+    "frontend/out/_next/static/chunks/0d2nspw-vpbaz.js",
+    "frontend/out/_next/static/chunks/0d8rkkm2x9y_6.js",
+    "frontend/out/_next/static/chunks/0dd7a2w4_tcd2.js",
+    "frontend/out/_next/static/chunks/0dw7ma1wh_frt.js",
+    "frontend/out/_next/static/chunks/0e18pao43mexw.js",
+    "frontend/out/_next/static/chunks/0eeb2uj09s43p.js",
+    "frontend/out/_next/static/chunks/0esmvcr39dv8w.js",
+    "frontend/out/_next/static/chunks/0f15o03p_3u2-.js",
+    "frontend/out/_next/static/chunks/0f9a9valiypm5.js",
+    "frontend/out/_next/static/chunks/0fok0ug519k_h.js",
+    "frontend/out/_next/static/chunks/0fok4kh8u3eu4.js",
+    "frontend/out/_next/static/chunks/0forf119f6slo.js",
+    "frontend/out/_next/static/chunks/0fugbi1_7zqnj.js",
+    "frontend/out/_next/static/chunks/0gwdlf3hgc_si.js",
+    "frontend/out/_next/static/chunks/0h1xnb4iqrb-6.js",
+    "frontend/out/_next/static/chunks/0h5yq2ikev3b5.js",
+    "frontend/out/_next/static/chunks/0hammwktl-x0q.js",
+    "frontend/out/_next/static/chunks/0hiqc5apo0iia.js",
+    "frontend/out/_next/static/chunks/0hk4rkexdgt5q.js",
+    "frontend/out/_next/static/chunks/0hzf_y831aclo.js",
+    "frontend/out/_next/static/chunks/0i_okfuiri_iy.js",
+    "frontend/out/_next/static/chunks/0ie7aqdmyp-hb.js",
+    "frontend/out/_next/static/chunks/0imo20zz471ov.js",
+    "frontend/out/_next/static/chunks/0jmm4iw6q66dj.js",
+    "frontend/out/_next/static/chunks/0jpxj1zp9b74_.js",
+    "frontend/out/_next/static/chunks/0jt8bu3qrwqxf.js",
+    "frontend/out/_next/static/chunks/0k0p6vnbsk8ok.js",
+    "frontend/out/_next/static/chunks/0k6vujx4p91eq.js",
+    "frontend/out/_next/static/chunks/0k_plh2tqrgq2.js",
+    "frontend/out/_next/static/chunks/0ki19pets1sz_.js",
+    "frontend/out/_next/static/chunks/0kvmbt1pxhs3a.js",
+    "frontend/out/_next/static/chunks/0kyo_3almtxy-.js",
+    "frontend/out/_next/static/chunks/0l-erw0d7fhkk.js",
+    "frontend/out/_next/static/chunks/0lf_83v85p7v-.js",
+    "frontend/out/_next/static/chunks/0lnximvno9-_p.js",
+    "frontend/out/_next/static/chunks/0lodn1bfehzq8.js",
+    "frontend/out/_next/static/chunks/0m3i5h4pbb474.js",
+    "frontend/out/_next/static/chunks/0m5hn5qswharr.js",
+    "frontend/out/_next/static/chunks/0mb8k4r79wgcc.js",
+    "frontend/out/_next/static/chunks/0mbd8jntkyn7z.js",
+    "frontend/out/_next/static/chunks/0mgc9toeubpy3.js",
+    "frontend/out/_next/static/chunks/0mnaxxb0k6z-f.js",
+    "frontend/out/_next/static/chunks/0n6sd56n8dubi.js",
+    "frontend/out/_next/static/chunks/0ncnhg7v543gt.js",
+    "frontend/out/_next/static/chunks/0nhag-opbcknq.js",
+    "frontend/out/_next/static/chunks/0nj99dmew4ovi.js",
+    "frontend/out/_next/static/chunks/0nnud3eqtauz8.js",
+    "frontend/out/_next/static/chunks/0o9b423uhf_3h.js",
+    "frontend/out/_next/static/chunks/0omns1dk0ymjb.js",
+    "frontend/out/_next/static/chunks/0ort8--u6ejtg.js",
+    "frontend/out/_next/static/chunks/0pew9oxfvwd4v.js",
+    "frontend/out/_next/static/chunks/0pghgadv8z72-.js",
+    "frontend/out/_next/static/chunks/0ppl40uznzqd4.js",
+    "frontend/out/_next/static/chunks/0pvwueuxgtcda.js",
+    "frontend/out/_next/static/chunks/0q4o9n9ry7rpn.js",
+    "frontend/out/_next/static/chunks/0qc3z9g-dc89-.js",
+    "frontend/out/_next/static/chunks/0qlmxavx8oby4.js",
+    "frontend/out/_next/static/chunks/0r5un37xwqjzk.js",
+    "frontend/out/_next/static/chunks/0roy9egs6-x40.js",
+    "frontend/out/_next/static/chunks/0s--_9gfwpjm5.js",
+    "frontend/out/_next/static/chunks/0s9mde0x03ouv.js",
+    "frontend/out/_next/static/chunks/0s_kz6227zl28.js",
+    "frontend/out/_next/static/chunks/0sbnxynljop47.js",
+    "frontend/out/_next/static/chunks/0sd2uytysd3fk.js",
+    "frontend/out/_next/static/chunks/0se6b-h7t_k-6.js",
+    "frontend/out/_next/static/chunks/0sg7sgh9kbz60.js",
+    "frontend/out/_next/static/chunks/0slgd63xo5ppa.js",
+    "frontend/out/_next/static/chunks/0spa6uvltnid5.js",
+    "frontend/out/_next/static/chunks/0surys_dhtiqn.js",
+    "frontend/out/_next/static/chunks/0tfi6q7j9yw1z.js",
+    "frontend/out/_next/static/chunks/0tqu0pdtg91uh.js",
+    "frontend/out/_next/static/chunks/0uap4fstc7po1.js",
+    "frontend/out/_next/static/chunks/0ubzdjlcgi-gu.js",
+    "frontend/out/_next/static/chunks/0um202dv7ed02.js",
+    "frontend/out/_next/static/chunks/0uvm5slgfc4qv.js",
+    "frontend/out/_next/static/chunks/0v-6ile_1noug.js",
+    "frontend/out/_next/static/chunks/0v49xf90yaao0.js",
+    "frontend/out/_next/static/chunks/0v6yc7extldpy.js",
+    "frontend/out/_next/static/chunks/0w1qofh2nn36v.js",
+    "frontend/out/_next/static/chunks/0w5yfg8uy2-kp.js",
+    "frontend/out/_next/static/chunks/0w7f4d5ls2y85.js",
+    "frontend/out/_next/static/chunks/0ww0pqopf1rc0.js",
+    "frontend/out/_next/static/chunks/0xgp-mcrzmjf0.js",
+    "frontend/out/_next/static/chunks/0xq7w-bw_4fxg.js",
+    "frontend/out/_next/static/chunks/0xr3us44ucbge.js",
+    "frontend/out/_next/static/chunks/0xs0qc4_q-0cz.js",
+    "frontend/out/_next/static/chunks/0xwtx3yk1f9ds.js",
+    "frontend/out/_next/static/chunks/0xy8n7vsyz65g.js",
+    "frontend/out/_next/static/chunks/0y7veusby6y8q.js",
+    "frontend/out/_next/static/chunks/0yk2g1x35hu9w.js",
+    "frontend/out/_next/static/chunks/0ylsl4z8jfcbz.js",
+    "frontend/out/_next/static/chunks/0ym1drwz550_c.js",
+    "frontend/out/_next/static/chunks/0ynom_q5xnjpq.js",
+    "frontend/out/_next/static/chunks/0yshesx8g0n6r.js",
+    "frontend/out/_next/static/chunks/0z288dd4lq-o1.js",
+    "frontend/out/_next/static/chunks/0zuqy4wnq9w2q.js",
+    "frontend/out/_next/static/chunks/0zwd_bbv9j_1e.js",
+    "frontend/out/_next/static/chunks/1--7f5c972_zs.js",
+    "frontend/out/_next/static/chunks/1-4ulnx0eaa-1.js",
+    "frontend/out/_next/static/chunks/1-_raaicml0-k.js",
+    "frontend/out/_next/static/chunks/1-r6nof2w8nf9.js",
+    "frontend/out/_next/static/chunks/10ghxcqhxbh1t.js",
+    "frontend/out/_next/static/chunks/10qhq9e2scyek.js",
+    "frontend/out/_next/static/chunks/10txp27orpwu4.js",
+    "frontend/out/_next/static/chunks/115ft70kxow_l.js",
+    "frontend/out/_next/static/chunks/11dr0mb-z8lit.js",
+    "frontend/out/_next/static/chunks/11ikbmkunazh7.js",
+    "frontend/out/_next/static/chunks/11q49w8qm5b93.js",
+    "frontend/out/_next/static/chunks/11shklx1fi3jd.js",
+    "frontend/out/_next/static/chunks/11v3ikga27eo5.js",
+    "frontend/out/_next/static/chunks/12-xzbkwcn3eg.js",
+    "frontend/out/_next/static/chunks/12d-rbw15m67a.js",
+    "frontend/out/_next/static/chunks/12d_qqdyr1kop.js",
+    "frontend/out/_next/static/chunks/13_dv65j8n5ez.js",
+    "frontend/out/_next/static/chunks/13bi2w4wekp4-.js",
+    "frontend/out/_next/static/chunks/13dh9_-pz8iwb.js",
+    "frontend/out/_next/static/chunks/13ibst832jgl2.js",
+    "frontend/out/_next/static/chunks/13t5ll3mou-h5.js",
+    "frontend/out/_next/static/chunks/1483r-6asqd_o.js",
+    "frontend/out/_next/static/chunks/14a9ocn39hco_.js",
+    "frontend/out/_next/static/chunks/14c8ofx38qfb5.js",
+    "frontend/out/_next/static/chunks/14imcj-6hqfu9.js",
+    "frontend/out/_next/static/chunks/14k7zvs65l_ew.js",
+    "frontend/out/_next/static/chunks/14s3rtm2v47e2.js",
+    "frontend/out/_next/static/chunks/14w1gb4215_3e.js",
+    "frontend/out/_next/static/chunks/14xou8kecmjos.js",
+    "frontend/out/_next/static/chunks/151gkr7-9z4y8.js",
+    "frontend/out/_next/static/chunks/154b9nepils9g.js",
+    "frontend/out/_next/static/chunks/15gizaqh1_f59.js",
+    "frontend/out/_next/static/chunks/15vi-j2ahkah7.js",
+    "frontend/out/_next/static/chunks/16432ajyl5isg.js",
+    "frontend/out/_next/static/chunks/16albe615o135.js",
+    "frontend/out/_next/static/chunks/16jppbi1keqph.js",
+    "frontend/out/_next/static/chunks/16rue_x0l8v85.js",
+    "frontend/out/_next/static/chunks/16t608st1iogb.js",
+    "frontend/out/_next/static/chunks/16v6vyu_kn3oa.js",
+    "frontend/out/_next/static/chunks/16wbb-j8ibv-p.js",
+    "frontend/out/_next/static/chunks/16ye-iiiq3i_8.js",
+    "frontend/out/_next/static/chunks/1708jqj8uoo2t.js",
+    "frontend/out/_next/static/chunks/175738zzj43kt.js",
+    "frontend/out/_next/static/chunks/17orn0f_xb0en.js",
+    "frontend/out/_next/static/chunks/17yqnh3u5p3ea.js",
+    "frontend/out/_next/static/chunks/184yrlprlv_8t.js",
+    "frontend/out/_next/static/chunks/18e7b2wqa86b_.js",
+    "frontend/out/_next/static/chunks/18j5u9ndmlrk5.js",
+    "frontend/out/_next/static/chunks/192qkkipa2ik7.js",
+    "frontend/out/_next/static/chunks/19jk3xeto0dk8.js",
+    "frontend/out/_next/static/chunks/1_05baw0f-np0.js",
+    "frontend/out/_next/static/chunks/1_6bnwe30yxyq.js",
+    "frontend/out/_next/static/chunks/1_7nwjamz7uwz.js",
+    "frontend/out/_next/static/chunks/1_tkalh-yeko-.js",
+    "frontend/out/_next/static/chunks/1_w0f4r4mq-ym.js",
+    "frontend/out/_next/static/chunks/1_z41-ic1av1a.js",
+    "frontend/out/_next/static/chunks/1app6ww15536m.js",
+    "frontend/out/_next/static/chunks/1b19jrjue_421.js",
+    "frontend/out/_next/static/chunks/1bp4ajtby3szo.js",
+    "frontend/out/_next/static/chunks/1cdnml5vf_-b6.js",
+    "frontend/out/_next/static/chunks/1ceo0al-ut8ud.js",
+    "frontend/out/_next/static/chunks/1cleb_u3nz0y1.js",
+    "frontend/out/_next/static/chunks/1d1ayqzkd80zx.js",
+    "frontend/out/_next/static/chunks/1d37bitua8-6s.js",
+    "frontend/out/_next/static/chunks/1d410aid-w7a4.js",
+    "frontend/out/_next/static/chunks/1dc1xz62-b-cg.js",
+    "frontend/out/_next/static/chunks/1deimw4cy4otk.js",
+    "frontend/out/_next/static/chunks/1do0gyaqa25p5.js",
+    "frontend/out/_next/static/chunks/1dt_76zwd74dq.js",
+    "frontend/out/_next/static/chunks/1duw2mpxngdui.js",
+    "frontend/out/_next/static/chunks/1duybh6atl9jg.js",
+    "frontend/out/_next/static/chunks/1ecbjqjd1ixxm.js",
+    "frontend/out/_next/static/chunks/1eu-_h9lfmfhr.js",
+    "frontend/out/_next/static/chunks/1f1gtpbrd-i3x.js",
+    "frontend/out/_next/static/chunks/1fjastnsdg3r6.js",
+    "frontend/out/_next/static/chunks/1fm47-_a4ttqc.js",
+    "frontend/out/_next/static/chunks/1ghqv_llk_a5l.js",
+    "frontend/out/_next/static/chunks/1gkohgk0s9g22.js",
+    "frontend/out/_next/static/chunks/1gvrvcljpsd7s.js",
+    "frontend/out/_next/static/chunks/1gzqma3jlhbc9.js",
+    "frontend/out/_next/static/chunks/1h2y67memjc2d.js",
+    "frontend/out/_next/static/chunks/1h3li0md_y_kk.js",
+    "frontend/out/_next/static/chunks/1h5wtc5l6cbzn.js",
+    "frontend/out/_next/static/chunks/1ht0u9jtwy4n7.js",
+    "frontend/out/_next/static/chunks/1hwgup07wtrmn.js",
+    "frontend/out/_next/static/chunks/1iaquljy7bs3g.js",
+    "frontend/out/_next/static/chunks/1ik3gcrnd5d0k.js",
+    "frontend/out/_next/static/chunks/1ilv8712ja4hd.js",
+    "frontend/out/_next/static/chunks/1ivvspp4l5eag.js",
+    "frontend/out/_next/static/chunks/1j5atq84x5h9r.js",
+    "frontend/out/_next/static/chunks/1jl2ffpy8wat5.js",
+    "frontend/out/_next/static/chunks/1jnho1v_x0n66.js",
+    "frontend/out/_next/static/chunks/1kho08cwxkqwp.js",
+    "frontend/out/_next/static/chunks/1kmcd7u03zffj.js",
+    "frontend/out/_next/static/chunks/1kmzb03-0pb5y.js",
+    "frontend/out/_next/static/chunks/1ku172oxul4mu.js",
+    "frontend/out/_next/static/chunks/1kurkkl55jifg.js",
+    "frontend/out/_next/static/chunks/1l21i0erue56-.js",
+    "frontend/out/_next/static/chunks/1lc-zpdb7z051.js",
+    "frontend/out/_next/static/chunks/1let9vc5r0cdk.js",
+    "frontend/out/_next/static/chunks/1lh2b5ugxbxf-.js",
+    "frontend/out/_next/static/chunks/1lt9gxpg4_9vu.js",
+    "frontend/out/_next/static/chunks/1m0hmyahjarbd.js",
+    "frontend/out/_next/static/chunks/1mddrxd8q_oxo.js",
+    "frontend/out/_next/static/chunks/1mqm7oz7_cbcv.js",
+    "frontend/out/_next/static/chunks/1n6bca41xhma1.js",
+    "frontend/out/_next/static/chunks/1n9fgg5urtcu9.js",
+    "frontend/out/_next/static/chunks/1nf2iwtc71tx0.js",
+    "frontend/out/_next/static/chunks/1nk-dwq13uu8j.js",
+    "frontend/out/_next/static/chunks/1nskky0z_7d7e.js",
+    "frontend/out/_next/static/chunks/1oi9w49f-1lvd.js",
+    "frontend/out/_next/static/chunks/1ovbwchr0namr.js",
+    "frontend/out/_next/static/chunks/1p1_cs5-ird7j.js",
+    "frontend/out/_next/static/chunks/1p5u0_9r_f-gr.js",
+    "frontend/out/_next/static/chunks/1pbnfqdkjkj7y.js",
+    "frontend/out/_next/static/chunks/1pecec72x727l.js",
+    "frontend/out/_next/static/chunks/1pt-nmo0smada.js",
+    "frontend/out/_next/static/chunks/1pyxk6xcwfsrr.js",
+    "frontend/out/_next/static/chunks/1q1k9dg6osyqu.js",
+    "frontend/out/_next/static/chunks/1q5tqy0gvc6q5.js",
+    "frontend/out/_next/static/chunks/1qmgs2rhk7e9o.js",
+    "frontend/out/_next/static/chunks/1r-f5e38avssr.js",
+    "frontend/out/_next/static/chunks/1r1m4p_h8v494.js",
+    "frontend/out/_next/static/chunks/1r33or2zq2wee.js",
+    "frontend/out/_next/static/chunks/1rj6e_3m51y4j.js",
+    "frontend/out/_next/static/chunks/1s15bgroxfo2s.js",
+    "frontend/out/_next/static/chunks/1s6wugr0tx6im.js",
+    "frontend/out/_next/static/chunks/1sgilmanlg6t2.js",
+    "frontend/out/_next/static/chunks/1svse546bepou.js",
+    "frontend/out/_next/static/chunks/1sx67s7rnteri.js",
+    "frontend/out/_next/static/chunks/1tbq_0qqc76w3.js",
+    "frontend/out/_next/static/chunks/1tbxqy7oeq9fj.js",
+    "frontend/out/_next/static/chunks/1tl-tsvhl_484.js",
+    "frontend/out/_next/static/chunks/1tms3kwtir8-q.js",
+    "frontend/out/_next/static/chunks/1tr43j8w5rvgq.js",
+    "frontend/out/_next/static/chunks/1unbyqoazd3ez.js",
+    "frontend/out/_next/static/chunks/1v0zs0yjlf_rf.js",
+    "frontend/out/_next/static/chunks/1v5zo14mpe8hn.js",
+    "frontend/out/_next/static/chunks/1va4pae45xibc.js",
+    "frontend/out/_next/static/chunks/1vbc07q5jpygs.js",
+    "frontend/out/_next/static/chunks/1vdmdjkkcx_i-.js",
+    "frontend/out/_next/static/chunks/1wkatzst-t0oh.js",
+    "frontend/out/_next/static/chunks/1wzwau2taz5mq.js",
+    "frontend/out/_next/static/chunks/1x1a9fn403xjh.js",
+    "frontend/out/_next/static/chunks/1x7y73y2q3aj9.js",
+    "frontend/out/_next/static/chunks/1xju30bl4j0un.js",
+    "frontend/out/_next/static/chunks/1xpgh-_eg4ce3.js",
+    "frontend/out/_next/static/chunks/1y5jqsd8iq63w.js",
+    "frontend/out/_next/static/chunks/1y614h5b19wg7.js",
+    "frontend/out/_next/static/chunks/1yqulcziorcc3.js",
+    "frontend/out/_next/static/chunks/1yx-ypbq7d2i0.js",
+    "frontend/out/_next/static/chunks/1z2r40-vbi4sq.js",
+    "frontend/out/_next/static/chunks/1z3x034knlh4w.js",
+    "frontend/out/_next/static/chunks/1zpjsuq3jj_mi.js",
+    "frontend/out/_next/static/chunks/2-1pa996un94u.js",
+    "frontend/out/_next/static/chunks/2-4glhtg08w7d.js",
+    "frontend/out/_next/static/chunks/2-k_1histv7xn.js",
+    "frontend/out/_next/static/chunks/2-pkg3jpdjo_s.js",
+    "frontend/out/_next/static/chunks/2-wg0u11145bi.js",
+    "frontend/out/_next/static/chunks/202w_rl6u-332.js",
+    "frontend/out/_next/static/chunks/20a433iu8b9vk.js",
+    "frontend/out/_next/static/chunks/20h_8yia4x29a.js",
+    "frontend/out/_next/static/chunks/20s2dhzgvee3b.js",
+    "frontend/out/_next/static/chunks/20w7s8ch58nx4.js",
+    "frontend/out/_next/static/chunks/21-hk1uh633cr.js",
+    "frontend/out/_next/static/chunks/216la3imo5i3n.js",
+    "frontend/out/_next/static/chunks/21_t2lsn6fo5_.js",
+    "frontend/out/_next/static/chunks/21c67ugtmmi0c.js",
+    "frontend/out/_next/static/chunks/21dh_i4muxrvg.js",
+    "frontend/out/_next/static/chunks/21mudr7yp-q5r.js",
+    "frontend/out/_next/static/chunks/21znw5pjtqabx.js",
+    "frontend/out/_next/static/chunks/22kfwhzbviyx1.js",
+    "frontend/out/_next/static/chunks/22lnuxsx22nr_.js",
+    "frontend/out/_next/static/chunks/22th93-1q2152.js",
+    "frontend/out/_next/static/chunks/23-s923rnc010.js",
+    "frontend/out/_next/static/chunks/235ujn8agmuvm.js",
+    "frontend/out/_next/static/chunks/23kdts0zqw7nn.js",
+    "frontend/out/_next/static/chunks/23pvm8bpj4nwd.js",
+    "frontend/out/_next/static/chunks/24-ilwemocwya.js",
+    "frontend/out/_next/static/chunks/24d161vis3k4c.js",
+    "frontend/out/_next/static/chunks/24g_-9peowdmg.js",
+    "frontend/out/_next/static/chunks/24m_ogrv9dgzf.js",
+    "frontend/out/_next/static/chunks/254wi_ikm6xr-.js",
+    "frontend/out/_next/static/chunks/258ntsln2gnkf.js",
+    "frontend/out/_next/static/chunks/25bsbf710hyci.js",
+    "frontend/out/_next/static/chunks/25fm65sc1s14o.js",
+    "frontend/out/_next/static/chunks/25gwg0147p9a2.js",
+    "frontend/out/_next/static/chunks/25le9xqg7k9td.js",
+    "frontend/out/_next/static/chunks/26jqvm07nfa31.js",
+    "frontend/out/_next/static/chunks/26ux1vig1e_9l.js",
+    "frontend/out/_next/static/chunks/270v_mtwxt8vm.js",
+    "frontend/out/_next/static/chunks/2768p70cgr3mv.js",
+    "frontend/out/_next/static/chunks/27hzkn43d_yd2.js",
+    "frontend/out/_next/static/chunks/28c3a9k8i3xmk.js",
+    "frontend/out/_next/static/chunks/28oss3x4r9lwv.js",
+    "frontend/out/_next/static/chunks/28s58n_irk1dc.js",
+    "frontend/out/_next/static/chunks/28ynstazyvk0x.js",
+    "frontend/out/_next/static/chunks/29ine7hrn-ixr.js",
+    "frontend/out/_next/static/chunks/29ohty-zyhob3.js",
+    "frontend/out/_next/static/chunks/2_45bir4ze0q9.js",
+    "frontend/out/_next/static/chunks/2a-vi066zmw4n.js",
+    "frontend/out/_next/static/chunks/2a8zabzghjsiu.js",
+    "frontend/out/_next/static/chunks/2aklk6ayic8db.js",
+    "frontend/out/_next/static/chunks/2aqu_ui0bj5df.js",
+    "frontend/out/_next/static/chunks/2buc0rzfs3e_m.js",
+    "frontend/out/_next/static/chunks/2bvptxz8of_d-.js",
+    "frontend/out/_next/static/chunks/2c1jebyi7d6d_.js",
+    "frontend/out/_next/static/chunks/2c3xuzi95-xz1.js",
+    "frontend/out/_next/static/chunks/2cbubihw-t53o.js",
+    "frontend/out/_next/static/chunks/2cci6-2dm2b6c.js",
+    "frontend/out/_next/static/chunks/2cfb05qay1h0r.js",
+    "frontend/out/_next/static/chunks/2cjd3u4zetksh.js",
+    "frontend/out/_next/static/chunks/2co942lesa2z-.js",
+    "frontend/out/_next/static/chunks/2coq79801zipw.js",
+    "frontend/out/_next/static/chunks/2cu4lr7ropx-r.js",
+    "frontend/out/_next/static/chunks/2dergqg-6_8tq.js",
+    "frontend/out/_next/static/chunks/2dkfyj_kqetc1.js",
+    "frontend/out/_next/static/chunks/2dv1m22kvnq04.js",
+    "frontend/out/_next/static/chunks/2efk-6ty0y-59.js",
+    "frontend/out/_next/static/chunks/2efoxq87hyz67.js",
+    "frontend/out/_next/static/chunks/2equskv0cky0s.js",
+    "frontend/out/_next/static/chunks/2f0375oopv1ei.js",
+    "frontend/out/_next/static/chunks/2fea4k-c1bjpl.js",
+    "frontend/out/_next/static/chunks/2fgaicc83zn_w.js",
+    "frontend/out/_next/static/chunks/2fm7vg8q10euo.js",
+    "frontend/out/_next/static/chunks/2fv3pkmn8leik.js",
+    "frontend/out/_next/static/chunks/2giylz7bw8siv.js",
+    "frontend/out/_next/static/chunks/2gluh4i9th7ar.js",
+    "frontend/out/_next/static/chunks/2gpa--vx-t0ib.js",
+    "frontend/out/_next/static/chunks/2gqo5_sjbut-c.js",
+    "frontend/out/_next/static/chunks/2gzmlaexcp5c8.js",
+    "frontend/out/_next/static/chunks/2h2-emvn1luy5.js",
+    "frontend/out/_next/static/chunks/2h6f7d1je443i.js",
+    "frontend/out/_next/static/chunks/2h7nxmywwh_u9.js",
+    "frontend/out/_next/static/chunks/2hef47nixrw21.js",
+    "frontend/out/_next/static/chunks/2i3e1gb_n4otj.js",
+    "frontend/out/_next/static/chunks/2ia8hw2jp00-8.js",
+    "frontend/out/_next/static/chunks/2ier0h-32q3o_.js",
+    "frontend/out/_next/static/chunks/2ip_71xj0fsla.js",
+    "frontend/out/_next/static/chunks/2jff0z_i71q7y.js",
+    "frontend/out/_next/static/chunks/2jrfvcyjev2--.js",
+    "frontend/out/_next/static/chunks/2k37z9el5mpej.js",
+    "frontend/out/_next/static/chunks/2kt95ntg3hzin.js",
+    "frontend/out/_next/static/chunks/2kvglx2y4xt0q.js",
+    "frontend/out/_next/static/chunks/2kw_8os9mtn9y.js",
+    "frontend/out/_next/static/chunks/2l33qk5ro4-in.js",
+    "frontend/out/_next/static/chunks/2lre26wgsifah.js",
+    "frontend/out/_next/static/chunks/2m9k54znjtvt-.js",
+    "frontend/out/_next/static/chunks/2mefo7nomv19d.js",
+    "frontend/out/_next/static/chunks/2mm2pucryirzo.js",
+    "frontend/out/_next/static/chunks/2mt4-8k_bwxnz.js",
+    "frontend/out/_next/static/chunks/2net14djd_ich.js",
+    "frontend/out/_next/static/chunks/2nnftw880w5o0.js",
+    "frontend/out/_next/static/chunks/2nwuam4uy_-6m.js",
+    "frontend/out/_next/static/chunks/2oi45vb4826jy.js",
+    "frontend/out/_next/static/chunks/2oop4zujxts8g.js",
+    "frontend/out/_next/static/chunks/2pdna5a1ykat0.js",
+    "frontend/out/_next/static/chunks/2pmybhy441_99.js",
+    "frontend/out/_next/static/chunks/2q_llvg-2jr2x.js",
+    "frontend/out/_next/static/chunks/2qm0xg1lr3fh-.js",
+    "frontend/out/_next/static/chunks/2qt7xydsjs527.js",
+    "frontend/out/_next/static/chunks/2qypzdcn_86vj.js",
+    "frontend/out/_next/static/chunks/2r4h_fycv5fr1.js",
+    "frontend/out/_next/static/chunks/2r84_4f4sk0gx.js",
+    "frontend/out/_next/static/chunks/2rbit6_tyniwo.js",
+    "frontend/out/_next/static/chunks/2rebn8_cqdarg.js",
+    "frontend/out/_next/static/chunks/2rgka27eupyf1.js",
+    "frontend/out/_next/static/chunks/2rqamsw6ub404.js",
+    "frontend/out/_next/static/chunks/2rrvpmmh6v62_.js",
+    "frontend/out/_next/static/chunks/2rw4tutt5j0di.js",
+    "frontend/out/_next/static/chunks/2rz6f9zqyz_t5.js",
+    "frontend/out/_next/static/chunks/2sapk9p726aab.js",
+    "frontend/out/_next/static/chunks/2sbv5yhd8eq83.js",
+    "frontend/out/_next/static/chunks/2tep5jg_5wazj.js",
+    "frontend/out/_next/static/chunks/2uef35kdc54zl.js",
+    "frontend/out/_next/static/chunks/2uth1ylb-4v20.js",
+    "frontend/out/_next/static/chunks/2uysb4w4zcvzl.js",
+    "frontend/out/_next/static/chunks/2vrx7f2m45kax.js",
+    "frontend/out/_next/static/chunks/2vsz5w87jfo89.js",
+    "frontend/out/_next/static/chunks/2vujilbi8m0oj.js",
+    "frontend/out/_next/static/chunks/2wcam0vnzutri.js",
+    "frontend/out/_next/static/chunks/2wgec9oroma54.js",
+    "frontend/out/_next/static/chunks/2wiipl1gyqvj7.js",
+    "frontend/out/_next/static/chunks/2yagc0lnetx2w.js",
+    "frontend/out/_next/static/chunks/2yg_k5pyw76oj.js",
+    "frontend/out/_next/static/chunks/2ykila666w56y.js",
+    "frontend/out/_next/static/chunks/2yo7nuky5k3j0.js",
+    "frontend/out/_next/static/chunks/2yvfbti5ikgj-.js",
+    "frontend/out/_next/static/chunks/2yyjlguwk9kqh.js",
+    "frontend/out/_next/static/chunks/2z1qaqs-9qpyy.js",
+    "frontend/out/_next/static/chunks/2ze-0sl5hkbxk.js",
+    "frontend/out/_next/static/chunks/2zhf-t6nuajwq.js",
+    "frontend/out/_next/static/chunks/2zjk9duke28ac.js",
+    "frontend/out/_next/static/chunks/2zr40w-65s3nx.js",
+    "frontend/out/_next/static/chunks/2ztzgmrt7wbf5.js",
+    "frontend/out/_next/static/chunks/3-1qr0v46nfn1.js",
+    "frontend/out/_next/static/chunks/3-6khrmr4fb02.js",
+    "frontend/out/_next/static/chunks/3-j0qcl_455s0.js",
+    "frontend/out/_next/static/chunks/3-k8t9dwu6h2-.js",
+    "frontend/out/_next/static/chunks/3-qga6aurxtjl.js",
+    "frontend/out/_next/static/chunks/3-w9jq4pbsw7p.js",
+    "frontend/out/_next/static/chunks/3-wv_dy6ymazr.js",
+    "frontend/out/_next/static/chunks/302c7b-crj7dg.js",
+    "frontend/out/_next/static/chunks/30wjo1ihz5sw0.js",
+    "frontend/out/_next/static/chunks/314cji94v40sr.js",
+    "frontend/out/_next/static/chunks/3197cvysxxa_t.js",
+    "frontend/out/_next/static/chunks/31_of3o6pqtwp.js",
+    "frontend/out/_next/static/chunks/31hf8f2beh19m.js",
+    "frontend/out/_next/static/chunks/31i7x63o657os.js",
+    "frontend/out/_next/static/chunks/31jwe9vx5vbxl.js",
+    "frontend/out/_next/static/chunks/31l9azbua_k78.js",
+    "frontend/out/_next/static/chunks/31y_z3onzxmgr.js",
+    "frontend/out/_next/static/chunks/328slp8bjhsen.js",
+    "frontend/out/_next/static/chunks/32g3x3576k9d_.js",
+    "frontend/out/_next/static/chunks/33dw6do1j71qj.js",
+    "frontend/out/_next/static/chunks/33hyai-q45ctg.js",
+    "frontend/out/_next/static/chunks/33kyoavvccxga.js",
+    "frontend/out/_next/static/chunks/33mxlxva40sha.js",
+    "frontend/out/_next/static/chunks/34gef7x3rx0-e.js",
+    "frontend/out/_next/static/chunks/34q5ixsy3z-6z.js",
+    "frontend/out/_next/static/chunks/35juu7nwerz9i.js",
+    "frontend/out/_next/static/chunks/35kk97ktced6b.js",
+    "frontend/out/_next/static/chunks/35r6q2__fg22x.js",
+    "frontend/out/_next/static/chunks/35tr-j6m8h078.js",
+    "frontend/out/_next/static/chunks/35w5hvalswqwi.js",
+    "frontend/out/_next/static/chunks/36_z_j745y6fv.js",
+    "frontend/out/_next/static/chunks/36diadjn3e889.js",
+    "frontend/out/_next/static/chunks/375oglm60pt9u.js",
+    "frontend/out/_next/static/chunks/376dhn53lppbb.js",
+    "frontend/out/_next/static/chunks/37rhla5__rb29.js",
+    "frontend/out/_next/static/chunks/38c4qk6-0cch6.js",
+    "frontend/out/_next/static/chunks/38x1z24hso7wf.js",
+    "frontend/out/_next/static/chunks/391qyi1sbb3gt.js",
+    "frontend/out/_next/static/chunks/39g6b9vtp45o3.js",
+    "frontend/out/_next/static/chunks/39ls4qep9xo0y.js",
+    "frontend/out/_next/static/chunks/39wqc5fb_s9y6.js",
+    "frontend/out/_next/static/chunks/3_7p6k58e02iv.js",
+    "frontend/out/_next/static/chunks/3_vryquqkjggr.js",
+    "frontend/out/_next/static/chunks/3a2alo_grwqyt.js",
+    "frontend/out/_next/static/chunks/3a90i4-k9aqje.js",
+    "frontend/out/_next/static/chunks/3ai0ugzuunc8k.js",
+    "frontend/out/_next/static/chunks/3aurfpnkckikj.js",
+    "frontend/out/_next/static/chunks/3b9pb0zwon-es.js",
+    "frontend/out/_next/static/chunks/3csgk9ebgszlt.js",
+    "frontend/out/_next/static/chunks/3cv1ii6q5n4vz.js",
+    "frontend/out/_next/static/chunks/3d0po8vtemqyu.js",
+    "frontend/out/_next/static/chunks/3dfmb2iumwl3h.js",
+    "frontend/out/_next/static/chunks/3dmp1gqzfh3w8.js",
+    "frontend/out/_next/static/chunks/3dxdcynf2_s5j.js",
+    "frontend/out/_next/static/chunks/3e3x_ybxgvbw3.js",
+    "frontend/out/_next/static/chunks/3e4y91rb57ewf.js",
+    "frontend/out/_next/static/chunks/3e8lzafw52-6m.js",
+    "frontend/out/_next/static/chunks/3eayryp8hnuqz.js",
+    "frontend/out/_next/static/chunks/3eey0bkzo7hqf.js",
+    "frontend/out/_next/static/chunks/3ewh25i2q685z.js",
+    "frontend/out/_next/static/chunks/3eynsw5etxiya.js",
+    "frontend/out/_next/static/chunks/3eysqhxzcjwtv.js",
+    "frontend/out/_next/static/chunks/3f_ctrumeha05.js",
+    "frontend/out/_next/static/chunks/3f_z-vr-yd8v_.js",
+    "frontend/out/_next/static/chunks/3fud72m-ec-_7.js",
+    "frontend/out/_next/static/chunks/3fyk0vsglolsl.js",
+    "frontend/out/_next/static/chunks/3g8_33hbj-g0v.js",
+    "frontend/out/_next/static/chunks/3ggfz7tmxebas.js",
+    "frontend/out/_next/static/chunks/3grcoqcd36230.js",
+    "frontend/out/_next/static/chunks/3h08hk0jsmly7.js",
+    "frontend/out/_next/static/chunks/3h7lsn0jws7qd.js",
+    "frontend/out/_next/static/chunks/3hw19y-yhtadq.js",
+    "frontend/out/_next/static/chunks/3i-zja2l3onch.js",
+    "frontend/out/_next/static/chunks/3i7eg-jmpnzox.js",
+    "frontend/out/_next/static/chunks/3i8o5cu-mcw-v.js",
+    "frontend/out/_next/static/chunks/3ijuq_dvs4dp-.js",
+    "frontend/out/_next/static/chunks/3jbqs4c4x79hl.js",
+    "frontend/out/_next/static/chunks/3jq_1r3zx7zvj.js",
+    "frontend/out/_next/static/chunks/3jybgs-n8mtbo.js",
+    "frontend/out/_next/static/chunks/3jysq-_4r0b3w.js",
+    "frontend/out/_next/static/chunks/3k7y2ypgh0qgp.js",
+    "frontend/out/_next/static/chunks/3k9cv8i-sjftd.js",
+    "frontend/out/_next/static/chunks/3kb0pw2alx8dy.js",
+    "frontend/out/_next/static/chunks/3l2_b8uv47l6t.js",
+    "frontend/out/_next/static/chunks/3l48hiqxsvino.js",
+    "frontend/out/_next/static/chunks/3ldlfqhaqmsqj.js",
+    "frontend/out/_next/static/chunks/3lw1kmdlwkqof.js",
+    "frontend/out/_next/static/chunks/3lyd2wcbxh2ud.js",
+    "frontend/out/_next/static/chunks/3lzwjoi4jqc-7.js",
+    "frontend/out/_next/static/chunks/3mqklxkpxbfr_.js",
+    "frontend/out/_next/static/chunks/3mxciv5wmexw1.js",
+    "frontend/out/_next/static/chunks/3mxg93t9adbug.js",
+    "frontend/out/_next/static/chunks/3n64jufeelhgj.js",
+    "frontend/out/_next/static/chunks/3n9dj1o-7lpeb.js",
+    "frontend/out/_next/static/chunks/3o5hxbjgy50sc.js",
+    "frontend/out/_next/static/chunks/3oi0tomzzxjpg.js",
+    "frontend/out/_next/static/chunks/3oqaehgnrothr.js",
+    "frontend/out/_next/static/chunks/3oxx3owb2tvj-.js",
+    "frontend/out/_next/static/chunks/3prnw-467bmiu.js",
+    "frontend/out/_next/static/chunks/3q1k5uyx34yme.js",
+    "frontend/out/_next/static/chunks/3qbou4u7wcaj5.js",
+    "frontend/out/_next/static/chunks/3qtuyvhu8xif1.js",
+    "frontend/out/_next/static/chunks/3r0hkz71k9t0t.js",
+    "frontend/out/_next/static/chunks/3r3awup43r--6.js",
+    "frontend/out/_next/static/chunks/3r6jk0s0yflc4.js",
+    "frontend/out/_next/static/chunks/3r92t241z_4k_.js",
+    "frontend/out/_next/static/chunks/3rhdf4jj44ock.js",
+    "frontend/out/_next/static/chunks/3rl5r71tm9ynj.js",
+    "frontend/out/_next/static/chunks/3rnum-sh3cvws.js",
+    "frontend/out/_next/static/chunks/3s9kaq8ul8nty.js",
+    "frontend/out/_next/static/chunks/3sw1s8nlz1naj.js",
+    "frontend/out/_next/static/chunks/3t6uzc6q5sjoq.js",
+    "frontend/out/_next/static/chunks/3t8hazqz7kieb.js",
+    "frontend/out/_next/static/chunks/3tgezh0sse-s6.js",
+    "frontend/out/_next/static/chunks/3tmycj85jitmf.js",
+    "frontend/out/_next/static/chunks/3ts4fime5kmtp.js",
+    "frontend/out/_next/static/chunks/3tvwlv7imwkip.js",
+    "frontend/out/_next/static/chunks/3tw-yjgbb80vc.js",
+    "frontend/out/_next/static/chunks/3txpk-seqmc1j.js",
+    "frontend/out/_next/static/chunks/3txw4hwtfcptx.js",
+    "frontend/out/_next/static/chunks/3u2dth1sk7y7z.js",
+    "frontend/out/_next/static/chunks/3ucgyjfvcaje5.js",
+    "frontend/out/_next/static/chunks/3vnb084nw7c2v.js",
+    "frontend/out/_next/static/chunks/3wupi2u_8m_r4.js",
+    "frontend/out/_next/static/chunks/3x05dbehk94h6.js",
+    "frontend/out/_next/static/chunks/3xn3u4el8ubfq.js",
+    "frontend/out/_next/static/chunks/3xtw0o664xhi-.js",
+    "frontend/out/_next/static/chunks/3y7hq8aahj7ci.js",
+    "frontend/out/_next/static/chunks/3yltb9r80evhi.js",
+    "frontend/out/_next/static/chunks/3yp0spif17_5k.js",
+    "frontend/out/_next/static/chunks/3yt8m-7wu13ls.js",
+    "frontend/out/_next/static/chunks/3z8lyrm2ized9.js",
+    "frontend/out/_next/static/chunks/3zk3bb69dmxey.js",
+    "frontend/out/_next/static/chunks/3znpvew7ukqlh.js",
+    "frontend/out/_next/static/chunks/3zuo_6relp7sf.js",
+    "frontend/out/_next/static/chunks/40vt41_f0i2j9.js",
+    "frontend/out/_next/static/chunks/40zcaiour7i1r.js",
+    "frontend/out/_next/static/chunks/41-59r42pm8ib.js",
+    "frontend/out/_next/static/chunks/4143pizvfhios.js",
+    "frontend/out/_next/static/chunks/41i28vpr3pw17.js",
+    "frontend/out/_next/static/chunks/41khrn_7o22ae.js",
+    "frontend/out/_next/static/chunks/41o4_3vdw9er4.js",
+    "frontend/out/_next/static/chunks/422o_qt40gg4b.js",
+    "frontend/out/_next/static/chunks/4262w0_v1q8f3.js",
+    "frontend/out/_next/static/chunks/42a-uhj5ee72f.js",
+    "frontend/out/_next/static/chunks/42hncd6a114vv.js",
+    "frontend/out/_next/static/chunks/42j1fbiskrgz9.js",
+    "frontend/out/_next/static/chunks/42m3s4kmmw_eb.js",
+    "frontend/out/_next/static/chunks/42rnd19jlwsfd.js",
+    "frontend/out/_next/static/chunks/42tnnjyxkdwzv.js",
+    "frontend/out/_next/static/chunks/42y0zv5v-75vk.js",
+    "frontend/out/_next/static/chunks/433lmbwjjkbjd.js",
+    "frontend/out/_next/static/chunks/434a5muyrz3sc.js",
+    "frontend/out/_next/static/chunks/4390eij0h36p3.js",
+    "frontend/out/_next/static/chunks/43eaqapj-9znr.js",
+    "frontend/out/_next/static/chunks/440o_qnpltf67.js",
+    "frontend/out/_next/static/chunks/4440rb6rox-w5.js",
+    "frontend/out/_next/static/chunks/44dykkemg0kaf.js",
+    "frontend/out/_next/static/chunks/44k03ldppf68w.js",
+    "frontend/out/_next/static/chunks/44o2gxj7sa2k8.js",
+    "frontend/out/_next/static/chunks/455l-2heka3u4.js",
+    "frontend/out/_next/static/chunks/turbopack-1cf9cvyn61lhs.js",
+    "package.json"
+  ],
+  "missingCategories": [],
+  "gaps": [
+    {
+      "mechanic": "planner/executor loop",
+      "status": "dmg-absent",
+      "note": "Desktop ships SessionSupervisor + sidecar + selectPlannerVisible UI. The actual planning/execution loop runs over wss://api.manus.im and is not in app.asar dist/."
+    }
+  ],
+  "classification": [
+    {
+      "category": "mcp",
+      "shippedPath": "dist/computerUse/operatorMcpConfig.js",
+      "shippedSymbols": [
+        "mcp_servers.json",
+        "operatorMcpConfig",
+        "OperatorMcpConfig"
+      ],
+      "bytes": 2785
+    },
+    {
+      "category": "mcp",
+      "shippedPath": "dist/ipc/handlers/computerUse.js",
+      "shippedSymbols": [
+        "localMcp"
+      ],
+      "bytes": 3737
+    },
+    {
+      "category": "mcp",
+      "shippedPath": "dist/ipc/handlers/localMcp.js",
+      "shippedSymbols": [
+        "localMcp"
+      ],
+      "bytes": 3127
+    },
+    {
+      "category": "mcp",
+      "shippedPath": "dist/ipc/registry.js",
+      "shippedSymbols": [
+        "localMcp"
+      ],
+      "bytes": 6425
+    },
+    {
+      "category": "mcp",
+      "shippedPath": "frontend/out/_next/static/chunks/2cbubihw-t53o.js",
+      "shippedSymbols": [
+        "localMcp"
+      ],
+      "bytes": 10408933
+    },
+    {
+      "category": "mcp",
+      "shippedPath": "Resources/addons/manus-computer-use/1.0.5/addon.json",
+      "shippedSymbols": [
+        "\"server\": \"computer-use\""
+      ],
+      "bytes": 424
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/agentManager/operatorManager.js",
+      "shippedSymbols": [
+        "manus-computer-operator"
+      ],
+      "bytes": 22869
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/autoWorkspaceManager.js",
+      "shippedSymbols": [
+        "manus-auto-workspace"
+      ],
+      "bytes": 12786
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/deviceAddonLocators.js",
+      "shippedSymbols": [
+        "COMPUTER_USE_ADDON_ID"
+      ],
+      "bytes": 855
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/operatorMcpConfig.js",
+      "shippedSymbols": [
+        "manus-computer-operator"
+      ],
+      "bytes": 2785
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/myComputerService/myComputerService.js",
+      "shippedSymbols": [
+        "SidecarManager"
+      ],
+      "bytes": 11262
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/myComputerService/SessionSupervisor.js",
+      "shippedSymbols": [
+        "sandboxWsUrl"
+      ],
+      "bytes": 10155
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "dist/myComputerService/sidecarManager.js",
+      "shippedSymbols": [
+        "SidecarManager"
+      ],
+      "bytes": 9854
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "frontend/out/_next/static/chunks/0y7veusby6y8q.js",
+      "shippedSymbols": [
+        "COMPUTER_USE_ADDON_ID"
+      ],
+      "bytes": 6743509
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "frontend/out/_next/static/chunks/2cbubihw-t53o.js",
+      "shippedSymbols": [
+        "COMPUTER_USE_ADDON_ID"
+      ],
+      "bytes": 10408933
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "frontend/out/_next/static/chunks/3qbou4u7wcaj5.js",
+      "shippedSymbols": [
+        "manus-auto-workspace",
+        "COMPUTER_USE_ADDON_ID"
+      ],
+      "bytes": 820141
+    },
+    {
+      "category": "sandbox",
+      "shippedPath": "frontend/out/_next/static/chunks/3xtw0o664xhi-.js",
+      "shippedSymbols": [
+        "COMPUTER_USE_ADDON_ID"
+      ],
+      "bytes": 77160
+    },
+    {
+      "category": "session",
+      "shippedPath": "dist/computerUse/autoWorkspaceManager.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 12786
+    },
+    {
+      "category": "session",
+      "shippedPath": "dist/ipc/handlers/localMcp.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 3127
+    },
+    {
+      "category": "session",
+      "shippedPath": "dist/myComputerService/myComputerService.js",
+      "shippedSymbols": [
+        "SessionSupervisor",
+        "sessionId",
+        "MyComputerService"
+      ],
+      "bytes": 11262
+    },
+    {
+      "category": "session",
+      "shippedPath": "dist/myComputerService/SessionSupervisor.js",
+      "shippedSymbols": [
+        "SessionSupervisor",
+        "sandboxWsUrl",
+        "sessionId"
+      ],
+      "bytes": 10155
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/03oh5d5w-5369.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1127887
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/05syuui81c6ul.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1133785
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/0hzf_y831aclo.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1113478
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/0jpxj1zp9b74_.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 989591
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/0y7veusby6y8q.js",
+      "shippedSymbols": [
+        "selectPlannerVisible",
+        "sessionId"
+      ],
+      "bytes": 6743509
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/0ynom_q5xnjpq.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 34434
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1_7nwjamz7uwz.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1266972
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1_w0f4r4mq-ym.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1334199
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1483r-6asqd_o.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1870361
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1jnho1v_x0n66.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 852941
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1kmzb03-0pb5y.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1133894
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1ku172oxul4mu.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1121028
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1vbc07q5jpygs.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1175761
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1xju30bl4j0un.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 335318
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/1y614h5b19wg7.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 9692
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/216la3imo5i3n.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 30851
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2a-vi066zmw4n.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 992143
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2bvptxz8of_d-.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1120071
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2cbubihw-t53o.js",
+      "shippedSymbols": [
+        "selectPlannerVisible",
+        "sessionId"
+      ],
+      "bytes": 10408933
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2efk-6ty0y-59.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1152236
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2fea4k-c1bjpl.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1093404
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2gluh4i9th7ar.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1422247
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2i3e1gb_n4otj.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1127289
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/2kw_8os9mtn9y.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 21241
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3_vryquqkjggr.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1558884
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3-qga6aurxtjl.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1126607
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3d0po8vtemqyu.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1828135
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3hw19y-yhtadq.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1085141
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3l2_b8uv47l6t.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1159133
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3lw1kmdlwkqof.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1537999
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3qbou4u7wcaj5.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 820141
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3sw1s8nlz1naj.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 994749
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3txw4hwtfcptx.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 1251843
+    },
+    {
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/3xtw0o664xhi-.js",
+      "shippedSymbols": [
+        "sessionId"
+      ],
+      "bytes": 77160
+    },
+    {
+      "category": "skills",
+      "shippedPath": "dist/computerUse/deviceAddonLocators.js",
+      "shippedSymbols": [
+        "skill-recorder",
+        "SKILL_RECORDER_ADDON_ID"
+      ],
+      "bytes": 855
+    },
+    {
+      "category": "skills",
+      "shippedPath": "dist/computerUse/skillRecordingClient.js",
+      "shippedSymbols": [
+        "SkillRecordingClient",
+        "recording/status"
+      ],
+      "bytes": 13492
+    },
+    {
+      "category": "skills",
+      "shippedPath": "dist/ipc/handlers/skillRecording.js",
+      "shippedSymbols": [
+        "recording/status"
+      ],
+      "bytes": 1869
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/03oh5d5w-5369.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1127887
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/05syuui81c6ul.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1133785
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/0hzf_y831aclo.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1113478
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/0jpxj1zp9b74_.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 989591
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/0y7veusby6y8q.js",
+      "shippedSymbols": [
+        "skill-recorder"
+      ],
+      "bytes": 6743509
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/1_7nwjamz7uwz.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1266972
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/1_w0f4r4mq-ym.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1334199
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/1483r-6asqd_o.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1870361
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/1kmzb03-0pb5y.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1133894
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/1ku172oxul4mu.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1121028
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/1vbc07q5jpygs.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1175761
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2a-vi066zmw4n.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 992143
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2bvptxz8of_d-.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1120071
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2cbubihw-t53o.js",
+      "shippedSymbols": [
+        "SKILL.md",
+        "SKILL_RECORDER_ADDON_ID"
+      ],
+      "bytes": 10408933
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2efk-6ty0y-59.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1152236
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2fea4k-c1bjpl.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1093404
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2gluh4i9th7ar.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1422247
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/2i3e1gb_n4otj.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1127289
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3_vryquqkjggr.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1558884
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3-qga6aurxtjl.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1126607
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3d0po8vtemqyu.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1828135
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3hw19y-yhtadq.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1085141
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3l2_b8uv47l6t.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1159133
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3lw1kmdlwkqof.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1537999
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3qbou4u7wcaj5.js",
+      "shippedSymbols": [
+        "skill-recorder",
+        "SKILL_RECORDER_ADDON_ID"
+      ],
+      "bytes": 820141
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3sw1s8nlz1naj.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 994749
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3txw4hwtfcptx.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "bytes": 1251843
+    },
+    {
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/3xtw0o664xhi-.js",
+      "shippedSymbols": [
+        "skill-recorder",
+        "SKILL_RECORDER_ADDON_ID"
+      ],
+      "bytes": 77160
+    },
+    {
+      "category": "skills",
+      "shippedPath": "Resources/addons/skill-recorder/1.0.0/addon.json",
+      "shippedSymbols": [
+        "skill-recorder"
+      ],
+      "bytes": 392
+    }
+  ],
+  "units": [
+    {
+      "id": "mcp:dist/agentManager/operatorManager.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/agentManager/operatorManager.js",
+      "shippedSymbols": [
+        "operatorManager.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__agentManager__operatorManager.js/operatorManager.js",
+      "sha256": "45e04e84f96cf17caa1f533c0bd2efe47644388f34b3c33b80740c1a90957c42",
+      "bytes": 23057,
+      "byteRange": [
+        0,
+        22825
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "mcp:dist/agentManager/operatorManagerUtils.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/agentManager/operatorManagerUtils.js",
+      "shippedSymbols": [
+        "operatorManagerUtils.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__agentManager__operatorManagerUtils.js/operatorManagerUtils.js",
+      "sha256": "a507c7508e8de02ab8a1d887623470ec8e86d791149f888b74912bbdcb65b85d",
+      "bytes": 896,
+      "byteRange": [
+        0,
+        700
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "mcp:dist/computerUse/operatorMcpConfig.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/computerUse/operatorMcpConfig.js",
+      "shippedSymbols": [
+        "operatorMcpConfig.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__computerUse__operatorMcpConfig.js/operatorMcpConfig.js",
+      "sha256": "a1e9fe26db6433e21f541e8a59b884abd6bad17e88c783b7328cb8e4d29fcfb3",
+      "bytes": 2975,
+      "byteRange": [
+        0,
+        2763
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "mcp:dist/computerUse/operatorMcpTypes.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/computerUse/operatorMcpTypes.js",
+      "shippedSymbols": [
+        "operatorMcpTypes.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__computerUse__operatorMcpTypes.js/operatorMcpTypes.js",
+      "sha256": "7dc93b345af8b6192e1d68b1be56e87db3d5287a93bc4b53bbfe75f74dcf3018",
+      "bytes": 263,
+      "byteRange": [
+        0,
+        77
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "mcp:dist/ipc/handlers/desktopOperator.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/ipc/handlers/desktopOperator.js",
+      "shippedSymbols": [
+        "desktopOperator.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__ipc__handlers__desktopOperator.js/desktopOperator.js",
+      "sha256": "31a524b02bb3cabb19418dc03779ba4cdb750457eb97363cb584f09355c10e8f",
+      "bytes": 692,
+      "byteRange": [
+        0,
+        506
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "mcp:dist/ipc/handlers/localMcp.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/ipc/handlers/localMcp.js",
+      "shippedSymbols": [
+        "localMcp.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__ipc__handlers__localMcp.js/localMcp.js",
+      "sha256": "0f1c0df816a5db45725bf3ea62b0e1b742e8c4a85d3b2d9340a1fb7b944cc6a4",
+      "bytes": 3300,
+      "byteRange": [
+        0,
+        3127
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/computerUse/AddonHelperLocator.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/AddonHelperLocator.js",
+      "shippedSymbols": [
+        "AddonHelperLocator.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__AddonHelperLocator.js/AddonHelperLocator.js",
+      "sha256": "4c01658569bef23c3a2881eb197f7a1af1a3ad2fbcd4fa66d8fcfaf4362e5b20",
+      "bytes": 6130,
+      "byteRange": [
+        0,
+        5938
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/computerUse/addonHost.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/addonHost.js",
+      "shippedSymbols": [
+        "addonHost.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__addonHost.js/addonHost.js",
+      "sha256": "5de4e114837b40b3fcca8ff11b26c3a2b13fa8fa3a286e2714cf83f6e9cc7e07",
+      "bytes": 14820,
+      "byteRange": [
+        0,
+        14645
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/computerUse/autoWorkspaceManager.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/autoWorkspaceManager.js",
+      "shippedSymbols": [
+        "autoWorkspaceManager.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__autoWorkspaceManager.js/autoWorkspaceManager.js",
+      "sha256": "957138dcbeedae7c91091a7457b572623421382612ed48d6c34af35188ad6549",
+      "bytes": 12983,
+      "byteRange": [
+        0,
+        12702
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/computerUse/computerUseHelperProcessManager.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/computerUseHelperProcessManager.js",
+      "shippedSymbols": [
+        "computerUseHelperProcessManager.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__computerUseHelperProcessManager.js/computerUseHelperProcessManager.js",
+      "sha256": "16c22be995d311863ca58bbb8c2b45c52fa8cb027e2fd00be375ecdfbc3900df",
+      "bytes": 4596,
+      "byteRange": [
+        0,
+        4378
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/computerUse/deviceAddonLocators.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/deviceAddonLocators.js",
+      "shippedSymbols": [
+        "deviceAddonLocators.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__deviceAddonLocators.js/deviceAddonLocators.js",
+      "sha256": "ab50f6d47c729dd0e0c0fb5c57f0f7bb8dee8b64a1e6a4ec677bd592d59ff43e",
+      "bytes": 1048,
+      "byteRange": [
+        0,
+        855
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/fileGrant/fileGrantService.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/fileGrant/fileGrantService.js",
+      "shippedSymbols": [
+        "fileGrantService.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__fileGrant__fileGrantService.js/fileGrantService.js",
+      "sha256": "7e716da204d696f21ac5336179026e4b55c8a370d45d366c026f2392fd49a779",
+      "bytes": 4968,
+      "byteRange": [
+        0,
+        4782
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/fileGrant/localFileHandoff.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/fileGrant/localFileHandoff.js",
+      "shippedSymbols": [
+        "localFileHandoff.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__fileGrant__localFileHandoff.js/localFileHandoff.js",
+      "sha256": "ef1523f04c0cb9a4e0e0b1d2f35fb720f3399d41d767f2f3f56513d8dc3ff2a2",
+      "bytes": 1478,
+      "byteRange": [
+        0,
+        1292
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:dist/ipc/handlers/computerUse.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/ipc/handlers/computerUse.js",
+      "shippedSymbols": [
+        "computerUse.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__ipc__handlers__computerUse.js/computerUse.js",
+      "sha256": "15e6b245ba95bed1cd2cee7ced08e714355bdadc6befc72087f2a096fc151462",
+      "bytes": 3916,
+      "byteRange": [
+        0,
+        3737
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "sandbox:Resources/addons/manus-computer-use/1.0.5/addon.json:full",
+      "category": "sandbox",
+      "shippedPath": "Resources/addons/manus-computer-use/1.0.5/addon.json",
+      "shippedSymbols": [
+        "addon.json"
+      ],
+      "recoveredPath": "recovered/sandbox/Resources__addons__manus-computer-use__1.0.5__addon.json/addon.json",
+      "sha256": "53ccaf005e38c51c2f1566154e220d006a4aff3609f594145dec070d3d469c5e",
+      "bytes": 424,
+      "byteRange": [
+        0,
+        424
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/consts.js:full",
+      "category": "session",
+      "shippedPath": "dist/consts.js",
+      "shippedSymbols": [
+        "consts.js"
+      ],
+      "recoveredPath": "recovered/session/dist__consts.js/consts.js",
+      "sha256": "80fe0e950468ddc56e28c461b0de7cfeab6a18fb31c2b8804f66ff467d08fe3a",
+      "bytes": 276,
+      "byteRange": [
+        0,
+        121
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/env.js:full",
+      "category": "session",
+      "shippedPath": "dist/env.js",
+      "shippedSymbols": [
+        "env.js"
+      ],
+      "recoveredPath": "recovered/session/dist__env.js/env.js",
+      "sha256": "8028a52992ff8cc1c761cef4f6e6d1f0b7b4f2eceff58a408ca3c87e22a5afa6",
+      "bytes": 415,
+      "byteRange": [
+        0,
+        266
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/generated-env.js:full",
+      "category": "session",
+      "shippedPath": "dist/generated-env.js",
+      "shippedSymbols": [
+        "generated-env.js"
+      ],
+      "recoveredPath": "recovered/session/dist__generated-env.js/generated-env.js",
+      "sha256": "f64df56d28653992bed25c8380399fca921cb8a50af1c05977f6dc594e1d03a2",
+      "bytes": 370,
+      "byteRange": [
+        0,
+        201
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/ipc/events/myComputer.js:full",
+      "category": "session",
+      "shippedPath": "dist/ipc/events/myComputer.js",
+      "shippedSymbols": [
+        "myComputer.js"
+      ],
+      "recoveredPath": "recovered/session/dist__ipc__events__myComputer.js/myComputer.js",
+      "sha256": "cdb28c8fc2b04718e4395190390c9df208cd11c93c1398b9b758efae60aa6d28",
+      "bytes": 506,
+      "byteRange": [
+        0,
+        332
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/ipc/registry.js:full",
+      "category": "session",
+      "shippedPath": "dist/ipc/registry.js",
+      "shippedSymbols": [
+        "registry.js"
+      ],
+      "recoveredPath": "recovered/session/dist__ipc__registry.js/registry.js",
+      "sha256": "4743b9766878859cac405a9ed4e7b8ce882125b2f6c2eb4e0233ee08571f5b67",
+      "bytes": 6589,
+      "byteRange": [
+        0,
+        6425
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/myComputerService/myComputerService.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/myComputerService.js",
+      "shippedSymbols": [
+        "myComputerService.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__myComputerService.js/myComputerService.js",
+      "sha256": "ffddfed9ca5d3a06ccadd94e8d0eed94a85d449f1dd875b77d676a2dea1868d3",
+      "bytes": 11459,
+      "byteRange": [
+        0,
+        11262
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/myComputerService/SessionSupervisor.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/SessionSupervisor.js",
+      "shippedSymbols": [
+        "SessionSupervisor.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__SessionSupervisor.js/SessionSupervisor.js",
+      "sha256": "3ea463e691ca891757958e54164208600c67d23ef00b1f65dbd7b51530d40c67",
+      "bytes": 10352,
+      "byteRange": [
+        0,
+        10155
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/myComputerService/sidecarManager.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/sidecarManager.js",
+      "shippedSymbols": [
+        "sidecarManager.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__sidecarManager.js/sidecarManager.js",
+      "sha256": "b4aa07dd92deb887c056576d6a5d46177e030381929c7cfd1913a8fd12117601",
+      "bytes": 10044,
+      "byteRange": [
+        0,
+        9854
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/myComputerService/socketClient.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/socketClient.js",
+      "shippedSymbols": [
+        "socketClient.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__socketClient.js/socketClient.js",
+      "sha256": "5fca52351d7527cecccbcdaa25e95cf8690d6acc902b95d929ce95f335caa33b",
+      "bytes": 4175,
+      "byteRange": [
+        0,
+        3989
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:dist/myComputerService/types.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/types.js",
+      "shippedSymbols": [
+        "types.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__types.js/types.js",
+      "sha256": "d5b22027c329562988c8d28db221b22472c6a86afcfd0f9d98795ccc67c069d3",
+      "bytes": 247,
+      "byteRange": [
+        0,
+        77
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "session:frontend/out/_next/static/chunks/0y7veusby6y8q.js:marker:selectPlannerVisible",
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/0y7veusby6y8q.js",
+      "shippedSymbols": [
+        "selectPlannerVisible"
+      ],
+      "recoveredPath": "recovered/session/frontend__out___next__static__chunks__0y7veusby6y8q.js/selectPlannerVisible.slice.js",
+      "sha256": "daeef810ffb9f0f5b4f6dd35695155814657b93f91bcc677e1d9c0a2f4976f63",
+      "bytes": 8428,
+      "byteRange": [
+        949193,
+        957405
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "session:package.json:full",
+      "category": "session",
+      "shippedPath": "package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/session/package.json/package.json",
+      "sha256": "3c55be71d519f22676cc545c36df503c9e322796250c42dc6e096dd382c6f548",
+      "bytes": 813,
+      "byteRange": [
+        0,
+        656
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "skills:dist/computerUse/skillRecordingClient.js:full",
+      "category": "skills",
+      "shippedPath": "dist/computerUse/skillRecordingClient.js",
+      "shippedSymbols": [
+        "skillRecordingClient.js"
+      ],
+      "recoveredPath": "recovered/skills/dist__computerUse__skillRecordingClient.js/skillRecordingClient.js",
+      "sha256": "7a44c327bd71ca2c2f44652335267041e90eefa14351793217415710b9699868",
+      "bytes": 13689,
+      "byteRange": [
+        0,
+        13492
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "skills:dist/ipc/events/skillRecording.js:full",
+      "category": "skills",
+      "shippedPath": "dist/ipc/events/skillRecording.js",
+      "shippedSymbols": [
+        "skillRecording.js"
+      ],
+      "recoveredPath": "recovered/skills/dist__ipc__events__skillRecording.js/skillRecording.js",
+      "sha256": "c0df0ccefb23bcb674879ea6b517e0c670b5c482c80f245fb07788afd6bee163",
+      "bytes": 868,
+      "byteRange": [
+        0,
+        686
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "skills:dist/ipc/handlers/skillRecording.js:full",
+      "category": "skills",
+      "shippedPath": "dist/ipc/handlers/skillRecording.js",
+      "shippedSymbols": [
+        "skillRecording.js"
+      ],
+      "recoveredPath": "recovered/skills/dist__ipc__handlers__skillRecording.js/skillRecording.js",
+      "sha256": "c08d61df7b786b7ee22505082f4adf4507844b85121cf0566430dfbd13139a11",
+      "bytes": 2054,
+      "byteRange": [
+        0,
+        1869
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    },
+    {
+      "id": "skills:frontend/out/_next/static/chunks/03oh5d5w-5369.js:marker:SKILL.md",
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/03oh5d5w-5369.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "recoveredPath": "recovered/skills/frontend__out___next__static__chunks__03oh5d5w-5369.js/SKILL.md.slice.js",
+      "sha256": "8414aee9b30bf73799d4818edd04975f3645c48ab2bda5367bc3ca906e851f29",
+      "bytes": 8692,
+      "byteRange": [
+        234,
+        8434
+      ],
+      "kind": "marker-window",
+      "truncated": false
+    },
+    {
+      "id": "skills:Resources/addons/skill-recorder/1.0.0/addon.json:full",
+      "category": "skills",
+      "shippedPath": "Resources/addons/skill-recorder/1.0.0/addon.json",
+      "shippedSymbols": [
+        "addon.json"
+      ],
+      "recoveredPath": "recovered/skills/Resources__addons__skill-recorder__1.0.0__addon.json/addon.json",
+      "sha256": "c00a320ec9abfd213cfa40185daa99890f1e78c6eb5de2b4255650182640cf0d",
+      "bytes": 392,
+      "byteRange": [
+        0,
+        392
+      ],
+      "kind": "full-copy",
+      "truncated": false
+    }
+  ],
+  "identities": [
+    {
+      "id": "mcp:dist/agentManager/operatorManager.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/agentManager/operatorManager.js",
+      "shippedSymbols": [
+        "operatorManager.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__agentManager__operatorManager.js/operatorManager.js",
+      "sha256": "45e04e84f96cf17caa1f533c0bd2efe47644388f34b3c33b80740c1a90957c42"
+    },
+    {
+      "id": "mcp:dist/agentManager/operatorManagerUtils.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/agentManager/operatorManagerUtils.js",
+      "shippedSymbols": [
+        "operatorManagerUtils.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__agentManager__operatorManagerUtils.js/operatorManagerUtils.js",
+      "sha256": "a507c7508e8de02ab8a1d887623470ec8e86d791149f888b74912bbdcb65b85d"
+    },
+    {
+      "id": "mcp:dist/computerUse/operatorMcpConfig.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/computerUse/operatorMcpConfig.js",
+      "shippedSymbols": [
+        "operatorMcpConfig.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__computerUse__operatorMcpConfig.js/operatorMcpConfig.js",
+      "sha256": "a1e9fe26db6433e21f541e8a59b884abd6bad17e88c783b7328cb8e4d29fcfb3"
+    },
+    {
+      "id": "mcp:dist/computerUse/operatorMcpTypes.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/computerUse/operatorMcpTypes.js",
+      "shippedSymbols": [
+        "operatorMcpTypes.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__computerUse__operatorMcpTypes.js/operatorMcpTypes.js",
+      "sha256": "7dc93b345af8b6192e1d68b1be56e87db3d5287a93bc4b53bbfe75f74dcf3018"
+    },
+    {
+      "id": "mcp:dist/ipc/handlers/desktopOperator.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/ipc/handlers/desktopOperator.js",
+      "shippedSymbols": [
+        "desktopOperator.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__ipc__handlers__desktopOperator.js/desktopOperator.js",
+      "sha256": "31a524b02bb3cabb19418dc03779ba4cdb750457eb97363cb584f09355c10e8f"
+    },
+    {
+      "id": "mcp:dist/ipc/handlers/localMcp.js:full",
+      "category": "mcp",
+      "shippedPath": "dist/ipc/handlers/localMcp.js",
+      "shippedSymbols": [
+        "localMcp.js"
+      ],
+      "recoveredPath": "recovered/mcp/dist__ipc__handlers__localMcp.js/localMcp.js",
+      "sha256": "0f1c0df816a5db45725bf3ea62b0e1b742e8c4a85d3b2d9340a1fb7b944cc6a4"
+    },
+    {
+      "id": "sandbox:dist/computerUse/AddonHelperLocator.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/AddonHelperLocator.js",
+      "shippedSymbols": [
+        "AddonHelperLocator.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__AddonHelperLocator.js/AddonHelperLocator.js",
+      "sha256": "4c01658569bef23c3a2881eb197f7a1af1a3ad2fbcd4fa66d8fcfaf4362e5b20"
+    },
+    {
+      "id": "sandbox:dist/computerUse/addonHost.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/addonHost.js",
+      "shippedSymbols": [
+        "addonHost.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__addonHost.js/addonHost.js",
+      "sha256": "5de4e114837b40b3fcca8ff11b26c3a2b13fa8fa3a286e2714cf83f6e9cc7e07"
+    },
+    {
+      "id": "sandbox:dist/computerUse/autoWorkspaceManager.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/autoWorkspaceManager.js",
+      "shippedSymbols": [
+        "autoWorkspaceManager.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__autoWorkspaceManager.js/autoWorkspaceManager.js",
+      "sha256": "957138dcbeedae7c91091a7457b572623421382612ed48d6c34af35188ad6549"
+    },
+    {
+      "id": "sandbox:dist/computerUse/computerUseHelperProcessManager.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/computerUseHelperProcessManager.js",
+      "shippedSymbols": [
+        "computerUseHelperProcessManager.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__computerUseHelperProcessManager.js/computerUseHelperProcessManager.js",
+      "sha256": "16c22be995d311863ca58bbb8c2b45c52fa8cb027e2fd00be375ecdfbc3900df"
+    },
+    {
+      "id": "sandbox:dist/computerUse/deviceAddonLocators.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/computerUse/deviceAddonLocators.js",
+      "shippedSymbols": [
+        "deviceAddonLocators.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__computerUse__deviceAddonLocators.js/deviceAddonLocators.js",
+      "sha256": "ab50f6d47c729dd0e0c0fb5c57f0f7bb8dee8b64a1e6a4ec677bd592d59ff43e"
+    },
+    {
+      "id": "sandbox:dist/fileGrant/fileGrantService.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/fileGrant/fileGrantService.js",
+      "shippedSymbols": [
+        "fileGrantService.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__fileGrant__fileGrantService.js/fileGrantService.js",
+      "sha256": "7e716da204d696f21ac5336179026e4b55c8a370d45d366c026f2392fd49a779"
+    },
+    {
+      "id": "sandbox:dist/fileGrant/localFileHandoff.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/fileGrant/localFileHandoff.js",
+      "shippedSymbols": [
+        "localFileHandoff.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__fileGrant__localFileHandoff.js/localFileHandoff.js",
+      "sha256": "ef1523f04c0cb9a4e0e0b1d2f35fb720f3399d41d767f2f3f56513d8dc3ff2a2"
+    },
+    {
+      "id": "sandbox:dist/ipc/handlers/computerUse.js:full",
+      "category": "sandbox",
+      "shippedPath": "dist/ipc/handlers/computerUse.js",
+      "shippedSymbols": [
+        "computerUse.js"
+      ],
+      "recoveredPath": "recovered/sandbox/dist__ipc__handlers__computerUse.js/computerUse.js",
+      "sha256": "15e6b245ba95bed1cd2cee7ced08e714355bdadc6befc72087f2a096fc151462"
+    },
+    {
+      "id": "sandbox:Resources/addons/manus-computer-use/1.0.5/addon.json:full",
+      "category": "sandbox",
+      "shippedPath": "Resources/addons/manus-computer-use/1.0.5/addon.json",
+      "shippedSymbols": [
+        "addon.json"
+      ],
+      "recoveredPath": "recovered/sandbox/Resources__addons__manus-computer-use__1.0.5__addon.json/addon.json",
+      "sha256": "53ccaf005e38c51c2f1566154e220d006a4aff3609f594145dec070d3d469c5e"
+    },
+    {
+      "id": "session:dist/consts.js:full",
+      "category": "session",
+      "shippedPath": "dist/consts.js",
+      "shippedSymbols": [
+        "consts.js"
+      ],
+      "recoveredPath": "recovered/session/dist__consts.js/consts.js",
+      "sha256": "80fe0e950468ddc56e28c461b0de7cfeab6a18fb31c2b8804f66ff467d08fe3a"
+    },
+    {
+      "id": "session:dist/env.js:full",
+      "category": "session",
+      "shippedPath": "dist/env.js",
+      "shippedSymbols": [
+        "env.js"
+      ],
+      "recoveredPath": "recovered/session/dist__env.js/env.js",
+      "sha256": "8028a52992ff8cc1c761cef4f6e6d1f0b7b4f2eceff58a408ca3c87e22a5afa6"
+    },
+    {
+      "id": "session:dist/generated-env.js:full",
+      "category": "session",
+      "shippedPath": "dist/generated-env.js",
+      "shippedSymbols": [
+        "generated-env.js"
+      ],
+      "recoveredPath": "recovered/session/dist__generated-env.js/generated-env.js",
+      "sha256": "f64df56d28653992bed25c8380399fca921cb8a50af1c05977f6dc594e1d03a2"
+    },
+    {
+      "id": "session:dist/ipc/events/myComputer.js:full",
+      "category": "session",
+      "shippedPath": "dist/ipc/events/myComputer.js",
+      "shippedSymbols": [
+        "myComputer.js"
+      ],
+      "recoveredPath": "recovered/session/dist__ipc__events__myComputer.js/myComputer.js",
+      "sha256": "cdb28c8fc2b04718e4395190390c9df208cd11c93c1398b9b758efae60aa6d28"
+    },
+    {
+      "id": "session:dist/ipc/registry.js:full",
+      "category": "session",
+      "shippedPath": "dist/ipc/registry.js",
+      "shippedSymbols": [
+        "registry.js"
+      ],
+      "recoveredPath": "recovered/session/dist__ipc__registry.js/registry.js",
+      "sha256": "4743b9766878859cac405a9ed4e7b8ce882125b2f6c2eb4e0233ee08571f5b67"
+    },
+    {
+      "id": "session:dist/myComputerService/myComputerService.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/myComputerService.js",
+      "shippedSymbols": [
+        "myComputerService.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__myComputerService.js/myComputerService.js",
+      "sha256": "ffddfed9ca5d3a06ccadd94e8d0eed94a85d449f1dd875b77d676a2dea1868d3"
+    },
+    {
+      "id": "session:dist/myComputerService/SessionSupervisor.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/SessionSupervisor.js",
+      "shippedSymbols": [
+        "SessionSupervisor.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__SessionSupervisor.js/SessionSupervisor.js",
+      "sha256": "3ea463e691ca891757958e54164208600c67d23ef00b1f65dbd7b51530d40c67"
+    },
+    {
+      "id": "session:dist/myComputerService/sidecarManager.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/sidecarManager.js",
+      "shippedSymbols": [
+        "sidecarManager.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__sidecarManager.js/sidecarManager.js",
+      "sha256": "b4aa07dd92deb887c056576d6a5d46177e030381929c7cfd1913a8fd12117601"
+    },
+    {
+      "id": "session:dist/myComputerService/socketClient.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/socketClient.js",
+      "shippedSymbols": [
+        "socketClient.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__socketClient.js/socketClient.js",
+      "sha256": "5fca52351d7527cecccbcdaa25e95cf8690d6acc902b95d929ce95f335caa33b"
+    },
+    {
+      "id": "session:dist/myComputerService/types.js:full",
+      "category": "session",
+      "shippedPath": "dist/myComputerService/types.js",
+      "shippedSymbols": [
+        "types.js"
+      ],
+      "recoveredPath": "recovered/session/dist__myComputerService__types.js/types.js",
+      "sha256": "d5b22027c329562988c8d28db221b22472c6a86afcfd0f9d98795ccc67c069d3"
+    },
+    {
+      "id": "session:frontend/out/_next/static/chunks/0y7veusby6y8q.js:marker:selectPlannerVisible",
+      "category": "session",
+      "shippedPath": "frontend/out/_next/static/chunks/0y7veusby6y8q.js",
+      "shippedSymbols": [
+        "selectPlannerVisible"
+      ],
+      "recoveredPath": "recovered/session/frontend__out___next__static__chunks__0y7veusby6y8q.js/selectPlannerVisible.slice.js",
+      "sha256": "daeef810ffb9f0f5b4f6dd35695155814657b93f91bcc677e1d9c0a2f4976f63"
+    },
+    {
+      "id": "session:package.json:full",
+      "category": "session",
+      "shippedPath": "package.json",
+      "shippedSymbols": [
+        "package.json"
+      ],
+      "recoveredPath": "recovered/session/package.json/package.json",
+      "sha256": "3c55be71d519f22676cc545c36df503c9e322796250c42dc6e096dd382c6f548"
+    },
+    {
+      "id": "skills:dist/computerUse/skillRecordingClient.js:full",
+      "category": "skills",
+      "shippedPath": "dist/computerUse/skillRecordingClient.js",
+      "shippedSymbols": [
+        "skillRecordingClient.js"
+      ],
+      "recoveredPath": "recovered/skills/dist__computerUse__skillRecordingClient.js/skillRecordingClient.js",
+      "sha256": "7a44c327bd71ca2c2f44652335267041e90eefa14351793217415710b9699868"
+    },
+    {
+      "id": "skills:dist/ipc/events/skillRecording.js:full",
+      "category": "skills",
+      "shippedPath": "dist/ipc/events/skillRecording.js",
+      "shippedSymbols": [
+        "skillRecording.js"
+      ],
+      "recoveredPath": "recovered/skills/dist__ipc__events__skillRecording.js/skillRecording.js",
+      "sha256": "c0df0ccefb23bcb674879ea6b517e0c670b5c482c80f245fb07788afd6bee163"
+    },
+    {
+      "id": "skills:dist/ipc/handlers/skillRecording.js:full",
+      "category": "skills",
+      "shippedPath": "dist/ipc/handlers/skillRecording.js",
+      "shippedSymbols": [
+        "skillRecording.js"
+      ],
+      "recoveredPath": "recovered/skills/dist__ipc__handlers__skillRecording.js/skillRecording.js",
+      "sha256": "c08d61df7b786b7ee22505082f4adf4507844b85121cf0566430dfbd13139a11"
+    },
+    {
+      "id": "skills:frontend/out/_next/static/chunks/03oh5d5w-5369.js:marker:SKILL.md",
+      "category": "skills",
+      "shippedPath": "frontend/out/_next/static/chunks/03oh5d5w-5369.js",
+      "shippedSymbols": [
+        "SKILL.md"
+      ],
+      "recoveredPath": "recovered/skills/frontend__out___next__static__chunks__03oh5d5w-5369.js/SKILL.md.slice.js",
+      "sha256": "8414aee9b30bf73799d4818edd04975f3645c48ab2bda5367bc3ca906e851f29"
+    },
+    {
+      "id": "skills:Resources/addons/skill-recorder/1.0.0/addon.json:full",
+      "category": "skills",
+      "shippedPath": "Resources/addons/skill-recorder/1.0.0/addon.json",
+      "shippedSymbols": [
+        "addon.json"
+      ],
+      "recoveredPath": "recovered/skills/Resources__addons__skill-recorder__1.0.0__addon.json/addon.json",
+      "sha256": "c00a320ec9abfd213cfa40185daa99890f1e78c6eb5de2b4255650182640cf0d"
+    }
+  ]
+}
