@@ -29,6 +29,7 @@ Grok Bot 侧对照 [../grok-bot-sandbox-reversed/README.md](../grok-bot-sandbox-
 | [pod-daemon/](pod-daemon/) | `hatch` cell leader、runtime-cell 脚本、privsep、healthd | `cursor-cloud-reversed/pod-daemon/` |
 | [agent-host/](agent-host/) | agent harness：模型、工具命名空间、子代理、记忆、技能、排程 | （Meta 特有，Cursor 侧对应桌面/IDE 宿主） |
 | [client-map/](client-map/) | 客户端面：iOS app、Muse app / muse.ai、WhatsApp、配对设备 | `cursor-cloud-reversed/client-map/` |
+| [runtime-report-2026-09-19.zh-CN.md](runtime-report-2026-09-19.zh-CN.md) | 运行时自述报告（2026-09-19）：agent loop 定位、进程/socket 网、状态存储、cron/hook、工具权限、推理网关、与「箱外 Temporal loop」假设的对质；每条结论标【观察/自述/推断】 | （Meta 特有归档报告） |
 
 ## 一句话
 
