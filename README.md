@@ -12,6 +12,7 @@
 - [Meta Cloud Agent 运行时逆向（agent 自述：hatch-execd / cell leader / agent-host）](meta-cloud-reversed/README.md)
 - [Muse 实现方式：已确认与需推测](analysis/muse-implementation-architecture.zh-CN.md)
 - [Muse vs Cursor Cloud Agents：产品与架构详细对照](analysis/muse-vs-cursor-cloud-agents.zh-CN.md)
+- [用 Temporal 拼箱外 loop + 隔离沙箱（开源前两截）](analysis/temporal-cloud-agent-loop-scheme.zh-CN.md)
 - [Muse 2.0 桌面逆向（Endo / Hatch / Browser Node）](muse-reversed/README.md)
 - [Meta vs Cursor Cloud Agent vs Grok Bot：产品与技术架构三方对照](analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md)
 - [Grok Bot Sandbox 运行时逆向（sand-host / exec-daemon / live-probe）](grok-bot-sandbox-reversed/README.md)

@@ -315,6 +315,7 @@ flowchart TB
 | 材料 | 用途 |
 | --- | --- |
 | [muse-implementation-architecture.zh-CN.md](muse-implementation-architecture.zh-CN.md) | Muse 已确认 vs 需推测的实现说明书 |
+| [temporal-cloud-agent-loop-scheme.zh-CN.md](temporal-cloud-agent-loop-scheme.zh-CN.md) | 开源 Temporal 两截（ReAct loop + sandbox harness）对照 Cursor |
 | [cloud-agent-architecture.zh-CN.md](cloud-agent-architecture.zh-CN.md) | Cursor Cloud 本机 VM + 控制面切片 |
 | [cursor-local-cloud-architecture.zh-CN.md](cursor-local-cloud-architecture.zh-CN.md) | 本地 Host/loop 与云端职责拆分 |
 | [meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md](meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md) | 含 Grok 的三方对照 |
