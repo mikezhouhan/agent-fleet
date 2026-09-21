@@ -79,7 +79,24 @@
       "kind": "self-reported reverse notes from the Meta cloud agent itself (live VM probes + harness self-description); not upstream source",
       "product": "Meta Cloud Agent (Muse, hatch/Jarvis runtime)",
       "captured": "2026-09-19",
-      "related_analysis": "analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md"
+      "related_analysis": [
+        "analysis/meta-cloud-vs-cursor-cloud-vs-grok-bot.zh-CN.md",
+        "analysis/muse-implementation-architecture.zh-CN.md",
+        "analysis/muse-vs-cursor-cloud-agents.zh-CN.md"
+      ]
+    },
+    {
+      "name": "muse-reversed",
+      "path": "muse-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "kind": "recovered Muse 2.0 macOS DMG slices (Endo Swift types, Hatch HTML markers, Chrome Browser Node); not upstream source",
+      "product": "Muse 2.0 (com.meta.endo / Hatch CVM client)",
+      "captured": "2026-09-19",
+      "related_analysis": [
+        "analysis/muse-implementation-architecture.zh-CN.md",
+        "analysis/muse-vs-cursor-cloud-agents.zh-CN.md",
+        "muse-reversed/COMPARISON-CURSOR.md"
+      ]
     },
     {
       "name": "grok-bot-sandbox-reversed",
@@ -117,11 +134,51 @@
       "clone_depth": 1
     }
   ],
+  "design_references": [
+    {
+      "name": "loopx",
+      "url": "https://github.com/loopx-project/loopx",
+      "commit": "09f10c4e37b89c6ed25f2f2354f89d641662e83c",
+      "cloned": "2026-09-21",
+      "kind": "provider-neutral local-first control plane (Goal/todo/quota/settlement); not vendored",
+      "related_analysis": "analysis/first-principles-cloud-agent-design.zh-CN.md"
+    },
+    {
+      "name": "beads",
+      "url": "https://github.com/gastownhall/beads",
+      "commit": "403e27c6dead4e128bf6b35483212a45481f15db",
+      "cloned": "2026-09-21",
+      "kind": "Dolt-backed graph issue tracker for agents (ready/claim/lease/reclaim); data-plane semantics",
+      "related_analysis": "analysis/first-principles-cloud-agent-design.zh-CN.md"
+    }
+  ],
   "web_sources": [
     {
       "url": "https://www.warp.dev/factories",
       "accessed": "2026-09-16",
       "kind": "product claims; detailed claims checked against pinned official documentation"
+    },
+    {
+      "url": "https://github.com/temporal-community/durable-react-agent-gemini",
+      "accessed": "2026-09-20",
+      "kind": "open-source Temporal ReAct agent loop sample; first piece of the Cursor-like scheme",
+      "related_analysis": "analysis/temporal-cloud-agent-loop-scheme.zh-CN.md"
+    },
+    {
+      "url": "https://github.com/temporal-community/sandbox-orchestration-harness",
+      "accessed": "2026-09-20",
+      "kind": "open-source Temporal sandbox lifecycle sample (E2B/Modal/Daytona/…); second piece of the Cursor-like scheme",
+      "related_analysis": "analysis/temporal-cloud-agent-loop-scheme.zh-CN.md"
+    },
+    {
+      "url": "https://temporal.io/blog/temporal-sandbox-orchestration-harness-the-missing-layer-for-running-agents",
+      "accessed": "2026-09-20",
+      "kind": "official Temporal blog: coding-agent workflow pseudocode and sandbox harness rationale"
+    },
+    {
+      "url": "https://temporal.io/code-exchange/temporal-sandbox-orchestration-harness",
+      "accessed": "2026-09-20",
+      "kind": "Code Exchange listing; states the harness is a community sample, not formally supported"
     }
   ],
   "live_captures": [

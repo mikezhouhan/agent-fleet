@@ -100,3 +100,5 @@ DSH 的报告单独比较三个子路线：默认 DSH 主管调用外部 agent�
 仍待决定的不是五条路线哪一个绝对最好，而是以下优先级：本地轻量与服务器常驻、编码交付与通用事务、创建时选择引擎与运行中切换、ACP 优先与纯 ACP、快速 fork 与独立长期核心。
 
 已有总览可配合阅读：[六项目源码分析](../multi-agent-grok-product-analysis.zh-CN.md)。各独立报告末尾列出精确源码与固定提交，便于回到证据核对。
+
+2026-09-21 起，独立核心不再以「再写一个 JSON workflow」为默认。第一性原理规格见 [Coding-Agent-Neutral Cloud Agent 平台设计](../first-principles-cloud-agent-design.zh-CN.md)：Beads 语义做 Task 图，LoopX 合同做 tick，自研 MicroVM Run；不把两家内核同时嵌进产品。

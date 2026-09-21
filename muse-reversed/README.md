@@ -10,4 +10,7 @@ npm test
 npm run recover -- --dmg /Users/jasper/Downloads/Muse-2.0.dmg
 ```
 
-对照：`COMPARISON-CURSOR.md`。完整 hatch HTML / Mach-O 在 gitignored `work/payload/`。
+对照：`COMPARISON-CURSOR.md`（桌面 vs Cursor Projects）。云端实现与 Cursor Cloud Agents 对照见
+[../analysis/muse-implementation-architecture.zh-CN.md](../analysis/muse-implementation-architecture.zh-CN.md)
+与 [../analysis/muse-vs-cursor-cloud-agents.zh-CN.md](../analysis/muse-vs-cursor-cloud-agents.zh-CN.md)。
+完整 hatch HTML / Mach-O 在 gitignored `work/payload/`。
