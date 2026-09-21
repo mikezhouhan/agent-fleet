@@ -45,6 +45,8 @@ Project（工作区、政策、master 槽位）
 
 **本地与云协同的正确形状：** 同一张 Goal/Task 图，不同 Run 跑在不同 Executor 上。权威图只在控制面一份。工人（本机 Claude、云 Codex）只打控制面 HTTP，不直连 Dolt `3307`。
 
+**容器回收 ≠ 丢 Goal。** 用户再拉起的是一次新 Run，不是把旧 Pod 从坟里挖出来。干净 restore 的默认路径是：控制面图 + 已落地的 git SHA 冷 clone；只有「结算之后拍的 idle 快照」才能当热路径。运行中途的脏盘禁止当工作区真相。
+
 ---
 
 ## 2. 要治的病
@@ -198,6 +200,7 @@ flowchart TB
 | `status` | `open` \| `closed` |
 | `closed_reason` | 达成 / 放弃 / 被取代，仅 closed 时 |
 | `quota` | 自动 compute 预算 |
+| `last_clean_sha` | 该 Goal 已落地、可被任意 Executor clone 的 git SHA |
 | `policy_override` | 覆盖 Project 政策，只能更严 |
 | `master_slot_override` | 可选；默认用 Project 的 master |
 
@@ -237,7 +240,7 @@ Beads 没有 Goal。不要用 epic 冒充 Goal：epic 是图上的聚合节点�
 | `worker_id` | 认领者 |
 | `executor_id` | 本机 daemon / 某区域 MicroVM 池中的一次放置 |
 | `harness` | `claude-code` `codex` `pi` … + 版本 |
-| `workspace_ref` | git SHA、snapshot ID、volume 声明 |
+| `workspace_ref` | 见 §5.5.1：`git_sha` + 可选 `snapshot_id`；禁止只记 hostname |
 | `status` | `admitted` `starting` `running` `succeeded` `failed` `cancelled` |
 | `result_kind` | 见 §7.2 |
 | `lease_id` | 持有的 Task lease |
@@ -246,7 +249,32 @@ Beads 没有 Goal。不要用 epic 冒充 Goal：epic 是图上的聚合节点�
 
 **Task 不绑 VM。Run 才绑。** 同一 Task 第一次 Run 在云上崩了，reclaim 后可以在本地开第二次 Run。
 
-对照：LoopX 把 Turn journal 和 Run history 糊在一起；云上必须拆开。Beads 没有 Run（只有 `gh:run` gate）。这是必须自建的对象。
+#### 5.5.1 `workspace_ref` 与 WorkspaceSnapshot
+
+`workspace_ref` 是 Run 启动时的**声明**，不是机器身份：
+
+| 字段 | 含义 |
+| --- | --- |
+| `git_remote` | 权威代码仓 |
+| `git_sha` | 本次启动必须 checkout 的提交；未落地的脏工作树不算 |
+| `snapshot_id` | 可选；指向 `WorkspaceSnapshot` |
+| `restore_mode` | `clone` \| `snapshot_then_verify` \| `repair_clone`（见 §9.5） |
+
+可选对象 **WorkspaceSnapshot**（挂在 Goal 或 Project 下，不挂在 Task 上）：
+
+| 字段 | 含义 |
+| --- | --- |
+| `snapshot_id` | 稳定 ID |
+| `goal_id` | 所属 Goal；跨 Goal 复用禁止 |
+| `executor_class` | 只能在同类 Executor 还原（云 MicroVM ≠ 本机磁盘） |
+| `base_git_sha` | 拍照时已与远程对齐的 SHA |
+| `taken_after_run_id` | 哪次 Run **结算成功之后**拍的 |
+| `status` | `clean_idle` \| `dirty_crash` \| `expired` \| `discarded` |
+| `expires_at` | 对照 Cursor 文档级 hibernate 保留期；过期当 `clone` |
+
+只有 `clean_idle` 能进入 `snapshot_then_verify`。`dirty_crash` 只作取证，启动时必须走 `repair_clone`。
+
+对照：LoopX 把 Turn journal 和 Run history 糊在一起；云上必须拆开。Beads 没有 Run（只有 `gh:run` gate）。这是必须自建的对象。Cursor 的 Environment Build / hibernate snapshot 是**执行面加速**，会话权威仍在控制面。
 
 ### 5.6 Worker
 
@@ -494,9 +522,10 @@ Goal
 
 - 创建：仅 `should-run = run_now` 且 claim 成功之后。禁止先开 VM 再找事做。
 - 运行：工具/CLI 在箱内；循环与权威在箱外（对照 Cursor：guest 只有 exec-daemon；对照 Muse：loop 在 cell 内——本产品选 Cursor 这侧，因为要换 CLI，不能把 loop 焊在镜像里）。
-- 空闲：可挂起 / 释放；self-hosted 对照 `--idle-release-timeout`。
+- 空闲：可挂起 / 释放；self-hosted 对照 `--idle-release-timeout`。释放前必须走 §9.5.4 的 **idle 封存**，否则只能丢盘。
 - 死亡：控制面把 Run 标 `failed/host_failure`，reclaim Task。workspace 可丢。Goal 仍 open。
-- 快照：可选，用于同 Executor 上 resume；**不能**当作跨引擎交接手段。
+- 再拉起：永远是**新 Run**（新 `run_id`、新 Executor 实例）。详见 §9.5。
+- 快照：可选热路径，仅 `clean_idle`；**不能**当作跨引擎交接，也不能代替 git。
 
 ### 9.3 子 agent 与后台命令
 
@@ -510,12 +539,148 @@ LoopX 的 `subagent_control_plane_handoff_v0` 若借鉴，只描述拓扑，不�
 
 每次 Run 声明：
 
-- `source`：clone SHA 或起始 snapshot
+- `workspace_ref`（§5.5.1）：启动用哪份 git SHA / 是否尝试干净快照
 - `writable_paths`
 - `network`：按政策投影后的实际值（只能更严）
-- `secrets`：按名注入，日志红线
+- `secrets`：按名注入，日志红线；每次再拉起重新发，不从快照继承
 
 本地 Run 允许更宽（用户自己的 SSH）；云 Run 默认无外网、无用户本机 cookie。同一 Goal 不自动继承本机信任。
+
+### 9.5 容器回收、再拉起与干净 restore
+
+这一节是计算面的硬规格。旧产品的病是把「这台 MicroVM 的磁盘」当成 flow 的身体：回收之后人不知道怎么继续，勉强 restore 又把半写的工作区当真相。本产品相反：**回收丢的是箱子，留下的是图和已落地的提交。**
+
+#### 9.5.1 回收之后还在什么、没了什么
+
+| 还在（控制面 / git） | 默认没了（这次箱子） |
+| --- | --- |
+| Project、Goal、Task 图、lease/reclaim 结果 | MicroVM、本地下的云盘、未 commit 的工作树 |
+| 已 `git push` / 已记录 `ProvCommit` 的 SHA | 未推送的本地 commit、stash、node_modules |
+| 已结算的 Run 终态、评论、acceptance | harness 进程、native session、子 agent、后台 bash |
+| `clean_idle` 快照（若拍了且未过期） | `dirty_crash` 盘；过期快照 |
+| 产品政策、配额余额 | 注入过的 secret 明文、临时 token、本机 SSH agent |
+
+本机 `local_daemon` 例外：用户磁盘还在，但**产品不得把它当成云端真相**。本机继续干，用本机工作树；云上再拉起，只认远程 git SHA。两边打架时以已推送的 SHA + 图为准，本机未推送的变更必须先变成 commit/patch 证据，否则新云 Run 看不见。
+
+#### 9.5.2 谁把容器再拉起来
+
+容器不会因为 Goal 还 open 就自己复活。再拉起 = 一次新的准入 tick。
+
+**合法唤醒源（与 §7.3 同一张表）：**
+
+1. 用户在 Goal 上发消息 / 点「继续」（入 followup 队列）。
+2. 用户显式选一张 ready Task 并选 Executor（本机或云）。
+3. Master slot 里的 CLI 被唤醒后 `create_task` / 建议 claim；仍要 `should-run`。
+4. gate 解除、CI 订阅、配额窗口恢复 → **入队**，不直接 `kubectl run`。
+
+**禁止：**
+
+- 回收回调里无条件把同一 VM spec 再开一遍（会把空转算力烧光，且没有 claim）。
+- 「恢复上次 Pod 名 / IP / PVC」。Run 不拥有永久卷身份。
+- 用户还没说话、也没有 ready Task，就预热一台空机器等人。
+
+产品文案必须把两个动作拆开：
+
+| 用户看见的 | 实际发生 |
+| --- | --- |
+| 继续这个 Goal | followup → should-run → 可能 claim → **新 Run** → 按 §9.5.5 restore |
+| 打开工作区 / 看桌面 | 若已有 **running** Run，attach；否则与「继续」相同，先准入 |
+| 换到云上跑 / 换回本机 | 新 Run + 新 Executor class；不迁旧盘 |
+
+对照 Cursor：hibernate 后再次 attach 是控制面 provision，guest 可从 snapshot 起来，但会话权威不在盘上。本产品连「同一个 Cloud Agent 容器」都不保证；保证的是同一个 Goal。
+
+#### 9.5.3 干净 restore 的优先级
+
+启动新 Run 时，控制面按顺序选工作区，**选中即停**；失败则落到下一条，并在 Run 上记录 `restore_mode` 与原因。
+
+```text
+1. clone（默认，永远合法）
+     checkout workspace_ref.git_sha → 可选 install → start harness
+2. snapshot_then_verify（仅 clean_idle 且 executor_class 相同）
+     还原快照 → fsck/只读检查 → git fetch
+     remote SHA 与 base_git_sha 一致且 working tree 相对该 SHA 干净
+       → 允许 start
+     否则丢弃快照（status=discarded）→ 回退 1
+3. repair_clone（上一次 Run 是 host_failure / 未结算）
+     忽略一切磁盘快照
+     clone 上一次**已落地**的 SHA（provenance commit/land，否则 Goal 上记录的 last_clean_sha）
+     未落地的 diff 若已作为 artifact 上传，只挂到 Run 评论当证据，不自动 checkout 回去
+```
+
+「干净」的机器定义（必须同时成立）：
+
+1. 没有未结算的 Run 仍标 `running`（若有，先由 reaper 结案：`failed/host_failure` 或 `cancelled`，并 reclaim）。
+2. 工作树相对 `git_sha` 无未提交改动；或只有政策允许的生成物目录且在 `.gitignore`。
+3. `git status` 不指向一个从未 push、也从未写入 provenance 的 commit（否则先把该 commit 当 artifact 或要求 push，禁止静默当 SHA）。
+4. 快照的 `taken_after_run_id` 指向一次 **succeeded 或 validated_progress 且 writeback 完成** 的 Run。运行中、`starting`、`failed` 中途拍的盘都是 `dirty_crash`。
+
+对照 Grok Bot Computer 的 Reset：回到上次 snapshot 可能丢掉未同步工作。本产品默认不提供「Reset 到脏快照」；只提供 clone 到已同步 SHA。热快照失败必须可观察地回退，禁止半还原还继续跑 harness。
+
+#### 9.5.4 回收当下：idle 封存 vs 崩溃丢盘
+
+**Idle 释放（配额、空闲超时、用户点停止且当前 Run 已终态）：**
+
+```text
+1. 禁止在 running 中途当 idle 释放。先 cancel 或等 terminal。
+2. adapter cancel → wait_terminal。
+3. 结算 writeback → spend → closeout。
+4. 若工作树相对远程有未推送提交：先 push 或把 patch 存进 artifacts_uri。
+   推不上去 → 不拍 clean_idle，只保留 artifact；仍可释放 VM。
+5. git_sha := 远程已见 SHA；拍盘 → WorkspaceSnapshot.status = clean_idle。
+6. 卸掉 secret；停 VM；Goal 仍 open。
+```
+
+**崩溃 / OOM / 节点没了 / 强制杀 running Run：**
+
+```text
+1. reaper：Run = failed/host_failure；lease reclaim。
+2. 若编排器还碰得到盘：标 dirty_crash，可选上传一次取证包（git diff + 日志），然后删。
+3. 不把这块盘登记为可启动快照。
+4. last_clean_sha 不变。
+```
+
+未推送的代码**可以丢**。这不是 ERROR：下一 Run 从 last_clean_sha 来，Task 仍 open，人可以再跑。若产品想少丢，正确投资是「更勤的 push / 更短的 lease」，不是「永远不回收盘」。
+
+#### 9.5.5 再拉起的逐步合同
+
+控制面在用户点「继续」或队列取出 followup 之后：
+
+1. **结案幽灵 Run。** 任何该 Goal 上仍 `running` 但心跳已死的 Run，按 host_failure 结算。禁止两台 VM 同时自称同一 Run。
+2. **`should-run`。** `wait` / `user_action_required` / 配额耗尽 → **不开 VM**，只把原因投影到时间线。
+3. **claim。** 失败则不开 VM。
+4. **解析 `workspace_ref`。** `git_sha = Goal.last_clean_sha`（或 Task 上记录的 base SHA）。若用户要基于未合并的 PR 分支，SHA 必须已经在 remote 上。
+5. **provision Executor。** 新实例，新 `executor_id`。可以是云 MicroVM 或本机 daemon。
+6. **restore 工作区**（§9.5.3）。失败则 Run=`failed` + `result_kind=host_failure` 或 `repair_required`，reclaim Task，**不要**带着半开磁盘 start harness。
+7. **投影政策与 secret。** 重新注入；禁止从快照里捡旧 token。
+8. **`start(run)`。** 注入新的 should-run 包。即使磁盘来自快照，harness 也默认**冷启动**（新进程）。只有 adapter `resume=true` **且** restore_mode=`snapshot_then_verify` **且** 同一 harness 版本时，才允许尝试 native resume；失败立即冷启动，不把 Goal 打成 ERROR。
+9. **heartbeat** 开始。此后与普通 Run 无异。
+
+本机 daemon 的 5–6 步是：在用户机器上 `git fetch` + checkout `git_sha`（或明确保留用户脏树并拒绝用云 SHA 覆盖，直到用户选择「丢弃本机未提交」或「先提交并 push」）。禁止云控制面静默 `reset --hard` 用户本机。
+
+#### 9.5.6 用户可见的 restore 报告
+
+每次再拉起必须在 Run 上留下人能读的摘要，投影到 Goal 时间线：
+
+- `restore_mode`（clone / snapshot_then_verify / repair_clone）
+- `git_sha`
+- 是否用了快照、快照为何被丢弃
+- 未恢复的东西：子 agent、后台命令、未推送 diff、过期 secret
+- 若有取证 artifact：链接，并写明「不会自动应用」
+
+没有这份报告的 restore 视为不干净：工人会误以为「上次做到一半的文件还在」。
+
+#### 9.5.7 明确不恢复的东西
+
+| 不恢复 | 原因 |
+| --- | --- |
+| 旧 Pod / PVC / IP | Run 不拥有基础设施身份 |
+| 快照里的 secret、SSH agent、云临时凭证 | 必须按新 Run 重新注入 |
+| harness native session（默认） | CLI 中立；session 文件不是跨回收合同 |
+| 子 agent、tmux 里的后台任务 | 只活在一次 Run |
+| 另一类 Executor 的盘（云快照 → 笔记本） | `executor_class` 必须匹配 |
+| `dirty_crash` 工作树自动 checkout | 会把崩溃现场当成主干 |
+
+需要「接着改那份未提交文件」时：人从 artifact 下载 patch，或在新 Run 里明确 `apply_artifact`（这是一次新的、可审计的 writeback），不是 restore 的隐式步骤。
 
 ---
 
@@ -733,6 +898,10 @@ LoopX 的 FastMCP / 各家 `*_goal_mode` 是碎适配器，不要整仓搬。每
 12. JSON/TOML flow 运行时状态机。
 13. 先开 VM 再找 Task。
 14. 聊天「好的」当作 production 批准。
+15. 回收回调里无条件把同一容器再拉起。
+16. 把 running 中途或崩溃盘标成可启动快照。
+17. restore 时从快照里复用 secret / 旧 token。
+18. 云控制面对用户本机 `reset --hard` 而不经选择。
 
 ---
 
@@ -769,7 +938,8 @@ LoopX 的 FastMCP / 各家 `*_goal_mode` 是碎适配器，不要整仓搬。每
 
 - 旧 PID→E2E 变成 formula。
 - CI 订阅入队。
-- VM idle 释放与可选快照。
+- VM idle 释放：必须能演示封存 → 删箱 → 用户点「继续」→ 新 Run 按 `clone` 或 `snapshot_then_verify` 起来，时间线上有 restore 报告。
+- 杀 running VM：只能 `repair_clone`，脏盘不得被下一 Run checkout。
 
 每一刀都必须能演示「杀 VM / 杀 CLI / 换引擎 / 人拒绝」后 Goal 仍可推进。
 
@@ -785,6 +955,7 @@ LoopX 的 FastMCP / 各家 `*_goal_mode` 是碎适配器，不要整仓搬。每
 | 协调者 | JSON 解释器 | 用户 + followup | Squad leader @ | CLI should-run，无 leader | 仓外编排 | 可替换 master slot + should-run |
 | 群聊 | 无/旁路 | 侧聊同 pod | 频道投影 | Lark 投影 | message issue | 投影 |
 | 执行器 | K8s MicroVM | anyrun VM | daemon×CLI | 本机 harness | 无 | MicroVM + 本机 |
+| 回收后再来 | 绑死 stage 盘 | hibernate / Build snapshot + 控制面会话 | 新排队执行 | 读 Goal 文件，无 VM | reclaim 后 ready | 新 Run；默认 clone `last_clean_sha` |
 | 跨引擎交接 | 绑死目录 | 无主路径 | 新 Run | successor todo | assign+claim | 冷交接 Task |
 | ERROR | stage 终态 | 无（agent 仍开） | 执行失败可重试 | 无 Goal ERROR | 无 issue error | 失败在 Run |
 | 存储 | 自建状态机 | 控制面 blob | 自建 | 本地文件 | Dolt | 控制面一份图 |
@@ -801,6 +972,9 @@ LoopX 的 FastMCP / 各家 `*_goal_mode` 是碎适配器，不要整仓搬。每
 | Executor | 跑 Run 的地方 |
 | Slot | Project/Goal 上指向 Worker 的可替换孔 |
 | Cold start | 新进程、新 workspace、读图与 git |
+| `last_clean_sha` | Goal 上已落地、任意 Executor 可 clone 的提交 |
+| `clean_idle` 快照 | 结算成功后拍的盘；唯一允许的热 restore |
+| `repair_clone` | 崩溃后再拉起：忽略脏盘，只 clone 已落地 SHA |
 | Projection | 只读视图，无 CAS |
 | should-run | 这一拍的唯一准入包 |
 | Reclaim | 租约死后把 Task 放回 ready |
