@@ -18,7 +18,7 @@
 
 [Omnigent 完整分析与演进路线](../extensions/omnigent-analysis.zh-CN.md)补充现成 meta-harness 底座的选择：限制接入范围 → 验证能力 → 持久交接与执行权 → 伙伴/项目模型 → 常驻事件与远端。报告明确 generic ACP 的 cold replay、顶层空闲会话切换限制、两次数据库提交与异步资源清理边界。
 
-[八项目综合报告](../extensions/eight-project-comparison.zh-CN.md)比较新增材料对原五条路线的影响。[Cursor Projects](../extensions/cursor-projects-analysis.zh-CN.md)作为产品模式与客户端证据参考，不作为可直接 fork 的完整底座路线。以下表格保留原五条路线的基准分析。
+[八项目综合报告](../extensions/eight-project-comparison.zh-CN.md)比较新增材料对原五条路线的影响。[Cursor Projects](../extensions/cursor-projects-analysis.zh-CN.md)作为产品模式与客户端证据参考，不作为可直接 fork 的完整底座路线；恢复集扩容到 1047 个单元后的编排实现细节见[深度分析](../extensions/cursor-projects-deep-dive.zh-CN.md)，它增加了可借鉴的委派与审批机制，但没有改变"不作为底座路线"这一结论。以下表格保留原五条路线的基准分析。
 
 ## 新增第七条路线：Agent Swarm
 

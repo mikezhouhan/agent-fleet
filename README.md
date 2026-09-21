@@ -24,6 +24,7 @@
 - [Multica：异构小队、任务工作台与第九条演进路线](analysis/extensions/multica-analysis.zh-CN.md)
 - [Memoh：长期记忆、独立电脑与第八条演进路线](analysis/extensions/memoh-analysis.zh-CN.md)
 - [Agent Swarm：持久任务团队与第七条演进路线](analysis/extensions/agent-swarm-analysis.zh-CN.md)
+- [Cursor Projects 深度分析：1047 个恢复单元中的编排实现](analysis/extensions/cursor-projects-deep-dive.zh-CN.md)
 - [Cursor Projects：产品机制与恢复证据](analysis/extensions/cursor-projects-analysis.zh-CN.md)
 - [Omnigent：多 Harness 底座与第六条演进路线](analysis/extensions/omnigent-analysis.zh-CN.md)
 - [下载源码、Warp 官方材料与 Cursor 恢复材料](SOURCE_DOWNLOAD.zh-CN.md)
@@ -42,5 +43,7 @@
 当前产出为静态源码/官方文档分析与演进方案，尚未实现新产品，也未通过实际模型调用验证各项目的性能、稳定性或兼容性。报告区分已有能力、架构推断和拟议改造，不代表项目最新版本的持续评测。2026-09-21 的第一性原理设计是拟议产品规格，对照 Cursor / LoopX / Beads / Multica / Omnigent 的固定证据，不是可运行实现。
 
 本仓库包含研究报告和 `cursor-projects-reversed/` 客户端恢复证据；十个独立上游仓库需另行下载，其源码、素材与许可证请访问各原始仓库。Grok Bot 研究对象为非官方重建版本，其结论受可见源码范围限制。
+
+Cursor 恢复集已从 70 个单元扩容到 1047 个，目录见 [CATALOG.md](cursor-projects-reversed/CATALOG.md)。恢复单元是打包代码的切片，不是完整模块，也不是原始 TypeScript。
 
 Warp 客户端开源不等于完整 Factories 开源：Oz 编排服务未包含在公开仓库中。新增三个 Warp 材料仓库也需单独下载，不随研究仓发布。
