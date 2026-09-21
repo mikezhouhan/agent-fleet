@@ -134,6 +134,24 @@
       "clone_depth": 1
     }
   ],
+  "design_references": [
+    {
+      "name": "loopx",
+      "url": "https://github.com/loopx-project/loopx",
+      "commit": "09f10c4e37b89c6ed25f2f2354f89d641662e83c",
+      "cloned": "2026-09-21",
+      "kind": "provider-neutral local-first control plane (Goal/todo/quota/settlement); not vendored",
+      "related_analysis": "analysis/first-principles-cloud-agent-design.zh-CN.md"
+    },
+    {
+      "name": "beads",
+      "url": "https://github.com/gastownhall/beads",
+      "commit": "403e27c6dead4e128bf6b35483212a45481f15db",
+      "cloned": "2026-09-21",
+      "kind": "Dolt-backed graph issue tracker for agents (ready/claim/lease/reclaim); data-plane semantics",
+      "related_analysis": "analysis/first-principles-cloud-agent-design.zh-CN.md"
+    }
+  ],
   "web_sources": [
     {
       "url": "https://www.warp.dev/factories",

@@ -4,6 +4,7 @@
 
 ## 阅读入口
 
+- [第一性原理：Coding-Agent-Neutral Cloud Agent 平台设计](analysis/first-principles-cloud-agent-design.zh-CN.md)
 - [Cursor 本地与云端架构：运行循环、宿主、会话与状态](analysis/cursor-local-cloud-architecture.zh-CN.md)
 
 - [Cursor Cloud Agent 完整架构（本机 VM 证据 + 控制面 + 客户端切片）](analysis/cloud-agent-architecture.zh-CN.md)
@@ -38,7 +39,7 @@
 
 比较对象为 Kandev、Cindy、Grok Bot 0.18 重建版、Rakazo、Agent Orchestrator、DeepSeek Harness、Cursor Projects 客户端恢复材料、Omnigent、Agent Swarm、Memoh、Multica 与 Warp Factories。原六项目报告保留其固定基准；2026-09-15 增补报告先后纳入五个新对象。2026-09-16 新增 Warp 客户端、工厂示例与文档三个官方仓库。报告基于固定源码及文档快照，源码引用链接锁定到具体提交；完整版本记录见 [sources.json](sources.json)。
 
-当前产出为静态源码/官方文档分析与演进方案，尚未实现新产品，也未通过实际模型调用验证各项目的性能、稳定性或兼容性。报告区分已有能力、架构推断和拟议改造，不代表项目最新版本的持续评测。
+当前产出为静态源码/官方文档分析与演进方案，尚未实现新产品，也未通过实际模型调用验证各项目的性能、稳定性或兼容性。报告区分已有能力、架构推断和拟议改造，不代表项目最新版本的持续评测。2026-09-21 的第一性原理设计是拟议产品规格，对照 Cursor / LoopX / Beads / Multica / Omnigent 的固定证据，不是可运行实现。
 
 本仓库包含研究报告和 `cursor-projects-reversed/` 客户端恢复证据；十个独立上游仓库需另行下载，其源码、素材与许可证请访问各原始仓库。Grok Bot 研究对象为非官方重建版本，其结论受可见源码范围限制。
 
