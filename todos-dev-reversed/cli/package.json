@@ -1,0 +1,48 @@
+{
+  "name": "@todos-dev/cli",
+  "version": "0.1.60",
+  "bin": {
+    "tds": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "0.3.226",
+    "@earendil-works/pi-ai": "1.0.0",
+    "@earendil-works/pi-coding-agent": "1.0.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "eventsource": "^4.1.0",
+    "undici": "^7"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.5.0",
+    "@tds/types": "0.1.0"
+  },
+  "optionalDependencies": {
+    "@todos-dev/cli-darwin-arm64": "0.1.60",
+    "@todos-dev/cli-darwin-x64": "0.1.60",
+    "@todos-dev/cli-linux-x64": "0.1.60",
+    "@todos-dev/cli-linux-arm64": "0.1.60",
+    "@todos-dev/cli-win32-x64": "0.1.60",
+    "@todos-dev/cli-win32-arm64": "0.1.60"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "cli": "tsx src/index.ts",
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx src/lib/remoteShellTool.test.ts",
+    "release": "node ../../scripts/release-cli.mjs",
+    "start": "node dist/index.js",
+    "reinstall": "rm -f todos-dev-cli-*.tgz && TDS_BUNDLE_TUNNEL=1 pnpm pack && npm i -g \"$PWD/$(ls todos-dev-cli-*.tgz)\" && rm -f todos-dev-cli-*.tgz"
+  }
+}
