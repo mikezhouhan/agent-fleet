@@ -1,5 +1,7 @@
 # 十二项目比较：伙伴、原生会话、任务团队与软件工厂
 
+> 2026-10-08 更新：已加入 Todos，最新结论见[十三项目比较](thirteen-project-comparison.zh-CN.md)；本页保留十二项目基准。
+
 更新日期：2026-09-16。新增 Warp Factories，旧对象沿用原固定快照；没有把十二个对象重新升级并执行统一测试。版本与证据类型见 [sources.json](../../sources.json)。
 
 ## 1. 加入 Warp 后的结论
