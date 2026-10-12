@@ -35,6 +35,11 @@
 - [路线四：独立新建核心](analysis/routes/04-independent-core-evolution.zh-CN.md)
 - [路线五：基于 DeepSeek Harness 演进](analysis/routes/05-deepseek-harness-evolution.zh-CN.md)
 
+## 对比项目链接
+
+- [DeepSeek-Bot](https://github.com/FeiZhuLulu/DeepSeek-Bot)
+- [pi durable](https://github.com/earendil-works/pi/tree/main/packages/durable)
+
 ## 研究范围与方法
 
 比较对象为 Kandev、Cindy、Grok Bot 0.18 重建版、Rakazo、Agent Orchestrator、DeepSeek Harness、Cursor Projects 客户端恢复材料、Omnigent、Agent Swarm、Memoh、Multica 与 Warp Factories。原六项目报告保留其固定基准；2026-09-15 增补报告先后纳入五个新对象。2026-09-16 新增 Warp 客户端、工厂示例与文档三个官方仓库。报告基于固定源码及文档快照，源码引用链接锁定到具体提交；完整版本记录见 [sources.json](sources.json)。
