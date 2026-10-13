@@ -1,0 +1,6 @@
+# 解包中间产物与大型二进制不入库。校验和与下载 URL 见 README.md。
+/work/
+*.dmg
+*.asar
+**/tds-tunnel
+**/node_modules/

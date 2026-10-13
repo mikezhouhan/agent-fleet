@@ -1,4 +1,4 @@
-# 多 Coding Agent 伙伴产品的十条演进路线
+# 多 Coding Agent 伙伴产品的演进路线
 
 原五份报告分别从不同底座出发，分析如何演进为长期伙伴、多原生 coding agent、可介入协作和可恢复执行的产品。各报告独立包含目标、源码现状、架构取舍、阶段与退出条件、数据迁移、风险、成本结构、验证与停止条件，可以单独阅读。
 
@@ -42,7 +42,13 @@
 
 [Warp Factories 完整分析](../extensions/warp-factories-analysis.zh-CN.md)从异构软件工厂出发：验证可替换主管 → 决定控制面归属 → 补长期伙伴 → 显式交接和权限 → 评价驱动迭代。已公开客户端、配置示例与文档，Oz 编排服务仍专有，因此此路线不能称为完整开源 fork。ACP 仍为计划，不将 Factory MCP 误写成 ACP 接管。
 
-最新综合判断见[十二项目比较](../extensions/twelve-project-comparison.zh-CN.md)。
+加入 Warp 时的综合判断见[十二项目比较](../extensions/twelve-project-comparison.zh-CN.md)。
+
+## 新增第十一条参照：Todos（不可 fork）
+
+[Todos 完整分析](../extensions/todos-dev-analysis.zh-CN.md)从官方 Mac 安装包 `0.1.12` 与 npm `@todos-dev/cli@0.1.60` 出发。执行器负责注册、领取、worktree 和多 harness；Chief 与看板留在 `todos.dev`。这条是产品参照和执行器机制借鉴，不是完整开源底座，也不替换前十条路线。
+
+最新综合判断见[十三项目比较](../extensions/thirteen-project-comparison.zh-CN.md)。
 
 ## 五条路线的不同起点
 

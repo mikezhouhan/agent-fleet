@@ -1,0 +1,14 @@
+{
+  "name": "@tds/desktop",
+  "version": "0.1.12",
+  "minimumVersion": "0.1.4",
+  "productName": "Todos",
+  "private": true,
+  "description": "Todos desktop — the Electron shell around the web app.",
+  "author": {
+    "name": "Todos",
+    "email": "support@todos.dev"
+  },
+  "homepage": "https://todos.dev",
+  "main": "dist/main/index.js"
+}

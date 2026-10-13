@@ -99,6 +99,27 @@
       ]
     },
     {
+      "name": "todos-dev-reversed",
+      "path": "todos-dev-reversed",
+      "repository": "https://github.com/mikezhouhan/agent-fleet",
+      "kind": "recovered Todos desktop shell TypeScript plus the published @todos-dev/cli bundle; not the orchestration server",
+      "product": "Todos",
+      "captured": "2026-10-08",
+      "desktop_version": "0.1.12",
+      "desktop_bundle_id": "dev.todos.desktop",
+      "cli_package": "@todos-dev/cli",
+      "cli_version": "0.1.60",
+      "cli_dist_sha256": "6753d4ff4a494cf6195b6a48b1d67b6bea3598211465fa84e9394dc961b2494f",
+      "dmg_arm64_url": "https://assets.todos.dev/desktop/Todos-arm64.dmg",
+      "dmg_arm64_sha256": "64a18e9b126a76a8224057303e592c518e3c346f7f26155a2e754801dbf5682c",
+      "dmg_x64_url": "https://assets.todos.dev/desktop/Todos-x64.dmg",
+      "dmg_x64_sha256": "abaaa69f24a77d5d7e83068f742d782dc24c336aa527b98e49d5c706404fb84c",
+      "related_analysis": [
+        "analysis/extensions/todos-dev-analysis.zh-CN.md",
+        "analysis/extensions/thirteen-project-comparison.zh-CN.md"
+      ]
+    },
+    {
       "name": "grok-bot-sandbox-reversed",
       "path": "grok-bot-sandbox-reversed",
       "repository": "https://github.com/mikezhouhan/agent-fleet",
@@ -153,6 +174,24 @@
     }
   ],
   "web_sources": [
+    {
+      "url": "https://todos.dev/install",
+      "accessed": "2026-10-08",
+      "kind": "official Mac DMG links (arm64 and x64) on the download page",
+      "related_analysis": "analysis/extensions/todos-dev-analysis.zh-CN.md"
+    },
+    {
+      "url": "https://todos.dev/docs/install",
+      "accessed": "2026-10-08",
+      "kind": "names the runner install as npm i -g @todos-dev/cli and tds start",
+      "related_analysis": "analysis/extensions/todos-dev-analysis.zh-CN.md"
+    },
+    {
+      "url": "https://registry.npmjs.org/@todos-dev/cli",
+      "accessed": "2026-10-08",
+      "kind": "public package @todos-dev/cli 0.1.60; platform packages are tds-tunnel sidecars",
+      "related_analysis": "analysis/extensions/todos-dev-analysis.zh-CN.md"
+    },
     {
       "url": "https://www.warp.dev/factories",
       "accessed": "2026-09-16",
