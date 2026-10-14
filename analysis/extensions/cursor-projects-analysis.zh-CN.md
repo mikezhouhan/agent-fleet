@@ -1,5 +1,7 @@
 # Cursor Projects：产品编排机制、源码证据与复用边界
 
+> **恢复集已扩容：**本文基于最初 70 个恢复单元。恢复集现为 1047 个单元，新增 subagent 执行控制、逐工具人工审批、分层权限文件、side chat 与 agent store 等证据，其中两项"无法确认"已有答案。最新分析见[深度分析报告](cursor-projects-deep-dive.zh-CN.md)；本文保留 70 单元阶段的判断。
+
 ## 1. 结论与研究范围
 
 Cursor Projects 对多 coding agent 产品最有价值的启发，是把项目做成持续组织工作的入口：项目成员、主管和 Worker、工作成果、用户插话、上下文以及外部事件共同构成工作过程。它补充了 Grok 的伙伴体验，也给 AO、Cindy 和 Omnigent 这类会话系统提供了更完整的项目组织视角。
